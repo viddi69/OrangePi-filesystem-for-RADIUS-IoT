@@ -1,0 +1,13 @@
+#!/bin/bash
+source /usr/lib/u-boot/platform_install.sh
+[[ $DEVICE == /dev/null ]] && exit 0
+[[ -z $DEVICE ]] && DEVICE="/dev/mmcblk0"
+[[ $(type -t setup_write_uboot_platform) == function ]] && setup_write_uboot_platform
+if [[ -b $DEVICE ]]; then
+echo "Updating u-boot on $DEVICE" >&2
+write_uboot_platform $DIR $DEVICE
+sync
+else
+echo "Device $DEVICE does not exist, skipping" >&2
+fi
+exit 0

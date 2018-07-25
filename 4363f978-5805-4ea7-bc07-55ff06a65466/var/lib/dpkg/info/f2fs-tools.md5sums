@@ -1,0 +1,12 @@
+9c58ecc91ff42d0d15a65e9aea7046bc  sbin/f2fstat
+9dc5757d0b1ae0a4e55f2a84e7c26d3a  sbin/fibmap.f2fs
+4ee3edb55224ce73cf146a0a844f0cb4  sbin/fsck.f2fs
+463d6dfb9f1a8ea27bbd7828dbfda236  sbin/mkfs.f2fs
+eace5566fb9505434c242c2d19b3e078  sbin/parse.f2fs
+872290f36427350e3d46020214e75e43  usr/share/doc/f2fs-tools/README
+e2f25539e90ebeee862e5f167138a809  usr/share/doc/f2fs-tools/copyright
+b32d5eb9351fedc7aa77f815cc65d9de  usr/share/lintian/overrides/f2fs-tools
+c8305b774d148b2f1da17f680b52ba9b  usr/share/man/man8/defrag.f2fs.8.gz
+43a98904c22e1d320dc1ea7f2ba10bc1  usr/share/man/man8/dump.f2fs.8.gz
+b359ca022304b99012ba42bb69e4721b  usr/share/man/man8/fsck.f2fs.8.gz
+067c6817f73501018a4a935ca11dabea  usr/share/man/man8/mkfs.f2fs.8.gz

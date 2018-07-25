@@ -1,0 +1,5 @@
+ccd172e1d0b9bf7c7f3a5b00c1a287cb  usr/lib/freeradius/libfreeradius-eap-2.2.8.so
+a42e6b0aee979cad2629e550eb91bc28  usr/lib/freeradius/libfreeradius-radius-020208.so
+db85a133a2a28fa7df48693d15a6846c  usr/share/doc/libfreeradius2/changelog.Debian.gz
+8676e3b434559d49784d2453961a4f3f  usr/share/doc/libfreeradius2/copyright
+753264aab34e98a47fd617ee31952ca3  usr/share/lintian/overrides/libfreeradius2

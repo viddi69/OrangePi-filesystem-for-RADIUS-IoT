@@ -1,0 +1,6 @@
+c779b7ddf2155d7005b39a8e65206938  etc/init.d/ap6212-bluetooth
+09bb788dfbb3792253705fbf6374f19e  etc/init.d/brcm40183-patch
+659787c013a485014d8997c852861b48  etc/default/ap6212
+399aa9bb7e0be4fcbed14f8c89d0759f  etc/default/brcm40183
+3b3572a7f3d49235afc75b9e046ebc58  usr/bin/brcm_patchram_plus
+07f3c98e9994d1728d6d15dcebd14993  usr/bin/brcm_bt_reset

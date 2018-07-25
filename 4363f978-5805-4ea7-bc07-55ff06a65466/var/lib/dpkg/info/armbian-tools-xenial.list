@@ -1,0 +1,12 @@
+/.
+/etc
+/etc/init.d
+/etc/init.d/ap6212-bluetooth
+/etc/init.d/brcm40183-patch
+/etc/default
+/etc/default/ap6212
+/etc/default/brcm40183
+/usr
+/usr/bin
+/usr/bin/brcm_patchram_plus
+/usr/bin/brcm_bt_reset

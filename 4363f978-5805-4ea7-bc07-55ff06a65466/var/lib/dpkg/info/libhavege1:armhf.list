@@ -1,0 +1,11 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libhavege1
+/usr/share/doc/libhavege1/changelog.Debian.gz
+/usr/share/doc/libhavege1/copyright
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libhavege.so.1.1.0
+/usr/lib/arm-linux-gnueabihf/libhavege.so.1

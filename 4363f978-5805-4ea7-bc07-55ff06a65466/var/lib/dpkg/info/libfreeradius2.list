@@ -1,0 +1,14 @@
+/.
+/usr
+/usr/lib
+/usr/lib/freeradius
+/usr/lib/freeradius/libfreeradius-eap-2.2.8.so
+/usr/lib/freeradius/libfreeradius-radius-020208.so
+/usr/share
+/usr/share/doc
+/usr/share/doc/libfreeradius2
+/usr/share/doc/libfreeradius2/copyright
+/usr/share/doc/libfreeradius2/changelog.Debian.gz
+/usr/share/lintian
+/usr/share/lintian/overrides
+/usr/share/lintian/overrides/libfreeradius2

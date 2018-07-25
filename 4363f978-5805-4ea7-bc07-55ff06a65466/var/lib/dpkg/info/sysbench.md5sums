@@ -1,0 +1,7 @@
+cbfea2ea18be37003fcc641a60fb6760  usr/bin/sysbench
+04a8b59b9b3987bb5b0958e9e09e81cf  usr/share/doc/sysbench/README
+be75437ea3f6168c15008edaabca7a95  usr/share/doc/sysbench/TODO.Debian
+4b3f329bfc037744c407ed667ba4e970  usr/share/doc/sysbench/changelog.Debian.gz
+34d4fa903e0899177c55c820dab98a2c  usr/share/doc/sysbench/copyright
+d41d8cd98f00b204e9800998ecf8427e  usr/share/doc/sysbench/manual.html
+94639b679f186b171e1af57495079110  usr/share/man/man1/sysbench.1.gz

@@ -1,0 +1,9 @@
+/.
+/usr
+/usr/lib
+/usr/lib/u-boot
+/usr/lib/u-boot/LICENSE
+/usr/lib/u-boot/orangepi_zero_defconfig
+/usr/lib/u-boot/platform_install.sh
+/usr/lib/linux-u-boot-orangepizero_5.35_armhf
+/usr/lib/linux-u-boot-orangepizero_5.35_armhf/u-boot-sunxi-with-spl.bin

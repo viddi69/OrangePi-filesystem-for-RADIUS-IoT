@@ -1,0 +1,4 @@
+a2c678cfd4a4d97135585cad908541c6  usr/lib/u-boot/LICENSE
+f475f8be44c1701ca8b73d28a026d61c  usr/lib/u-boot/orangepi_zero_defconfig
+ea80e4df2408917acb5f28f5fa8e3ad6  usr/lib/u-boot/platform_install.sh
+8c3edb93762dd48bcf05bd4f32b29ee5  usr/lib/linux-u-boot-orangepizero_5.35_armhf/u-boot-sunxi-with-spl.bin

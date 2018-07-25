@@ -1,0 +1,16 @@
+#!/bin/sh
+[ ! -f "/etc/network/interfaces" ] && cp /etc/network/interfaces.default /etc/network/interfaces
+ln -sf /var/run/motd /etc/motd
+rm -f /etc/update-motd.d/00-header /etc/update-motd.d/10-help-text
+if [ -f "/boot/bin/orangepizero.bin" ] && [ ! -f "/boot/script.bin" ]; then ln -sf bin/orangepizero.bin /boot/script.bin >/dev/null 2>&1 || cp /boot/bin/orangepizero.bin /boot/script.bin; fi
+rm -f /usr/local/bin/h3disp /usr/local/bin/h3consumption
+if [ ! -f "/etc/default/armbian-motd" ]; then
+cp /etc/default/armbian-motd.dpkg-dist /etc/default/armbian-motd
+fi
+if [ ! -f "/etc/default/log2ram" ]; then
+cp /etc/default/log2ram.dpkg-dist /etc/default/log2ram
+fi
+if [ -f "/etc/systemd/system/log2ram.service" ]; then
+mv /etc/systemd/system/log2ram.service /etc/systemd/system/log2ram-service.dpkg-old
+fi
+exit 0

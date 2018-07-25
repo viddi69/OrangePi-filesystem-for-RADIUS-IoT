@@ -1,0 +1,10 @@
+TARGETS = resize2fs firstrun hostapd unattended-upgrades armhwinfo alsa-utils haveged freeradius resolvconf hddtemp fake-hwclock ntp urandom sendsigs rsyslog umountnfs.sh hwclock.sh networking umountfs umountroot halt reboot
+sendsigs: hostapd unattended-upgrades alsa-utils haveged freeradius hddtemp
+rsyslog: sendsigs haveged freeradius hddtemp ntp
+umountnfs.sh: hostapd rsyslog unattended-upgrades alsa-utils haveged sendsigs freeradius hddtemp
+hwclock.sh: rsyslog
+networking: umountnfs.sh hddtemp
+umountfs: hostapd unattended-upgrades alsa-utils networking haveged hwclock.sh freeradius urandom umountnfs.sh resolvconf hddtemp
+umountroot: umountfs fake-hwclock
+halt: umountroot
+reboot: umountroot

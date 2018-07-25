@@ -1,0 +1,535 @@
+Jun 25 06:32:55 localhost systemd[1]: Starting Daily apt upgrade and clean activities...
+Jun 25 06:32:55 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 06:34:25 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 06:33:22 localhost systemd[1]: Started Daily apt upgrade and clean activities.
+Jun 25 06:35:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 06:36:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 06:35:01 localhost CRON[1883]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 06:45:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 06:46:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 06:45:01 localhost CRON[2087]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 06:48:58 localhost NetworkManager[445]: <error> [1529909338.9522] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 06:53:48 localhost ntpd[976]: 5.186.56.205 local addr 192.168.1.50 -> <null>
+Jun 25 06:53:48 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 06:55:18 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 06:53:48 localhost systemd[1]: Starting Daily apt download activities...
+Jun 25 06:53:52 localhost systemd[1]: Started Daily apt download activities.
+Jun 25 06:55:01 localhost CRON[2314]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 07:01:17 localhost NetworkManager[445]: <error> [1529910077.6967] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 07:02:50 localhost dhclient[898]: PRC: Renewing lease on eth0.
+Jun 25 07:02:50 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 07:04:20 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 07:02:50 localhost dhclient[898]: XMT: Renew on eth0, interval 10440ms.
+Jun 25 07:02:50 localhost dhclient[898]: RCV: Reply message on eth0 from fe80::5a6d:8fff:fef5:b154.
+Jun 25 07:02:50 localhost NetworkManager[445]: <info>  [1529910170.4536]   valid_lft 4294967295
+Jun 25 07:02:50 localhost NetworkManager[445]: <info>  [1529910170.4538]   preferred_lft 4294967295
+Jun 25 07:02:50 localhost NetworkManager[445]: <info>  [1529910170.4539]   address fd07:3bb5:c7b1::e4c
+Jun 25 07:02:50 localhost NetworkManager[445]: <info>  [1529910170.4540]   nameserver 'fe80::5a6d:8fff:fef5:b154'
+Jun 25 07:02:50 localhost NetworkManager[445]: <info>  [1529910170.4542] dhcp6 (eth0): state changed bound -> bound, event ID="98:7f:73:22|1529910170"
+Jun 25 07:02:50 localhost NetworkManager[445]: <error> [1529910170.4564] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 07:02:50 localhost dbus[422]: [system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service'
+Jun 25 07:02:50 localhost systemd[1]: Starting Network Manager Script Dispatcher Service...
+Jun 25 07:02:50 localhost dbus[422]: [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+Jun 25 07:02:50 localhost systemd[1]: Started Network Manager Script Dispatcher Service.
+Jun 25 07:02:50 localhost nm-dispatcher: req:1 'dhcp6-change' [eth0]: new request (1 scripts)
+Jun 25 07:02:50 localhost nm-dispatcher: req:1 'dhcp6-change' [eth0]: start running ordered scripts...
+Jun 25 07:05:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 07:06:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 07:05:01 localhost CRON[2518]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 07:15:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 07:16:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 07:15:01 localhost CRON[2811]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 07:17:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 07:18:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 07:17:01 localhost CRON[2934]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Jun 25 07:25:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 07:26:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 07:25:01 localhost CRON[3141]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 07:27:55 localhost NetworkManager[445]: <error> [1529911675.7273] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 07:35:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 07:36:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 07:35:01 localhost CRON[3385]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 07:36:01 localhost ntpd[976]: 158.248.168.58 local addr 192.168.1.50 -> <null>
+Jun 25 07:45:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 07:46:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 07:45:01 localhost CRON[3651]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 07:53:27 localhost NetworkManager[445]: <error> [1529913207.0797] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 07:55:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 07:56:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 07:55:01 localhost CRON[3938]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 08:05:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 08:06:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 08:05:01 localhost CRON[4193]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 08:15:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 08:16:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 08:15:01 localhost CRON[4498]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 08:17:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 08:18:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 08:17:01 localhost CRON[4541]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Jun 25 08:21:11 localhost NetworkManager[445]: <error> [1529914871.8804] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 08:25:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 08:26:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 08:25:01 localhost CRON[4772]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 08:35:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 08:36:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 08:35:01 localhost CRON[5047]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 08:45:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 08:46:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 08:45:01 localhost CRON[5332]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 08:48:46 localhost NetworkManager[445]: <error> [1529916526.9703] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 08:55:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 08:56:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 08:55:01 localhost CRON[5607]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 09:05:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 09:06:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 09:05:01 localhost CRON[5851]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 09:15:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 09:16:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 09:15:01 localhost CRON[6104]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 09:15:35 localhost NetworkManager[445]: <error> [1529918135.5284] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 09:17:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 09:18:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 09:17:01 localhost CRON[6157]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Jun 25 09:25:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 09:26:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 09:25:01 localhost CRON[6398]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 09:35:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 09:36:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 09:35:01 localhost CRON[6643]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 09:42:13 localhost NetworkManager[445]: <error> [1529919733.2378] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 09:45:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 09:46:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 09:45:01 localhost CRON[6928]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 09:55:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 09:56:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 09:55:01 localhost CRON[7221]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 10:05:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 10:06:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 10:05:01 localhost CRON[7444]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 10:08:14 localhost NetworkManager[445]: <error> [1529921294.1820] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 10:15:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 10:16:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 10:15:01 localhost CRON[7787]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 10:17:02 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 10:18:32 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 10:17:02 localhost CRON[7830]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Jun 25 10:25:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 10:26:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 10:25:01 localhost CRON[8051]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 10:34:32 localhost NetworkManager[445]: <error> [1529922872.8401] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 10:35:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 10:36:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 10:35:01 localhost CRON[8315]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 10:45:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 10:46:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 10:45:01 localhost CRON[8548]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 10:55:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 10:56:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 10:55:01 localhost CRON[8811]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 11:04:23 localhost NetworkManager[445]: <error> [1529924663.2992] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 11:05:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 11:06:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 11:05:01 localhost CRON[9055]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 11:15:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 11:16:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 11:15:01 localhost CRON[9318]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 11:17:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 11:18:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 11:17:01 localhost CRON[9361]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Jun 25 11:25:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 11:26:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 11:25:01 localhost CRON[9601]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 11:30:46 localhost NetworkManager[445]: <error> [1529926246.7273] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 11:35:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 11:36:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 11:35:01 localhost CRON[9865]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 11:45:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 11:46:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 11:45:01 localhost CRON[10118]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 11:55:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 11:56:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 11:55:01 localhost CRON[10371]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 11:55:31 localhost NetworkManager[445]: <error> [1529927731.6671] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 12:05:02 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 12:06:32 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 12:05:02 localhost CRON[10675]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 12:15:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 12:16:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 12:15:01 localhost CRON[10951]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 12:17:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 12:18:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 12:17:01 localhost CRON[11024]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Jun 25 12:24:47 localhost NetworkManager[445]: <error> [1529929487.2275] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 12:25:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 12:26:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 12:25:01 localhost CRON[11210]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 12:35:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 12:36:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 12:35:01 localhost CRON[11480]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 12:37:22 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 12:38:52 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 12:38:53 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 12:40:23 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 12:40:54 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 12:42:24 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 12:43:41 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 12:45:11 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 12:45:01 localhost CRON[11771]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 12:54:42 localhost NetworkManager[445]: <error> [1529931282.2090] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 12:55:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 12:56:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 12:55:01 localhost CRON[12025]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 13:02:50 localhost dhclient[898]: PRC: Renewing lease on eth0.
+Jun 25 13:02:50 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 13:04:20 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 13:02:50 localhost dhclient[898]: XMT: Renew on eth0, interval 10520ms.
+Jun 25 13:02:50 localhost dhclient[898]: RCV: Reply message on eth0 from fe80::5a6d:8fff:fef5:b154.
+Jun 25 13:02:50 localhost NetworkManager[445]: <info>  [1529931770.6293]   valid_lft 4294967295
+Jun 25 13:02:50 localhost NetworkManager[445]: <info>  [1529931770.6295]   preferred_lft 4294967295
+Jun 25 13:02:50 localhost NetworkManager[445]: <info>  [1529931770.6296]   address fd07:3bb5:c7b1::e4c
+Jun 25 13:02:50 localhost NetworkManager[445]: <info>  [1529931770.6297]   nameserver 'fe80::5a6d:8fff:fef5:b154'
+Jun 25 13:02:50 localhost NetworkManager[445]: <info>  [1529931770.6298] dhcp6 (eth0): state changed bound -> bound, event ID="98:7f:73:22|1529931770"
+Jun 25 13:02:50 localhost NetworkManager[445]: <error> [1529931770.6317] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 13:02:50 localhost dbus[422]: [system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service'
+Jun 25 13:02:50 localhost systemd[1]: Starting Network Manager Script Dispatcher Service...
+Jun 25 13:02:51 localhost dbus[422]: [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+Jun 25 13:02:51 localhost systemd[1]: Started Network Manager Script Dispatcher Service.
+Jun 25 13:02:51 localhost nm-dispatcher: req:1 'dhcp6-change' [eth0]: new request (1 scripts)
+Jun 25 13:02:51 localhost nm-dispatcher: req:1 'dhcp6-change' [eth0]: start running ordered scripts...
+Jun 25 13:05:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 13:06:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 13:05:01 localhost CRON[12258]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 13:15:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 13:16:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 13:15:01 localhost CRON[12502]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 13:17:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 13:18:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 13:17:01 localhost CRON[12555]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Jun 25 13:22:48 localhost NetworkManager[445]: <error> [1529932968.7206] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 13:25:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 13:26:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 13:25:01 localhost CRON[12846]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 13:35:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 13:36:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 13:35:01 localhost CRON[13100]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 13:45:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 13:46:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 13:45:01 localhost CRON[13364]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 13:50:49 localhost NetworkManager[445]: <error> [1529934649.8940] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 13:55:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 13:56:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 13:55:01 localhost CRON[13608]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 14:05:02 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 14:06:32 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 14:05:02 localhost CRON[13871]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 14:09:24 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 14:10:54 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 14:11:03 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 14:12:33 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 14:13:10 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 14:14:40 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 14:13:52 localhost NetworkManager[445]: <error> [1529936032.0976] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 14:15:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 14:16:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 14:15:01 localhost CRON[14157]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 14:16:59 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 14:18:29 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 14:17:01 localhost CRON[14238]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Jun 25 14:20:40 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 14:22:10 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 14:22:16 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 14:23:46 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 14:25:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 14:26:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 14:25:01 localhost CRON[14544]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 14:26:35 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 14:28:05 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 14:28:11 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 14:29:41 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 14:29:44 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 14:31:14 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 14:31:17 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 14:32:47 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 14:33:31 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 14:35:01 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 14:34:11 localhost systemd[1]: Started Session 489 of user viddi.
+Jun 25 14:35:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 14:36:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 14:35:01 localhost CRON[14936]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 14:40:12 localhost NetworkManager[445]: <error> [1529937612.7943] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 14:45:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 14:46:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 14:45:01 localhost CRON[15228]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 14:55:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 14:56:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 14:55:01 localhost CRON[15477]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 15:05:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 15:06:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 15:05:01 localhost CRON[15721]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 15:06:23 localhost NetworkManager[445]: <error> [1529939183.2493] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 15:09:44 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 15:11:14 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 15:11:46 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 15:13:16 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 15:13:25 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 15:14:55 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 15:15:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 15:16:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 15:15:01 localhost CRON[16023]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 15:17:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 15:18:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 15:17:01 localhost CRON[16070]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Jun 25 15:25:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 15:26:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 15:25:01 localhost CRON[16281]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 15:30:02 localhost NetworkManager[445]: <error> [1529940602.6760] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 15:35:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 15:36:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 15:35:01 localhost CRON[16594]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 15:45:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 15:46:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 15:45:01 localhost CRON[16868]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 15:55:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 15:56:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 15:55:01 localhost CRON[17187]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 15:58:33 localhost NetworkManager[445]: <error> [1529942313.7585] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 16:05:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 16:06:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 16:05:01 localhost CRON[17473]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 16:15:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 16:16:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 16:15:01 localhost CRON[17718]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 16:17:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 16:18:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 16:17:01 localhost CRON[17761]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Jun 25 16:25:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 16:26:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 16:25:01 localhost CRON[18002]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 16:26:39 localhost NetworkManager[445]: <error> [1529943999.8327] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 16:35:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 16:36:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 16:35:01 localhost CRON[18287]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 16:45:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 16:46:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 16:45:01 localhost CRON[18573]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 16:52:25 localhost NetworkManager[445]: <error> [1529945545.8839] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 16:55:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 16:56:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 16:55:01 localhost CRON[18797]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 17:05:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 17:06:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 17:05:01 localhost CRON[19051]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 17:15:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 17:16:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 17:15:01 localhost CRON[19325]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 17:17:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 17:18:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 17:17:01 localhost CRON[19378]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Jun 25 17:18:29 localhost NetworkManager[445]: <error> [1529947109.9970] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 17:25:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 17:26:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 17:25:01 localhost CRON[19600]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 17:35:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 17:36:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 17:35:01 localhost CRON[19895]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 17:42:02 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 17:43:32 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 17:42:02 localhost systemd[1]: Stopping User Manager for UID 0...
+Jun 25 17:42:02 localhost systemd[17112]: Reached target Shutdown.
+Jun 25 17:42:02 localhost systemd[17112]: Stopped target Default.
+Jun 25 17:42:02 localhost systemd[17112]: Stopped target Basic System.
+Jun 25 17:42:02 localhost systemd[17112]: Stopped target Paths.
+Jun 25 17:42:02 localhost systemd[17112]: Stopped target Sockets.
+Jun 25 17:42:02 localhost systemd[17112]: Starting Exit the Session...
+Jun 25 17:42:02 localhost systemd[17112]: Stopped target Timers.
+Jun 25 17:42:02 localhost systemd[17112]: Received SIGRTMIN+24 from PID 20088 (kill).
+Jun 25 17:42:04 localhost systemd[1]: Stopped User Manager for UID 0.
+Jun 25 17:42:04 localhost systemd[1]: Removed slice User Slice of root.
+Jun 25 17:42:18 localhost systemd[1]: Stopping User Manager for UID 1000...
+Jun 25 17:42:18 localhost systemd[2989]: Stopped target Default.
+Jun 25 17:42:18 localhost systemd[2989]: Stopped target Basic System.
+Jun 25 17:42:18 localhost systemd[2989]: Stopped target Sockets.
+Jun 25 17:42:18 localhost systemd[2989]: Stopped target Paths.
+Jun 25 17:42:18 localhost systemd[2989]: Stopped target Timers.
+Jun 25 17:42:18 localhost systemd[2989]: Reached target Shutdown.
+Jun 25 17:42:18 localhost systemd[2989]: Starting Exit the Session...
+Jun 25 17:42:18 localhost systemd[2989]: Received SIGRTMIN+24 from PID 20103 (kill).
+Jun 25 17:42:19 localhost systemd[1]: Stopped User Manager for UID 1000.
+Jun 25 17:42:19 localhost systemd[1]: Removed slice User Slice of viddi.
+Jun 25 17:44:55 localhost NetworkManager[445]: <error> [1529948695.7253] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 17:45:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 17:46:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 17:45:01 localhost CRON[20168]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 17:55:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 17:56:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 17:55:01 localhost CRON[20364]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 18:05:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 18:06:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 18:05:01 localhost CRON[20560]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 18:07:25 localhost NetworkManager[445]: <error> [1529950045.8203] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 18:15:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 18:16:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 18:15:01 localhost CRON[20785]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 18:17:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 18:18:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 18:17:01 localhost CRON[20828]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Jun 25 18:25:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 18:26:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 18:25:01 localhost CRON[20979]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 18:31:43 localhost NetworkManager[445]: <error> [1529951503.4032] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 18:35:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 18:36:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 18:35:01 localhost CRON[21196]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 18:42:33 localhost ntpd[976]: 217.63.114.248 local addr 192.168.1.50 -> <null>
+Jun 25 18:42:33 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 18:44:03 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 18:45:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 18:46:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 18:45:01 localhost CRON[21360]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 18:45:05 localhost kernel: [258164.760267] [BH_WRN] miss interrupt!
+Jun 25 18:52:09 localhost NetworkManager[445]: <error> [1529952729.9200] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 18:55:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 18:56:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 18:55:01 localhost CRON[21546]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 19:02:50 localhost dhclient[898]: PRC: Renewing lease on eth0.
+Jun 25 19:02:50 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 19:04:20 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 19:02:50 localhost dhclient[898]: XMT: Renew on eth0, interval 10770ms.
+Jun 25 19:02:50 localhost dhclient[898]: RCV: Reply message on eth0 from fe80::5a6d:8fff:fef5:b154.
+Jun 25 19:02:50 localhost NetworkManager[445]: <info>  [1529953370.8230]   valid_lft 4294967295
+Jun 25 19:02:50 localhost NetworkManager[445]: <info>  [1529953370.8232]   preferred_lft 4294967295
+Jun 25 19:02:50 localhost NetworkManager[445]: <info>  [1529953370.8234]   address fd07:3bb5:c7b1::e4c
+Jun 25 19:02:50 localhost NetworkManager[445]: <info>  [1529953370.8235]   nameserver 'fe80::5a6d:8fff:fef5:b154'
+Jun 25 19:02:50 localhost NetworkManager[445]: <info>  [1529953370.8236] dhcp6 (eth0): state changed bound -> bound, event ID="98:7f:73:22|1529953370"
+Jun 25 19:02:50 localhost NetworkManager[445]: <error> [1529953370.8255] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 19:02:50 localhost dbus[422]: [system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service'
+Jun 25 19:02:50 localhost systemd[1]: Starting Network Manager Script Dispatcher Service...
+Jun 25 19:02:51 localhost dbus[422]: [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+Jun 25 19:02:51 localhost systemd[1]: Started Network Manager Script Dispatcher Service.
+Jun 25 19:02:51 localhost nm-dispatcher: req:1 'dhcp6-change' [eth0]: new request (1 scripts)
+Jun 25 19:02:51 localhost nm-dispatcher: req:1 'dhcp6-change' [eth0]: start running ordered scripts...
+Jun 25 19:05:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 19:06:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 19:05:01 localhost CRON[21903]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 19:15:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 19:16:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 19:15:01 localhost CRON[22167]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 19:17:02 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 19:18:32 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 19:17:02 localhost CRON[22221]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Jun 25 19:17:27 localhost ntpd[976]: 91.189.89.198 local addr 192.168.1.50 -> <null>
+Jun 25 19:19:04 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 19:20:34 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 19:19:04 localhost systemd[1]: Created slice User Slice of viddi.
+Jun 25 19:19:04 localhost systemd[1]: Starting User Manager for UID 1000...
+Jun 25 19:19:05 localhost systemd[1]: Started Session 524 of user viddi.
+Jun 25 19:19:05 localhost systemd[22273]: Reached target Paths.
+Jun 25 19:19:05 localhost systemd[22273]: Reached target Sockets.
+Jun 25 19:19:05 localhost systemd[22273]: Reached target Timers.
+Jun 25 19:19:05 localhost systemd[22273]: Reached target Basic System.
+Jun 25 19:19:05 localhost systemd[22273]: Reached target Default.
+Jun 25 19:19:05 localhost systemd[22273]: Startup finished in 510ms.
+Jun 25 19:19:05 localhost systemd[1]: Started User Manager for UID 1000.
+Jun 25 19:20:15 localhost systemd[1]: Starting Cleanup of Temporary Directories...
+Jun 25 19:20:16 localhost systemd-tmpfiles[22424]: [/usr/lib/tmpfiles.d/var.conf:14] Duplicate line for path "/var/log", ignoring.
+Jun 25 19:20:16 localhost systemd[1]: Started Cleanup of Temporary Directories.
+Jun 25 19:21:59 localhost NetworkManager[445]: <error> [1529954519.4291] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 19:22:39 localhost ntpd[976]: 195.137.195.254 local addr 192.168.1.50 -> <null>
+Jun 25 19:22:39 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 19:24:09 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 19:25:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 19:26:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 19:25:01 localhost CRON[22548]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 19:35:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 19:36:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 19:35:01 localhost CRON[22764]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 19:45:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 19:46:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 19:45:01 localhost CRON[23031]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 19:46:22 localhost NetworkManager[445]: <error> [1529955982.0189] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 19:53:43 localhost ntpd[976]: 85.27.184.232 local addr 192.168.1.50 -> <null>
+Jun 25 19:53:43 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 19:55:13 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 19:55:01 localhost CRON[23296]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 20:05:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 20:06:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 20:05:01 localhost CRON[23533]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 20:12:36 localhost NetworkManager[445]: <error> [1529957556.2322] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 20:15:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 20:16:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 20:15:01 localhost CRON[23840]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 20:17:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 20:18:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 20:17:01 localhost CRON[23883]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Jun 25 20:25:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 20:26:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 20:25:01 localhost CRON[24096]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 20:35:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 20:36:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 20:35:01 localhost CRON[24341]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 20:40:06 localhost NetworkManager[445]: <error> [1529959206.9267] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 20:45:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 20:46:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 20:45:01 localhost CRON[24565]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 20:55:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 20:56:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 20:55:01 localhost CRON[24813]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 21:05:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 21:06:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 21:05:01 localhost CRON[25050]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 21:08:22 localhost NetworkManager[445]: <error> [1529960902.6302] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 21:15:02 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 21:16:32 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 21:15:02 localhost CRON[25326]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 21:17:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 21:18:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 21:17:01 localhost CRON[25380]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Jun 25 21:25:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 21:26:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 21:25:01 localhost CRON[25621]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 21:35:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 21:36:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 21:35:01 localhost CRON[25856]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 21:36:47 localhost NetworkManager[445]: <error> [1529962607.3578] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 21:45:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 21:46:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 21:45:01 localhost CRON[26143]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 21:55:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 21:56:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 21:55:01 localhost CRON[26377]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 22:01:36 localhost NetworkManager[445]: <error> [1529964096.2156] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 22:05:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 22:06:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 22:05:01 localhost CRON[26662]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 22:15:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 22:16:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 22:15:01 localhost CRON[26895]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 22:17:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 22:18:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 22:17:01 localhost CRON[26959]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Jun 25 22:25:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 22:26:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 22:25:01 localhost CRON[27169]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 22:30:37 localhost NetworkManager[445]: <error> [1529965837.8234] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 22:35:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 22:36:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 22:35:01 localhost CRON[27453]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 22:45:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 22:46:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 22:45:01 localhost CRON[27636]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 22:55:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 22:56:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 22:55:01 localhost CRON[27909]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 22:57:15 localhost NetworkManager[445]: <error> [1529967435.9937] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 23:05:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 23:06:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 23:05:01 localhost CRON[28163]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 23:15:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 23:16:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 23:15:01 localhost CRON[28436]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 23:17:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 23:18:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 23:17:01 localhost CRON[28469]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Jun 25 23:20:09 localhost NetworkManager[445]: <error> [1529968809.4206] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 23:25:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 23:26:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 23:25:01 localhost CRON[28710]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 23:35:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 23:36:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 23:35:01 localhost CRON[28994]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 23:45:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 23:46:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 23:45:01 localhost CRON[29237]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 23:46:11 localhost NetworkManager[445]: <error> [1529970371.1341] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 23:55:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Mon Jun 25 23:56:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 23:55:01 localhost CRON[29460]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 25 23:59:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Tue Jun 26 00:00:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 25 23:59:01 localhost CRON[29543]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 60 2)
+Jun 26 00:00:01 localhost CRON[29586]: (root) CMD (/usr/lib/armbian/apt-updates)
+Jun 26 00:05:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Tue Jun 26 00:06:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 26 00:05:01 localhost CRON[29703]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 26 00:11:05 localhost NetworkManager[445]: <error> [1529971865.3935] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 26 00:15:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Tue Jun 26 00:16:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 26 00:15:01 localhost CRON[29976]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 26 00:17:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Tue Jun 26 00:18:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 26 00:17:01 localhost CRON[30029]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Jun 26 00:25:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Tue Jun 26 00:26:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 26 00:25:01 localhost CRON[30269]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 26 00:35:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Tue Jun 26 00:36:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 26 00:35:01 localhost CRON[30483]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 26 00:35:37 localhost NetworkManager[445]: <error> [1529973337.6444] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 26 00:45:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Tue Jun 26 00:46:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 26 00:45:01 localhost CRON[30706]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 26 00:55:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Tue Jun 26 00:56:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 26 00:55:01 localhost CRON[30970]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 26 01:02:33 localhost NetworkManager[445]: <error> [1529974953.4474] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 26 01:02:50 localhost dhclient[898]: PRC: Renewing lease on eth0.
+Jun 26 01:02:50 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Tue Jun 26 01:04:20 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 26 01:02:50 localhost dhclient[898]: XMT: Renew on eth0, interval 10910ms.
+Jun 26 01:02:50 localhost dhclient[898]: RCV: Reply message on eth0 from fe80::5a6d:8fff:fef5:b154.
+Jun 26 01:02:51 localhost NetworkManager[445]: <info>  [1529974971.0008]   valid_lft 4294967295
+Jun 26 01:02:51 localhost NetworkManager[445]: <info>  [1529974971.0010]   preferred_lft 4294967295
+Jun 26 01:02:51 localhost NetworkManager[445]: <info>  [1529974971.0011]   address fd07:3bb5:c7b1::e4c
+Jun 26 01:02:51 localhost NetworkManager[445]: <info>  [1529974971.0012]   nameserver 'fe80::5a6d:8fff:fef5:b154'
+Jun 26 01:02:51 localhost NetworkManager[445]: <info>  [1529974971.0013] dhcp6 (eth0): state changed bound -> bound, event ID="98:7f:73:22|1529974970"
+Jun 26 01:02:51 localhost NetworkManager[445]: <error> [1529974971.0032] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 26 01:02:51 localhost dbus[422]: [system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service'
+Jun 26 01:02:51 localhost systemd[1]: Starting Network Manager Script Dispatcher Service...
+Jun 26 01:02:51 localhost dbus[422]: [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+Jun 26 01:02:51 localhost systemd[1]: Started Network Manager Script Dispatcher Service.
+Jun 26 01:02:51 localhost nm-dispatcher: req:1 'dhcp6-change' [eth0]: new request (1 scripts)
+Jun 26 01:02:51 localhost nm-dispatcher: req:1 'dhcp6-change' [eth0]: start running ordered scripts...
+Jun 26 01:05:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Tue Jun 26 01:06:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 26 01:05:01 localhost CRON[31253]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 26 01:15:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Tue Jun 26 01:16:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 26 01:15:01 localhost CRON[31516]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 26 01:17:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Tue Jun 26 01:18:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 26 01:17:01 localhost CRON[31559]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Jun 26 01:25:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Tue Jun 26 01:26:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 26 01:25:01 localhost CRON[31770]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 26 01:30:55 localhost NetworkManager[445]: <error> [1529976655.8891] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 26 01:35:02 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Tue Jun 26 01:36:32 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 26 01:35:02 localhost CRON[32023]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 26 01:45:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Tue Jun 26 01:46:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 26 01:45:01 localhost CRON[32256]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 26 01:55:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Tue Jun 26 01:56:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 26 01:55:01 localhost CRON[32519]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 26 01:58:29 localhost NetworkManager[445]: <error> [1529978309.2415] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 26 02:05:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Tue Jun 26 02:06:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 26 02:05:01 localhost CRON[32733]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 26 02:15:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Tue Jun 26 02:16:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 26 02:15:01 localhost CRON[519]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 26 02:17:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Tue Jun 26 02:18:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 26 02:17:01 localhost CRON[562]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Jun 26 02:19:30 localhost ntpd[976]: 195.137.195.250 local addr 192.168.1.50 -> <null>
+Jun 26 02:19:30 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Tue Jun 26 02:21:00 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 26 02:25:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Tue Jun 26 02:26:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 26 02:25:01 localhost CRON[808]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 26 02:27:28 localhost NetworkManager[445]: <error> [1529980048.7549] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 26 02:35:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Tue Jun 26 02:36:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 26 02:35:01 localhost CRON[1006]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 26 02:45:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Tue Jun 26 02:46:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 26 02:45:01 localhost CRON[1250]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 26 02:50:08 localhost NetworkManager[445]: <error> [1529981408.6790] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 26 02:55:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Tue Jun 26 02:56:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 26 02:55:01 localhost CRON[1523]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 26 03:05:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Tue Jun 26 03:06:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 26 03:05:01 localhost CRON[1777]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 26 03:15:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Tue Jun 26 03:16:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 26 03:15:01 localhost CRON[2010]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 26 03:17:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Tue Jun 26 03:18:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 26 03:17:01 localhost CRON[2073]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Jun 26 03:18:20 localhost NetworkManager[445]: <error> [1529983100.9951] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 26 03:25:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Tue Jun 26 03:26:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 26 03:25:01 localhost CRON[2294]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 26 03:35:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Tue Jun 26 03:36:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 26 03:35:01 localhost CRON[2557]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 26 03:41:22 localhost NetworkManager[445]: <error> [1529984482.9048] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 26 03:45:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Tue Jun 26 03:46:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 26 03:45:01 localhost CRON[2811]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 26 03:55:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Tue Jun 26 03:56:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 26 03:55:01 localhost CRON[3045]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 26 04:05:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Tue Jun 26 04:06:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 26 04:05:01 localhost CRON[3288]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 26 04:07:06 localhost NetworkManager[445]: <error> [1529986026.8158] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 26 04:15:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Tue Jun 26 04:16:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 26 04:15:01 localhost CRON[3571]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 26 04:17:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Tue Jun 26 04:18:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 26 04:17:01 localhost CRON[3624]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Jun 26 04:25:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Tue Jun 26 04:26:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 26 04:25:01 localhost CRON[3815]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 26 04:35:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Tue Jun 26 04:36:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 26 04:35:01 localhost CRON[4058]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 26 04:37:04 localhost NetworkManager[445]: <error> [1529987824.1580] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 26 04:45:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Tue Jun 26 04:46:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 26 04:45:01 localhost CRON[4261]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 26 04:55:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Tue Jun 26 04:56:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 26 04:55:01 localhost CRON[4516]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 26 05:05:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Tue Jun 26 05:06:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 26 05:05:01 localhost CRON[4792]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 26 05:05:53 localhost NetworkManager[445]: <error> [1529989553.3773] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 26 05:14:15 localhost systemd[1]: Starting Daily apt download activities...
+Jun 26 05:14:15 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Tue Jun 26 05:15:45 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 26 05:14:52 localhost systemd[1]: Started Daily apt download activities.
+Jun 26 05:15:01 localhost CRON[5314]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 26 05:17:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Tue Jun 26 05:18:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 26 05:17:01 localhost CRON[5347]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Jun 26 05:25:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Tue Jun 26 05:26:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 26 05:25:01 localhost CRON[5578]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 26 05:33:21 localhost NetworkManager[445]: <error> [1529991201.4947] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 26 05:35:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Tue Jun 26 05:36:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 26 05:35:01 localhost CRON[5793]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 26 05:45:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Tue Jun 26 05:46:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 26 05:45:01 localhost CRON[6077]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 26 05:53:04 localhost ntpd[976]: 86.48.99.37 local addr 192.168.1.50 -> <null>
+Jun 26 05:53:04 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Tue Jun 26 05:54:34 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 26 05:55:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Tue Jun 26 05:56:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 26 05:55:01 localhost CRON[6342]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 26 05:59:07 localhost NetworkManager[445]: <error> [1529992747.1722] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 26 06:05:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Tue Jun 26 06:06:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 26 06:05:01 localhost CRON[6566]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 26 06:15:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Tue Jun 26 06:16:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 26 06:15:01 localhost CRON[6853]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 26 06:17:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Tue Jun 26 06:18:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 26 06:17:01 localhost CRON[6907]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Jun 26 06:21:15 localhost systemd[1]: Starting Daily apt upgrade and clean activities...
+Jun 26 06:21:15 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Tue Jun 26 06:22:45 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 26 06:21:41 localhost systemd[1]: Started Daily apt upgrade and clean activities.
+Jun 26 06:25:01 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Tue Jun 26 06:26:31 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Jun 26 06:25:01 localhost CRON[7170]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 26 06:25:01 localhost CRON[7171]: (root) CMD (test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily ))

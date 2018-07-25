@@ -1,0 +1,4 @@
+a33b1fa369871c68475f31452fdaeb13  lib/arm-linux-gnueabihf/libnss_myhostname.so.2
+ccf23da647e8026595854dfc13063170  usr/share/doc/libnss-myhostname/changelog.Debian.gz
+0314d5cb1a26a298c7e02cf3384cd3fc  usr/share/doc/libnss-myhostname/copyright
+c19b400a870efa1d4d000137ae08bf70  usr/share/man/man8/nss-myhostname.8.gz

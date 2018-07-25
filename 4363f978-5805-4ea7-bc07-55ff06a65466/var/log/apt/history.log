@@ -1,0 +1,25 @@
+
+Start-Date: 2018-06-07  06:06:29
+Commandline: /usr/bin/unattended-upgrade
+Upgrade: git-man:armhf (1:2.7.4-0ubuntu1.3, 1:2.7.4-0ubuntu1.4), git:armhf (1:2.7.4-0ubuntu1.3, 1:2.7.4-0ubuntu1.4)
+End-Date: 2018-06-07  06:06:37
+
+Start-Date: 2018-06-12  06:32:23
+Commandline: /usr/bin/unattended-upgrade
+Upgrade: linux-libc-dev:armhf (4.4.0-127.153, 4.4.0-128.154)
+End-Date: 2018-06-12  06:32:26
+
+Start-Date: 2018-06-14  06:04:56
+Commandline: /usr/bin/unattended-upgrade
+Upgrade: perl-base:armhf (5.22.1-9ubuntu0.3, 5.22.1-9ubuntu0.5), perl-modules-5.22:armhf (5.22.1-9ubuntu0.3, 5.22.1-9ubuntu0.5), libperl5.22:armhf (5.22.1-9ubuntu0.3, 5.22.1-9ubuntu0.5), gpgv:armhf (1.4.20-1ubuntu3.1, 1.4.20-1ubuntu3.2), perl:armhf (5.22.1-9ubuntu0.3, 5.22.1-9ubuntu0.5), gnupg:armhf (1.4.20-1ubuntu3.1, 1.4.20-1ubuntu3.2)
+End-Date: 2018-06-14  06:05:11
+
+Start-Date: 2018-06-15  06:39:30
+Commandline: /usr/bin/unattended-upgrade
+Upgrade: libmagic1:armhf (1:5.25-2ubuntu1, 1:5.25-2ubuntu1.1), file:armhf (1:5.25-2ubuntu1, 1:5.25-2ubuntu1.1)
+End-Date: 2018-06-15  06:39:33
+
+Start-Date: 2018-06-20  06:06:00
+Commandline: /usr/bin/unattended-upgrade
+Upgrade: libgcrypt20:armhf (1.6.5-2ubuntu0.4, 1.6.5-2ubuntu0.5)
+End-Date: 2018-06-20  06:06:01

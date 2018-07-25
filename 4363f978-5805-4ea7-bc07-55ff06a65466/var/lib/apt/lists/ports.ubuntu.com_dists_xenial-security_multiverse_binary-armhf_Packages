@@ -1,0 +1,187 @@
+Package: libclamunrar7
+Architecture: armhf
+Version: 0.99-1ubuntu0.1
+Priority: extra
+Section: multiverse/libs
+Source: libclamunrar
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: ClamAV Team <pkg-clamav-devel@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 73
+Depends: libclamav7, libc6 (>= 2.4)
+Filename: pool/multiverse/libc/libclamunrar/libclamunrar7_0.99-1ubuntu0.1_armhf.deb
+Size: 28792
+MD5sum: 21cb70f27ae3c2d36fdd189ded03ade7
+SHA1: d051f97cad506d9d89f39c5b8ed744ed9e58b9eb
+SHA256: 044b1b79aef77295b3dd8ecdd2d8256c25f746e6e5920a6cf1fca151f6729ff6
+Homepage: http://www.clamav.net/
+Description: anti-virus utility for Unix - unrar support
+Description-md5: cc91b3ee0883ae72d88576f9ca8c850e
+
+Package: libcuda1-331
+Architecture: armhf
+Version: 340.102-0ubuntu0.16.04.1
+Priority: optional
+Section: multiverse/misc
+Source: nvidia-graphics-drivers-340
+Origin: Ubuntu
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 18
+Depends: libcuda1-340
+Filename: pool/multiverse/n/nvidia-graphics-drivers-340/libcuda1-331_340.102-0ubuntu0.16.04.1_armhf.deb
+Size: 6704
+MD5sum: f493ce68bfeccd0ee6861e2409e0e004
+SHA1: 2af22feab41bf93aca9ff213a4d2961be4b8d471
+SHA256: 830a676c080e5e6e4999cbe77eb5ef75140240c4e9a3276887c09fbd14a4f7f3
+Description: Transitional package for libcuda1-340
+Description-md5: a10363c018e08f69fb7494b3d411a6f6
+
+Package: libcuda1-331-updates
+Architecture: armhf
+Version: 340.102-0ubuntu0.16.04.1
+Priority: optional
+Section: multiverse/misc
+Source: nvidia-graphics-drivers-340
+Origin: Ubuntu
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 18
+Depends: libcuda1-340
+Filename: pool/multiverse/n/nvidia-graphics-drivers-340/libcuda1-331-updates_340.102-0ubuntu0.16.04.1_armhf.deb
+Size: 6706
+MD5sum: eecca496219770362bbd00a2ce4e68c6
+SHA1: c6d78b0e06b5cf2e6babd281200c8e82914f810a
+SHA256: a6d03f1f31e8541fff6da87f2231a1f589f384f6aed9a3617b39c249337e387c
+Description: Transitional package for libcuda1-340
+Description-md5: a10363c018e08f69fb7494b3d411a6f6
+
+Package: libcuda1-340-updates
+Architecture: armhf
+Version: 340.102-0ubuntu0.16.04.1
+Priority: optional
+Section: multiverse/misc
+Source: nvidia-graphics-drivers-340
+Origin: Ubuntu
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 18
+Depends: libcuda1-340
+Filename: pool/multiverse/n/nvidia-graphics-drivers-340/libcuda1-340-updates_340.102-0ubuntu0.16.04.1_armhf.deb
+Size: 6710
+MD5sum: 0fcc856fcd5eb5b7ea308e59de3566b0
+SHA1: 9dd80b36aadeaaec5d8b6da97425b5721acfc951
+SHA256: 9c13853ce411636a2070fb9a6eb4ff95be8ae2abe5339f00c83ac446a22797ec
+Description: Transitional package for libcuda1-340
+Description-md5: a10363c018e08f69fb7494b3d411a6f6
+
+Package: libcuda1-375
+Architecture: armhf
+Version: 384.130-0ubuntu0.16.04.1
+Priority: optional
+Section: multiverse/misc
+Source: nvidia-graphics-drivers-384
+Origin: Ubuntu
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 18
+Depends: libcuda1-384
+Filename: pool/multiverse/n/nvidia-graphics-drivers-384/libcuda1-375_384.130-0ubuntu0.16.04.1_armhf.deb
+Size: 6098
+MD5sum: 6fb4ebcd63c2d57edc9890b4844b0697
+SHA1: f6dd58048f6b5ec4b6ba4007ec115748cc5544df
+SHA256: 05b5a9be8147c7b6bcbda90c98dc869e6c9d563d7a5a606cb14a1404fa34518b
+Description: Transitional package for libcuda1-384
+Description-md5: 75f404c52df7fbe2fb5d9f76b20e3fa0
+
+Package: linux-firmware-raspi2
+Architecture: armhf
+Version: 1.20161020-0ubuntu1~0.1
+Priority: optional
+Section: multiverse/misc
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 12074
+Filename: pool/multiverse/l/linux-firmware-raspi2/linux-firmware-raspi2_1.20161020-0ubuntu1~0.1_armhf.deb
+Size: 3152980
+MD5sum: e8b9473876d8d268f11b23c9fa84db6e
+SHA1: 160b8b1e12bb62629bf153b0ade9b408c05b3f51
+SHA256: 6ad417262e8581a5af24435384caf81622e4f6eb2132bf2e1db8adfd91aee961
+Homepage: https://github.com/raspberrypi/firmware
+Description: RaspberryPi2 GPU firmware and bootloaders
+Description-md5: 2d87d254447f99a5e678827b890a3fc7
+
+Package: nvidia-libopencl1-331
+Architecture: armhf
+Version: 340.102-0ubuntu0.16.04.1
+Priority: optional
+Section: multiverse/misc
+Source: nvidia-graphics-drivers-340
+Origin: Ubuntu
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 18
+Filename: pool/multiverse/n/nvidia-graphics-drivers-340/nvidia-libopencl1-331_340.102-0ubuntu0.16.04.1_armhf.deb
+Size: 6700
+MD5sum: 49f0993d780aa76565624aa8953c3f58
+SHA1: ddfe994ff7fdc4b7683b1e46456e9d0038f2ff3d
+SHA256: a9423c0b6bde114bb1b769bbaf980aceffccfd87296154535612964dc3840c51
+Description: Transitional package for nvidia-libopencl1-340
+Description-md5: c0bc1edc3452a373d95e34ed168d26d3
+
+Package: nvidia-libopencl1-331-updates
+Architecture: armhf
+Version: 340.102-0ubuntu0.16.04.1
+Priority: optional
+Section: multiverse/misc
+Source: nvidia-graphics-drivers-340
+Origin: Ubuntu
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 18
+Filename: pool/multiverse/n/nvidia-graphics-drivers-340/nvidia-libopencl1-331-updates_340.102-0ubuntu0.16.04.1_armhf.deb
+Size: 6712
+MD5sum: 6d80ee2725d2fcbe3a7332006c9fe3f2
+SHA1: f93aec0f88206c75c981afc7eabe2b48ed8e53ae
+SHA256: e2ab7e94e75017a3fa85bfbd5f24b8e5c71e7695107c5397978236f7dd0ec5d7
+Description: Transitional package for nvidia-libopencl1-340
+Description-md5: c0bc1edc3452a373d95e34ed168d26d3
+
+Package: nvidia-opencl-icd-331
+Architecture: armhf
+Version: 340.102-0ubuntu0.16.04.1
+Priority: optional
+Section: multiverse/misc
+Source: nvidia-graphics-drivers-340
+Origin: Ubuntu
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 18
+Filename: pool/multiverse/n/nvidia-graphics-drivers-340/nvidia-opencl-icd-331_340.102-0ubuntu0.16.04.1_armhf.deb
+Size: 6700
+MD5sum: 46777bba35bb7964183141e7f302d62a
+SHA1: b7a2493298d3ecf6f4d114252c0eab8c7c2d85fe
+SHA256: d7e85dba231355e4ad380ec499fb8fddf3cebd706428c94065182410a3b1e71d
+Description: Transitional package for nvidia-opencl-icd-340
+Description-md5: 5698808952d1d1454e2b98d80ab83d79
+
+Package: nvidia-opencl-icd-331-updates
+Architecture: armhf
+Version: 340.102-0ubuntu0.16.04.1
+Priority: optional
+Section: multiverse/misc
+Source: nvidia-graphics-drivers-340
+Origin: Ubuntu
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 18
+Filename: pool/multiverse/n/nvidia-graphics-drivers-340/nvidia-opencl-icd-331-updates_340.102-0ubuntu0.16.04.1_armhf.deb
+Size: 6714
+MD5sum: ed1003c9c474668f72e74511b44561b7
+SHA1: 50da81c6e60e88c7b53a80bc61015c4a9b860b19
+SHA256: adbbf1dba17aedbd67ee17696b7c35bb5afa9cf2e850f5bd5a193fc4a48ffb10
+Description: Transitional package for nvidia-opencl-icd-340
+Description-md5: 5698808952d1d1454e2b98d80ab83d79
+

@@ -1,0 +1,9 @@
+90baf0afc6819c8c9ca64ab0a0fddc26  lib/udev/rules.d/60-sunxi-tools.rules
+44df024582f2f2483f06d964c3dfe6eb  usr/bin/sunxi-bootinfo
+4e5ab9de6202c5ecf9e2bdacdba1d653  usr/bin/sunxi-fel
+96b5ffd76c41041c7c084da23ce63df1  usr/bin/sunxi-fexc
+f507f0f62bd7b0813496cb7ada319461  usr/bin/sunxi-nand-part
+cb419f9d03328cf9ec59e1201fe1374b  usr/bin/sunxi-pio
+752ae6ee95efd84107dd8ace3853aff6  usr/share/doc/sunxi-tools/README.md.gz
+ab6a6d4bb49919981f8e5fd1d6a19331  usr/share/doc/sunxi-tools/changelog.Debian.gz
+8a23346e6690d45b768f456a077fcbf2  usr/share/doc/sunxi-tools/copyright

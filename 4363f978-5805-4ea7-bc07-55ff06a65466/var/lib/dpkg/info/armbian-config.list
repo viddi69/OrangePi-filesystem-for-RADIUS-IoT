@@ -1,0 +1,13 @@
+/.
+/usr
+/usr/bin
+/usr/bin/tv_grab_file
+/usr/lib
+/usr/lib/armbian-config
+/usr/lib/armbian-config/submenu.sh
+/usr/lib/armbian-config/jobs.sh
+/usr/sbin
+/usr/sbin/armbian-config
+/usr/sbin/softy
+/usr/bin/armbian-config
+/usr/bin/softy

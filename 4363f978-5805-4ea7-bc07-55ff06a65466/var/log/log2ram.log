@@ -1,0 +1,2473 @@
+sending incremental file list
+./
+alternatives.log
+bootstrap.log
+btmp
+dmesg
+dpkg.log
+faillog
+lastlog
+wtmp
+apt/
+apt/history.log
+apt/term.log
+fsck/
+fsck/checkfs
+fsck/checkroot
+ntpstats/
+sysstat/
+unattended-upgrades/
+
+sent 635,133 bytes  received 275 bytes  1,270,816.00 bytes/sec
+total size is 633,926  speedup is 1.00
+sending incremental file list
+./
+alternatives.log
+bootstrap.log
+btmp
+dmesg
+dpkg.log
+faillog
+lastlog
+wtmp
+apt/
+apt/history.log
+apt/term.log
+fsck/
+fsck/checkfs
+fsck/checkroot
+ntpstats/
+sysstat/
+unattended-upgrades/
+
+sent 635,133 bytes  received 275 bytes  1,270,816.00 bytes/sec
+total size is 633,926  speedup is 1.00
+sending incremental file list
+./
+armhwinfo.log
+auth.log
+faillog
+kern.log
+lastlog
+syslog
+wtmp
+unattended-upgrades/
+unattended-upgrades/unattended-upgrades-shutdown.log
+unattended-upgrades/unattended-upgrades.log
+
+sent 521,433 bytes  received 205 bytes  1,043,276.00 bytes/sec
+total size is 1,119,053  speedup is 2.15
+sending incremental file list
+./
+alternatives.log
+armhwinfo.log
+auth.log
+bootstrap.log
+btmp
+dmesg
+dpkg.log
+faillog
+kern.log
+lastlog
+syslog
+wtmp
+apt/
+apt/history.log
+apt/term.log
+fsck/
+fsck/checkfs
+fsck/checkroot
+ntpstats/
+sysstat/
+unattended-upgrades/
+unattended-upgrades/unattended-upgrades-shutdown.log
+unattended-upgrades/unattended-upgrades.log
+
+sent 1,120,826 bytes  received 389 bytes  747,476.67 bytes/sec
+total size is 1,119,053  speedup is 1.00
+sending incremental file list
+./
+alternatives.log
+armhwinfo.log
+auth.log
+dpkg.log
+faillog
+kern.log
+lastlog
+syslog
+wtmp
+apt/history.log
+apt/term.log
+freeradius/
+freeradius/radius.log
+freeradius/radwtmp
+
+sent 1,525,872 bytes  received 283 bytes  3,052,310.00 bytes/sec
+total size is 1,589,106  speedup is 1.04
+sending incremental file list
+armhwinfo.log
+auth.log
+kern.log
+lastlog
+syslog
+wtmp
+unattended-upgrades/unattended-upgrades.log
+
+sent 843,696 bytes  received 159 bytes  1,687,710.00 bytes/sec
+total size is 1,675,110  speedup is 1.99
+sending incremental file list
+./
+alternatives.log
+armhwinfo.log
+auth.log
+bootstrap.log
+btmp
+dmesg
+dpkg.log
+faillog
+kern.log
+lastlog
+syslog
+wtmp
+apt/
+apt/history.log
+apt/term.log
+freeradius/
+freeradius/radius.log
+freeradius/radwtmp
+fsck/
+fsck/checkfs
+fsck/checkroot
+ntpstats/
+sysstat/
+unattended-upgrades/
+unattended-upgrades/unattended-upgrades-shutdown.log
+unattended-upgrades/unattended-upgrades.log
+
+sent 1,677,214 bytes  received 431 bytes  1,118,430.00 bytes/sec
+total size is 1,675,110  speedup is 1.00
+sending incremental file list
+./
+armhwinfo.log
+auth.log
+kern.log
+lastlog
+syslog
+wtmp
+freeradius/radius.log
+unattended-upgrades/unattended-upgrades.log
+
+sent 1,339,549 bytes  received 181 bytes  2,679,460.00 bytes/sec
+total size is 2,170,600  speedup is 1.62
+sending incremental file list
+./
+auth.log
+kern.log
+syslog
+syslog.1
+unattended-upgrades/unattended-upgrades.log
+
+sent 2,025,629 bytes  received 128 bytes  4,051,514.00 bytes/sec
+total size is 3,296,124  speedup is 1.63
+sending incremental file list
+./
+alternatives.log
+armhwinfo.log
+auth.log
+bootstrap.log
+btmp
+dmesg
+dpkg.log
+faillog
+kern.log
+lastlog
+syslog
+syslog.1
+wtmp
+apt/
+apt/history.log
+apt/term.log
+freeradius/
+freeradius/radius.log
+freeradius/radwtmp
+fsck/
+fsck/checkfs
+fsck/checkroot
+ntpstats/
+sysstat/
+unattended-upgrades/
+unattended-upgrades/unattended-upgrades-shutdown.log
+unattended-upgrades/unattended-upgrades.log
+
+sent 3,298,694 bytes  received 454 bytes  2,199,432.00 bytes/sec
+total size is 3,296,124  speedup is 1.00
+sending incremental file list
+armhwinfo.log
+auth.log
+btmp
+kern.log
+lastlog
+syslog
+wtmp
+freeradius/radius.log
+
+sent 2,566,751 bytes  received 178 bytes  1,711,286.00 bytes/sec
+total size is 4,021,796  speedup is 1.57
+sending incremental file list
+./
+alternatives.log
+armhwinfo.log
+auth.log
+bootstrap.log
+btmp
+dmesg
+dpkg.log
+faillog
+kern.log
+lastlog
+syslog
+syslog.1
+wtmp
+apt/
+apt/history.log
+apt/term.log
+freeradius/
+freeradius/radius.log
+freeradius/radwtmp
+fsck/
+fsck/checkfs
+fsck/checkroot
+ntpstats/
+sysstat/
+unattended-upgrades/
+unattended-upgrades/unattended-upgrades-shutdown.log
+unattended-upgrades/unattended-upgrades.log
+
+sent 4,024,545 bytes  received 454 bytes  2,683,332.67 bytes/sec
+total size is 4,021,796  speedup is 1.00
+sending incremental file list
+./
+alternatives.log
+armhwinfo.log
+auth.log
+bootstrap.log
+btmp
+dmesg
+dpkg.log
+faillog
+kern.log
+lastlog
+syslog
+syslog.1
+wtmp
+apt/
+apt/history.log
+apt/term.log
+freeradius/
+freeradius/radius.log
+freeradius/radwtmp
+fsck/
+fsck/checkfs
+fsck/checkroot
+ntpstats/
+sysstat/
+unattended-upgrades/
+unattended-upgrades/unattended-upgrades-shutdown.log
+unattended-upgrades/unattended-upgrades.log
+
+sent 4,024,545 bytes  received 454 bytes  2,683,332.67 bytes/sec
+total size is 4,021,796  speedup is 1.00
+sending incremental file list
+armhwinfo.log
+auth.log
+kern.log
+lastlog
+syslog
+wtmp
+freeradius/radius.log
+
+sent 2,839,428 bytes  received 159 bytes  5,679,174.00 bytes/sec
+total size is 4,294,828  speedup is 1.51
+sending incremental file list
+./
+auth.log
+kern.log
+syslog
+syslog.1
+syslog.2.gz
+wtmp
+unattended-upgrades/unattended-upgrades.log
+
+sent 3,468,257 bytes  received 162 bytes  6,936,838.00 bytes/sec
+total size is 4,799,607  speedup is 1.38
+sending incremental file list
+./
+alternatives.log
+armhwinfo.log
+auth.log
+bootstrap.log
+btmp
+dmesg
+dpkg.log
+faillog
+kern.log
+lastlog
+syslog
+syslog.1
+syslog.2.gz
+wtmp
+apt/
+apt/history.log
+apt/term.log
+freeradius/
+freeradius/radius.log
+freeradius/radwtmp
+fsck/
+fsck/checkfs
+fsck/checkroot
+ntpstats/
+sysstat/
+unattended-upgrades/
+unattended-upgrades/unattended-upgrades-shutdown.log
+unattended-upgrades/unattended-upgrades.log
+
+sent 4,802,621 bytes  received 473 bytes  3,202,062.67 bytes/sec
+total size is 4,799,607  speedup is 1.00
+sending incremental file list
+./
+alternatives.log
+armhwinfo.log
+auth.log
+bootstrap.log
+btmp
+dmesg
+dpkg.log
+faillog
+kern.log
+lastlog
+syslog
+syslog.1
+syslog.2.gz
+wtmp
+apt/
+apt/history.log
+apt/term.log
+freeradius/
+freeradius/radius.log
+freeradius/radwtmp
+fsck/
+fsck/checkfs
+fsck/checkroot
+ntpstats/
+sysstat/
+unattended-upgrades/
+unattended-upgrades/unattended-upgrades-shutdown.log
+unattended-upgrades/unattended-upgrades.log
+
+sent 4,802,621 bytes  received 473 bytes  3,202,062.67 bytes/sec
+total size is 4,799,607  speedup is 1.00
+sending incremental file list
+armhwinfo.log
+auth.log
+kern.log
+lastlog
+syslog
+wtmp
+freeradius/radius.log
+unattended-upgrades/unattended-upgrades.log
+
+sent 2,489,809 bytes  received 178 bytes  4,979,974.00 bytes/sec
+total size is 5,234,651  speedup is 2.10
+sending incremental file list
+./
+alternatives.log
+armhwinfo.log
+auth.log
+bootstrap.log
+btmp
+dmesg
+dpkg.log
+faillog
+kern.log
+lastlog
+syslog
+syslog.1
+syslog.2.gz
+wtmp
+apt/
+apt/history.log
+apt/term.log
+freeradius/
+freeradius/radius.log
+freeradius/radwtmp
+fsck/
+fsck/checkfs
+fsck/checkroot
+ntpstats/
+sysstat/
+unattended-upgrades/
+unattended-upgrades/unattended-upgrades-shutdown.log
+unattended-upgrades/unattended-upgrades.log
+
+sent 5,237,758 bytes  received 473 bytes  10,476,462.00 bytes/sec
+total size is 5,234,651  speedup is 1.00
+sending incremental file list
+armhwinfo.log
+auth.log
+kern.log
+lastlog
+syslog
+wtmp
+freeradius/radius.log
+
+sent 2,712,956 bytes  received 159 bytes  5,426,230.00 bytes/sec
+total size is 5,460,715  speedup is 2.01
+sending incremental file list
+./
+alternatives.log
+armhwinfo.log
+auth.log
+bootstrap.log
+btmp
+dmesg
+dpkg.log
+faillog
+kern.log
+lastlog
+syslog
+syslog.1
+syslog.2.gz
+wtmp
+apt/
+apt/history.log
+apt/term.log
+freeradius/
+freeradius/radius.log
+freeradius/radwtmp
+fsck/
+fsck/checkfs
+fsck/checkroot
+ntpstats/
+sysstat/
+unattended-upgrades/
+unattended-upgrades/unattended-upgrades-shutdown.log
+unattended-upgrades/unattended-upgrades.log
+
+sent 5,463,868 bytes  received 473 bytes  10,928,682.00 bytes/sec
+total size is 5,460,715  speedup is 1.00
+sending incremental file list
+armhwinfo.log
+auth.log
+btmp
+kern.log
+lastlog
+syslog
+wtmp
+freeradius/radius.log
+
+sent 2,960,058 bytes  received 178 bytes  1,973,490.67 bytes/sec
+total size is 5,707,317  speedup is 1.93
+sending incremental file list
+./
+auth.log
+dpkg.log
+kern.log
+lastlog
+syslog
+syslog.1
+syslog.2.gz
+syslog.3.gz
+wtmp
+apt/history.log
+apt/term.log
+freeradius/radius.log
+unattended-upgrades/
+unattended-upgrades/unattended-upgrades-dpkg.log
+unattended-upgrades/unattended-upgrades.log
+
+sent 3,809,763 bytes  received 306 bytes  2,540,046.00 bytes/sec
+total size is 4,252,609  speedup is 1.12
+sending incremental file list
+./
+auth.log
+kern.log
+syslog
+syslog.1
+syslog.2.gz
+syslog.3.gz
+syslog.4.gz
+unattended-upgrades/unattended-upgrades.log
+
+sent 1,561,920 bytes  received 181 bytes  3,124,202.00 bytes/sec
+total size is 3,076,701  speedup is 1.97
+sending incremental file list
+./
+auth.log
+kern.log
+syslog
+syslog.1
+syslog.2.gz
+syslog.3.gz
+syslog.4.gz
+syslog.5.gz
+unattended-upgrades/unattended-upgrades.log
+
+sent 1,606,443 bytes  received 200 bytes  3,213,286.00 bytes/sec
+total size is 3,121,149  speedup is 1.94
+sending incremental file list
+./
+armhwinfo.log
+armhwinfo.log.1.gz
+auth.log
+auth.log.1
+kern.log
+kern.log.1
+syslog
+syslog.1
+syslog.2.gz
+syslog.3.gz
+syslog.4.gz
+syslog.5.gz
+syslog.6.gz
+freeradius/
+freeradius/radius.log
+freeradius/radius.log.1
+unattended-upgrades/unattended-upgrades.log
+
+sent 1,805,006 bytes  received 336 bytes  3,610,684.00 bytes/sec
+total size is 2,980,766  speedup is 1.65
+sending incremental file list
+./
+auth.log
+kern.log
+syslog
+syslog.1
+syslog.2.gz
+syslog.3.gz
+syslog.4.gz
+syslog.5.gz
+syslog.6.gz
+syslog.7.gz
+unattended-upgrades/unattended-upgrades.log
+
+sent 835,414 bytes  received 238 bytes  1,671,304.00 bytes/sec
+total size is 3,062,204  speedup is 3.66
+sending incremental file list
+./
+auth.log
+kern.log
+syslog
+syslog.1
+syslog.2.gz
+syslog.3.gz
+syslog.4.gz
+syslog.5.gz
+syslog.6.gz
+syslog.7.gz
+unattended-upgrades/unattended-upgrades.log
+
+sent 785,678 bytes  received 238 bytes  1,571,832.00 bytes/sec
+total size is 3,012,474  speedup is 3.83
+sending incremental file list
+./
+alternatives.log
+armhwinfo.log
+armhwinfo.log.1.gz
+auth.log
+auth.log.1
+bootstrap.log
+btmp
+dmesg
+dpkg.log
+faillog
+kern.log
+kern.log.1
+lastlog
+syslog
+syslog.1
+syslog.2.gz
+syslog.3.gz
+syslog.4.gz
+syslog.5.gz
+syslog.6.gz
+syslog.7.gz
+wtmp
+apt/
+apt/history.log
+apt/term.log
+freeradius/
+freeradius/radius.log
+freeradius/radius.log.1
+freeradius/radwtmp
+fsck/
+fsck/checkfs
+fsck/checkroot
+ntpstats/
+sysstat/
+unattended-upgrades/
+unattended-upgrades/unattended-upgrades-dpkg.log
+unattended-upgrades/unattended-upgrades-shutdown.log
+unattended-upgrades/unattended-upgrades.log
+
+sent 3,015,696 bytes  received 663 bytes  2,010,906.00 bytes/sec
+total size is 3,012,474  speedup is 1.00
+sending incremental file list
+./
+alternatives.log
+armhwinfo.log
+armhwinfo.log.1.gz
+auth.log
+auth.log.1
+bootstrap.log
+btmp
+dmesg
+dpkg.log
+faillog
+kern.log
+kern.log.1
+lastlog
+syslog
+syslog.1
+syslog.2.gz
+syslog.3.gz
+syslog.4.gz
+syslog.5.gz
+syslog.6.gz
+syslog.7.gz
+wtmp
+apt/
+apt/history.log
+apt/term.log
+freeradius/
+freeradius/radius.log
+freeradius/radius.log.1
+freeradius/radwtmp
+fsck/
+fsck/checkfs
+fsck/checkroot
+ntpstats/
+sysstat/
+unattended-upgrades/
+unattended-upgrades/unattended-upgrades-dpkg.log
+unattended-upgrades/unattended-upgrades-shutdown.log
+unattended-upgrades/unattended-upgrades.log
+
+sent 3,015,696 bytes  received 663 bytes  2,010,906.00 bytes/sec
+total size is 3,012,474  speedup is 1.00
+sending incremental file list
+armhwinfo.log
+auth.log
+kern.log
+syslog
+wtmp
+freeradius/radius.log
+
+sent 548,986 bytes  received 140 bytes  366,084.00 bytes/sec
+total size is 3,242,807  speedup is 5.91
+sending incremental file list
+./
+auth.log
+dpkg.log
+kern.log
+syslog
+syslog.1
+syslog.2.gz
+syslog.3.gz
+syslog.4.gz
+syslog.5.gz
+syslog.6.gz
+syslog.7.gz
+apt/history.log
+apt/term.log
+unattended-upgrades/unattended-upgrades-dpkg.log
+unattended-upgrades/unattended-upgrades.log
+
+sent 1,639,301 bytes  received 322 bytes  3,279,246.00 bytes/sec
+total size is 3,185,140  speedup is 1.94
+sending incremental file list
+./
+auth.log
+btmp
+kern.log
+lastlog
+syslog
+syslog.1
+syslog.2.gz
+syslog.3.gz
+syslog.4.gz
+syslog.5.gz
+syslog.6.gz
+syslog.7.gz
+wtmp
+unattended-upgrades/unattended-upgrades.log
+
+sent 1,052,753 bytes  received 295 bytes  2,106,096.00 bytes/sec
+total size is 2,983,473  speedup is 2.83
+sending incremental file list
+./
+armhwinfo.log
+armhwinfo.log.1.gz
+armhwinfo.log.2.gz
+auth.log
+auth.log.1
+auth.log.2.gz
+kern.log
+kern.log.1
+kern.log.2.gz
+syslog
+syslog.1
+syslog.2.gz
+syslog.3.gz
+syslog.4.gz
+syslog.5.gz
+syslog.6.gz
+syslog.7.gz
+freeradius/
+freeradius/radius.log
+freeradius/radius.log.1
+freeradius/radius.log.2.gz
+unattended-upgrades/unattended-upgrades.log
+
+sent 872,306 bytes  received 439 bytes  581,830.00 bytes/sec
+total size is 2,059,622  speedup is 2.36
+sending incremental file list
+./
+auth.log
+kern.log
+syslog
+syslog.1
+syslog.2.gz
+syslog.3.gz
+syslog.4.gz
+syslog.5.gz
+syslog.6.gz
+syslog.7.gz
+unattended-upgrades/unattended-upgrades.log
+
+sent 369,309 bytes  received 242 bytes  739,102.00 bytes/sec
+total size is 2,105,768  speedup is 5.70
+sending incremental file list
+./
+alternatives.log
+armhwinfo.log
+armhwinfo.log.1.gz
+armhwinfo.log.2.gz
+auth.log
+auth.log.1
+auth.log.2.gz
+bootstrap.log
+btmp
+dmesg
+dpkg.log
+faillog
+kern.log
+kern.log.1
+kern.log.2.gz
+lastlog
+syslog
+syslog.1
+syslog.2.gz
+syslog.3.gz
+syslog.4.gz
+syslog.5.gz
+syslog.6.gz
+syslog.7.gz
+wtmp
+apt/
+apt/history.log
+apt/term.log
+freeradius/
+freeradius/radius.log
+freeradius/radius.log.1
+freeradius/radius.log.2.gz
+freeradius/radwtmp
+fsck/
+fsck/checkfs
+fsck/checkroot
+ntpstats/
+sysstat/
+unattended-upgrades/
+unattended-upgrades/unattended-upgrades-dpkg.log
+unattended-upgrades/unattended-upgrades-shutdown.log
+unattended-upgrades/unattended-upgrades.log
+
+sent 2,109,032 bytes  received 739 bytes  1,406,514.00 bytes/sec
+total size is 2,105,768  speedup is 1.00
+sending incremental file list
+armhwinfo.log
+auth.log
+kern.log
+lastlog
+syslog
+wtmp
+freeradius/radius.log
+unattended-upgrades/unattended-upgrades.log
+
+sent 889,637 bytes  received 182 bytes  1,779,638.00 bytes/sec
+total size is 2,442,709  speedup is 2.75
+sending incremental file list
+./
+auth.log
+kern.log
+syslog
+syslog.1
+syslog.2.gz
+syslog.3.gz
+syslog.4.gz
+syslog.5.gz
+syslog.6.gz
+syslog.7.gz
+unattended-upgrades/unattended-upgrades.log
+
+sent 774,442 bytes  received 242 bytes  1,549,368.00 bytes/sec
+total size is 2,554,947  speedup is 3.30
+sending incremental file list
+./
+auth.log
+kern.log
+syslog
+syslog.1
+syslog.2.gz
+syslog.3.gz
+syslog.4.gz
+syslog.5.gz
+syslog.6.gz
+syslog.7.gz
+unattended-upgrades/unattended-upgrades.log
+
+sent 819,697 bytes  received 238 bytes  1,639,870.00 bytes/sec
+total size is 2,600,212  speedup is 3.17
+sending incremental file list
+./
+auth.log
+kern.log
+syslog
+syslog.1
+syslog.2.gz
+syslog.3.gz
+syslog.4.gz
+syslog.5.gz
+syslog.6.gz
+syslog.7.gz
+unattended-upgrades/unattended-upgrades.log
+
+sent 977,426 bytes  received 242 bytes  1,955,336.00 bytes/sec
+total size is 2,757,903  speedup is 2.82
+sending incremental file list
+./
+armhwinfo.log
+armhwinfo.log.1.gz
+armhwinfo.log.2.gz
+armhwinfo.log.3.gz
+auth.log
+auth.log.1
+auth.log.2.gz
+auth.log.3.gz
+kern.log
+kern.log.1
+kern.log.2.gz
+kern.log.3.gz
+syslog
+syslog.1
+syslog.2.gz
+syslog.3.gz
+syslog.4.gz
+syslog.5.gz
+syslog.6.gz
+syslog.7.gz
+freeradius/
+freeradius/radius.log
+freeradius/radius.log.1
+freeradius/radius.log.2.gz
+freeradius/radius.log.3.gz
+unattended-upgrades/unattended-upgrades.log
+
+sent 1,158,134 bytes  received 511 bytes  2,317,290.00 bytes/sec
+total size is 2,349,782  speedup is 2.03
+sending incremental file list
+./
+alternatives.log
+alternatives.log.1
+auth.log
+btmp
+btmp.1
+dpkg.log
+dpkg.log.1
+kern.log
+syslog
+syslog.1
+syslog.2.gz
+syslog.3.gz
+syslog.4.gz
+syslog.5.gz
+syslog.6.gz
+syslog.7.gz
+wtmp
+wtmp.1
+apt/
+apt/history.log
+apt/history.log.1.gz
+apt/term.log
+apt/term.log.1.gz
+unattended-upgrades/
+unattended-upgrades/unattended-upgrades-dpkg.log
+unattended-upgrades/unattended-upgrades-dpkg.log.1.gz
+unattended-upgrades/unattended-upgrades.log
+unattended-upgrades/unattended-upgrades.log.1.gz
+
+sent 1,170,634 bytes  received 533 bytes  780,778.00 bytes/sec
+total size is 2,139,578  speedup is 1.83
+sending incremental file list
+./
+alternatives.log
+alternatives.log.1
+armhwinfo.log
+armhwinfo.log.1.gz
+armhwinfo.log.2.gz
+armhwinfo.log.3.gz
+auth.log
+auth.log.1
+auth.log.2.gz
+auth.log.3.gz
+bootstrap.log
+btmp
+btmp.1
+dmesg
+dpkg.log
+dpkg.log.1
+faillog
+kern.log
+kern.log.1
+kern.log.2.gz
+kern.log.3.gz
+lastlog
+syslog
+syslog.1
+syslog.2.gz
+syslog.3.gz
+syslog.4.gz
+syslog.5.gz
+syslog.6.gz
+syslog.7.gz
+wtmp
+wtmp.1
+apt/
+apt/history.log
+apt/history.log.1.gz
+apt/term.log
+apt/term.log.1.gz
+freeradius/
+freeradius/radius.log
+freeradius/radius.log.1
+freeradius/radius.log.2.gz
+freeradius/radius.log.3.gz
+freeradius/radwtmp
+fsck/
+fsck/checkfs
+fsck/checkroot
+ntpstats/
+sysstat/
+unattended-upgrades/
+unattended-upgrades/unattended-upgrades-dpkg.log
+unattended-upgrades/unattended-upgrades-dpkg.log.1.gz
+unattended-upgrades/unattended-upgrades-shutdown.log
+unattended-upgrades/unattended-upgrades.log
+unattended-upgrades/unattended-upgrades.log.1.gz
+
+sent 2,143,628 bytes  received 963 bytes  4,289,182.00 bytes/sec
+total size is 2,139,578  speedup is 1.00
+sending incremental file list
+armhwinfo.log
+auth.log
+kern.log
+syslog
+wtmp
+freeradius/radius.log
+
+sent 529,495 bytes  received 143 bytes  1,059,276.00 bytes/sec
+total size is 2,392,952  speedup is 4.52
+sending incremental file list
+./
+auth.log
+kern.log
+syslog
+syslog.1
+syslog.2.gz
+syslog.3.gz
+syslog.4.gz
+syslog.5.gz
+syslog.6.gz
+syslog.7.gz
+unattended-upgrades/unattended-upgrades.log
+
+sent 708,027 bytes  received 238 bytes  1,416,530.00 bytes/sec
+total size is 2,367,429  speedup is 3.34
+sending incremental file list
+./
+auth.log
+kern.log
+lastlog
+syslog
+syslog.1
+syslog.2.gz
+syslog.3.gz
+syslog.4.gz
+syslog.5.gz
+syslog.6.gz
+syslog.7.gz
+wtmp
+freeradius/radius.log
+unattended-upgrades/unattended-upgrades.log
+
+sent 1,105,492 bytes  received 299 bytes  2,211,582.00 bytes/sec
+total size is 2,467,590  speedup is 2.23
+sending incremental file list
+./
+armhwinfo.log
+auth.log
+kern.log
+lastlog
+syslog
+syslog.1
+syslog.2.gz
+syslog.3.gz
+syslog.4.gz
+syslog.5.gz
+syslog.6.gz
+syslog.7.gz
+wtmp
+unattended-upgrades/unattended-upgrades.log
+
+sent 1,213,649 bytes  received 295 bytes  2,427,888.00 bytes/sec
+total size is 2,537,992  speedup is 2.09
+sending incremental file list
+./
+alternatives.log
+alternatives.log.1
+armhwinfo.log
+armhwinfo.log.1.gz
+armhwinfo.log.2.gz
+armhwinfo.log.3.gz
+auth.log
+auth.log.1
+auth.log.2.gz
+auth.log.3.gz
+bootstrap.log
+btmp
+btmp.1
+dmesg
+dpkg.log
+dpkg.log.1
+faillog
+kern.log
+kern.log.1
+kern.log.2.gz
+kern.log.3.gz
+lastlog
+syslog
+syslog.1
+syslog.2.gz
+syslog.3.gz
+syslog.4.gz
+syslog.5.gz
+syslog.6.gz
+syslog.7.gz
+wtmp
+wtmp.1
+apt/
+apt/history.log
+apt/history.log.1.gz
+apt/term.log
+apt/term.log.1.gz
+freeradius/
+freeradius/radius.log
+freeradius/radius.log.1
+freeradius/radius.log.2.gz
+freeradius/radius.log.3.gz
+freeradius/radwtmp
+fsck/
+fsck/checkfs
+fsck/checkroot
+ntpstats/
+sysstat/
+unattended-upgrades/
+unattended-upgrades/unattended-upgrades-dpkg.log
+unattended-upgrades/unattended-upgrades-dpkg.log.1.gz
+unattended-upgrades/unattended-upgrades-shutdown.log
+unattended-upgrades/unattended-upgrades.log
+unattended-upgrades/unattended-upgrades.log.1.gz
+
+sent 2,542,133 bytes  received 963 bytes  5,086,192.00 bytes/sec
+total size is 2,537,992  speedup is 1.00
+sending incremental file list
+armhwinfo.log
+auth.log
+kern.log
+lastlog
+syslog
+wtmp
+freeradius/radius.log
+unattended-upgrades/unattended-upgrades.log
+
+sent 1,470,942 bytes  received 178 bytes  2,942,240.00 bytes/sec
+total size is 3,214,326  speedup is 2.18
+sending incremental file list
+./
+armhwinfo.log
+armhwinfo.log.1.gz
+armhwinfo.log.2.gz
+armhwinfo.log.3.gz
+armhwinfo.log.4.gz
+auth.log
+auth.log.1
+auth.log.2.gz
+auth.log.3.gz
+auth.log.4.gz
+kern.log
+kern.log.1
+kern.log.2.gz
+kern.log.3.gz
+kern.log.4.gz
+syslog
+syslog.1
+syslog.2.gz
+syslog.3.gz
+syslog.4.gz
+syslog.5.gz
+syslog.6.gz
+syslog.7.gz
+freeradius/
+freeradius/radius.log
+freeradius/radius.log.1
+freeradius/radius.log.2.gz
+freeradius/radius.log.3.gz
+freeradius/radius.log.4.gz
+unattended-upgrades/unattended-upgrades.log
+
+sent 1,680,101 bytes  received 583 bytes  3,361,368.00 bytes/sec
+total size is 2,715,896  speedup is 1.62
+sending incremental file list
+./
+auth.log
+kern.log
+lastlog
+syslog
+syslog.1
+syslog.2.gz
+syslog.3.gz
+syslog.4.gz
+syslog.5.gz
+syslog.6.gz
+syslog.7.gz
+wtmp
+unattended-upgrades/unattended-upgrades.log
+
+sent 716,090 bytes  received 276 bytes  1,432,732.00 bytes/sec
+total size is 2,171,436  speedup is 3.03
+sending incremental file list
+./
+auth.log
+kern.log
+syslog
+syslog.1
+syslog.2.gz
+syslog.3.gz
+syslog.4.gz
+syslog.5.gz
+syslog.6.gz
+syslog.7.gz
+
+sent 410,385 bytes  received 215 bytes  821,200.00 bytes/sec
+total size is 2,176,028  speedup is 5.30
+sending incremental file list
+./
+auth.log
+dpkg.log
+kern.log
+syslog
+syslog.1
+syslog.2.gz
+syslog.3.gz
+syslog.4.gz
+syslog.5.gz
+syslog.6.gz
+syslog.7.gz
+apt/history.log
+apt/term.log
+unattended-upgrades/unattended-upgrades-dpkg.log
+unattended-upgrades/unattended-upgrades.log
+
+sent 486,966 bytes  received 318 bytes  974,568.00 bytes/sec
+total size is 2,246,841  speedup is 4.61
+sending incremental file list
+./
+alternatives.log
+alternatives.log.1
+armhwinfo.log
+armhwinfo.log.1.gz
+armhwinfo.log.2.gz
+armhwinfo.log.3.gz
+armhwinfo.log.4.gz
+auth.log
+auth.log.1
+auth.log.2.gz
+auth.log.3.gz
+auth.log.4.gz
+bootstrap.log
+btmp
+btmp.1
+dmesg
+dpkg.log
+dpkg.log.1
+faillog
+kern.log
+kern.log.1
+kern.log.2.gz
+kern.log.3.gz
+kern.log.4.gz
+lastlog
+syslog
+syslog.1
+syslog.2.gz
+syslog.3.gz
+syslog.4.gz
+syslog.5.gz
+syslog.6.gz
+syslog.7.gz
+wtmp
+wtmp.1
+apt/
+apt/history.log
+apt/history.log.1.gz
+apt/term.log
+apt/term.log.1.gz
+freeradius/
+freeradius/radius.log
+freeradius/radius.log.1
+freeradius/radius.log.2.gz
+freeradius/radius.log.3.gz
+freeradius/radius.log.4.gz
+freeradius/radwtmp
+fsck/
+fsck/checkfs
+fsck/checkroot
+ntpstats/
+sysstat/
+unattended-upgrades/
+unattended-upgrades/unattended-upgrades-dpkg.log
+unattended-upgrades/unattended-upgrades-dpkg.log.1.gz
+unattended-upgrades/unattended-upgrades-shutdown.log
+unattended-upgrades/unattended-upgrades.log
+unattended-upgrades/unattended-upgrades.log.1.gz
+
+sent 2,251,180 bytes  received 1,039 bytes  4,504,438.00 bytes/sec
+total size is 2,246,841  speedup is 1.00
+sending incremental file list
+armhwinfo.log
+auth.log
+kern.log
+lastlog
+syslog
+wtmp
+freeradius/radius.log
+unattended-upgrades/unattended-upgrades.log
+
+sent 872,707 bytes  received 178 bytes  1,745,770.00 bytes/sec
+total size is 2,537,141  speedup is 2.91
+sending incremental file list
+./
+armhwinfo.log
+armhwinfo.log.1.gz
+armhwinfo.log.2.gz
+armhwinfo.log.3.gz
+armhwinfo.log.4.gz
+armhwinfo.log.5.gz
+auth.log
+auth.log.1
+auth.log.2.gz
+auth.log.3.gz
+auth.log.4.gz
+kern.log
+kern.log.1
+kern.log.2.gz
+kern.log.3.gz
+kern.log.4.gz
+syslog
+syslog.1
+syslog.2.gz
+syslog.3.gz
+syslog.4.gz
+syslog.5.gz
+syslog.6.gz
+syslog.7.gz
+freeradius/
+freeradius/radius.log
+freeradius/radius.log.1
+freeradius/radius.log.2.gz
+freeradius/radius.log.3.gz
+freeradius/radius.log.4.gz
+freeradius/radius.log.5.gz
+unattended-upgrades/unattended-upgrades.log
+
+sent 1,019,430 bytes  received 625 bytes  2,040,110.00 bytes/sec
+total size is 2,067,832  speedup is 2.03
+sending incremental file list
+./
+auth.log
+dpkg.log
+kern.log
+lastlog
+syslog
+syslog.1
+syslog.2.gz
+syslog.3.gz
+syslog.4.gz
+syslog.5.gz
+syslog.6.gz
+syslog.7.gz
+wtmp
+apt/history.log
+apt/term.log
+unattended-upgrades/unattended-upgrades-dpkg.log
+unattended-upgrades/unattended-upgrades.log
+
+sent 867,531 bytes  received 356 bytes  1,735,774.00 bytes/sec
+total size is 2,149,214  speedup is 2.48
+sending incremental file list
+./
+auth.log
+kern.log
+syslog
+syslog.1
+syslog.2.gz
+syslog.3.gz
+syslog.4.gz
+syslog.5.gz
+syslog.6.gz
+syslog.7.gz
+wtmp
+unattended-upgrades/unattended-upgrades.log
+
+sent 592,808 bytes  received 257 bytes  1,186,130.00 bytes/sec
+total size is 2,181,106  speedup is 3.68
+sending incremental file list
+./
+alternatives.log
+alternatives.log.1
+armhwinfo.log
+armhwinfo.log.1.gz
+armhwinfo.log.2.gz
+armhwinfo.log.3.gz
+armhwinfo.log.4.gz
+armhwinfo.log.5.gz
+auth.log
+auth.log.1
+auth.log.2.gz
+auth.log.3.gz
+auth.log.4.gz
+bootstrap.log
+btmp
+btmp.1
+dmesg
+dpkg.log
+dpkg.log.1
+faillog
+kern.log
+kern.log.1
+kern.log.2.gz
+kern.log.3.gz
+kern.log.4.gz
+lastlog
+syslog
+syslog.1
+syslog.2.gz
+syslog.3.gz
+syslog.4.gz
+syslog.5.gz
+syslog.6.gz
+syslog.7.gz
+wtmp
+wtmp.1
+apt/
+apt/history.log
+apt/history.log.1.gz
+apt/term.log
+apt/term.log.1.gz
+freeradius/
+freeradius/radius.log
+freeradius/radius.log.1
+freeradius/radius.log.2.gz
+freeradius/radius.log.3.gz
+freeradius/radius.log.4.gz
+freeradius/radius.log.5.gz
+freeradius/radwtmp
+fsck/
+fsck/checkfs
+fsck/checkroot
+ntpstats/
+sysstat/
+unattended-upgrades/
+unattended-upgrades/unattended-upgrades-dpkg.log
+unattended-upgrades/unattended-upgrades-dpkg.log.1.gz
+unattended-upgrades/unattended-upgrades-shutdown.log
+unattended-upgrades/unattended-upgrades.log
+unattended-upgrades/unattended-upgrades.log.1.gz
+
+sent 2,185,555 bytes  received 1,081 bytes  4,373,272.00 bytes/sec
+total size is 2,181,106  speedup is 1.00
+sending incremental file list
+./
+alternatives.log
+alternatives.log.1
+armhwinfo.log
+armhwinfo.log.1.gz
+armhwinfo.log.2.gz
+armhwinfo.log.3.gz
+armhwinfo.log.4.gz
+armhwinfo.log.5.gz
+auth.log
+auth.log.1
+auth.log.2.gz
+auth.log.3.gz
+auth.log.4.gz
+bootstrap.log
+btmp
+btmp.1
+dmesg
+dpkg.log
+dpkg.log.1
+faillog
+kern.log
+kern.log.1
+kern.log.2.gz
+kern.log.3.gz
+kern.log.4.gz
+lastlog
+syslog
+syslog.1
+syslog.2.gz
+syslog.3.gz
+syslog.4.gz
+syslog.5.gz
+syslog.6.gz
+syslog.7.gz
+wtmp
+wtmp.1
+apt/
+apt/history.log
+apt/history.log.1.gz
+apt/term.log
+apt/term.log.1.gz
+freeradius/
+freeradius/radius.log
+freeradius/radius.log.1
+freeradius/radius.log.2.gz
+freeradius/radius.log.3.gz
+freeradius/radius.log.4.gz
+freeradius/radius.log.5.gz
+freeradius/radwtmp
+fsck/
+fsck/checkfs
+fsck/checkroot
+ntpstats/
+sysstat/
+unattended-upgrades/
+unattended-upgrades/unattended-upgrades-dpkg.log
+unattended-upgrades/unattended-upgrades-dpkg.log.1.gz
+unattended-upgrades/unattended-upgrades-shutdown.log
+unattended-upgrades/unattended-upgrades.log
+unattended-upgrades/unattended-upgrades.log.1.gz
+
+sent 2,185,559 bytes  received 1,081 bytes  4,373,280.00 bytes/sec
+total size is 2,181,106  speedup is 1.00
+sending incremental file list
+armhwinfo.log
+auth.log
+kern.log
+lastlog
+syslog
+wtmp
+freeradius/radius.log
+unattended-upgrades/unattended-upgrades.log
+
+sent 901,688 bytes  received 182 bytes  1,803,740.00 bytes/sec
+total size is 2,523,427  speedup is 2.80
+sending incremental file list
+./
+armhwinfo.log
+armhwinfo.log.1.gz
+armhwinfo.log.2.gz
+armhwinfo.log.3.gz
+armhwinfo.log.4.gz
+armhwinfo.log.5.gz
+armhwinfo.log.6.gz
+auth.log
+auth.log.1
+auth.log.2.gz
+auth.log.3.gz
+auth.log.4.gz
+kern.log
+kern.log.1
+kern.log.2.gz
+kern.log.3.gz
+kern.log.4.gz
+lastlog
+syslog
+syslog.1
+syslog.2.gz
+syslog.3.gz
+syslog.4.gz
+syslog.5.gz
+syslog.6.gz
+syslog.7.gz
+wtmp
+freeradius/
+freeradius/radius.log
+freeradius/radius.log.1
+freeradius/radius.log.2.gz
+freeradius/radius.log.3.gz
+freeradius/radius.log.4.gz
+freeradius/radius.log.5.gz
+freeradius/radius.log.6.gz
+unattended-upgrades/unattended-upgrades.log
+
+sent 1,310,413 bytes  received 705 bytes  2,622,236.00 bytes/sec
+total size is 2,056,228  speedup is 1.57
+sending incremental file list
+./
+alternatives.log
+alternatives.log.1
+armhwinfo.log
+armhwinfo.log.1.gz
+armhwinfo.log.2.gz
+armhwinfo.log.3.gz
+armhwinfo.log.4.gz
+armhwinfo.log.5.gz
+armhwinfo.log.6.gz
+auth.log
+auth.log.1
+auth.log.2.gz
+auth.log.3.gz
+auth.log.4.gz
+bootstrap.log
+btmp
+btmp.1
+dmesg
+dpkg.log
+dpkg.log.1
+faillog
+kern.log
+kern.log.1
+kern.log.2.gz
+kern.log.3.gz
+kern.log.4.gz
+lastlog
+syslog
+syslog.1
+syslog.2.gz
+syslog.3.gz
+syslog.4.gz
+syslog.5.gz
+syslog.6.gz
+syslog.7.gz
+wtmp
+wtmp.1
+apt/
+apt/history.log
+apt/history.log.1.gz
+apt/term.log
+apt/term.log.1.gz
+freeradius/
+freeradius/radius.log
+freeradius/radius.log.1
+freeradius/radius.log.2.gz
+freeradius/radius.log.3.gz
+freeradius/radius.log.4.gz
+freeradius/radius.log.5.gz
+freeradius/radius.log.6.gz
+freeradius/radwtmp
+fsck/
+fsck/checkfs
+fsck/checkroot
+ntpstats/
+sysstat/
+unattended-upgrades/
+unattended-upgrades/unattended-upgrades-dpkg.log
+unattended-upgrades/unattended-upgrades-dpkg.log.1.gz
+unattended-upgrades/unattended-upgrades-shutdown.log
+unattended-upgrades/unattended-upgrades.log
+unattended-upgrades/unattended-upgrades.log.1.gz
+
+sent 2,060,798 bytes  received 1,119 bytes  1,374,611.33 bytes/sec
+total size is 2,056,228  speedup is 1.00
+sending incremental file list
+armhwinfo.log
+auth.log
+kern.log
+lastlog
+syslog
+wtmp
+freeradius/radius.log
+unattended-upgrades/unattended-upgrades.log
+
+sent 695,857 bytes  received 178 bytes  1,392,070.00 bytes/sec
+total size is 2,317,223  speedup is 3.33
+sending incremental file list
+./
+auth.log
+kern.log
+syslog
+syslog.1
+syslog.2.gz
+syslog.3.gz
+syslog.4.gz
+syslog.5.gz
+syslog.6.gz
+syslog.7.gz
+unattended-upgrades/unattended-upgrades.log
+
+sent 654,245 bytes  received 242 bytes  1,308,974.00 bytes/sec
+total size is 2,300,171  speedup is 3.51
+sending incremental file list
+./
+auth.log
+kern.log
+syslog
+syslog.1
+syslog.2.gz
+syslog.3.gz
+syslog.4.gz
+syslog.5.gz
+syslog.6.gz
+syslog.7.gz
+unattended-upgrades/unattended-upgrades.log
+
+sent 706,929 bytes  received 238 bytes  1,414,334.00 bytes/sec
+total size is 2,352,847  speedup is 3.33
+sending incremental file list
+./
+auth.log
+dpkg.log
+kern.log
+syslog
+syslog.1
+syslog.2.gz
+syslog.3.gz
+syslog.4.gz
+syslog.5.gz
+syslog.6.gz
+syslog.7.gz
+apt/history.log
+apt/term.log
+unattended-upgrades/unattended-upgrades-dpkg.log
+unattended-upgrades/unattended-upgrades.log
+
+sent 714,990 bytes  received 318 bytes  1,430,616.00 bytes/sec
+total size is 2,346,676  speedup is 3.28
+sending incremental file list
+./
+auth.log
+kern.log
+lastlog
+syslog
+syslog.1
+syslog.2.gz
+syslog.3.gz
+syslog.4.gz
+syslog.5.gz
+syslog.6.gz
+syslog.7.gz
+wtmp
+unattended-upgrades/unattended-upgrades.log
+
+sent 1,009,452 bytes  received 280 bytes  2,019,464.00 bytes/sec
+total size is 2,329,316  speedup is 2.31
+sending incremental file list
+./
+alternatives.log
+auth.log
+dpkg.log
+kern.log
+lastlog
+syslog
+syslog.1
+syslog.2.gz
+syslog.3.gz
+syslog.4.gz
+syslog.5.gz
+syslog.6.gz
+syslog.7.gz
+wtmp
+apt/history.log
+apt/term.log
+unattended-upgrades/unattended-upgrades-dpkg.log
+unattended-upgrades/unattended-upgrades.log
+
+sent 1,064,399 bytes  received 375 bytes  2,129,548.00 bytes/sec
+total size is 2,367,104  speedup is 2.22
+sending incremental file list
+./
+auth.log
+kern.log
+lastlog
+syslog
+syslog.1
+syslog.2.gz
+syslog.3.gz
+syslog.4.gz
+syslog.5.gz
+syslog.6.gz
+syslog.7.gz
+wtmp
+unattended-upgrades/unattended-upgrades.log
+
+sent 1,091,562 bytes  received 276 bytes  727,892.00 bytes/sec
+total size is 2,418,781  speedup is 2.22
+sending incremental file list
+./
+armhwinfo.log
+armhwinfo.log.1.gz
+armhwinfo.log.2.gz
+armhwinfo.log.3.gz
+armhwinfo.log.4.gz
+armhwinfo.log.5.gz
+armhwinfo.log.6.gz
+armhwinfo.log.7.gz
+auth.log
+auth.log.1
+auth.log.2.gz
+auth.log.3.gz
+auth.log.4.gz
+kern.log
+kern.log.1
+kern.log.2.gz
+kern.log.3.gz
+kern.log.4.gz
+syslog
+syslog.1
+syslog.2.gz
+syslog.3.gz
+syslog.4.gz
+syslog.5.gz
+syslog.6.gz
+syslog.7.gz
+freeradius/
+freeradius/radius.log
+freeradius/radius.log.1
+freeradius/radius.log.2.gz
+freeradius/radius.log.3.gz
+freeradius/radius.log.4.gz
+freeradius/radius.log.5.gz
+freeradius/radius.log.6.gz
+freeradius/radius.log.7.gz
+unattended-upgrades/unattended-upgrades.log
+
+sent 1,079,322 bytes  received 701 bytes  2,160,046.00 bytes/sec
+total size is 2,172,633  speedup is 2.01
+sending incremental file list
+./
+auth.log
+kern.log
+syslog
+syslog.1
+syslog.2.gz
+syslog.3.gz
+syslog.4.gz
+syslog.5.gz
+syslog.6.gz
+syslog.7.gz
+unattended-upgrades/unattended-upgrades.log
+
+sent 311,513 bytes  received 238 bytes  207,834.00 bytes/sec
+total size is 2,198,603  speedup is 7.05
+sending incremental file list
+./
+auth.log
+kern.log
+lastlog
+syslog
+syslog.1
+syslog.2.gz
+syslog.3.gz
+syslog.4.gz
+syslog.5.gz
+syslog.6.gz
+syslog.7.gz
+wtmp
+unattended-upgrades/unattended-upgrades.log
+
+sent 668,266 bytes  received 276 bytes  1,337,084.00 bytes/sec
+total size is 2,217,977  speedup is 3.32
+sending incremental file list
+./
+auth.log
+kern.log
+lastlog
+syslog
+syslog.1
+syslog.2.gz
+syslog.3.gz
+syslog.4.gz
+syslog.5.gz
+syslog.6.gz
+syslog.7.gz
+wtmp
+freeradius/radius.log
+unattended-upgrades/unattended-upgrades.log
+
+sent 717,060 bytes  received 299 bytes  1,434,718.00 bytes/sec
+total size is 2,266,709  speedup is 3.16
+sending incremental file list
+./
+auth.log
+kern.log
+lastlog
+syslog
+syslog.1
+syslog.2.gz
+syslog.3.gz
+syslog.4.gz
+syslog.5.gz
+syslog.6.gz
+syslog.7.gz
+wtmp
+unattended-upgrades/unattended-upgrades.log
+
+sent 777,551 bytes  received 280 bytes  1,555,662.00 bytes/sec
+total size is 2,327,530  speedup is 2.99
+sending incremental file list
+./
+alternatives.log
+alternatives.log.1
+alternatives.log.2.gz
+auth.log
+btmp
+btmp.1
+dpkg.log
+dpkg.log.1
+dpkg.log.2.gz
+kern.log
+syslog
+syslog.1
+syslog.2.gz
+syslog.3.gz
+syslog.4.gz
+syslog.5.gz
+syslog.6.gz
+syslog.7.gz
+wtmp
+wtmp.1
+apt/
+apt/history.log
+apt/history.log.1.gz
+apt/history.log.2.gz
+apt/term.log
+apt/term.log.1.gz
+apt/term.log.2.gz
+unattended-upgrades/
+unattended-upgrades/unattended-upgrades-dpkg.log
+unattended-upgrades/unattended-upgrades-dpkg.log.1.gz
+unattended-upgrades/unattended-upgrades-dpkg.log.2.gz
+unattended-upgrades/unattended-upgrades.log
+unattended-upgrades/unattended-upgrades.log.1.gz
+unattended-upgrades/unattended-upgrades.log.2.gz
+
+sent 743,889 bytes  received 647 bytes  1,489,072.00 bytes/sec
+total size is 1,914,677  speedup is 2.57
+sending incremental file list
+./
+auth.log
+kern.log
+syslog
+syslog.1
+syslog.2.gz
+syslog.3.gz
+syslog.4.gz
+syslog.5.gz
+syslog.6.gz
+syslog.7.gz
+unattended-upgrades/unattended-upgrades.log
+
+sent 721,185 bytes  received 238 bytes  1,442,846.00 bytes/sec
+total size is 2,022,907  speedup is 2.80
+sending incremental file list
+./
+auth.log
+kern.log
+syslog
+syslog.1
+syslog.2.gz
+syslog.3.gz
+syslog.4.gz
+syslog.5.gz
+syslog.6.gz
+syslog.7.gz
+unattended-upgrades/unattended-upgrades.log
+
+sent 931,889 bytes  received 238 bytes  1,864,254.00 bytes/sec
+total size is 2,233,564  speedup is 2.40
+sending incremental file list
+./
+auth.log
+auth.log.1
+auth.log.2.gz
+auth.log.3.gz
+auth.log.4.gz
+kern.log
+kern.log.1
+kern.log.2.gz
+kern.log.3.gz
+kern.log.4.gz
+syslog
+syslog.1
+syslog.2.gz
+syslog.3.gz
+syslog.4.gz
+syslog.5.gz
+syslog.6.gz
+syslog.7.gz
+freeradius/
+freeradius/radius.log
+freeradius/radius.log.1
+freeradius/radius.log.2.gz
+freeradius/radius.log.3.gz
+freeradius/radius.log.4.gz
+freeradius/radius.log.5.gz
+freeradius/radius.log.6.gz
+freeradius/radius.log.7.gz
+freeradius/radius.log.8.gz
+unattended-upgrades/unattended-upgrades.log
+
+sent 1,396,287 bytes  received 564 bytes  931,234.00 bytes/sec
+total size is 2,090,104  speedup is 1.50
+sending incremental file list
+./
+auth.log
+kern.log
+syslog
+syslog.1
+syslog.2.gz
+syslog.3.gz
+syslog.4.gz
+syslog.5.gz
+syslog.6.gz
+syslog.7.gz
+unattended-upgrades/unattended-upgrades.log
+
+sent 1,172,889 bytes  received 238 bytes  2,346,254.00 bytes/sec
+total size is 2,348,010  speedup is 2.00
+sending incremental file list
+./
+auth.log
+dpkg.log
+kern.log
+syslog
+syslog.1
+syslog.2.gz
+syslog.3.gz
+syslog.4.gz
+syslog.5.gz
+syslog.6.gz
+syslog.7.gz
+apt/history.log
+apt/term.log
+unattended-upgrades/unattended-upgrades-dpkg.log
+unattended-upgrades/unattended-upgrades.log
+
+sent 974,082 bytes  received 318 bytes  1,948,800.00 bytes/sec
+total size is 2,149,089  speedup is 2.21
+sending incremental file list
+./
+auth.log
+kern.log
+syslog
+syslog.1
+syslog.2.gz
+syslog.3.gz
+syslog.4.gz
+syslog.5.gz
+syslog.6.gz
+syslog.7.gz
+unattended-upgrades/unattended-upgrades.log
+
+sent 845,605 bytes  received 238 bytes  1,691,686.00 bytes/sec
+total size is 2,025,184  speedup is 2.39
+sending incremental file list
+./
+auth.log
+kern.log
+syslog
+syslog.1
+syslog.2.gz
+syslog.3.gz
+syslog.4.gz
+syslog.5.gz
+syslog.6.gz
+syslog.7.gz
+unattended-upgrades/unattended-upgrades.log
+
+sent 1,413,801 bytes  received 238 bytes  2,828,078.00 bytes/sec
+total size is 2,593,244  speedup is 1.83
+sending incremental file list
+./
+auth.log
+syslog
+syslog.1
+syslog.2.gz
+syslog.3.gz
+syslog.4.gz
+syslog.5.gz
+syslog.6.gz
+syslog.7.gz
+unattended-upgrades/unattended-upgrades.log
+
+sent 1,928,759 bytes  received 223 bytes  3,857,964.00 bytes/sec
+total size is 3,149,280  speedup is 1.63
+sending incremental file list
+./
+auth.log
+auth.log.1
+auth.log.2.gz
+auth.log.3.gz
+auth.log.4.gz
+kern.log
+kern.log.1
+kern.log.2.gz
+kern.log.3.gz
+kern.log.4.gz
+syslog
+syslog.1
+syslog.2.gz
+syslog.3.gz
+syslog.4.gz
+syslog.5.gz
+syslog.6.gz
+syslog.7.gz
+unattended-upgrades/unattended-upgrades.log
+
+sent 1,940,523 bytes  received 390 bytes  3,881,826.00 bytes/sec
+total size is 2,641,622  speedup is 1.36
+sending incremental file list
+./
+auth.log
+kern.log
+syslog
+syslog.1
+syslog.2.gz
+syslog.3.gz
+syslog.4.gz
+syslog.5.gz
+syslog.6.gz
+syslog.7.gz
+unattended-upgrades/unattended-upgrades.log
+
+sent 1,016,782 bytes  received 242 bytes  2,034,048.00 bytes/sec
+total size is 2,052,488  speedup is 2.02
+sending incremental file list
+./
+auth.log
+dpkg.log
+kern.log
+syslog
+syslog.1
+syslog.2.gz
+syslog.3.gz
+syslog.4.gz
+syslog.5.gz
+syslog.6.gz
+syslog.7.gz
+apt/history.log
+apt/term.log
+unattended-upgrades/unattended-upgrades-dpkg.log
+unattended-upgrades/unattended-upgrades.log
+
+sent 719,015 bytes  received 318 bytes  1,438,666.00 bytes/sec
+total size is 1,750,260  speedup is 2.43
+sending incremental file list
+./
+alternatives.log
+auth.log
+dpkg.log
+kern.log
+syslog
+syslog.1
+syslog.2.gz
+syslog.3.gz
+syslog.4.gz
+syslog.5.gz
+syslog.6.gz
+syslog.7.gz
+apt/history.log
+apt/term.log
+unattended-upgrades/unattended-upgrades-dpkg.log
+unattended-upgrades/unattended-upgrades.log
+
+sent 769,234 bytes  received 337 bytes  1,539,142.00 bytes/sec
+total size is 1,800,436  speedup is 2.34
+sending incremental file list
+./
+auth.log
+kern.log
+syslog
+syslog.1
+syslog.2.gz
+syslog.3.gz
+syslog.4.gz
+syslog.5.gz
+syslog.6.gz
+syslog.7.gz
+unattended-upgrades/unattended-upgrades.log
+
+sent 771,861 bytes  received 242 bytes  1,544,206.00 bytes/sec
+total size is 1,823,721  speedup is 2.36
+sending incremental file list
+./
+auth.log
+dpkg.log
+kern.log
+syslog
+syslog.1
+syslog.2.gz
+syslog.3.gz
+syslog.4.gz
+syslog.5.gz
+syslog.6.gz
+syslog.7.gz
+apt/history.log
+apt/term.log
+unattended-upgrades/unattended-upgrades-dpkg.log
+unattended-upgrades/unattended-upgrades.log
+
+sent 728,869 bytes  received 318 bytes  1,458,374.00 bytes/sec
+total size is 1,760,300  speedup is 2.41
+sending incremental file list
+./
+auth.log
+kern.log
+syslog
+syslog.1
+syslog.2.gz
+syslog.3.gz
+syslog.4.gz
+syslog.5.gz
+syslog.6.gz
+syslog.7.gz
+unattended-upgrades/unattended-upgrades.log
+
+sent 641,669 bytes  received 238 bytes  1,283,814.00 bytes/sec
+total size is 1,698,804  speedup is 2.65
+sending incremental file list
+./
+auth.log
+kern.log
+syslog
+syslog.1
+syslog.2.gz
+syslog.3.gz
+syslog.4.gz
+syslog.5.gz
+syslog.6.gz
+syslog.7.gz
+unattended-upgrades/unattended-upgrades.log
+
+sent 764,482 bytes  received 242 bytes  1,529,448.00 bytes/sec
+total size is 1,821,583  speedup is 2.38
+sending incremental file list
+./
+alternatives.log
+alternatives.log.1
+alternatives.log.2.gz
+armhwinfo.log
+armhwinfo.log.1.gz
+armhwinfo.log.2.gz
+armhwinfo.log.3.gz
+armhwinfo.log.4.gz
+armhwinfo.log.5.gz
+armhwinfo.log.6.gz
+armhwinfo.log.7.gz
+auth.log
+auth.log.1
+auth.log.2.gz
+auth.log.3.gz
+auth.log.4.gz
+bootstrap.log
+btmp
+btmp.1
+dmesg
+dpkg.log
+dpkg.log.1
+dpkg.log.2.gz
+faillog
+kern.log
+kern.log.1
+kern.log.2.gz
+kern.log.3.gz
+kern.log.4.gz
+lastlog
+syslog
+syslog.1
+syslog.2.gz
+syslog.3.gz
+syslog.4.gz
+syslog.5.gz
+syslog.6.gz
+syslog.7.gz
+wtmp
+wtmp.1
+apt/
+apt/history.log
+apt/history.log.1.gz
+apt/history.log.2.gz
+apt/term.log
+apt/term.log.1.gz
+apt/term.log.2.gz
+freeradius/
+freeradius/radius.log
+freeradius/radius.log.1
+freeradius/radius.log.2.gz
+freeradius/radius.log.3.gz
+freeradius/radius.log.4.gz
+freeradius/radius.log.5.gz
+freeradius/radius.log.6.gz
+freeradius/radius.log.7.gz
+freeradius/radius.log.8.gz
+freeradius/radwtmp
+fsck/
+fsck/checkfs
+fsck/checkroot
+ntpstats/
+sysstat/
+unattended-upgrades/
+unattended-upgrades/unattended-upgrades-dpkg.log
+unattended-upgrades/unattended-upgrades-dpkg.log.1.gz
+unattended-upgrades/unattended-upgrades-dpkg.log.2.gz
+unattended-upgrades/unattended-upgrades-shutdown.log
+unattended-upgrades/unattended-upgrades.log
+unattended-upgrades/unattended-upgrades.log.1.gz
+unattended-upgrades/unattended-upgrades.log.2.gz
+
+sent 1,826,703 bytes  received 1,290 bytes  3,655,986.00 bytes/sec
+total size is 1,821,583  speedup is 1.00
+sending incremental file list
+armhwinfo.log
+auth.log
+kern.log
+syslog
+wtmp
+freeradius/radius.log
+
+sent 850,536 bytes  received 143 bytes  1,701,358.00 bytes/sec
+total size is 2,078,619  speedup is 2.44
+sending incremental file list
+./
+armhwinfo.log
+armhwinfo.log.1.gz
+armhwinfo.log.2.gz
+armhwinfo.log.3.gz
+armhwinfo.log.4.gz
+armhwinfo.log.5.gz
+armhwinfo.log.6.gz
+armhwinfo.log.7.gz
+armhwinfo.log.8.gz
+auth.log
+dpkg.log
+kern.log
+lastlog
+syslog
+syslog.1
+syslog.2.gz
+syslog.3.gz
+syslog.4.gz
+syslog.5.gz
+syslog.6.gz
+syslog.7.gz
+wtmp
+apt/history.log
+apt/term.log
+freeradius/
+freeradius/radius.log
+freeradius/radius.log.1
+freeradius/radius.log.2.gz
+freeradius/radius.log.3.gz
+freeradius/radius.log.4.gz
+freeradius/radius.log.5.gz
+freeradius/radius.log.6.gz
+freeradius/radius.log.7.gz
+freeradius/radius.log.8.gz
+freeradius/radius.log.9.gz
+unattended-upgrades/unattended-upgrades-dpkg.log
+unattended-upgrades/unattended-upgrades.log
+
+sent 1,568,421 bytes  received 724 bytes  3,138,290.00 bytes/sec
+total size is 2,117,939  speedup is 1.35
+sending incremental file list
+./
+alternatives.log
+alternatives.log.1
+alternatives.log.2.gz
+armhwinfo.log
+armhwinfo.log.1.gz
+armhwinfo.log.2.gz
+armhwinfo.log.3.gz
+armhwinfo.log.4.gz
+armhwinfo.log.5.gz
+armhwinfo.log.6.gz
+armhwinfo.log.7.gz
+armhwinfo.log.8.gz
+auth.log
+auth.log.1
+auth.log.2.gz
+auth.log.3.gz
+auth.log.4.gz
+bootstrap.log
+btmp
+btmp.1
+dmesg
+dpkg.log
+dpkg.log.1
+dpkg.log.2.gz
+faillog
+kern.log
+kern.log.1
+kern.log.2.gz
+kern.log.3.gz
+kern.log.4.gz
+lastlog
+syslog
+syslog.1
+syslog.2.gz
+syslog.3.gz
+syslog.4.gz
+syslog.5.gz
+syslog.6.gz
+syslog.7.gz
+wtmp
+wtmp.1
+apt/
+apt/history.log
+apt/history.log.1.gz
+apt/history.log.2.gz
+apt/term.log
+apt/term.log.1.gz
+apt/term.log.2.gz
+freeradius/
+freeradius/radius.log
+freeradius/radius.log.1
+freeradius/radius.log.2.gz
+freeradius/radius.log.3.gz
+freeradius/radius.log.4.gz
+freeradius/radius.log.5.gz
+freeradius/radius.log.6.gz
+freeradius/radius.log.7.gz
+freeradius/radius.log.8.gz
+freeradius/radius.log.9.gz
+freeradius/radwtmp
+fsck/
+fsck/checkfs
+fsck/checkroot
+ntpstats/
+sysstat/
+unattended-upgrades/
+unattended-upgrades/unattended-upgrades-dpkg.log
+unattended-upgrades/unattended-upgrades-dpkg.log.1.gz
+unattended-upgrades/unattended-upgrades-dpkg.log.2.gz
+unattended-upgrades/unattended-upgrades-shutdown.log
+unattended-upgrades/unattended-upgrades.log
+unattended-upgrades/unattended-upgrades.log.1.gz
+unattended-upgrades/unattended-upgrades.log.2.gz
+
+sent 2,123,265 bytes  received 1,328 bytes  4,249,186.00 bytes/sec
+total size is 2,117,939  speedup is 1.00
+sending incremental file list
+armhwinfo.log
+auth.log
+kern.log
+syslog
+wtmp
+freeradius/radius.log
+unattended-upgrades/unattended-upgrades.log
+
+sent 859,763 bytes  received 163 bytes  1,719,852.00 bytes/sec
+total size is 2,352,461  speedup is 2.74
+sending incremental file list
+./
+auth.log
+kern.log
+syslog
+syslog.1
+syslog.2.gz
+syslog.3.gz
+syslog.4.gz
+syslog.5.gz
+syslog.6.gz
+syslog.7.gz
+unattended-upgrades/unattended-upgrades.log
+
+sent 1,242,749 bytes  received 242 bytes  2,485,982.00 bytes/sec
+total size is 2,365,179  speedup is 1.90
+sending incremental file list
+./
+armhwinfo.log
+armhwinfo.log.1.gz
+armhwinfo.log.2.gz
+armhwinfo.log.3.gz
+armhwinfo.log.4.gz
+armhwinfo.log.5.gz
+armhwinfo.log.6.gz
+armhwinfo.log.7.gz
+armhwinfo.log.8.gz
+armhwinfo.log.9.gz
+auth.log
+auth.log.1
+auth.log.2.gz
+auth.log.3.gz
+auth.log.4.gz
+kern.log
+kern.log.1
+kern.log.2.gz
+kern.log.3.gz
+kern.log.4.gz
+lastlog
+syslog
+syslog.1
+syslog.2.gz
+syslog.3.gz
+syslog.4.gz
+syslog.5.gz
+syslog.6.gz
+syslog.7.gz
+wtmp
+freeradius/
+freeradius/radius.log
+freeradius/radius.log.1
+freeradius/radius.log.10.gz
+freeradius/radius.log.2.gz
+freeradius/radius.log.3.gz
+freeradius/radius.log.4.gz
+freeradius/radius.log.5.gz
+freeradius/radius.log.6.gz
+freeradius/radius.log.7.gz
+freeradius/radius.log.8.gz
+freeradius/radius.log.9.gz
+unattended-upgrades/unattended-upgrades.log
+
+sent 1,835,789 bytes  received 834 bytes  1,224,415.33 bytes/sec
+total size is 2,080,091  speedup is 1.13
+sending incremental file list
+./
+auth.log
+kern.log
+lastlog
+syslog
+syslog.1
+syslog.2.gz
+syslog.3.gz
+syslog.4.gz
+syslog.5.gz
+syslog.6.gz
+syslog.7.gz
+wtmp
+unattended-upgrades/unattended-upgrades.log
+
+sent 750,159 bytes  received 276 bytes  1,500,870.00 bytes/sec
+total size is 1,925,152  speedup is 2.57

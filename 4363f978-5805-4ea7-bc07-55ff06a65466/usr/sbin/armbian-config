@@ -1,0 +1,102 @@
+#!/bin/bash
+#
+# Copyright (c) 2017 Igor Pecovnik, igor.pecovnik@gma**.com
+#
+# This file is licensed under the terms of the GNU General Public
+# License version 2. This program is licensed "as is" without any
+# warranty of any kind, whether express or implied.
+
+# define sane $PATH
+export PATH=/usr/sbin:/usr/bin:/sbin:/bin
+
+#-----------------------------------------------------------------------------------------------------------------------------------------#
+# check for root
+#
+if [[ $EUID != 0 ]]; then
+	echo "This tool requires root privileges. Try again with \"sudo \" please ..." >&2
+	sleep 2
+	exit 1
+fi
+
+
+#-----------------------------------------------------------------------------------------------------------------------------------------#
+# check if we have internet connection to install dependencies
+#
+echo -e "GET http://github.com HTTP/1.0\n\n" | nc github.com 80 > /dev/null 2>&1
+if [[ $? -ne 0 ]]; then
+		read -n 1 -s -p "Warning. Configurator can't work properly without internet connection. \
+		Press CTRL C to stop to stop or any key to ignore and continue."
+fi
+
+
+#-----------------------------------------------------------------------------------------------------------------------------------------#
+# load functions
+[[ -f /usr/lib/armbian-config/jobs.sh ]] && source /usr/lib/armbian-config/jobs.sh || source ${BASH_SOURCE}-jobs
+[[ -f /usr/lib/armbian-config/submenu.sh ]] && source /usr/lib/armbian-config/submenu.sh || source ${BASH_SOURCE}-submenu
+
+
+
+#-----------------------------------------------------------------------------------------------------------------------------------------#
+# Main menu
+#
+while true
+do
+	LIST=()
+
+	LIST+=( "System" "System and security settings" )
+	LIST+=( "Network" "Wired, wireless, Bluetooth, access point" )
+	LIST+=( "Personal" "Timezone, language, hostname" )
+	LIST+=( "Software" "System and 3rd party software install" )
+	LIST+=( "Help" "Documentation, support, sources" )
+
+	# count number of menu items to adjust window size
+	LISTLENGHT="$((11+${#LIST[@]}/2))"
+	BOXLENGHT=${#LIST[@]}
+	MENUTITLE="Configure $DISTRO $DISTROID based \Z1Armbian\Z0 "
+	[[ -n "${BOARD_NAME/ /}" ]] && MENUTITLE=$MENUTITLE"for the \Z1${BOARD_NAME}\Z0 "
+
+	# main dialog routine
+	DIALOG_CANCEL=1
+	DIALOG_ESC=255
+	TITLELENGHT=${#MENUTITLE}
+
+	[[ "$TITLELENGHT" -lt 50 ]] && TITLELENGHT="50"
+
+	exec 3>&1
+	selection=$(dialog --colors --backtitle "$BACKTITLE" --title " armbian-config " --clear \
+	--cancel-label "Cancel" --menu "\n$MENUTITLE \n \nSupport: \Z1https://www.armbian.com\Z0\n " \
+	$LISTLENGHT ${TITLELENGHT} $BOXLENGHT "${LIST[@]}" 2>&1 1>&3)
+	exit_status=$?
+	exec 3>&-
+
+	[[ $exit_status == $DIALOG_CANCEL || $exit_status == $DIALOG_ESC ]] && clear && exit
+
+	dialog --backtitle "$BACKTITLE" --title "Please wait" --infobox "\nLoading ${selection,,} submodule ... " 5 $((26+${#selection}))
+
+	case $selection in
+
+		"System" )
+			submenu_settings
+		;;
+
+		"Network" )
+			submenu_networking
+		;;
+
+		"Personal" )
+			submenu_personal
+		;;
+
+		"Software" )
+			submenu_software
+		;;
+
+		"Help" )
+			show_box "Info" "This tool provides a straightforward way of configuring the \Z4${BOARD_NAME}\Z0. \
+			\n \nAlthough it can be run at any time, some of the options may have difficulties if you alter system settings manually.\n\
+			\n\Z1Documentation:\Z0     https://docs.armbian.com\n\n\Z1Support:\Z0           https://forum.armbian.com\n
+			\n\Z1Sources:\Z0           https://git.armbian.com" "18"
+		;;
+	esac
+done
+#-----------------------------------------------------------------------------------------------------------------------------------------#

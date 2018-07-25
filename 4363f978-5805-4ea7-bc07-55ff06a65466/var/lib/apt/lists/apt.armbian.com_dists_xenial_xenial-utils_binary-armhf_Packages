@@ -1,0 +1,471 @@
+Package: a10disp
+Priority: optional
+Section: utils
+Installed-Size: 18
+Maintainer: root <root@unknown>
+Architecture: armhf
+Version: 1.0-1~armbian5.35+1
+Depends: fbset, libc6 (>= 2.4)
+Filename: pool/xenial-utils/a/a10disp/a10disp_1.0-1~armbian5.35+1_armhf.deb
+Size: 8822
+MD5sum: f11c68658f632013e9c36560af71a5f1
+SHA1: ff7291584057e79d6126b13b28edca7b4a85b1bc
+SHA256: 437ed529812464972031194bce244234377e5861376973a69d585120b2209386
+SHA512: da98b8cfa17fc3eede6f88c9c85323fe11767ff14a314cdb2ddbd4a59cd33e89f90a202c1ecd1414294dbfacfa009120050fb11963cff7dd6e0558e395fbd374
+Description: Program to the change the display mode of Allwinner devices
+ running linux-sunxi.
+Multi-Arch: same
+
+Package: hostapd
+Priority: optional
+Section: net
+Installed-Size: 680
+Maintainer: Debian wpasupplicant Maintainers <pkg-wpa-devel@lists.alioth.debian.org>
+Architecture: armhf
+Source: wpa
+Version: 2:2.6-4~armbian5.38+1
+Replaces: armbian-hostapd, hostapd, hostapd-realtek
+Provides: hostapd
+Depends: libc6 (>= 2.15), libnl-3-200 (>= 3.2.7), libnl-genl-3-200 (>= 3.2.7), libssl1.0.0 (>= 1.0.1), lsb-base
+Conflicts: armbian-hostapd, hostapd, hostapd-realtek
+Breaks: initscripts (<< 2.88dsf-13.3)
+Filename: pool/xenial-utils/w/wpa/hostapd_2.6-4~armbian5.38+1_armhf.deb
+Size: 360288
+MD5sum: 8cbf26a8c7a317bbeafa72311f59460b
+SHA1: 4147a2aa348736ed3811063bb9711f2109677c4f
+SHA256: 7b667f498ac18d3ac78c5e7ac6e90e80d32c9cc94aded1a0a4538c9d9221c425
+SHA512: 858bb2e6e4a6e5f015844210ab36abae7e473ef71ba9ba4b061e9a9a7bb135dae59e72ef3c22659395089f51069d81b59e2fc80849573976571cdd56c2807143
+Description: IEEE 802.11 AP and IEEE 802.1X/WPA/WPA2/EAP Authenticator
+ Originally, hostapd was an optional user space component for Host AP
+ driver. It adds more features to the basic IEEE 802.11 management
+ included in the kernel driver: using external RADIUS authentication
+ server for MAC address based access control, IEEE 802.1X Authenticator
+ and dynamic WEP keying, RADIUS accounting, WPA/WPA2 (IEEE 802.11i/RSN)
+ Authenticator and dynamic TKIP/CCMP keying.
+ .
+ The current version includes support for other drivers, an integrated
+ EAP authenticator (i.e., allow full authentication without requiring
+ an external RADIUS authentication server), and RADIUS authentication
+ server for EAP authentication.
+ .
+ hostapd works with the following drivers:
+ .
+  * mac80211 based drivers with support for master mode [linux]
+  * Host AP driver for Prism2/2.5/3 [linux]
+  * Driver interface for FreeBSD net80211 layer [kfreebsd]
+  * Any wired Ethernet driver for wired IEEE 802.1X authentication.
+Multi-Arch: foreign
+Homepage: http://w1.fi/wpa_supplicant/
+
+Package: hostapd
+Priority: optional
+Section: net
+Installed-Size: 680
+Maintainer: Debian wpasupplicant Maintainers <pkg-wpa-devel@lists.alioth.debian.org>
+Architecture: armhf
+Source: wpa
+Version: 2:2.6-4~armbian5.35+1
+Replaces: armbian-hostapd, hostapd, hostapd-realtek
+Provides: hostapd
+Depends: libc6 (>= 2.15), libnl-3-200 (>= 3.2.7), libnl-genl-3-200 (>= 3.2.7), libssl1.0.0 (>= 1.0.1), lsb-base
+Conflicts: armbian-hostapd, hostapd, hostapd-realtek
+Breaks: initscripts (<< 2.88dsf-13.3)
+Filename: pool/xenial-utils/w/wpa/hostapd_2.6-4~armbian5.35+1_armhf.deb
+Size: 360640
+MD5sum: c2c11461e9dc90d8745c3fcd5c816c6a
+SHA1: 775a3b1bf3b3012b2a17e747adcb292c4158d471
+SHA256: d6d8ea7bf5fe9fd0747a4d3964c32896bbf3d291d06609c8708e51dfab50bc12
+SHA512: 5382dbf98e5c3d303edcade4c8f7236ebc5ae386a74676036b12588f0f529425e9cbe09ab96ab26551cc496022d889c1892a2f0d525b6623a6926f4afea4b673
+Description: IEEE 802.11 AP and IEEE 802.1X/WPA/WPA2/EAP Authenticator
+ Originally, hostapd was an optional user space component for Host AP
+ driver. It adds more features to the basic IEEE 802.11 management
+ included in the kernel driver: using external RADIUS authentication
+ server for MAC address based access control, IEEE 802.1X Authenticator
+ and dynamic WEP keying, RADIUS accounting, WPA/WPA2 (IEEE 802.11i/RSN)
+ Authenticator and dynamic TKIP/CCMP keying.
+ .
+ The current version includes support for other drivers, an integrated
+ EAP authenticator (i.e., allow full authentication without requiring
+ an external RADIUS authentication server), and RADIUS authentication
+ server for EAP authentication.
+ .
+ hostapd works with the following drivers:
+ .
+  * mac80211 based drivers with support for master mode [linux]
+  * Host AP driver for Prism2/2.5/3 [linux]
+  * Driver interface for FreeBSD net80211 layer [kfreebsd]
+  * Any wired Ethernet driver for wired IEEE 802.1X authentication.
+Homepage: http://w1.fi/wpa_supplicant/
+Multi-Arch: foreign
+
+Package: hostapd
+Priority: optional
+Section: net
+Installed-Size: 680
+Maintainer: Debian wpasupplicant Maintainers <pkg-wpa-devel@lists.alioth.debian.org>
+Architecture: armhf
+Source: wpa
+Version: 2:2.6-4~armbian5.34.171017+1
+Replaces: armbian-hostapd, hostapd, hostapd-realtek
+Provides: hostapd
+Depends: libc6 (>= 2.15), libnl-3-200 (>= 3.2.7), libnl-genl-3-200 (>= 3.2.7), libssl1.0.0 (>= 1.0.1), lsb-base
+Conflicts: armbian-hostapd, hostapd, hostapd-realtek
+Breaks: initscripts (<< 2.88dsf-13.3)
+Filename: pool/xenial-utils/w/wpa/hostapd_2.6-4~armbian5.34.171017+1_armhf.deb
+Size: 360630
+MD5sum: 31c5c1094a891c5109f410c0926416b7
+SHA1: cc7856a3df062acaefaae0ef57c7a77cad812986
+SHA256: 16f76acae9edb008357340316ad6aaadf73021f196043c895cafc1de713e81cb
+SHA512: aee03ea33d0b0ed99ef1f38d2613b0551ea4ff6d594e4bc10bc716c0f468bd7ce034281a9ad62fb2770d7f60908146d8eee2fac415cb7b82ec53526d07170e14
+Description: IEEE 802.11 AP and IEEE 802.1X/WPA/WPA2/EAP Authenticator
+ Originally, hostapd was an optional user space component for Host AP
+ driver. It adds more features to the basic IEEE 802.11 management
+ included in the kernel driver: using external RADIUS authentication
+ server for MAC address based access control, IEEE 802.1X Authenticator
+ and dynamic WEP keying, RADIUS accounting, WPA/WPA2 (IEEE 802.11i/RSN)
+ Authenticator and dynamic TKIP/CCMP keying.
+ .
+ The current version includes support for other drivers, an integrated
+ EAP authenticator (i.e., allow full authentication without requiring
+ an external RADIUS authentication server), and RADIUS authentication
+ server for EAP authentication.
+ .
+ hostapd works with the following drivers:
+ .
+  * mac80211 based drivers with support for master mode [linux]
+  * Host AP driver for Prism2/2.5/3 [linux]
+  * Driver interface for FreeBSD net80211 layer [kfreebsd]
+  * Any wired Ethernet driver for wired IEEE 802.1X authentication.
+Homepage: http://w1.fi/wpa_supplicant/
+Multi-Arch: foreign
+
+Package: hostapd-realtek
+Priority: optional
+Section: net
+Installed-Size: 508
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian wpasupplicant Maintainers <pkg-wpa-devel@lists.alioth.debian.org>
+Architecture: armhf
+Source: wpa
+Version: 2:2.5-1~armbian5.38+1
+Replaces: armbian-hostapd, hostapd
+Provides: hostapd
+Depends: libc6 (>= 2.15), lsb-base
+Conflicts: armbian-hostapd, hostapd
+Breaks: initscripts (<< 2.88dsf-13.3)
+Filename: pool/xenial-utils/w/wpa/hostapd-realtek_2.5-1~armbian5.38+1_armhf.deb
+Size: 268260
+MD5sum: 2deff41551bb3d31ae24bc66e118fe8e
+SHA1: c3a5f5dc3c7db557663f67e2a5e3fa928835f22a
+SHA256: 076c617910db1164b295ce67d289eda12ade6ed3cf55d335c77f159e82311e5c
+SHA512: 6fd7b7073a2f3bf24c0073e77c3c81eb65939ce251dd49fbad2ef96fdf4ab4ecc7e1d4eceff51ab9b72ceefd086482dfa36891cb0fbb3c7a671fe85965a1fb7b
+Description: IEEE 802.11 AP and IEEE 802.1X/WPA/WPA2/EAP Authenticator
+ Originally, hostapd was an optional user space component for Host AP
+ driver. It adds more features to the basic IEEE 802.11 management
+ included in the kernel driver: using external RADIUS authentication
+ server for MAC address based access control, IEEE 802.1X Authenticator
+ and dynamic WEP keying, RADIUS accounting, WPA/WPA2 (IEEE 802.11i/RSN)
+ Authenticator and dynamic TKIP/CCMP keying.
+ .
+ The current version includes support for other drivers, an integrated
+ EAP authenticator (i.e., allow full authentication without requiring
+ an external RADIUS authentication server), and RADIUS authentication
+ server for EAP authentication.
+ .
+ hostapd works with the following drivers:
+ .
+  * mac80211 based drivers with support for master mode [linux]
+  * Host AP driver for Prism2/2.5/3 [linux]
+  * Driver interface for FreeBSD net80211 layer [kfreebsd]
+  * Any wired Ethernet driver for wired IEEE 802.1X authentication.
+Multi-Arch: foreign
+Homepage: http://w1.fi/wpa_supplicant/
+
+Package: hostapd-realtek
+Priority: optional
+Section: net
+Installed-Size: 508
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian wpasupplicant Maintainers <pkg-wpa-devel@lists.alioth.debian.org>
+Architecture: armhf
+Source: wpa
+Version: 2:2.5-1~armbian5.35+1
+Replaces: armbian-hostapd, hostapd
+Provides: hostapd
+Depends: libc6 (>= 2.15), lsb-base
+Conflicts: armbian-hostapd, hostapd
+Breaks: initscripts (<< 2.88dsf-13.3)
+Filename: pool/xenial-utils/w/wpa/hostapd-realtek_2.5-1~armbian5.35+1_armhf.deb
+Size: 268264
+MD5sum: 795320fa18bd8cb5500f957b8830a992
+SHA1: 8ac230aaa144542ca7698e5e60d46a0b10c432f6
+SHA256: b8daf0ffe9e657ffe6db7648b85871edc790407fd218b3ea3ba1b2c0fb883e42
+SHA512: 45aab49724186dfb9c105064051e10a39baace96bec3104fca57d5457486b7307916fece71c0d48655a503f68d11a25619a0897017cb43c9a0ac7c9457ba016d
+Description: IEEE 802.11 AP and IEEE 802.1X/WPA/WPA2/EAP Authenticator
+ Originally, hostapd was an optional user space component for Host AP
+ driver. It adds more features to the basic IEEE 802.11 management
+ included in the kernel driver: using external RADIUS authentication
+ server for MAC address based access control, IEEE 802.1X Authenticator
+ and dynamic WEP keying, RADIUS accounting, WPA/WPA2 (IEEE 802.11i/RSN)
+ Authenticator and dynamic TKIP/CCMP keying.
+ .
+ The current version includes support for other drivers, an integrated
+ EAP authenticator (i.e., allow full authentication without requiring
+ an external RADIUS authentication server), and RADIUS authentication
+ server for EAP authentication.
+ .
+ hostapd works with the following drivers:
+ .
+  * mac80211 based drivers with support for master mode [linux]
+  * Host AP driver for Prism2/2.5/3 [linux]
+  * Driver interface for FreeBSD net80211 layer [kfreebsd]
+  * Any wired Ethernet driver for wired IEEE 802.1X authentication.
+Multi-Arch: foreign
+Homepage: http://w1.fi/wpa_supplicant/
+
+Package: hostapd-realtek
+Priority: optional
+Section: net
+Installed-Size: 508
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian wpasupplicant Maintainers <pkg-wpa-devel@lists.alioth.debian.org>
+Architecture: armhf
+Source: wpa
+Version: 2:2.5-1~armbian5.34.171017+1
+Replaces: armbian-hostapd, hostapd
+Provides: hostapd
+Depends: libc6 (>= 2.15), lsb-base
+Conflicts: armbian-hostapd, hostapd
+Breaks: initscripts (<< 2.88dsf-13.3)
+Filename: pool/xenial-utils/w/wpa/hostapd-realtek_2.5-1~armbian5.34.171017+1_armhf.deb
+Size: 268316
+MD5sum: 26c4dc6523001e5ed08b44e8b764e947
+SHA1: a0c684b159f0bfb53455554931892772c565592e
+SHA256: 95df591f4b5c6498e7ddfba7f7f92db7b7c5f08e000e9a316b9ea9230c5f87c9
+SHA512: 6753671e6d50312eb0f5bccb5c78feb5216615d747c7c19b818d3735f06f84ab278782f229d501fc72f9abb96c8fc452e49fad968dfd51d0c18ff3ce1a989109
+Description: IEEE 802.11 AP and IEEE 802.1X/WPA/WPA2/EAP Authenticator
+ Originally, hostapd was an optional user space component for Host AP
+ driver. It adds more features to the basic IEEE 802.11 management
+ included in the kernel driver: using external RADIUS authentication
+ server for MAC address based access control, IEEE 802.1X Authenticator
+ and dynamic WEP keying, RADIUS accounting, WPA/WPA2 (IEEE 802.11i/RSN)
+ Authenticator and dynamic TKIP/CCMP keying.
+ .
+ The current version includes support for other drivers, an integrated
+ EAP authenticator (i.e., allow full authentication without requiring
+ an external RADIUS authentication server), and RADIUS authentication
+ server for EAP authentication.
+ .
+ hostapd works with the following drivers:
+ .
+  * mac80211 based drivers with support for master mode [linux]
+  * Host AP driver for Prism2/2.5/3 [linux]
+  * Driver interface for FreeBSD net80211 layer [kfreebsd]
+  * Any wired Ethernet driver for wired IEEE 802.1X authentication.
+Multi-Arch: foreign
+Homepage: http://w1.fi/wpa_supplicant/
+
+Package: mmc-utils
+Priority: optional
+Section: utils
+Installed-Size: 88
+Maintainer: Nobuhiro Iwamatsu <iwamatsu@debian.org>
+Architecture: armhf
+Version: 0~gita3d3331-3~armbian5.38+1
+Depends: libc6 (>= 2.4)
+Filename: pool/xenial-utils/m/mmc-utils/mmc-utils_0~gita3d3331-3~armbian5.38+1_armhf.deb
+Size: 37098
+MD5sum: 5fb8a5d8cc1344680afdc6d178d7cf11
+SHA1: 6386eb9978197d7f26d438a55a46989d6c726f0e
+SHA256: 779d15713619c05b86712297983a8eefe162ad0a6331dde218480c6ec9a28996
+SHA512: 066416aca8e62cce00b2edea3057505a6eebdfd08f045c1f30262c37a8dc85a3c4c642abf375a50262497a568f5da01b6579ffe110cf9d4d0529dd3850f4729b
+Description: Userspace tools for MMC/SD devices
+ mmc-utils is a tool that supports the MMC device development of linux kernel.
+ .
+ The mmc-utils tools can do the following:
+  - Print and parse extcsd data.
+  - Determine the eMMC writeprotect status.
+  - Set the eMMC writeprotect status.
+  - Set the eMMC data sector size to 4KB by disabling emulation.
+  - Create general purpose partition.
+  - Enable the enhanced user area.
+  - Enable write reliability per partition.
+  - Print the response to STATUS_SEND (CMD13).
+  - Enable the boot partition.
+  - Set Boot Bus Conditions.
+  - Enable the eMMC BKOPS feature.
+  - Permanently enable the eMMC H/W Reset feature.
+  - Permanently disable the eMMC H/W Reset feature.
+  - Send Sanitize command.
+  - Program authentication key for the device.
+  - Counter value for the rpmb device will be read to stdout.
+  - Read from rpmb device to output.
+  - Write to rpmb device from data file.
+  - Enable the eMMC cache feature.
+  - Disable the eMMC cache feature.
+  - Print and parse CID data.
+  - Print and parse CSD data.
+  - Print and parse SCR data.
+Homepage: http://git.kernel.org/cgit/linux/kernel/git/cjb/mmc-utils.git
+
+Package: mmc-utils
+Priority: optional
+Section: utils
+Installed-Size: 88
+Maintainer: Nobuhiro Iwamatsu <iwamatsu@debian.org>
+Architecture: armhf
+Version: 0~gita3d3331-3~armbian5.35+1
+Depends: libc6 (>= 2.4)
+Filename: pool/xenial-utils/m/mmc-utils/mmc-utils_0~gita3d3331-3~armbian5.35+1_armhf.deb
+Size: 37070
+MD5sum: 2bbbd43d9698b74787c82e9e8657de68
+SHA1: 0606f7c51e8f60d875f828957a64b547a5cd873d
+SHA256: 27d69fd83e2aec4c7eee39ba67d7a357e0dcef1e7016b573bc5ae244d974e44d
+SHA512: c198c127b121d00d74bec6d4e3aff537b2afaca13543edc9067ff2cba3ed47b36914bc6f510deda4af35e046ef71aff48ac0be49a94027b16320b2ba376150d5
+Description: Userspace tools for MMC/SD devices
+ mmc-utils is a tool that supports the MMC device development of linux kernel.
+ .
+ The mmc-utils tools can do the following:
+  - Print and parse extcsd data.
+  - Determine the eMMC writeprotect status.
+  - Set the eMMC writeprotect status.
+  - Set the eMMC data sector size to 4KB by disabling emulation.
+  - Create general purpose partition.
+  - Enable the enhanced user area.
+  - Enable write reliability per partition.
+  - Print the response to STATUS_SEND (CMD13).
+  - Enable the boot partition.
+  - Set Boot Bus Conditions.
+  - Enable the eMMC BKOPS feature.
+  - Permanently enable the eMMC H/W Reset feature.
+  - Permanently disable the eMMC H/W Reset feature.
+  - Send Sanitize command.
+  - Program authentication key for the device.
+  - Counter value for the rpmb device will be read to stdout.
+  - Read from rpmb device to output.
+  - Write to rpmb device from data file.
+  - Enable the eMMC cache feature.
+  - Disable the eMMC cache feature.
+  - Print and parse CID data.
+  - Print and parse CSD data.
+  - Print and parse SCR data.
+Homepage: http://git.kernel.org/cgit/linux/kernel/git/cjb/mmc-utils.git
+
+Package: mmc-utils
+Priority: optional
+Section: utils
+Installed-Size: 88
+Maintainer: Nobuhiro Iwamatsu <iwamatsu@debian.org>
+Architecture: armhf
+Version: 0~gita3d3331-3~armbian5.34.171017+1
+Depends: libc6 (>= 2.4)
+Filename: pool/xenial-utils/m/mmc-utils/mmc-utils_0~gita3d3331-3~armbian5.34.171017+1_armhf.deb
+Size: 37092
+MD5sum: 74e3f8b6489ffab1d9d180d45572f7d3
+SHA1: d445bdae51a5ee61c8121f30926d4f155b133121
+SHA256: f0e6183157fc7715ac12ef1eb88a84defc0f6ed25d5781cb1e271aecf2b646ba
+SHA512: 62d5c66ac313886aa80a8c1a9cc15cd70de5c7310cf97b76f7f05c1533b413de80e66a626ab3981c2027501845cd9c4f0196f5cacaa1b68bc26c1a0b296d0299
+Description: Userspace tools for MMC/SD devices
+ mmc-utils is a tool that supports the MMC device development of linux kernel.
+ .
+ The mmc-utils tools can do the following:
+  - Print and parse extcsd data.
+  - Determine the eMMC writeprotect status.
+  - Set the eMMC writeprotect status.
+  - Set the eMMC data sector size to 4KB by disabling emulation.
+  - Create general purpose partition.
+  - Enable the enhanced user area.
+  - Enable write reliability per partition.
+  - Print the response to STATUS_SEND (CMD13).
+  - Enable the boot partition.
+  - Set Boot Bus Conditions.
+  - Enable the eMMC BKOPS feature.
+  - Permanently enable the eMMC H/W Reset feature.
+  - Permanently disable the eMMC H/W Reset feature.
+  - Send Sanitize command.
+  - Program authentication key for the device.
+  - Counter value for the rpmb device will be read to stdout.
+  - Read from rpmb device to output.
+  - Write to rpmb device from data file.
+  - Enable the eMMC cache feature.
+  - Disable the eMMC cache feature.
+  - Print and parse CID data.
+  - Print and parse CSD data.
+  - Print and parse SCR data.
+Homepage: http://git.kernel.org/cgit/linux/kernel/git/cjb/mmc-utils.git
+
+Package: sunxi-tools
+Priority: optional
+Section: utils
+Installed-Size: 103
+Maintainer: Ian Campbell <ijc@debian.org>
+Architecture: armhf
+Version: 1.4.2-2~armbian5.38+1
+Depends: libc6 (>= 2.10), libusb-1.0-0 (>= 2:1.0.16), zlib1g (>= 1:1.1.4)
+Filename: pool/xenial-utils/s/sunxi-tools/sunxi-tools_1.4.2-2~armbian5.38+1_armhf.deb
+Size: 35790
+MD5sum: 22d7c7ce2bf936050b5352e96a506027
+SHA1: 7e68d0cdf370865c14e40e0d5a59bf9d1b528460
+SHA256: 426b653400d96fa4cd516f303fecf6da402e309aeb124bfdc4488585ac3269d7
+SHA512: b0b4889bc90f86010938de05e540bad784a8d648daa044510b79870f09af92af20aa46ea1ecac69667a04ef23b00ef205d2d8c8c17853765ec48e27c81125199
+Description: tools for working with Allwinner (sunxi) ARM processors
+ This package contains various tools for working with devices based around the
+ Allwinner sunxi processors (A10/A13/A20/A31 etc). Utilities include tools to:
+ .
+  - interact with the processors' lowlevel bootrom (AKA FEL mode).
+  - boot over the USB OTG port.
+  - compile and decompile the Allwinner binary hardware descriptions (FEX
+    files).
+  - display information about sunxi boot headers.
+Homepage: http://linux-sunxi.org/Sunxi-tools
+
+Package: sunxi-tools
+Priority: optional
+Section: utils
+Installed-Size: 103
+Maintainer: Ian Campbell <ijc@debian.org>
+Architecture: armhf
+Version: 1.4.2-1~armbian5.35+1
+Depends: libc6 (>= 2.10), libusb-1.0-0 (>= 2:1.0.16)
+Filename: pool/xenial-utils/s/sunxi-tools/sunxi-tools_1.4.2-1~armbian5.35+1_armhf.deb
+Size: 35638
+MD5sum: 6c3a1743c26e85aeeb92b2fbb9d9f604
+SHA1: 1d4302f2edaf3a6fa5853067cde6f82faef57171
+SHA256: 9c6729337ead2327ed5dd4b85d232230fed71050e52815cf524232d63655a6aa
+SHA512: 5ecef8fe54b3d7367a92e64f298c3901f727de0e6d2cb94cf2b7ad504a3794a2105b76623c537235739026aa19b6027fe57253c138750d1bde0f1d1b3555d2a3
+Description: tools for working with Allwinner (sunxi) ARM processors
+ This package contains various tools for working with devices based around the
+ Allwinner sunxi processors (A10/A13/A20/A31 etc). Utilities include tools to:
+ .
+  - interact with the processors' lowlevel bootrom (AKA FEL mode).
+  - boot over the USB OTG port.
+  - compile and decompile the Allwinner binary hardware descriptions (FEX
+    files).
+  - display information about sunxi boot headers.
+Homepage: http://linux-sunxi.org/Sunxi-tools
+
+Package: sunxi-tools
+Priority: optional
+Section: utils
+Installed-Size: 103
+Maintainer: Ian Campbell <ijc@debian.org>
+Architecture: armhf
+Version: 1.4.2-1~armbian5.34.171017+1
+Depends: libc6 (>= 2.10), libusb-1.0-0 (>= 2:1.0.16)
+Filename: pool/xenial-utils/s/sunxi-tools/sunxi-tools_1.4.2-1~armbian5.34.171017+1_armhf.deb
+Size: 35674
+MD5sum: e508fc4aa5312ce9e382a7d81aa067f4
+SHA1: 6217caf95d6d930a2b06d91a14619c2f1108e656
+SHA256: dcd25eb3e5967855502da818668e7fc1563735e38a2e4147bf80d7008ec43f51
+SHA512: 7438d22d6c6d6f4d3a1e6aa8c4a9476a741689dddfd2d0f75a23ef27cf833e80ecd38d90f596c953f253a68cf28ec644dc1855f7fb7ac5b72b4febe2ba4399a3
+Description: tools for working with Allwinner (sunxi) ARM processors
+ This package contains various tools for working with devices based around the
+ Allwinner sunxi processors (A10/A13/A20/A31 etc). Utilities include tools to:
+ .
+  - interact with the processors' lowlevel bootrom (AKA FEL mode).
+  - boot over the USB OTG port.
+  - compile and decompile the Allwinner binary hardware descriptions (FEX
+    files).
+  - display information about sunxi boot headers.
+Homepage: http://linux-sunxi.org/Sunxi-tools
+

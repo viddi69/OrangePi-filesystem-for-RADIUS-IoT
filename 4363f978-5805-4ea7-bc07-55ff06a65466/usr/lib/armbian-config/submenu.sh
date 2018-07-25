@@ -1,0 +1,881 @@
+#!/bin/bash
+#
+# Copyright (c) 2017 Igor Pecovnik, igor.pecovnik@gma**.com
+#
+# This file is licensed under the terms of the GNU General Public
+# License version 2. This program is licensed "as is" without any
+# warranty of any kind, whether express or implied.
+
+
+
+check_if_installed (){
+#------------------------------------------------------------------------------------------------------------------------------------------
+# check dpkg status of $1 -- currently only 'not installed at all' case catched
+#
+	local DPKG_Status="$(dpkg -s "$1" 2>/dev/null | awk -F": " '/^Status/ {print $2}')"
+	if [[ "X${DPKG_Status}" = "X" || "${DPKG_Status}" = *deinstall* ]]; then
+		return 1
+	else
+		return 0
+	fi
+}
+
+
+#-----------------------------------------------------------------------------------------------------------------------------------------#
+# check hostapd configuration. Return error or empty if o.k.
+#
+check_hostapd ()
+{
+systemctl daemon-reload
+hostapd_error=""
+[[ -n $1 && -n $2 ]] && dialog --title " $1 " --backtitle "$BACKTITLE" --no-collapse --colors --infobox "$2" 5 $((${#2}-3))
+service hostapd stop
+rm -f /var/run/hostapd/*
+sleep 1
+service hostapd start
+sleep 6
+if [[ "$(hostapd_cli ping 2> /dev/null| grep PONG)" == "PONG" ]]; then
+		hostapd_error=""
+	else
+		hostapd_error=$(hostapd /etc/hostapd.conf)
+		sleep 6
+		[[ -n $(echo $hostapd_error | grep "channel") ]] && hostapd_error="channel_restriction"
+		[[ -n $(echo $hostapd_error | grep "does not support" | grep "hw_mode") ]] && hostapd_error="hw_mode"
+		[[ -n $(echo $hostapd_error | grep "not found from the channel list" | grep "802.11g") ]] && hostapd_error="wrong_channel"
+		[[ -n $(echo $hostapd_error | grep "VHT") ]] && hostapd_error="unsupported_vht"
+		[[ -n $(echo $hostapd_error | grep " HT capability") ]] && hostapd_error="unsupported_ht"
+fi
+}
+
+
+#-----------------------------------------------------------------------------------------------------------------------------------------#
+# check all possible wireless modes
+#
+function check_advanced_modes ()
+{
+sed '/### IEEE 802.11n/,/^### IEEE 802.11n/ s/^# *//' -i /etc/hostapd.conf
+check_hostapd "Probing" "\n802.11n \Z1(150-300Mbps)\Z0"
+# check HT capability
+check_ht_capab
+if [[ -z "$hostapd_error" ]]; then
+	sed '/### IEEE 802.11a\>/,/^### IEEE 802.11a\>/ s/^# *//' -i /etc/hostapd.conf
+	sed -i "s/^channel=.*/channel=40/" /etc/hostapd.conf
+	check_hostapd "Probing" "\n802.11a \Z1(5Ghz)\Z0"
+	if [[ "$hostapd_error" == "channel_restriction" ]]; then check_channels; fi
+	if [[ "$hostapd_error" == "channel_restriction" ]]; then
+		# revering configuration
+		sed -i "s/^channel=.*/channel=5/" /etc/hostapd.conf
+		sed '/## IEEE 802.11a\>/,/^## IEEE 802.11a\>/ s/.*/#&/' -i /etc/hostapd.conf
+		check_hostapd "Reverting" "\nWireless \Z1802.11a (5Ghz)\Z0 is not supported"
+	else
+		sed '/### IEEE 802.11ac\>/,/^### IEEE 802.11ac\>/ s/^# *//' -i /etc/hostapd.conf
+		# check VHT capability
+		check_vht_capab
+		if [[ "$hostapd_error" == "unsupported_vht" || "$hostapd_error" == "channel_restriction" ]]; then
+			# revering configuration
+			sed '/## IEEE 802.11ac\>/,/^## IEEE 802.11ac\>/ s/.*/#&/' -i /etc/hostapd.conf
+			check_hostapd "Reverting" "\nWireless 802.11ac \Z1(433Mbps x n @ 5Ghz)\Z0 is not supported"
+			if [[ "$hostapd_error" == "channel_restriction" ]]; then check_channels; fi
+		fi
+	fi
+else
+	sed '/## IEEE 802.11n/,/^## IEEE 802.11n/ s/.*/#&/' -i /etc/hostapd.conf
+fi
+}
+
+
+#-----------------------------------------------------------------------------------------------------------------------------------------#
+#
+# create interface configuration section
+#
+function create_if_config() {
+		address=$(ip -4 addr show dev $1 | awk '/inet/ {print $2}' | cut -d'/' -f1)
+		netmask=$(ip -4 addr show dev $1 | awk '/inet/ {print $2}' | cut -d'/' -f2)
+		gateway=$(route -n | grep 'UG[ \t]' | awk '{print $2}' | sed -n '1p')
+		echo -e "# armbian-config created"
+		echo -e "source /etc/network/interfaces.d/*\n"
+		echo -e "# Local loopback\nauto lo\niface lo init loopback\n"
+		echo -e "# Interface $2\nallow-hotplug $2\nno-auto-down $2"
+		if [[ "$3" != "fixed" ]]; then
+			echo -e "iface $2 inet dhcp"
+		else
+			echo -e "iface $2 inet static\n\taddress $address\n\tnetmask $netmask\n\tgateway $gateway\n\tdns-nameservers 8.8.8.8"
+		fi
+} #
+
+
+#-----------------------------------------------------------------------------------------------------------------------------------------#
+#
+# reaload network related services. some are "just in case"
+#
+function reload-nety() {
+	systemctl daemon-reload
+	if [[ "$1" == "reload" ]]; then WHATODO="Reloading services"; else WHATODO="Stopping services"; fi
+	(service network-manager stop; echo 10; sleep 1; service hostapd stop; echo 20; sleep 1; service dnsmasq stop; echo 30; sleep 1;\
+	[[ "$1" == "reload" ]] && service dnsmasq start && echo 60 && sleep 1 && service hostapd start && echo 80 && sleep 1;\
+	service network-manager start; echo 90; sleep 5;) | dialog --backtitle "$BACKTITLE" --title " $WHATODO " --gauge "" 6 70 0
+	systemctl restart systemd-resolved.service
+}
+
+
+#-----------------------------------------------------------------------------------------------------------------------------------------#
+#
+# Check if something is running on port $1 and display info
+#
+check_port ()
+{
+[[ -n $(netstat -lnt | awk '$6 == "LISTEN" && $4 ~ ".'$1'"') ]] && dialog --backtitle "$BACKTITLE" --title "Checking service" \
+--msgbox "\nIt looks good.\n\nThere is $2 service on port $1" 9 52
+}
+
+
+#-----------------------------------------------------------------------------------------------------------------------------------------#
+#
+# show disclaimer
+#
+function beta_disclaimer ()
+{
+exec 3>&1
+ACKNOWLEDGEMENT=$(dialog --nocancel --backtitle "$BACKTITLE" --no-collapse --title " Warning " \
+--clear \--radiolist "\n$1.\n \n" 12 56 7 "Yes, I understand" "" off	 2>&1 1>&3)
+exec 3>&-
+}
+
+
+#-----------------------------------------------------------------------------------------------------------------------------------------#
+#
+# show box
+#
+function show_box ()
+{
+dialog --colors --backtitle "$BACKTITLE" --no-collapse --title " $1 " --clear --msgbox "\n$2\n \n" $3 56
+}
+
+
+#-----------------------------------------------------------------------------------------------------------------------------------------#
+#
+# check wifi high throughput
+#
+function check_ht_capab ()
+{
+declare -a arr=("[HT40+][LDPC][SHORT-GI-20][SHORT-GI-40][TX-STBC][RX-STBC1][DSSS_CCK-40][SMPS-STATIC]" \
+"[HT40-][SHORT-GI-40][SHORT-GI-40][DSSS_CCK-40]" "[SHORT-GI-20][SHORT-GI-40][HT40+]" "[DSSS_CK-40][HT20+]" "")
+local j=0
+for i in "${arr[@]}"
+do
+	j=$((j+(100/${#arr[@]})))
+	echo $j | dialog --title " Probing HT " --colors --gauge "\nSeeking for optimal \Z1high throughput\Z0 settings." 8 50 0
+	sed -i "s/^ht_capab=.*/ht_capab=$i/" /etc/hostapd.conf
+	check_hostapd
+	if [[ "$hostapd_error" == "channel_restriction" ]]; then check_channels; fi
+	if [[ "$hostapd_error" == "" ]]; then break; fi
+done
+}
+
+
+#-----------------------------------------------------------------------------------------------------------------------------------------#
+#
+# check wifi high throughput
+#
+function check_vht_capab ()
+{
+declare -a arr=("[MAX-MPDU-11454][SHORT-GI-80][TX-STBC-2BY1][RX-STBC-1][MAX-A-MPDU-LEN-EXP3]" "[MAX-MPDU-11454][SHORT-GI-80][RX-STBC-1][MAX-A-MPDU-LEN-EXP3]" "")
+local j=0
+for i in "${arr[@]}"
+do
+	j=$((j+(100/${#arr[@]})))
+	echo $j | dialog --title " Probing VHT " --colors --gauge "\nSeeking for optimal \Z1very high throughput\Z0 settings." 8 54 0
+	sed -i "s/^vht_capab=.*/vht_capab=$i/" /etc/hostapd.conf
+	check_hostapd
+	if [[ "$hostapd_error" == "channel_restriction" ]]; then check_channels; fi
+	if [[ "$hostapd_error" == "" ]]; then break; fi
+done
+}
+
+
+#-----------------------------------------------------------------------------------------------------------------------------------------#
+#
+# check 5Ghz channels
+#
+function check_channels ()
+{
+declare -a arr=("36" "40")
+for i in "${arr[@]}"
+do
+	sed -i "s/^channel=.*/channel=$i/" /etc/hostapd.conf
+	check_hostapd "Probing" "\nChannel:\Z1 ${i}\Z0"
+	if [[ "$hostapd_error" != "channel_restriction" ]]; then break; fi
+done
+}
+
+
+#-----------------------------------------------------------------------------------------------------------------------------------------#
+#
+# show description for MOTD files
+#
+function description
+{
+	case $1 in
+		*header*)
+			echo "Big board logo and kernel info"
+		;;
+		*sysinfo*)
+			echo "Sysinfo - load, ip, memory, uptime, ..."
+		;;
+		*tips*)
+			echo "Shows tip of the day"
+		;;
+		*updates*)
+			echo "Display number of avaliable updates"
+		;;
+		*armbian-config*)
+			echo "Show command for system configuration"
+		;;
+		*autoreboot-warn*)
+			echo "Show warning when reboot is needed"
+		;;
+		*uk.armbian.com*)
+			echo "United Kingdom"
+		;;
+		*.armbian.com*)
+			echo "Estonia"
+		;;
+		*)
+		echo ""
+		;;
+	esac
+}
+
+
+#-----------------------------------------------------------------------------------------------------------------------------------------#
+# edit ip address
+#
+function ip_editor ()
+{
+	exec 3>&1
+	dialog --title " Static IP configuration" --backtitle "$BACKTITLE" --form "\nAdapter: $1
+	\n " 12 38 0 \
+	"Address:"				1 1 "$address"				1 15 15 0 \
+	"Netmask:"			2 1 "$netmask"	2 15 15 0 \
+	"Gateway:"			3 1 "$gateway"			3 15 15 0 \
+	2>&1 1>&3 | {
+		read -r address;read -r netmask;read -r gateway
+		if [[ $? = 0 ]]; then
+				echo -e "# armbian-config created\nsource /etc/network/interfaces.d/*\n" >$3
+				echo -e "# Local loopback\nauto lo\niface lo inet loopback\n" >> $3
+				echo -e "# Interface $2\nallow-hotplug $2\nno-auto-down $2\niface $2 inet static\
+				\n\taddress $address\n\tnetmask $netmask\n\tgateway $gateway\n\tdns-nameservers 8.8.8.8" >> $3
+		fi
+		}
+}
+
+
+#-----------------------------------------------------------------------------------------------------------------------------------------#
+# edit hostapd parameters
+#
+function wlan_edit_basic ()
+{
+	source /etc/hostapd.conf
+	exec 3>&1
+	dialog --title "AP configuration" --backtitle "$BACKTITLE" --form "\nWPA2 enabled, \
+	advanced config: edit /etc/hostapd.conf\n " 12 58 0 \
+	"SSID:"				1 1 "$ssid"				1 31 22 0 \
+	"Password:"			2 1 "$wpa_passphrase"	2 31 22 0 \
+	"Channel:"			3 1 "$channel"			3 31 3 0 \
+	2>&1 1>&3 | {
+		read -r ssid;read -r wpa_passphrase;read -r channel
+		if [[ $? = 0 ]]; then
+				sed -i "s/^ssid=.*/ssid=$ssid/" /etc/hostapd.conf
+				sed -i "s/^wpa_passphrase=.*/wpa_passphrase=$wpa_passphrase/" /etc/hostapd.conf
+				sed -i "s/^channel=.*/channel=$channel/" /etc/hostapd.conf
+				wpa_psk=$(wpa_passphrase $ssid $wpa_passphrase | grep '^[[:blank:]]*[^[:blank:]#;]' | grep psk | cut -d= -f2-)
+				sed -i "s/^wpa_psk=.*/wpa_psk=$wpa_psk/" /etc/hostapd.conf
+		fi
+		}
+}
+
+
+#-----------------------------------------------------------------------------------------------------------------------------------------#
+# edit hostapd parameters
+#
+function wlan_edit ()
+{
+	# select default interfaces if there is more than one
+	select_default_interface
+	dialog --title " Configuration edit " --colors --backtitle "$BACKTITLE" --help-button --help-label "Cancel" --yes-label "Basic" \
+	--no-label "Advanced" --yesno "\n\Z1Basic:\Z0    Change SSID, password and channel\n\n\Z1Advanced:\Z0 Edit /etc/hostapd.conf file" 9 70
+	if [[ $? = 0 ]]; then
+		wlan_edit_basic
+	elif [[ $? = 1 ]]; then
+		dialog --backtitle "$BACKTITLE" --title " Edit hostapd configuration /etc/hostapd.conf" --no-collapse \
+		--ok-label "Save" --editbox /etc/hostapd.conf 30 0 2> /etc/hostapd.conf.out
+		[[ $? = 0 ]] && mv /etc/hostapd.conf.out /etc/hostapd.conf && service hostapd restart
+	fi
+}
+
+
+#-----------------------------------------------------------------------------------------------------------------------------------------#
+# naming exceptions for packages
+#
+function exceptions ()
+{
+	TARGET_FAMILY=$LINUXFAMILY
+	UBOOT_BRANCH=$TARGET_BRANCH # uboot naming is different
+
+	if [[ $TARGET_BRANCH == "default" ]]; then TARGET_BRANCH=""; else TARGET_BRANCH="-"$TARGET_BRANCH; fi
+	if [[ $TARGET_FAMILY == sun*i ]]; then
+		TARGET_FAMILY="sunxi"
+		if [[ $UBOOT_BRANCH == "default" ]]; then
+			TARGET_FAMILY=$(cat /proc/cpuinfo | grep "Hardware" | sed 's/^.*Allwinner //' | awk '{print $1;}')
+		fi
+	fi
+}
+
+
+#-----------------------------------------------------------------------------------------------------------------------------------------#
+# here we add wifi exceptions
+#
+function wlan_exceptions ()
+{
+	reboot_module=false
+	[[ -n "$(lsmod | grep -w dhd)" && $1 = "on" ]] && \
+	echo 'options dhd op_mode=2' >/etc/modprobe.d/ap6212.conf && rmmod dhd && modprobe dhd
+	[[ -n "$(lsmod | grep -w dhd)" && $1 = "off" ]] && \
+	rm /etc/modprobe.d/ap6212.conf && rmmod dhd && modprobe dhd
+	# Cubietruck
+	[[ -n "$(lsmod | grep -w ap6210)" && $1 = "on" ]] && \
+	echo 'options ap6210 op_mode=2' >/etc/modprobe.d/ap6210.conf && reboot_module=true
+	[[ -n "$(lsmod | grep -w ap6210)" && $1 = "off" ]] && \
+	rm /etc/modprobe.d/ap6210.conf && reboot_module=true
+
+}
+
+#-----------------------------------------------------------------------------------------------------------------------------------------#
+# here add shaddy wifi adaptors
+#
+function check_and_warn ()
+{
+local shaddy=false
+# blacklist
+[[ "$LINUXFAMILY" == "sun8i" && $BOARD == "orangepizero" ]] && shaddy=true
+[[ -n "$(lsmod | grep mt7601u)" ]] && shaddy=true
+[[ -n "$(lsmod | grep r8188eu)" ]] && shaddy=true
+# blacklist
+if [[ "$shaddy" == "true" ]]; then
+dialog --title " Warning " --ok-label " Accept and proceed " --msgbox '\nOne of your wireless drivers are on a black list due to poor quality.\n\nAP mode might not be possible!' 9 73
+fi
+}
+
+
+#-----------------------------------------------------------------------------------------------------------------------------------------#
+# check if board has alternative kernels
+#
+function aval_kernel ()
+{
+	IFS=$'\r\n'
+	GLOBIGNORE='*'
+	AVAL_KERNEL=($(apt-cache search --names-only '^linux-'$(lsb_release	 -cs)'-root.*.'$BOARD'*' \
+	| grep -w "$BOARD " | sed 's/.*(\(.*\))/\1/' | awk '{print $1}' | grep -v "$BRANCH" ))
+	local LIST=()
+	for i in "${AVAL_KERNEL[@]}"
+	do
+			LIST+=( "${i[0]//[[:blank:]]/}" "" )
+	done
+	LIST_LENGHT=$((${#LIST[@]}/2));
+	if [ "$LIST_LENGHT" -eq 1 ]; then
+			TARGET_BRANCH=${AVAL_KERNEL[0]}
+	else
+			exec 3>&1
+			TARGET_BRANCH=$(dialog --cancel-label "Cancel" --backtitle "$BACKTITLE" --no-collapse \
+			--title "Upgrade from $BRANCH to:" --clear --menu "" $((6+${LIST_LENGHT})) 40 15 "${LIST[@]}" 2>&1 1>&3)
+			exitstatus=$?;
+			exec 3>&-
+	fi
+}
+
+
+#-----------------------------------------------------------------------------------------------------------------------------------------#
+# check if board has alternative kernels
+#
+function aval_cubox ()
+{
+	LIST=("imx6dl-hummingboard.dtb" "HB Solo/DualLite" "imx6dl-hummingboard-emmc-som-v15.dtb" "HB Solo/DualLite v1.5 with eMMC" "imx6dl-hummingboard-som-v15.dtb" "HB Solo/DualLite v1.5" \
+	"imx6dl-hummingboard2.dtb" "HB2 Solo/DualLite" "imx6dl-hummingboard2-emmc-som-v15.dtb" "HB2 Solo/DualLite v1.5 with eMMC" "imx6dl-hummingboard2-som-v15.dtb" "HB2 Solo/DualLite v1.5" \
+	"imx6q-hummingboard.dtb" "HB Dual/Quad" "imx6q-hummingboard-emmc-som-v15.dtb" "HB Dual/Quad v1.5 with eMMC" "imx6q-hummingboard-som-v15.dtb" "HB Dual/Quad v1.5" \
+	"imx6q-hummingboard2.dtb" "HB2 Dual/Quad" "imx6q-hummingboard2-emmc-som-v15.dtb" "HB2 Dual/Quad v1.5 with eMMC" "imx6q-hummingboard2-som-v15.dtb" "HB2 Dual/Quad v1.5" \
+	"imx6dl-cubox-i.dtb" "Cubox-i Solo/DualLite" "imx6dl-cubox-i-emmc-som-v15.dtb" "Cubox-i Solo/DualLite v1.5 with eMMC" "imx6dl-cubox-i-som-v15.dtb" "Cubox-i Solo/DualLite v1.5" \
+	"imx6q-cubox-i.dtb" "Cubox-i Dual/Quad" "imx6q-cubox-i-emmc-som-v15.dtb" "Cubox-i Dual/Quad v1.5 with eMMC" "imx6q-cubox-i-som-v15.dtb" "Cubox-i Dual/Quad v1.5")
+
+	LIST_LENGHT=$((${#LIST[@]}/2));
+	if [ "$LIST_LENGHT" -eq 1 ]; then
+			TARGET_BOARD=${AVAL_KERNEL[0]}
+	else
+			exec 3>&1
+			TARGET_BOARD=$(dialog --cancel-label "Cancel" --backtitle "$BACKTITLE" --no-collapse \
+			--title "Select board configuration" --clear --menu "" $((6+${LIST_LENGHT})) 80 25 "${LIST[@]}" 2>&1 1>&3)
+			exitstatus=$?;
+			exec 3>&-
+	fi
+}
+
+
+#-----------------------------------------------------------------------------------------------------------------------------------------#
+# select video modes for a10 and a20
+#
+function get_a20modes ()
+{
+	IFS=$'\r'
+	GLOBIGNORE='*'
+	SCREEN_RESOLUTION=("1920x1080p60" "1280x720p60" "1920x1080p50" "1280x1024p60" "1024x768p60" "800x600p60" "640x480p60" "1360x768p60" "1440x900p60" "1680x1050p60")
+	local LIST=()
+	for i in "${SCREEN_RESOLUTION[@]}"
+	do
+			LIST+=( "${i[0]//[[:blank:]]/}" "" )
+	done
+	LIST_LENGHT=$((${#LIST[@]}/2));
+	#echo $LIST_LENGHT
+	#exit
+	if [ "$LIST_LENGHT" -eq 1 ]; then
+			SCREEN_RESOLUTION=${SCREEN_RESOLUTION[0]}
+	else
+			exec 3>&1
+			SCREEN_RESOLUTION=$(dialog --nocancel --backtitle "$BACKTITLE" --no-collapse \
+			--title "Select video mode" --clear --menu "" $((6+${LIST_LENGHT})) 25 $((1+${LIST_LENGHT})) "${LIST[@]}" 2>&1 1>&3)
+			exec 3>&-
+	fi
+}
+
+
+#-----------------------------------------------------------------------------------------------------------------------------------------#
+# select video modes for h3
+#
+function get_h3modes ()
+{
+	IFS=$'\r\n'
+	GLOBIGNORE='*'
+	SCREEN_RESOLUTION=($(h3disp -i))
+	local LIST=()
+	for i in "${SCREEN_RESOLUTION[@]}"
+	do
+			LIST+=( "${i[0]//[[:blank:]]/}" "" )
+	done
+	LIST_LENGHT=$((${#LIST[@]}/2));
+	#echo $LIST_LENGHT
+	#exit
+	if [ "$LIST_LENGHT" -eq 1 ]; then
+			SCREEN_RESOLUTION=${SCREEN_RESOLUTION[0]}
+	else
+			exec 3>&1
+			SCREEN_RESOLUTION=$(dialog --nocancel --backtitle "$BACKTITLE" --no-collapse \
+			--title "Select video mode" --clear --menu "" $((6+${LIST_LENGHT})) 25 $((1+${LIST_LENGHT})) "${LIST[@]}" 2>&1 1>&3)
+			exec 3>&-
+	fi
+}
+
+
+#-----------------------------------------------------------------------------------------------------------------------------------------#
+# search for wlan interfaces and provide a selection menu if there are more than one
+#
+function get_wlan_interface ()
+{
+	IFS=$'\r\n'
+	GLOBIGNORE='*'
+
+	WLAN_INTERFACES=($(LC_ALL=C nmcli --wait 10 dev status | grep wifi | grep disconnected |awk '{print $1}'))
+	local LIST=()
+	for i in "${WLAN_INTERFACES[@]}"
+	do
+			LIST+=( "${i[0]//[[:blank:]]/}" "" )
+	done
+	LIST_LENGHT=$((${#LIST[@]}/2));
+
+	if [ "$LIST_LENGHT" -eq 1 ]; then
+			WIRELESS_ADAPTER=${WLAN_INTERFACES[0]}
+	else
+			exec 3>&1
+			WIRELESS_ADAPTER=$(dialog --nocancel --backtitle "$BACKTITLE" --no-collapse \
+			--title "Select interface" --clear --menu "" $((6+${LIST_LENGHT})) 40 15 "${LIST[@]}" 2>&1 1>&3)
+			exec 3>&-
+	fi
+}
+
+
+#-----------------------------------------------------------------------------------------------------------------------------------------#
+# select interface if there is more than one
+#
+function select_default_interface ()
+{
+	IFS=$'\r\n'
+	GLOBIGNORE='*'
+	local ADAPTER=($(ls /sys/class/net | grep -E -v 'lo|tun|bonding_masters|dummy0|bond0|sit0'))
+	local LIST=()
+	for i in "${ADAPTER[@]}"
+	do
+			local IPADDR=$(ip -4 addr show dev ${i[0]} | awk '/inet/ {print $2}' | cut -d'/' -f1)
+			LIST+=( "${i[0]//[[:blank:]]/}" "${IPADDR}" )
+	done
+	LIST_LENGHT=$((${#LIST[@]}/2));
+	if [ "$LIST_LENGHT" -eq 0 ]; then
+			DEFAULT_ADAPTER="lo"
+	elif [ "$LIST_LENGHT" -eq 1 ]; then
+			DEFAULT_ADAPTER=${ADAPTER[0]}
+	else
+			exec 3>&1
+			DEFAULT_ADAPTER=$(dialog --nocancel --backtitle "$BACKTITLE" --no-collapse \
+			--title "Select default interface" --clear --menu "" $((6+${LIST_LENGHT})) 40 15 "${LIST[@]}" 2>&1 1>&3)
+			exec 3>&-
+	fi
+}
+
+
+#-----------------------------------------------------------------------------------------------------------------------------------------#
+# search for BT devices and connect
+#
+function connect_bt_interface ()
+{
+		IFS=$'\r\n'
+		GLOBIGNORE='*'
+		dialog --backtitle "$BACKTITLE" --title "Please wait" --infobox "\nDiscovering Bluetooth devices ... " 5 37
+		BT_INTERFACES=($(hcitool scan | sed '1d'))
+
+		local LIST=()
+		for i in "${BT_INTERFACES[@]}"
+		do
+			local a=$(echo ${i[0]//[[:blank:]]/} | sed -e 's/^\(.\{17\}\).*/\1/')
+			local b=${i[0]//$a/}
+			local b=$(echo $b | sed -e 's/^[ \t]*//')
+			LIST+=( "$a" "$b")
+		done
+
+		LIST_LENGHT=$((${#LIST[@]}/2));
+		if [ "$LIST_LENGHT" -eq 0 ]; then
+			BT_ADAPTER=${WLAN_INTERFACES[0]}
+			dialog --backtitle "$BACKTITLE" --title "Bluetooth" --msgbox "\nNo nearby Bluetooth devices were found!" 7 43
+		else
+			exec 3>&1
+			BT_ADAPTER=$(dialog --backtitle "$BACKTITLE" --no-collapse --title "Select interface" \
+			--clear --menu "" $((6+${LIST_LENGHT})) 50 15 "${LIST[@]}" 2>&1 1>&3)
+			exec 3>&-
+			if [[ $BT_ADAPTER != "" ]]; then
+				dialog --backtitle "$BACKTITLE" --title "Please wait" --infobox "\nConnecting to $BT_ADAPTER " 5 35
+				BT_EXEC=$(
+				expect -c 'set prompt "#";set address '$BT_ADAPTER';spawn bluetoothctl;expect -re $prompt;send "disconnect $address\r";
+				sleep 1;send "remove $address\r";sleep 1;expect -re $prompt;send "scan on\r";sleep 8;send "scan off\r";
+				expect "Controller";send "trust $address\r";sleep 2;send "pair $address\r";sleep 2;send "connect $address\r";
+				send_user "\nShould be paired now.\r";sleep 2;send "quit\r";expect eof')
+				echo "$BT_EXEC" > /tmp/bt-connect-debug.log
+					if [[ $(echo "$BT_EXEC" | grep "Connection successful" ) != "" ]]; then
+						dialog --backtitle "$BACKTITLE" --title "Bluetooth" --msgbox "\nYour device is ready to use!" 7 32
+					else
+						dialog --backtitle "$BACKTITLE" --title "Bluetooth" --msgbox "\nError connecting. Try again!" 7 32
+					fi
+			fi
+		fi
+}
+
+
+
+
+
+
+
+
+#-----------------------------------------------------------------------------------------------------------------------------------------#
+# system
+#
+function submenu_settings ()
+{
+while true; do
+
+	LIST=()
+
+	[[ $(sed -n 's/^DEVNAME=//p' /sys/dev/block/$(mountpoint -d /)/uevent 2> /dev/null) == mmcblk* && -f /usr/sbin/nand-sata-install ]] \
+	&& LIST+=( "Install" "Install to SATA, eMMC, NAND or USB" )
+	if [[ -n $(apt-mark showhold | grep -w "$BOARD") ]]; then
+			LIST+=( "Defreeze" "Enable kernel upgrades" )
+		else
+			LIST+=( "Freeze" "Disable kernel upgrades" )
+	fi
+	if [[ -z $(apt-mark showhold | grep -w "$BOARD") ]]; then
+	[[ -f /etc/apt/sources.list.d/armbian.list ]] && [[ -n $(grep -w apt /etc/apt/sources.list.d/armbian.list) ]] \
+		&& LIST+=( "Nightly" "Switch to nightly automated builds" )
+	[[ -f /etc/apt/sources.list.d/armbian.list ]] && [[ -n $(grep -w beta /etc/apt/sources.list.d/armbian.list) ]] \
+		&& LIST+=( "Stable" "Switch to stable builds" )
+	fi
+	[[ -n $(grep -w "#kernel.printk" /etc/sysctl.conf ) ]] && LIST+=( "Lowlevel" "Stop low-level messages on console" )
+	[[ -f /boot/armbianEnv.txt ]] && LIST+=( "Bootenv" "Edit boot environment" )
+	[[ -f /boot/boot.ini ]] && LIST+=( "Bootscript" "Edit boot script" )
+
+	[[ -d ${OVERLAYDIR} ]] && \
+	LIST+=( "Hardware" "Toggle hardware configuration: UART, I2C, etc." )
+	[[ "$LINUXFAMILY" = cubox && "$BRANCH" = "next" ]] && LIST+=( "DTB" "Switch board .dtb configuration" )
+	[[ -f /usr/bin/bin2fex && "$LINUXFAMILY" = sun*i && "$BRANCH" = "default" ]] && LIST+=( "Fexedit" "Board (fex) settings editor" )
+	[[ $(apt-cache search --names-only '^linux-'$(lsb_release  -cs)'-root.*.'$BOARD'' | sed 's/.*(\(.*\))/\1/' | awk '{print $1}' \
+	| wc -l) -gt 1 ]] && LIST+=( "Switch" "Switch to alternative kernels" )
+
+
+	LIST+=( "SSH" "Reconfigure SSH daemon" )
+	LIST+=( "Firmware" "Run apt update & apt upgrade" )
+	[[ "$LINUXFAMILY" = sun*i && "$BRANCH" = "default" && \
+	-n $(bin2fex </boot/script.bin 2>/dev/null | grep -w "hdmi_used = 1") ]] && LIST+=( "Display" "set the display resolution" )
+
+
+	if [[ -n $DISPLAY_MANAGER ]]; then
+			LIST+=( "Desktop" "Disable desktop" )
+			[[ $DISPLAY_MANAGER == 'nodm' ]] && 			LIST+=( "Lightdm" "Switch to standard login manager" )
+			[[ $DISPLAY_MANAGER == 'lightdm' ]] && 			LIST+=( "Nodm" "Switch to simple auto login manager" )
+		elif [[ -n $DESKTOP_INSTALLED ]]; then
+			LIST+=( "Desktop" "Enable desktop" )
+	fi
+
+
+	LIST+=( "Services" "Toggle running services" )
+	if [[ "$DISTRO" == "Ubuntu" && "$(modinfo overlay > /dev/null 2>&1; echo $?)" == "0" ]]; then
+		if [ -n "$(mount | grep -w tmpfs-root)" ]; then
+			LIST+=( "Overlayroot" "Disable virtual read-only root filesystem" )
+		else
+			LIST+=( "Overlayroot" "Enable virtual read-only root filesystem" )
+		fi
+	fi
+
+	# count number of menu items to adjust window sizee
+	LISTLENGHT="$((6+${#LIST[@]}/2))"
+	BOXLENGHT=${#LIST[@]}
+
+	exec 3>&1
+	selection=$(dialog --colors --backtitle "$BACKTITLE" --title " System settings " --clear \
+	--cancel-label "Cancel" --menu "$disclaimer" $LISTLENGHT 70 $BOXLENGHT \
+	"${LIST[@]}" 2>&1 1>&3)
+	exit_status=$?
+	exec 3>&-
+	[[ $exit_status == $DIALOG_CANCEL || $exit_status == $DIALOG_ESC ]] && clear && break
+
+	# run main function
+	jobs "$selection"
+done
+}
+
+
+#-----------------------------------------------------------------------------------------------------------------------------------------#
+# menu for networking
+#
+function submenu_networking ()
+{
+
+# if there is more than one connected device
+select_default_interface
+
+while true; do
+
+	LIST=()
+
+	LIST+=( "IP" "Select dynamic or edit static IP address" )
+	HOSTAPDBRIDGE=$(cat /etc/hostapd.conf 2> /dev/null | grep -w "^bridge=br0")
+	HOSTAPDSTATUS=$(service hostapd status | grep -w active | grep -w running)
+	if [[ -n "$HOSTAPDSTATUS" ]]; then
+			HOSTAPDINFO=$(hostapd_cli get_config 2> /dev/null | grep ^ssid | sed 's/ssid=//g')
+			HOSTAPDCLIENTS=$(hostapd_cli all_sta 2> /dev/null | grep connected_time | wc -l)
+			LIST+=( "Hotspot" "Manage active wireless access point" )
+		else
+			[[ -n $(LC_ALL=C nmcli device status | grep wifi | grep -w disconnected) ]] && LIST+=( "Hotspot" "Create WiFi access point" )
+
+	fi
+
+	if pgrep -x "iperf3" > /dev/null
+	then
+		LIST+=( "Iperf3" "Disable network throughput tests daemon" )
+		else
+		LIST+=( "Iperf3" "Enable network throughput tests daemon" )
+	fi
+
+
+	if [[ -n $(LC_ALL=C nmcli device status | grep wifi | grep -v unavailable | grep -v unmanaged) ]]; then
+		LIST+=( "WiFi" "Manage wireless networking" )
+	else
+		LIST+=( "Clear" "Clear possible blocked interfaces" )
+	fi
+	check_if_installed lirc && LIST+=( "Remove IR" "Remove IR support" ) || LIST+=( "IR" "Install IR support" )
+	if check_if_installed bluetooth then ; then
+			LIST+=( "BT remove" "Remove Bluetooth support" )
+			if [[ -n $(service bluetooth status | grep -w active | grep -w running) ]]; then
+				[[ $(hcitool dev | sed '1d') != "" ]] && LIST+=( "BT discover" "Discover and connect Bluetooth devices" )
+			fi
+		else
+			LIST+=( "BT install" "Install Bluetooth support" )
+	fi
+
+
+
+	[[ -d /usr/local/vpnclient ]] && LIST+=( "VPN" "Manage Softether VPN client" ) && VPNSERVERIP=$(/usr/local/vpnclient/vpncmd /client localhost /cmd accountlist | grep "VPN Server" |grep -o '[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}' | head -1)
+
+	LIST+=( "Advanced" "Edit /etc/network/interfaces" )
+	[[ $(ls -1 /etc/NetworkManager/system-connections 2> /dev/null) ]] && \
+	LIST+=( "Forget" "Disconnect and forget all wireless connections" )
+
+	# count number of menu items to adjust window sizee
+	LISTLENGHT="$((12+${#LIST[@]}/2))"
+	BOXLENGHT=${#LIST[@]}
+	WIFICONNECTED=$(LC_ALL=C nmcli -f NAME,TYPE connection show --active | grep wireless | awk 'NF{NF-=1};1')
+
+	local disclaimer=""
+
+	local ipadd=$(ip -4 addr show dev $DEFAULT_ADAPTER | awk '/inet/ {print $2}' | cut -d'/' -f1)
+
+	if [[ -n $(LC_ALL=C nmcli device status | grep wlan0 | grep connected) ]]; then
+		local ifup="\nIP ($DEFAULT_ADAPTER) via Network Manager: \Z1${ipadd}\n\Z0 "
+	else
+		local ifup="\nIP ($DEFAULT_ADAPTER) via IFUPDOWN: \Z1${ipadd}\n\Z0 "
+	fi
+
+	disclaimer="$ifup"
+
+	if [[ -n $WIFICONNECTED ]]; then
+		LISTLENGHT=$((LISTLENGHT+2))
+		local connected="\n\Z0Connected to SSID: \Z1${WIFICONNECTED}\n\Z0 "
+		disclaimer=$disclaimer"$connected"
+	fi
+
+	if [[ -n $VPNSERVERIP ]]; then
+		local vpnserverip="\n\Z0Connected to VPN server: \Z1${VPNSERVERIP}\n\Z0 "
+		disclaimer=$disclaimer"$vpnserverip"
+		LISTLENGHT=$((LISTLENGHT+2))
+	fi
+
+	if [[ -n $HOSTAPDINFO && -n $HOSTAPDSTATUS ]]; then
+		LISTLENGHT=$((LISTLENGHT+2))
+		chpid=$(dmesg | grep $(grep ^interface /etc/hostapd.conf | sed 's/interface=//g') | head -1 | sed 's/\[.*\]//g' | awk '{print $1}')
+		disclaimer=$disclaimer$"\n\Z0Hotspot SSID: \Z1$HOSTAPDINFO\Zn Band:";
+		if [[ `grep ^hw_mode=a /etc/hostapd.conf` ]]; then local band="5Ghz"; else band="2.4Ghz"; fi
+		if [[ `grep ^ieee80211n /etc/hostapd.conf` ]]; then local type="N"; fi
+		if [[ `grep ^ieee80211ac /etc/hostapd.conf` ]]; then local type="AC"; fi
+		disclaimer=$disclaimer$" \Z1${band} ${type}\Z0"
+		[[ ! "$chpid" =~ .*IPv6.* ]] && disclaimer=$disclaimer$"\n\nChip: \Z1${chpid}\Z0";
+		if [ "$HOSTAPDCLIENTS" -gt "0" ]; then disclaimer=$disclaimer$" Connected clients: \Z1$HOSTAPDCLIENTS\Zn"; fi
+		if [[ ! "$chpid" =~ .*IPv6.* ]]; then LISTLENGHT=$((LISTLENGHT+2)); fi
+		disclaimer=$disclaimer$"\n";
+	fi
+	disclaimer=$disclaimer"\n\Z1Note\Zn: This tool can be successful only when drivers are in good shape. If autodetection fails, you are on your own.\n "
+
+	exec 3>&1
+	selection=$(dialog --backtitle "$BACKTITLE" --colors --title " Wired, Wireless, Bluetooth, Hotspot " --clear \
+	--cancel-label "Cancel" --menu "${disclaimer}" $LISTLENGHT 70 $BOXLENGHT \
+	"${LIST[@]}" 2>&1 1>&3)
+	exit_status=$?
+	exec 3>&-
+	[[ $exit_status == $DIALOG_CANCEL || $exit_status == $DIALOG_ESC ]] && clear && break
+
+	# run main function
+	jobs "$selection"
+
+done
+}
+
+
+#-----------------------------------------------------------------------------------------------------------------------------------------#
+# personal
+#
+function submenu_personal ()
+{
+while true; do
+
+	LIST=()
+	LIST+=( "Timezone" "Change timezone \Z5($(date +%Z))\Z0" )
+	LIST+=( "Locales" "Reconfigure language \Z5($(locale | grep LANGUAGE | cut -d= -f2 | cut -d_ -f1))\Z0 and character set" )
+	LIST+=( "Hostname" "Change your hostname \Z5($(cat /etc/hostname))\Z0" )
+	[[ -f /etc/apt/sources.list.d/armbian.list ]] && LIST+=( "Mirror" "Change repository server" )
+	LIST+=( "Welcome" "Toggle welcome screen items" )
+
+	# count number of menu items to adjust window sizee
+	LISTLENGHT="$((6+${#LIST[@]}/2))"
+	BOXLENGHT=${#LIST[@]}
+
+	exec 3>&1
+	selection=$(dialog --colors --backtitle "$BACKTITLE" --title "Personal settings" --clear \
+	--cancel-label "Cancel" --menu "$disclaimer" $LISTLENGHT 70 $BOXLENGHT \
+	"${LIST[@]}" 2>&1 1>&3)
+	exit_status=$?
+	exec 3>&-
+	[[ $exit_status == $DIALOG_CANCEL || $exit_status == $DIALOG_ESC ]] && clear && break
+
+	# run main function
+	jobs "$selection"
+
+done
+}
+
+
+#-----------------------------------------------------------------------------------------------------------------------------------------#
+# software
+#
+function submenu_software ()
+{
+while true; do
+
+	LIST=()
+	[[ -f /usr/bin/softy ]] && LIST+=( "Softy" "3rd party applications installer" )
+	[[ -f /usr/bin/h3consumption && "$LINUXFAMILY" = "sun8i" && "$BRANCH" = "default" ]] && \
+	LIST+=( "Consumption" "Control board consumption" )
+	[[ -f /usr/bin/armbianmonitor ]] && LIST+=( "Monitor" "Simple CLI board monitoring" )
+	[[ -f /usr/bin/armbianmonitor ]] && LIST+=( "Diagnostics" "Send diagnostics" )
+
+	if [[ -n $(dpkg -l | grep linux-headers) ]]; then LIST+=( "Headers" "Remove kernel headers" ); else \
+	LIST+=( "Headers" "Install kernel headers" ); fi
+	if check_if_installed build-essential then ; then
+		LIST+=( "Development" "Remove base development tools" );
+		else
+		LIST+=( "Development" "Install base development tools" );
+	fi
+	if [[ -n $DISPLAY_MANAGER ]]; then
+			if [[ $(service xrdp status 2> /dev/null | grep -w active) ]]; then
+				LIST+=( "RDP" "Disable remote desktop access from Windows" )
+				else
+				LIST+=( "RDP" "Enable remote desktop access from Windows" )
+			fi
+	fi
+
+	# count number of menu items to adjust window sizee
+	LISTLENGHT="$((6+${#LIST[@]}/2))"
+	BOXLENGHT=${#LIST[@]}
+
+	exec 3>&1
+	selection=$(dialog --backtitle "$BACKTITLE" --title "System and 3rd party software" --clear \
+	--cancel-label "Cancel" --menu "$disclaimer" $LISTLENGHT 70 $BOXLENGHT \
+	"${LIST[@]}" 2>&1 1>&3)
+	exit_status=$?
+	exec 3>&-
+	[[ $exit_status == $DIALOG_CANCEL || $exit_status == $DIALOG_ESC ]] && clear && break
+
+	# run main function
+	jobs "$selection"
+
+done
+}
+
+
+
+
+DIALOG_CANCEL=1
+DIALOG_ESC=255
+
+#-----------------------------------------------------------------------------------------------------------------------------------------#
+# gather info about the board and start with loading menu
+#
+[[ -f /etc/armbian-release ]] && source /etc/armbian-release && ARMBIAN="Armbian $VERSION $IMAGE_TYPE";
+DISTRO=$(lsb_release -is)
+DISTROID=$(lsb_release -sc)
+KERNELID=$(uname -r)
+[[ -z "${ARMBIAN// }" ]] && ARMBIAN=$KERNELID
+BACKTITLE="Configuration utility, $ARMBIAN, https://www.armbian.com"
+TITLE="$BOARD_NAME "
+DEFAULT_ADAPTER=$(ip -4 route ls | grep default | grep -Po '(?<=dev )(\S+)')
+[[ -z "${DEFAULT_ADAPTER// }" ]] && DEFAULT_ADAPTER="lo"
+# detect desktop
+DISPLAY_MANAGER=""; DESKTOP_INSTALLED=""
+check_if_installed bluetooth nodm && DESKTOP_INSTALLED="nodm";
+check_if_installed bluetooth lightdm && DESKTOP_INSTALLED="lightdm";
+[[ -n $(service lightdm status 2> /dev/null | grep -w active) ]] && DISPLAY_MANAGER="lightdm"
+[[ -n $(service nodm status 2> /dev/null | grep -w active) ]] && DISPLAY_MANAGER="nodm"
+OVERLAYDIR="/boot/dtb/overlay";
+[[ "$LINUXFAMILY" == "sunxi64" ]] && OVERLAYDIR="/boot/dtb/allwinner/overlay";
+dialog --backtitle "$BACKTITLE" --title "Please wait" --infobox "\nLoading Armbian configuration utility ... " 5 45
+sleep 1

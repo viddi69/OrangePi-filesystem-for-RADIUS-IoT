@@ -1,0 +1,275 @@
+default-duid "\000\004$\360\323\365\006\354\026m\342\264\024\363\005$;\334";
+lease6 {
+  interface "eth0";
+  ia-na 98:7f:73:22 {
+    starts 1529498634;
+    renew 21600;
+    rebind 34560;
+    iaaddr fd07:3bb5:c7b1::e4c {
+      starts 1529498634;
+      preferred-life 2147483647;
+      max-life 2147483647;
+    }
+  }
+  option dhcp6.client-id 0:4:24:f0:d3:f5:6:ec:16:6d:e2:b4:14:f3:5:24:3b:dc;
+  option dhcp6.server-id 0:3:0:1:58:6d:8f:f5:b1:54;
+  option dhcp6.solmax-rt 60;
+  option dhcp6.name-servers fe80::5a6d:8fff:fef5:b154;
+}
+lease6 {
+  interface "eth0";
+  ia-na 98:7f:73:22 {
+    starts 1529504237;
+    renew 21600;
+    rebind 34560;
+    iaaddr fd07:3bb5:c7b1::e4c {
+      starts 1529504237;
+      preferred-life 4294967295;
+      max-life 4294967295;
+    }
+  }
+  option dhcp6.client-id 0:4:24:f0:d3:f5:6:ec:16:6d:e2:b4:14:f3:5:24:3b:dc;
+  option dhcp6.server-id 0:3:0:1:58:6d:8f:f5:b1:54;
+  option dhcp6.reconf-accept;
+  option dhcp6.solmax-rt 60;
+  option dhcp6.name-servers fe80::5a6d:8fff:fef5:b154;
+  option dhcp6.unknown-11 3:1:0:5b:2d:47:d9:0:0:0:6:1:29:2c:93:99:24:6c:52:d6:35:91:b5:fe:9:2:97:14;
+}
+lease6 {
+  interface "eth0";
+  ia-na 98:7f:73:22 {
+    starts 1529715768;
+    renew 21600;
+    rebind 34560;
+    iaaddr fd07:3bb5:c7b1::e4c {
+      starts 1529715768;
+      preferred-life 4294967295;
+      max-life 4294967295;
+    }
+  }
+  option dhcp6.client-id 0:4:24:f0:d3:f5:6:ec:16:6d:e2:b4:14:f3:5:24:3b:dc;
+  option dhcp6.server-id 0:3:0:1:58:6d:8f:f5:b1:54;
+  option dhcp6.solmax-rt 60;
+  option dhcp6.name-servers fe80::5a6d:8fff:fef5:b154;
+}
+lease6 {
+  interface "eth0";
+  ia-na 98:7f:73:22 {
+    starts 1529737368;
+    renew 21600;
+    rebind 34560;
+    iaaddr fd07:3bb5:c7b1::e4c {
+      starts 1529737368;
+      preferred-life 4294967295;
+      max-life 4294967295;
+    }
+  }
+  option dhcp6.client-id 0:4:24:f0:d3:f5:6:ec:16:6d:e2:b4:14:f3:5:24:3b:dc;
+  option dhcp6.server-id 0:3:0:1:58:6d:8f:f5:b1:54;
+  option dhcp6.solmax-rt 60;
+  option dhcp6.name-servers fe80::5a6d:8fff:fef5:b154;
+}
+lease6 {
+  interface "eth0";
+  ia-na 98:7f:73:22 {
+    starts 1529758969;
+    renew 21600;
+    rebind 34560;
+    iaaddr fd07:3bb5:c7b1::e4c {
+      starts 1529758969;
+      preferred-life 4294967295;
+      max-life 4294967295;
+    }
+  }
+  option dhcp6.client-id 0:4:24:f0:d3:f5:6:ec:16:6d:e2:b4:14:f3:5:24:3b:dc;
+  option dhcp6.server-id 0:3:0:1:58:6d:8f:f5:b1:54;
+  option dhcp6.solmax-rt 60;
+  option dhcp6.name-servers fe80::5a6d:8fff:fef5:b154;
+}
+lease6 {
+  interface "eth0";
+  ia-na 98:7f:73:22 {
+    starts 1529780569;
+    renew 21600;
+    rebind 34560;
+    iaaddr fd07:3bb5:c7b1::e4c {
+      starts 1529780569;
+      preferred-life 4294967295;
+      max-life 4294967295;
+    }
+  }
+  option dhcp6.client-id 0:4:24:f0:d3:f5:6:ec:16:6d:e2:b4:14:f3:5:24:3b:dc;
+  option dhcp6.server-id 0:3:0:1:58:6d:8f:f5:b1:54;
+  option dhcp6.solmax-rt 60;
+  option dhcp6.name-servers fe80::5a6d:8fff:fef5:b154;
+}
+lease6 {
+  interface "eth0";
+  ia-na 98:7f:73:22 {
+    starts 1529802169;
+    renew 21600;
+    rebind 34560;
+    iaaddr fd07:3bb5:c7b1::e4c {
+      starts 1529802169;
+      preferred-life 4294967295;
+      max-life 4294967295;
+    }
+  }
+  option dhcp6.client-id 0:4:24:f0:d3:f5:6:ec:16:6d:e2:b4:14:f3:5:24:3b:dc;
+  option dhcp6.server-id 0:3:0:1:58:6d:8f:f5:b1:54;
+  option dhcp6.solmax-rt 60;
+  option dhcp6.name-servers fe80::5a6d:8fff:fef5:b154;
+}
+lease6 {
+  interface "eth0";
+  ia-na 98:7f:73:22 {
+    starts 1529823769;
+    renew 21600;
+    rebind 34560;
+    iaaddr fd07:3bb5:c7b1::e4c {
+      starts 1529823769;
+      preferred-life 4294967295;
+      max-life 4294967295;
+    }
+  }
+  option dhcp6.client-id 0:4:24:f0:d3:f5:6:ec:16:6d:e2:b4:14:f3:5:24:3b:dc;
+  option dhcp6.server-id 0:3:0:1:58:6d:8f:f5:b1:54;
+  option dhcp6.solmax-rt 60;
+  option dhcp6.name-servers fe80::5a6d:8fff:fef5:b154;
+}
+lease6 {
+  interface "eth0";
+  ia-na 98:7f:73:22 {
+    starts 1529845369;
+    renew 21600;
+    rebind 34560;
+    iaaddr fd07:3bb5:c7b1::e4c {
+      starts 1529845369;
+      preferred-life 4294967295;
+      max-life 4294967295;
+    }
+  }
+  option dhcp6.client-id 0:4:24:f0:d3:f5:6:ec:16:6d:e2:b4:14:f3:5:24:3b:dc;
+  option dhcp6.server-id 0:3:0:1:58:6d:8f:f5:b1:54;
+  option dhcp6.solmax-rt 60;
+  option dhcp6.name-servers fe80::5a6d:8fff:fef5:b154;
+}
+lease6 {
+  interface "eth0";
+  ia-na 98:7f:73:22 {
+    starts 1529866970;
+    renew 21600;
+    rebind 34560;
+    iaaddr fd07:3bb5:c7b1::e4c {
+      starts 1529866970;
+      preferred-life 4294967295;
+      max-life 4294967295;
+    }
+  }
+  option dhcp6.client-id 0:4:24:f0:d3:f5:6:ec:16:6d:e2:b4:14:f3:5:24:3b:dc;
+  option dhcp6.server-id 0:3:0:1:58:6d:8f:f5:b1:54;
+  option dhcp6.solmax-rt 60;
+  option dhcp6.name-servers fe80::5a6d:8fff:fef5:b154;
+}
+lease6 {
+  interface "eth0";
+  ia-na 98:7f:73:22 {
+    starts 1529888570;
+    renew 21600;
+    rebind 34560;
+    iaaddr fd07:3bb5:c7b1::e4c {
+      starts 1529888570;
+      preferred-life 4294967295;
+      max-life 4294967295;
+    }
+  }
+  option dhcp6.client-id 0:4:24:f0:d3:f5:6:ec:16:6d:e2:b4:14:f3:5:24:3b:dc;
+  option dhcp6.server-id 0:3:0:1:58:6d:8f:f5:b1:54;
+  option dhcp6.solmax-rt 60;
+  option dhcp6.name-servers fe80::5a6d:8fff:fef5:b154;
+}
+lease6 {
+  interface "eth0";
+  ia-na 98:7f:73:22 {
+    starts 1529910170;
+    renew 21600;
+    rebind 34560;
+    iaaddr fd07:3bb5:c7b1::e4c {
+      starts 1529910170;
+      preferred-life 4294967295;
+      max-life 4294967295;
+    }
+  }
+  option dhcp6.client-id 0:4:24:f0:d3:f5:6:ec:16:6d:e2:b4:14:f3:5:24:3b:dc;
+  option dhcp6.server-id 0:3:0:1:58:6d:8f:f5:b1:54;
+  option dhcp6.solmax-rt 60;
+  option dhcp6.name-servers fe80::5a6d:8fff:fef5:b154;
+}
+lease6 {
+  interface "eth0";
+  ia-na 98:7f:73:22 {
+    starts 1529931770;
+    renew 21600;
+    rebind 34560;
+    iaaddr fd07:3bb5:c7b1::e4c {
+      starts 1529931770;
+      preferred-life 4294967295;
+      max-life 4294967295;
+    }
+  }
+  option dhcp6.client-id 0:4:24:f0:d3:f5:6:ec:16:6d:e2:b4:14:f3:5:24:3b:dc;
+  option dhcp6.server-id 0:3:0:1:58:6d:8f:f5:b1:54;
+  option dhcp6.solmax-rt 60;
+  option dhcp6.name-servers fe80::5a6d:8fff:fef5:b154;
+}
+lease6 {
+  interface "eth0";
+  ia-na 98:7f:73:22 {
+    starts 1529953370;
+    renew 21600;
+    rebind 34560;
+    iaaddr fd07:3bb5:c7b1::e4c {
+      starts 1529953370;
+      preferred-life 4294967295;
+      max-life 4294967295;
+    }
+  }
+  option dhcp6.client-id 0:4:24:f0:d3:f5:6:ec:16:6d:e2:b4:14:f3:5:24:3b:dc;
+  option dhcp6.server-id 0:3:0:1:58:6d:8f:f5:b1:54;
+  option dhcp6.solmax-rt 60;
+  option dhcp6.name-servers fe80::5a6d:8fff:fef5:b154;
+}
+lease6 {
+  interface "eth0";
+  ia-na 98:7f:73:22 {
+    starts 1529974970;
+    renew 21600;
+    rebind 34560;
+    iaaddr fd07:3bb5:c7b1::e4c {
+      starts 1529974970;
+      preferred-life 4294967295;
+      max-life 4294967295;
+    }
+  }
+  option dhcp6.client-id 0:4:24:f0:d3:f5:6:ec:16:6d:e2:b4:14:f3:5:24:3b:dc;
+  option dhcp6.server-id 0:3:0:1:58:6d:8f:f5:b1:54;
+  option dhcp6.solmax-rt 60;
+  option dhcp6.name-servers fe80::5a6d:8fff:fef5:b154;
+}
+lease6 {
+  interface "eth0";
+  ia-na 98:7f:73:22 {
+    starts 1529996570;
+    renew 21600;
+    rebind 34560;
+    iaaddr fd07:3bb5:c7b1::e4c {
+      starts 1529996570;
+      preferred-life 4294967295;
+      max-life 4294967295;
+    }
+  }
+  option dhcp6.client-id 0:4:24:f0:d3:f5:6:ec:16:6d:e2:b4:14:f3:5:24:3b:dc;
+  option dhcp6.server-id 0:3:0:1:58:6d:8f:f5:b1:54;
+  option dhcp6.solmax-rt 60;
+  option dhcp6.name-servers fe80::5a6d:8fff:fef5:b154;
+}

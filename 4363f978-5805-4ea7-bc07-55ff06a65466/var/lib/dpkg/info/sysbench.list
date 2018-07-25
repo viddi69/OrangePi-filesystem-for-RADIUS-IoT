@@ -1,0 +1,15 @@
+/.
+/usr
+/usr/bin
+/usr/bin/sysbench
+/usr/share
+/usr/share/doc
+/usr/share/doc/sysbench
+/usr/share/doc/sysbench/manual.html
+/usr/share/doc/sysbench/changelog.Debian.gz
+/usr/share/doc/sysbench/README
+/usr/share/doc/sysbench/TODO.Debian
+/usr/share/doc/sysbench/copyright
+/usr/share/man
+/usr/share/man/man1
+/usr/share/man/man1/sysbench.1.gz

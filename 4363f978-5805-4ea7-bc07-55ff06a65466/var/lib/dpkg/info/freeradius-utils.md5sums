@@ -1,0 +1,14 @@
+e580df18dd6f28e3b251b2a832702550  usr/bin/radclient
+0716df621edfac56dd2ee678b4a89404  usr/bin/radeapclient
+117e787580421b11e1920cc0afc29c15  usr/bin/radlast
+d00abc68c123dbec1063f50ac6bc7956  usr/bin/radsniff
+c775f745caad8bb00941ceb9f10ea029  usr/bin/radsqlrelay
+232e87cd13d6618f97d08c0f2cf13042  usr/bin/radtest
+dc42d5d96879da66b5552be83d445396  usr/bin/radwho
+59f1a73fb241dd2f65959c406a669ff7  usr/bin/radzap
+951f7ebb2895f71169a220174d0a26e1  usr/bin/rlm_dbm_cat
+3fb56d55cd45d9b6da227c29b2f115fd  usr/bin/rlm_dbm_parser
+ea3456144b1290fb2b621eceae4cef75  usr/bin/rlm_ippool_tool
+89eccaab22e0c5d9a73b561ac587d0c9  usr/bin/smbencrypt
+8676e3b434559d49784d2453961a4f3f  usr/share/doc/freeradius-utils/copyright
+42650c09b70a777891581678fe1b5dfd  usr/share/lintian/overrides/freeradius-utils

@@ -1,0 +1,10 @@
+3fd11677c9f240643f8501f5f8588dd9  usr/share/command-not-found/priority.txt
+92a8b79883a4231eafc290c5b7772270  usr/share/command-not-found/programs.d/all-main.db
+f83b563aeb111ebd5f2f0c92acb41bc2  usr/share/command-not-found/programs.d/all-multiverse.db
+0e7dd1e6ddbf4339d2b6f5ec7de548c3  usr/share/command-not-found/programs.d/all-universe.db
+60ab0b22b80364745833fd2090bbcef1  usr/share/command-not-found/programs.d/armhf-main.db
+6531f746525705ef9d03152f7bd41e06  usr/share/command-not-found/programs.d/armhf-multiverse.db
+71186503c435ba3f455120c2417a172d  usr/share/command-not-found/programs.d/armhf-restricted.db
+61050cebdf2b187bc7b24b89c9605f0f  usr/share/command-not-found/programs.d/armhf-universe.db
+ec2b439754cfd1aa2a8dea18b799ab9b  usr/share/doc/command-not-found-data/changelog.gz
+d8d63b205bed90d1c4ab7bcf4ae2d447  usr/share/doc/command-not-found-data/copyright

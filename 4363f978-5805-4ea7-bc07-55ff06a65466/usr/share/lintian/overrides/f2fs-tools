@@ -1,0 +1,3 @@
+# We want to check if update-initramfs is available before attempting to call
+# it; the actual command is run without the path prepended.
+f2fs-tools: command-with-path-in-maintainer-script

@@ -1,0 +1,5 @@
+d53bc2525677ce78ae694e65fbf4c19b  lib/arm-linux-gnueabihf/libf2fs.so.0.0.1
+b343fba52db8231cb0ef9a88d5aca402  lib/arm-linux-gnueabihf/libf2fs_format.so.0.0.1
+cd6ec5f5ea260cb37c54ab4e7f0886c8  usr/share/doc/libf2fs0/changelog.Debian.gz
+e2f25539e90ebeee862e5f167138a809  usr/share/doc/libf2fs0/copyright
+996a17b02395e139b6f1b288ee836079  usr/share/lintian/overrides/libf2fs0

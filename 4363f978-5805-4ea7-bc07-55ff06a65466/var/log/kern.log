@@ -1,0 +1,158 @@
+Jun 24 06:32:34 localhost NetworkManager[445]: <error> [1529821954.6498] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 24 06:58:54 localhost NetworkManager[445]: <error> [1529823534.1234] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 24 07:02:49 localhost NetworkManager[445]: <info>  [1529823769.5513]   valid_lft 4294967295
+Jun 24 07:02:49 localhost NetworkManager[445]: <info>  [1529823769.5515]   preferred_lft 4294967295
+Jun 24 07:02:49 localhost NetworkManager[445]: <info>  [1529823769.5516]   address fd07:3bb5:c7b1::e4c
+Jun 24 07:02:49 localhost NetworkManager[445]: <info>  [1529823769.5517]   nameserver 'fe80::5a6d:8fff:fef5:b154'
+Jun 24 07:02:49 localhost NetworkManager[445]: <info>  [1529823769.5518] dhcp6 (eth0): state changed bound -> bound, event ID="98:7f:73:22|1529823769"
+Jun 24 07:02:49 localhost NetworkManager[445]: <error> [1529823769.5538] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 24 07:21:45 localhost NetworkManager[445]: <error> [1529824905.3018] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 24 07:46:19 localhost NetworkManager[445]: <error> [1529826379.2657] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 24 08:13:21 localhost NetworkManager[445]: <error> [1529828001.5819] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 24 08:38:06 localhost NetworkManager[445]: <error> [1529829486.0758] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 24 09:01:28 localhost NetworkManager[445]: <error> [1529830888.1858] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 24 09:31:04 localhost NetworkManager[445]: <error> [1529832664.0898] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 24 09:53:54 localhost NetworkManager[445]: <error> [1529834034.6875] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 24 10:19:09 localhost NetworkManager[445]: <error> [1529835549.0007] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 24 10:49:03 localhost NetworkManager[445]: <error> [1529837343.8835] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 24 11:14:02 localhost NetworkManager[445]: <error> [1529838842.6518] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 24 11:39:16 localhost NetworkManager[445]: <error> [1529840356.6700] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 24 12:07:01 localhost NetworkManager[445]: <error> [1529842021.5396] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 24 12:35:54 localhost NetworkManager[445]: <error> [1529843754.7804] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 24 12:59:26 localhost NetworkManager[445]: <error> [1529845166.4125] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 24 13:02:49 localhost NetworkManager[445]: <info>  [1529845369.9303]   valid_lft 4294967295
+Jun 24 13:02:49 localhost NetworkManager[445]: <info>  [1529845369.9305]   preferred_lft 4294967295
+Jun 24 13:02:49 localhost NetworkManager[445]: <info>  [1529845369.9306]   address fd07:3bb5:c7b1::e4c
+Jun 24 13:02:49 localhost NetworkManager[445]: <info>  [1529845369.9307]   nameserver 'fe80::5a6d:8fff:fef5:b154'
+Jun 24 13:02:49 localhost NetworkManager[445]: <info>  [1529845369.9308] dhcp6 (eth0): state changed bound -> bound, event ID="98:7f:73:22|1529845369"
+Jun 24 13:02:49 localhost NetworkManager[445]: <error> [1529845369.9329] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 24 13:25:54 localhost NetworkManager[445]: <error> [1529846754.5793] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 24 13:54:17 localhost NetworkManager[445]: <error> [1529848457.7046] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 24 14:22:27 localhost NetworkManager[445]: <error> [1529850147.8058] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 24 14:51:35 localhost NetworkManager[445]: <error> [1529851895.5393] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 24 15:21:06 localhost NetworkManager[445]: <error> [1529853666.8064] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 24 15:49:51 localhost NetworkManager[445]: <error> [1529855391.3837] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 24 16:13:46 localhost NetworkManager[445]: <error> [1529856826.6051] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 24 16:42:28 localhost NetworkManager[445]: <error> [1529858548.1585] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 24 17:05:39 localhost NetworkManager[445]: <error> [1529859939.1475] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 24 17:29:37 localhost NetworkManager[445]: <error> [1529861377.9905] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 24 17:58:27 localhost NetworkManager[445]: <error> [1529863107.8637] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 24 18:21:04 localhost NetworkManager[445]: <error> [1529864464.5529] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 24 18:50:55 localhost NetworkManager[445]: <error> [1529866255.5806] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 24 19:02:50 localhost NetworkManager[445]: <info>  [1529866970.1042]   valid_lft 4294967295
+Jun 24 19:02:50 localhost NetworkManager[445]: <info>  [1529866970.1044]   preferred_lft 4294967295
+Jun 24 19:02:50 localhost NetworkManager[445]: <info>  [1529866970.1045]   address fd07:3bb5:c7b1::e4c
+Jun 24 19:02:50 localhost NetworkManager[445]: <info>  [1529866970.1047]   nameserver 'fe80::5a6d:8fff:fef5:b154'
+Jun 24 19:02:50 localhost NetworkManager[445]: <info>  [1529866970.1048] dhcp6 (eth0): state changed bound -> bound, event ID="98:7f:73:22|1529866970"
+Jun 24 19:02:50 localhost NetworkManager[445]: <error> [1529866970.1068] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 24 19:20:42 localhost NetworkManager[445]: <error> [1529868042.7854] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 24 19:49:55 localhost NetworkManager[445]: <error> [1529869795.5201] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 24 20:17:54 localhost NetworkManager[445]: <error> [1529871474.2708] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 24 20:41:01 localhost NetworkManager[445]: <error> [1529872861.3309] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 24 21:05:24 localhost NetworkManager[445]: <error> [1529874324.0057] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 24 21:33:23 localhost NetworkManager[445]: <error> [1529876003.9273] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 24 21:56:44 localhost NetworkManager[445]: <error> [1529877404.2646] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 24 22:22:55 localhost NetworkManager[445]: <error> [1529878975.2901] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 24 22:45:28 localhost NetworkManager[445]: <error> [1529880328.4565] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 24 23:11:53 localhost NetworkManager[445]: <error> [1529881913.6579] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 24 23:39:03 localhost NetworkManager[445]: <error> [1529883543.0697] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 00:05:06 localhost NetworkManager[445]: <error> [1529885106.3344] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 00:34:12 localhost NetworkManager[445]: <error> [1529886852.3803] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 01:02:42 localhost NetworkManager[445]: <error> [1529888562.7103] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 01:02:50 localhost NetworkManager[445]: <info>  [1529888570.2798]   valid_lft 4294967295
+Jun 25 01:02:50 localhost NetworkManager[445]: <info>  [1529888570.2800]   preferred_lft 4294967295
+Jun 25 01:02:50 localhost NetworkManager[445]: <info>  [1529888570.2801]   address fd07:3bb5:c7b1::e4c
+Jun 25 01:02:50 localhost NetworkManager[445]: <info>  [1529888570.2802]   nameserver 'fe80::5a6d:8fff:fef5:b154'
+Jun 25 01:02:50 localhost NetworkManager[445]: <info>  [1529888570.2803] dhcp6 (eth0): state changed bound -> bound, event ID="98:7f:73:22|1529888570"
+Jun 25 01:02:50 localhost NetworkManager[445]: <error> [1529888570.2823] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 01:28:41 localhost NetworkManager[445]: <error> [1529890121.7424] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 01:53:15 localhost NetworkManager[445]: <error> [1529891595.8402] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 02:20:20 localhost NetworkManager[445]: <error> [1529893220.2390] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 02:45:36 localhost NetworkManager[445]: <error> [1529894736.2282] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 03:14:13 localhost NetworkManager[445]: <error> [1529896453.2900] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 03:44:08 localhost NetworkManager[445]: <error> [1529898248.5658] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 04:08:15 localhost NetworkManager[445]: <error> [1529899695.0873] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 04:37:17 localhost NetworkManager[445]: <error> [1529901437.0312] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 05:03:29 localhost NetworkManager[445]: <error> [1529903009.9747] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 05:32:14 localhost NetworkManager[445]: <error> [1529904734.9581] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 06:00:21 localhost NetworkManager[445]: <error> [1529906421.2845] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 06:22:49 localhost NetworkManager[445]: <error> [1529907769.7275] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 06:48:58 localhost NetworkManager[445]: <error> [1529909338.9522] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 07:01:17 localhost NetworkManager[445]: <error> [1529910077.6967] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 07:02:50 localhost NetworkManager[445]: <info>  [1529910170.4536]   valid_lft 4294967295
+Jun 25 07:02:50 localhost NetworkManager[445]: <info>  [1529910170.4538]   preferred_lft 4294967295
+Jun 25 07:02:50 localhost NetworkManager[445]: <info>  [1529910170.4539]   address fd07:3bb5:c7b1::e4c
+Jun 25 07:02:50 localhost NetworkManager[445]: <info>  [1529910170.4540]   nameserver 'fe80::5a6d:8fff:fef5:b154'
+Jun 25 07:02:50 localhost NetworkManager[445]: <info>  [1529910170.4542] dhcp6 (eth0): state changed bound -> bound, event ID="98:7f:73:22|1529910170"
+Jun 25 07:02:50 localhost NetworkManager[445]: <error> [1529910170.4564] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 07:27:55 localhost NetworkManager[445]: <error> [1529911675.7273] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 07:53:27 localhost NetworkManager[445]: <error> [1529913207.0797] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 08:21:11 localhost NetworkManager[445]: <error> [1529914871.8804] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 08:48:46 localhost NetworkManager[445]: <error> [1529916526.9703] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 09:15:35 localhost NetworkManager[445]: <error> [1529918135.5284] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 09:42:13 localhost NetworkManager[445]: <error> [1529919733.2378] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 10:08:14 localhost NetworkManager[445]: <error> [1529921294.1820] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 10:34:32 localhost NetworkManager[445]: <error> [1529922872.8401] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 11:04:23 localhost NetworkManager[445]: <error> [1529924663.2992] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 11:30:46 localhost NetworkManager[445]: <error> [1529926246.7273] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 11:55:31 localhost NetworkManager[445]: <error> [1529927731.6671] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 12:24:47 localhost NetworkManager[445]: <error> [1529929487.2275] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 12:54:42 localhost NetworkManager[445]: <error> [1529931282.2090] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 13:02:50 localhost NetworkManager[445]: <info>  [1529931770.6293]   valid_lft 4294967295
+Jun 25 13:02:50 localhost NetworkManager[445]: <info>  [1529931770.6295]   preferred_lft 4294967295
+Jun 25 13:02:50 localhost NetworkManager[445]: <info>  [1529931770.6296]   address fd07:3bb5:c7b1::e4c
+Jun 25 13:02:50 localhost NetworkManager[445]: <info>  [1529931770.6297]   nameserver 'fe80::5a6d:8fff:fef5:b154'
+Jun 25 13:02:50 localhost NetworkManager[445]: <info>  [1529931770.6298] dhcp6 (eth0): state changed bound -> bound, event ID="98:7f:73:22|1529931770"
+Jun 25 13:02:50 localhost NetworkManager[445]: <error> [1529931770.6317] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 13:22:48 localhost NetworkManager[445]: <error> [1529932968.7206] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 13:50:49 localhost NetworkManager[445]: <error> [1529934649.8940] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 14:13:52 localhost NetworkManager[445]: <error> [1529936032.0976] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 14:40:12 localhost NetworkManager[445]: <error> [1529937612.7943] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 15:06:23 localhost NetworkManager[445]: <error> [1529939183.2493] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 15:30:02 localhost NetworkManager[445]: <error> [1529940602.6760] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 15:58:33 localhost NetworkManager[445]: <error> [1529942313.7585] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 16:26:39 localhost NetworkManager[445]: <error> [1529943999.8327] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 16:52:25 localhost NetworkManager[445]: <error> [1529945545.8839] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 17:18:29 localhost NetworkManager[445]: <error> [1529947109.9970] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 17:44:55 localhost NetworkManager[445]: <error> [1529948695.7253] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 18:07:25 localhost NetworkManager[445]: <error> [1529950045.8203] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 18:31:43 localhost NetworkManager[445]: <error> [1529951503.4032] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 18:45:05 localhost kernel: [258164.760267] [BH_WRN] miss interrupt!
+Jun 25 18:52:09 localhost NetworkManager[445]: <error> [1529952729.9200] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 19:02:50 localhost NetworkManager[445]: <info>  [1529953370.8230]   valid_lft 4294967295
+Jun 25 19:02:50 localhost NetworkManager[445]: <info>  [1529953370.8232]   preferred_lft 4294967295
+Jun 25 19:02:50 localhost NetworkManager[445]: <info>  [1529953370.8234]   address fd07:3bb5:c7b1::e4c
+Jun 25 19:02:50 localhost NetworkManager[445]: <info>  [1529953370.8235]   nameserver 'fe80::5a6d:8fff:fef5:b154'
+Jun 25 19:02:50 localhost NetworkManager[445]: <info>  [1529953370.8236] dhcp6 (eth0): state changed bound -> bound, event ID="98:7f:73:22|1529953370"
+Jun 25 19:02:50 localhost NetworkManager[445]: <error> [1529953370.8255] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 19:21:59 localhost NetworkManager[445]: <error> [1529954519.4291] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 19:46:22 localhost NetworkManager[445]: <error> [1529955982.0189] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 20:12:36 localhost NetworkManager[445]: <error> [1529957556.2322] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 20:40:06 localhost NetworkManager[445]: <error> [1529959206.9267] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 21:08:22 localhost NetworkManager[445]: <error> [1529960902.6302] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 21:36:47 localhost NetworkManager[445]: <error> [1529962607.3578] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 22:01:36 localhost NetworkManager[445]: <error> [1529964096.2156] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 22:30:37 localhost NetworkManager[445]: <error> [1529965837.8234] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 22:57:15 localhost NetworkManager[445]: <error> [1529967435.9937] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 23:20:09 localhost NetworkManager[445]: <error> [1529968809.4206] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 25 23:46:11 localhost NetworkManager[445]: <error> [1529970371.1341] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 26 00:11:05 localhost NetworkManager[445]: <error> [1529971865.3935] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 26 00:35:37 localhost NetworkManager[445]: <error> [1529973337.6444] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 26 01:02:33 localhost NetworkManager[445]: <error> [1529974953.4474] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 26 01:02:51 localhost NetworkManager[445]: <info>  [1529974971.0008]   valid_lft 4294967295
+Jun 26 01:02:51 localhost NetworkManager[445]: <info>  [1529974971.0010]   preferred_lft 4294967295
+Jun 26 01:02:51 localhost NetworkManager[445]: <info>  [1529974971.0011]   address fd07:3bb5:c7b1::e4c
+Jun 26 01:02:51 localhost NetworkManager[445]: <info>  [1529974971.0012]   nameserver 'fe80::5a6d:8fff:fef5:b154'
+Jun 26 01:02:51 localhost NetworkManager[445]: <info>  [1529974971.0013] dhcp6 (eth0): state changed bound -> bound, event ID="98:7f:73:22|1529974970"
+Jun 26 01:02:51 localhost NetworkManager[445]: <error> [1529974971.0032] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 26 01:30:55 localhost NetworkManager[445]: <error> [1529976655.8891] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 26 01:58:29 localhost NetworkManager[445]: <error> [1529978309.2415] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 26 02:27:28 localhost NetworkManager[445]: <error> [1529980048.7549] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 26 02:50:08 localhost NetworkManager[445]: <error> [1529981408.6790] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 26 03:18:20 localhost NetworkManager[445]: <error> [1529983100.9951] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 26 03:41:22 localhost NetworkManager[445]: <error> [1529984482.9048] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 26 04:07:06 localhost NetworkManager[445]: <error> [1529986026.8158] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 26 04:37:04 localhost NetworkManager[445]: <error> [1529987824.1580] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 26 05:05:53 localhost NetworkManager[445]: <error> [1529989553.3773] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 26 05:33:21 localhost NetworkManager[445]: <error> [1529991201.4947] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)
+Jun 26 05:59:07 localhost NetworkManager[445]: <error> [1529992747.1722] platform-linux: do-add-ip6-address[2: fd07:3bb5:c7b1::e4c]: failure 22 (Invalid argument)

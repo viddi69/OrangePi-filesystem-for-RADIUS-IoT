@@ -1,0 +1,6 @@
+/etc/freeradius/sites-enabled/challenge[55]: Unknown attribute list "session-state"
+/etc/freeradius/sites-enabled/challenge[55]: Failed to parse "update" subsection.
+/etc/freeradius/sites-enabled/challenge[51]: Failed to parse "if" subsection.
+/etc/freeradius/sites-enabled/challenge[55]: Unknown attribute list "session-state"
+/etc/freeradius/sites-enabled/challenge[55]: Failed to parse "update" subsection.
+/etc/freeradius/sites-enabled/challenge[51]: Failed to parse "if" subsection.

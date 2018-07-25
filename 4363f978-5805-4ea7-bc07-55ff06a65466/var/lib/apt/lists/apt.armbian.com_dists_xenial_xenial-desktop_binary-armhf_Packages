@@ -1,0 +1,1382 @@
+Package: fswebcam-gc2035
+Priority: optional
+Section: graphics
+Installed-Size: 86
+Maintainer: Luca Niccoli <lultimouomo@gmail.com>
+Architecture: armhf
+Version: 20140113-1~armbian5.31+1
+Replaces: fswebcam
+Depends: libc6 (>= 2.15), libgd3 (>= 2.1.0~alpha~)
+Conflicts: fswebcam
+Filename: pool/xenial-desktop/f/fswebcam-gc2035/fswebcam-gc2035_20140113-1~armbian5.31+1_armhf.deb
+Size: 35010
+MD5sum: eda22b83f7650ccae8c27dea8393ef69
+SHA1: 3d8d354deb8cabe157250ca487ad03eeaa044bac
+SHA256: 7382322878613f7b2a06c96a3e200d9bfae88087b0d0dacc2a52d6d05cac3751
+SHA512: 9dcd45aba1273a6991672d9e803be549be37feb755c386bb3551fdb5e494d92642eb194bdabd282c7c01f12d06ebfc4c30fc60ab0f8c40a6d6a8d174ff92a01d
+Description: Tiny and flexible webcam program
+ Fswebcam is a tiny and flexible webcam command-line program for capturing
+ images from a V4L1/V4L2 device. It accepts a number of formats, can skip
+ the first (possibly bad) frames before performing the actual capture, and
+ can perform simple manipulation on the captured image, such as resizing,
+ averaging multiple frames or overlaying a caption or an image.
+ .
+ This is the version for Orange Pi boards with gc2035 camera
+Homepage: https://github.com/avafinger/fswebcam
+
+Package: fswebcam-gc2035
+Priority: optional
+Section: graphics
+Installed-Size: 86
+Maintainer: Luca Niccoli <lultimouomo@gmail.com>
+Architecture: armhf
+Version: 20140113-1~armbian5.30+1
+Replaces: fswebcam
+Depends: libc6 (>= 2.15), libgd3 (>= 2.1.0~alpha~)
+Conflicts: fswebcam
+Filename: pool/xenial-desktop/f/fswebcam-gc2035/fswebcam-gc2035_20140113-1~armbian5.30+1_armhf.deb
+Size: 35040
+MD5sum: 60bca30f37ee805ed5da8858ce2db5ee
+SHA1: 898c942d53fd969ebad296d9b0c10608fec7da12
+SHA256: 57f23649373b3e52a1d6521ade0c53c8316db564f79e461b1ecb668970089eb3
+SHA512: d3e6af46381e3f77c2d6f248ae25cadab1ae5ef6810c841bf7a36a7d249cf7cfdc982d79c17e7d36fa6c28ac73cdde1da4e3006b481ef7e1e5bdd36085bb754e
+Description: Tiny and flexible webcam program
+ Fswebcam is a tiny and flexible webcam command-line program for capturing
+ images from a V4L1/V4L2 device. It accepts a number of formats, can skip
+ the first (possibly bad) frames before performing the actual capture, and
+ can perform simple manipulation on the captured image, such as resizing,
+ averaging multiple frames or overlaying a caption or an image.
+ .
+ This is the version for Orange Pi boards with gc2035 camera
+Homepage: https://github.com/avafinger/fswebcam
+
+Package: guvcview
+Priority: extra
+Section: graphics
+Installed-Size: 520
+Maintainer: Nobuhiro Iwamatsu <iwamatsu@debian.org>
+Architecture: armhf
+Version: 2.0.2.1~armbian5.31+1
+Depends: libc6 (>= 2.7), libglib2.0-0 (>= 2.12.0), libgtk-3-0 (>= 3.16.2), libguvcview-1.1-1, libpango-1.0-0 (>= 1.14.0)
+Recommends: uvcdynctrl
+Filename: pool/xenial-desktop/g/guvcview/guvcview_2.0.2.1~armbian5.31+1_armhf.deb
+Size: 130006
+MD5sum: f9f99ff2ec22193fff94b665b335435d
+SHA1: 0eb50d24137ce37e5c88fb2da8e9309ea199a4fc
+SHA256: 0ab4c6da729b78bf7bbc153bd7e7222e48d060e931a36d48157524ee6d27326f
+SHA512: ae943b0ffb03bcba39d2bbe93fddd5d8d9cae3d64d3d180c456e7f37f9e0012bf12840dd539b872d5f0369ad355b21c5f03fbab63de567a699fdbbc2516fd757
+Description: GTK+ base UVC Viewer
+ guvcview is a simple GTK+ interface for capturing and viewing video from
+ devices supported by the Linux UVC driver.
+Homepage: http://guvcview.sourceforge.net/
+
+Package: guvcview
+Priority: extra
+Section: graphics
+Installed-Size: 520
+Maintainer: Nobuhiro Iwamatsu <iwamatsu@debian.org>
+Architecture: armhf
+Version: 2.0.2.1~armbian5.30+1
+Depends: libc6 (>= 2.7), libglib2.0-0 (>= 2.12.0), libgtk-3-0 (>= 3.16.2), libguvcview-1.1-1, libpango-1.0-0 (>= 1.14.0)
+Recommends: uvcdynctrl
+Filename: pool/xenial-desktop/g/guvcview/guvcview_2.0.2.1~armbian5.30+1_armhf.deb
+Size: 129860
+MD5sum: 57abe4a7a8cacc0ffb2097609cddfa60
+SHA1: 12eb59b73ee4ff5a89807914706c00551903cb82
+SHA256: 98c59c71fa7ec913fbc6fc641397cb1812720eca31c40f8a5ea864bf3eb44914
+SHA512: 751244f7d878461137a58848ff26e5ffb6d0baf6f0cacb400774b209913bae71ee1a17b710b11c3ef663f977373fc626be50d6f29a0d79bd9166647171c5fb61
+Description: GTK+ base UVC Viewer
+ guvcview is a simple GTK+ interface for capturing and viewing video from
+ devices supported by the Linux UVC driver.
+Homepage: http://guvcview.sourceforge.net/
+
+Package: libcedrus1
+Priority: optional
+Section: libs
+Installed-Size: 31
+Maintainer: Simon Eisenmann <simon@longsleep.org>
+Architecture: armhf
+Source: libcedrus
+Version: 1.0.1~armbian5.38+1
+Depends: libc6 (>= 2.4)
+Filename: pool/xenial-desktop/libc/libcedrus/libcedrus1_1.0.1~armbian5.38+1_armhf.deb
+Size: 5922
+MD5sum: 7aca88ebe8d5fbb1dd9d0dbb7b2e1d2e
+SHA1: eb67f4c4ad4af272cc6bdbd6b8ffc3e73041fd16
+SHA256: b656768e7166263add0b300c582bd1d3ac4757f1c6d03ff231134d563bce2e69
+SHA512: ccae18e7c767099942e1ff3d13aa2f5e12c7c7557fcd5dbd93bcf2af292734a9c0fd1a671f8fb9afbf9fda4e8ea52ca3679edc9e51a56f0f9a6226f5cd87be00
+Description: Low-level acces to video enginge ofr Allwinner sunxi SoCs
+ The Cedrus library is need for video engine access of Allwinner sunxi
+ SOCS. The vdpau sunxi driver depends on it.
+Multi-Arch: same
+
+Package: libcedrus1
+Priority: optional
+Section: libs
+Installed-Size: 31
+Maintainer: Simon Eisenmann <simon@longsleep.org>
+Architecture: armhf
+Source: libcedrus
+Version: 1.0.1~armbian5.35+1
+Depends: libc6 (>= 2.4)
+Filename: pool/xenial-desktop/libc/libcedrus/libcedrus1_1.0.1~armbian5.35+1_armhf.deb
+Size: 5924
+MD5sum: 53bc11ff71c1347d0b61a0eccaebd5c0
+SHA1: 821d2ec570b78c525c44fbe763630f8ebae0ae8b
+SHA256: 25777ac09d3a6b49abdfc7e7baecca122676963113989e02ce03e530e6834728
+SHA512: 1ae372c5ce858e4c746173a875f390f021d771727c3445089ad8dd458fa9000ab7acf3f79e8531b859b14ef43339b8eff613a5306b9baef3229d4fd017d803ca
+Description: Low-level acces to video enginge ofr Allwinner sunxi SoCs
+ The Cedrus library is need for video engine access of Allwinner sunxi
+ SOCS. The vdpau sunxi driver depends on it.
+Multi-Arch: same
+
+Package: libcedrus1
+Priority: optional
+Section: libs
+Installed-Size: 31
+Maintainer: Simon Eisenmann <simon@longsleep.org>
+Architecture: armhf
+Source: libcedrus
+Version: 1.0.1~armbian5.31+1
+Depends: libc6 (>= 2.4)
+Filename: pool/xenial-desktop/libc/libcedrus/libcedrus1_1.0.1~armbian5.31+1_armhf.deb
+Size: 5928
+MD5sum: f859ebcf5db86f201c026883c13e32ae
+SHA1: fa1c1e0630366660b86fecad91831baa5d626bf4
+SHA256: 4fbbd20317ba682c28205e569a8152368f18d201470c14b2d8e4cbb9942b4d3c
+SHA512: 108926f1a4f57e868393625f131859e40e2e1b28c88faf06434583783ec5d2a651703807eed222ce0afb9af5ce4ddcca35d35b92c8cf565b40975a06ef2ab26a
+Description: Low-level acces to video enginge ofr Allwinner sunxi SoCs
+ The Cedrus library is need for video engine access of Allwinner sunxi
+ SOCS. The vdpau sunxi driver depends on it.
+Multi-Arch: same
+
+Package: libcedrus1
+Priority: optional
+Section: libs
+Installed-Size: 31
+Maintainer: Simon Eisenmann <simon@longsleep.org>
+Architecture: armhf
+Source: libcedrus
+Version: 1.0.1~armbian5.30+1
+Depends: libc6 (>= 2.4)
+Filename: pool/xenial-desktop/libc/libcedrus/libcedrus1_1.0.1~armbian5.30+1_armhf.deb
+Size: 5924
+MD5sum: a5d360c02e4faa3da101e602fd98a52f
+SHA1: 6d5ad866524809a27faab3b38300ea39b630dae8
+SHA256: a9ec8b58e68c4699fad1e2152bd7bb825beb71e8d0c025ed05c89110277cffeb
+SHA512: e5ce694f0b830eb1aa636d088cb2798b0a7854936663e1a52f8e6514622684e4e62ee1007b09a1fe641893bf43ed7e29cd15c65e76687a1a1e889c6b8597a190
+Description: Low-level acces to video enginge ofr Allwinner sunxi SoCs
+ The Cedrus library is need for video engine access of Allwinner sunxi
+ SOCS. The vdpau sunxi driver depends on it.
+Multi-Arch: same
+
+Package: libcedrus1-dev
+Priority: optional
+Section: libdevel
+Installed-Size: 23
+Maintainer: Simon Eisenmann <simon@longsleep.org>
+Architecture: armhf
+Source: libcedrus
+Version: 1.0.1~armbian5.38+1
+Depends: libcedrus1 (= 1.0.1~armbian5.38+1)
+Filename: pool/xenial-desktop/libc/libcedrus/libcedrus1-dev_1.0.1~armbian5.38+1_armhf.deb
+Size: 3600
+MD5sum: f1abc68d806c03ad641cf48376ed62c9
+SHA1: cd12e7a46e77f8f3120b5daea1a2614fbd956d1f
+SHA256: ea7a6b39225fc9371c4158a400a4cb66b4a31af003ca3814b92ff058f8fac9ee
+SHA512: 6b466b9d542fd96b922bb04cc6ce802c7678067e6c424a129edf45b658a80fe4277f6abd7b623304c4f2b31e4866567da6db10a7c75e79ee059211a134eb3660
+Description: Low-level acces to video enginge ofr Allwinner sunxi SoCs (development files)
+ The Cedrus library is need for video engine access of Allwinner sunxi
+ SOCS. This package is needed to build programs which link against libcedrus.
+Multi-Arch: same
+
+Package: libcedrus1-dev
+Priority: optional
+Section: libdevel
+Installed-Size: 23
+Maintainer: Simon Eisenmann <simon@longsleep.org>
+Architecture: armhf
+Source: libcedrus
+Version: 1.0.1~armbian5.35+1
+Depends: libcedrus1 (= 1.0.1~armbian5.35+1)
+Filename: pool/xenial-desktop/libc/libcedrus/libcedrus1-dev_1.0.1~armbian5.35+1_armhf.deb
+Size: 3602
+MD5sum: 2dd771423eb1da8dfde2872338e362fa
+SHA1: 154beb5e1a14e08cb183552bd79fcd73ab9a0020
+SHA256: 65b94d059acea1eb460c6a78f1903949c54d452a41047621f1c71a4f90f29c85
+SHA512: 0d49fbaf3397156b735f686fa60628545929557d6d35f046cd14ce6c8482e68f2693c07efd8d85772ceab37ff3e080ca57a8546015c7b41d457ed98404c5c30a
+Description: Low-level acces to video enginge ofr Allwinner sunxi SoCs (development files)
+ The Cedrus library is need for video engine access of Allwinner sunxi
+ SOCS. This package is needed to build programs which link against libcedrus.
+Multi-Arch: same
+
+Package: libcedrus1-dev
+Priority: optional
+Section: libdevel
+Installed-Size: 23
+Maintainer: Simon Eisenmann <simon@longsleep.org>
+Architecture: armhf
+Source: libcedrus
+Version: 1.0.1~armbian5.31+1
+Depends: libcedrus1 (= 1.0.1~armbian5.31+1)
+Filename: pool/xenial-desktop/libc/libcedrus/libcedrus1-dev_1.0.1~armbian5.31+1_armhf.deb
+Size: 3602
+MD5sum: 288ee5b0a08767c47878cb350bcc61b5
+SHA1: 166ed95c23ea5e2d45b7fc3e4144f9c94fbc099d
+SHA256: df7758a9492afbea31a34280dd42c79403144b13a3e180fc187b64bcb802a151
+SHA512: 1549617e96be063cecacbc5b14574e4a52f415155b8e2cadbbcba74b6c76cf589ea12296de1aa6bfce495ea1975aafde0294d6855cdf5c1faa27a6fd2b2d5e9c
+Description: Low-level acces to video enginge ofr Allwinner sunxi SoCs (development files)
+ The Cedrus library is need for video engine access of Allwinner sunxi
+ SOCS. This package is needed to build programs which link against libcedrus.
+Multi-Arch: same
+
+Package: libcedrus1-dev
+Priority: optional
+Section: libdevel
+Installed-Size: 23
+Maintainer: Simon Eisenmann <simon@longsleep.org>
+Architecture: armhf
+Source: libcedrus
+Version: 1.0.1~armbian5.30+1
+Depends: libcedrus1 (= 1.0.1~armbian5.30+1)
+Filename: pool/xenial-desktop/libc/libcedrus/libcedrus1-dev_1.0.1~armbian5.30+1_armhf.deb
+Size: 3602
+MD5sum: 10a8d4ac8e07e9f5b674bd9a250b31df
+SHA1: 3cc27731b1b76f38baefaa5808992994cd8574c3
+SHA256: 391e3e0ebe9eba705ce689a08f11ea05556b91e69bf69e79f4faefd353d6d52f
+SHA512: 4820c020dd1a7240f6ac73e8fc362859f25906a2d8a16d8d444f863df6a027fd1131485e9b2a7f79e662b13f53614eded77a16563917942b7eebfce32f1592fa
+Description: Low-level acces to video enginge ofr Allwinner sunxi SoCs (development files)
+ The Cedrus library is need for video engine access of Allwinner sunxi
+ SOCS. This package is needed to build programs which link against libcedrus.
+Multi-Arch: same
+
+Package: libglshim
+Priority: optional
+Section: libs
+Installed-Size: 2239
+Maintainer: Armbian maintainers <root@localhost>
+Architecture: armhf
+Source: glshim
+Version: 1:0.9.2~armbian5.38+1
+Replaces: libgl1-mesa-dev, libgl1-mesa-glx
+Depends: libc6 (>= 2.4), libgcc1 (>= 1:3.5), libx11-6
+Filename: pool/xenial-desktop/g/glshim/libglshim_0.9.2~armbian5.38+1_armhf.deb
+Size: 612440
+MD5sum: 3ffd8cbfe3354a90bc854c3744819a8a
+SHA1: c213c1b535f4c3e03f40da8d0cbff5098c91c2db
+SHA256: eece57de2da3de0d887cbbe74e8d6a12c981c06ab846a5d08d37f57bd1c67d2d
+SHA512: 37288737b68dbdbc22e33c2c587fb6dcb6a42a7e76142448c1123acf88aa038c2b9d8855c08a100a9163b16356bbf70c2f71e592e9e055f051c9c7b460feaa6b
+Description: OpenGL 1.x shim to to OpenGL ES
+ This is a shim providing OpenGL 1.x functionality to OpenGL ES accelerated cards.
+ .
+ This package contains GL shared library
+Multi-Arch: same
+
+Package: libglshim
+Priority: optional
+Section: libs
+Installed-Size: 2239
+Maintainer: Armbian maintainers <root@localhost>
+Architecture: armhf
+Source: glshim
+Version: 1:0.9.2~armbian5.35+1
+Replaces: libgl1-mesa-dev, libgl1-mesa-glx
+Depends: libc6 (>= 2.4), libgcc1 (>= 1:3.5), libx11-6
+Filename: pool/xenial-desktop/g/glshim/libglshim_0.9.2~armbian5.35+1_armhf.deb
+Size: 610614
+MD5sum: 28741a908668b7cb5194c7b76f327087
+SHA1: a2b2f04b569b8e1cb84d8380070b00c6d6f50cdf
+SHA256: 51c03f15269a4a3f3bc5bc09836ba1a17e22900c4976e9a3f33a9e25f0aaa214
+SHA512: 715f07c7f5f0dd3376bbf2a14ebda88b8eba02d6835f970316cb271e63769039ea7b2c792d9972c04530e9b76a2a59df5a814cf64cf6a0156cde2aa0f71641a5
+Description: OpenGL 1.x shim to to OpenGL ES
+ This is a shim providing OpenGL 1.x functionality to OpenGL ES accelerated cards.
+ .
+ This package contains GL shared library
+Multi-Arch: same
+
+Package: libglshim
+Priority: optional
+Section: libs
+Installed-Size: 2239
+Maintainer: Armbian maintainers <root@localhost>
+Architecture: armhf
+Source: glshim
+Version: 1:0.9.2~armbian5.31+1
+Replaces: libgl1-mesa-dev, libgl1-mesa-glx
+Depends: libc6 (>= 2.4), libgcc1 (>= 1:3.5), libx11-6
+Filename: pool/xenial-desktop/g/glshim/libglshim_0.9.2~armbian5.31+1_armhf.deb
+Size: 609734
+MD5sum: c7548cd45fb5701c92447a3506c351fe
+SHA1: 4051f748872695ac6bd24a9d864f83de103ef814
+SHA256: c463b7215729d6f277d78e2f21cc81e5db75699ffcb6068c12246c66d68fc140
+SHA512: 821e4aad2b55f03790e3026d79fc481bf19009e4fe79483c63672408bdec3e4e8d43ca181175d0a822bce501d3d0a1bab55d6a52f235d311ed0e190534598ba4
+Description: OpenGL 1.x shim to to OpenGL ES
+ This is a shim providing OpenGL 1.x functionality to OpenGL ES accelerated cards.
+ .
+ This package contains GL shared library
+Multi-Arch: same
+
+Package: libglshim
+Priority: optional
+Section: libs
+Installed-Size: 2239
+Maintainer: Armbian maintainers <root@localhost>
+Architecture: armhf
+Source: glshim
+Version: 1:0.9.2~armbian5.30+1
+Replaces: libgl1-mesa-dev, libgl1-mesa-glx
+Depends: libc6 (>= 2.4), libgcc1 (>= 1:3.5), libx11-6
+Filename: pool/xenial-desktop/g/glshim/libglshim_0.9.2~armbian5.30+1_armhf.deb
+Size: 609882
+MD5sum: 09cd2669efac6179b402eac3c3d65aef
+SHA1: e5227029842265459605e61d9964a377c9e31173
+SHA256: 283e569fd555511a587ebd92630b3d57f4d9d3cc0bec6d837b155dfad6617683
+SHA512: 8729f93e5753308646f6a6e3eb468571a11197cdb9c6e4b1b39abc13d289cbc3d997d7ff4f7aac93bd9b7c64fe9dd6ec32c029b9ac61c3849e68b01ccdce4e5f
+Description: OpenGL 1.x shim to to OpenGL ES
+ This is a shim providing OpenGL 1.x functionality to OpenGL ES accelerated cards.
+ .
+ This package contains GL shared library
+Multi-Arch: same
+
+Package: libglshim
+Priority: optional
+Section: libs
+Installed-Size: 2104
+Maintainer: Armbian maintainers <root@localhost>
+Architecture: armhf
+Source: glshim
+Version: 1.0-1~armbian5.23+1
+Replaces: libgl1-mesa-dev, libgl1-mesa-glx
+Depends: libc6 (>= 2.4), libgcc1 (>= 1:3.5), libx11-6
+Filename: pool/xenial-desktop/g/glshim/libglshim_1.0-1~armbian5.23+1_armhf.deb
+Size: 574098
+MD5sum: 903c4bb8667393db12f9ba3d05a116bc
+SHA1: 66f07aa7bf4885ee54b16c1ee7c69a1d3bb29d59
+SHA256: 3bf31e9040e64fb86d30e8585c5658fc59d569170b7aed41f51602cf24e98266
+SHA512: 06d8153fc24cf161d929f8d688a4824aadb405ec611268a881edb41387af492234e8b4db226521d97ce72cf29632a878a9bfe713f6981929f140f61109ec7d22
+Description: OpenGL 1.x shim to to OpenGL ES
+ This is a shim providing OpenGL 1.x functionality to OpenGL ES accelerated cards.
+ .
+ This package contains GL shared library
+Multi-Arch: same
+
+Package: libglshim
+Priority: optional
+Section: libs
+Installed-Size: 2107
+Maintainer: Armbian maintainers <root@localhost>
+Architecture: armhf
+Source: glshim
+Version: 1.0-1~armbian5.22+1
+Replaces: libgl1-mesa-dev, libgl1-mesa-glx
+Depends: libc6 (>= 2.4), libgcc1 (>= 1:3.5), libx11-6
+Filename: pool/xenial-desktop/g/glshim/libglshim_1.0-1~armbian5.22+1_armhf.deb
+Size: 575866
+MD5sum: 6229860c42e62736d3a752dce555c7ae
+SHA1: 463f05f1bd16017b9998d2dad887cfcf27583ae2
+SHA256: dc76f1a0d2d5d3482fab86135461d7b9b4871444d452860652b86aa461bdd92c
+SHA512: 03067acf5b80932ebe1cad30b7a5ee0ff0e865de1b1756b7217384ce7159cfd276a3d03c90b2fc31fd56dbc201dca3bc64be5c36ed9176caa1fd9dc7723d0345
+Description: OpenGL 1.x shim to to OpenGL ES
+ This is a shim providing OpenGL 1.x functionality to OpenGL ES accelerated cards.
+ .
+ This package contains GL shared library
+Multi-Arch: same
+
+Package: libguvcview-1.1-1
+Priority: extra
+Section: libs
+Installed-Size: 220
+Maintainer: Nobuhiro Iwamatsu <iwamatsu@debian.org>
+Architecture: armhf
+Source: guvcview
+Version: 2.0.2.1~armbian5.31+1
+Depends: libavcodec-ffmpeg56 (>= 7:2.4) | libavcodec-ffmpeg-extra56 (>= 7:2.4), libavutil-ffmpeg54 (>= 7:2.4), libc6 (>= 2.17), libgsl2, libpng12-0 (>= 1.2.13-4), libportaudio2 (>= 19+svn20101113), libpulse0 (>= 0.99.1), libsdl1.2debian (>= 1.2.11), libudev1 (>= 183), libusb-1.0-0 (>= 2:1.0.8), libv4l-0 (>= 0.5.0)
+Filename: pool/xenial-desktop/g/guvcview/libguvcview-1.1-1_2.0.2.1~armbian5.31+1_armhf.deb
+Size: 91144
+MD5sum: 738f8592d21ccf231c866e9f2a881506
+SHA1: 0b1d1ceaab68dc4c08817f29e8934836fb0d9433
+SHA256: f16158a164a516902de07fab5c535ca521dfd36d0e5a4dbc8396e24d0d18027c
+SHA512: e9305ec0f10208f0bab7db0b62463256610e2ef78e9310c14427669c725be499bef57f6b688e848c79631cca30497196a3128262a6a236108c70779076f6c8db
+Description: GTK+ base UVC Viewer - runtime
+ guvcview is a simple GTK+ interface for capturing and viewing video from
+ devices supported by the Linux UVC driver.
+ .
+ This package includes the shared library.
+Homepage: http://guvcview.sourceforge.net/
+Multi-Arch: same
+
+Package: libguvcview-1.1-1
+Priority: extra
+Section: libs
+Installed-Size: 220
+Maintainer: Nobuhiro Iwamatsu <iwamatsu@debian.org>
+Architecture: armhf
+Source: guvcview
+Version: 2.0.2.1~armbian5.30+1
+Depends: libavcodec-ffmpeg56 (>= 7:2.4) | libavcodec-ffmpeg-extra56 (>= 7:2.4), libavutil-ffmpeg54 (>= 7:2.4), libc6 (>= 2.17), libgsl2, libpng12-0 (>= 1.2.13-4), libportaudio2 (>= 19+svn20101113), libpulse0 (>= 0.99.1), libsdl1.2debian (>= 1.2.11), libudev1 (>= 183), libusb-1.0-0 (>= 2:1.0.8), libv4l-0 (>= 0.5.0)
+Filename: pool/xenial-desktop/g/guvcview/libguvcview-1.1-1_2.0.2.1~armbian5.30+1_armhf.deb
+Size: 91136
+MD5sum: ce77ff008edc86cde71f5f0be5f5ff2c
+SHA1: 7e4896daf29ac3fe249109f6041d2a5cbc7b7a5f
+SHA256: 038084711d3b0fa09720acc20a0af51d815843d35251a1b2fbfb34136cc49744
+SHA512: 51ccbc6f8c89d18d8046b31fad5d132486d91377aac4238fa1d495db149d762e3649f1bf6ae303a91f4ec9c6737f2452539aceeb6186dc26c32d3e66fc859bed
+Description: GTK+ base UVC Viewer - runtime
+ guvcview is a simple GTK+ interface for capturing and viewing video from
+ devices supported by the Linux UVC driver.
+ .
+ This package includes the shared library.
+Homepage: http://guvcview.sourceforge.net/
+Multi-Arch: same
+
+Package: libguvcview-dev
+Priority: extra
+Section: libdevel
+Installed-Size: 397
+Maintainer: Nobuhiro Iwamatsu <iwamatsu@debian.org>
+Architecture: armhf
+Source: guvcview
+Version: 2.0.2.1~armbian5.31+1
+Depends: libguvcview-1.1-1 (= 2.0.2.1~armbian5.31+1)
+Recommends: uvcdynctrl
+Filename: pool/xenial-desktop/g/guvcview/libguvcview-dev_2.0.2.1~armbian5.31+1_armhf.deb
+Size: 109284
+MD5sum: 03d6f39a7f4498842c91db5cb433c468
+SHA1: 47329c37c1b4f35fb2b72cc5dcbb3d3c5f1f88d9
+SHA256: a5e573fc259fcb24ebfd02ea2190bf60d17ab83a503209aa66585f374428722b
+SHA512: df54be73cfd30f2735f2043e73d0039d3584e739e19a0fe638eed59218b77cd3a67372d07dbe3dec8938a3fa0cf826941f0e19c848fd79c98bccfc857460c1b1
+Description: GTK+ base UVC Viewer - development files
+ guvcview is a simple GTK+ interface for capturing and viewing video from
+ devices supported by the Linux UVC driver.
+ .
+ This package contains files that are needed to build applications.
+Homepage: http://guvcview.sourceforge.net/
+Multi-Arch: same
+
+Package: libguvcview-dev
+Priority: extra
+Section: libdevel
+Installed-Size: 397
+Maintainer: Nobuhiro Iwamatsu <iwamatsu@debian.org>
+Architecture: armhf
+Source: guvcview
+Version: 2.0.2.1~armbian5.30+1
+Depends: libguvcview-1.1-1 (= 2.0.2.1~armbian5.30+1)
+Recommends: uvcdynctrl
+Filename: pool/xenial-desktop/g/guvcview/libguvcview-dev_2.0.2.1~armbian5.30+1_armhf.deb
+Size: 109230
+MD5sum: c41faab14752af609af43ac602a351a2
+SHA1: d04b16b6b0ba87203405f170683ef8253e958309
+SHA256: 4ccbcdc4a37ea26c97f804f299fffb3630cc93dfd0a4eff00c998bd6b8af4249
+SHA512: 758d7bc6a6a33d6256167c7e6975765a90892b571c73137677ee28eaf143382bf1520eb25570ed592656a47c35a8bf1bd9ba04d3e80a14eb101c0c7f04fca337
+Description: GTK+ base UVC Viewer - development files
+ guvcview is a simple GTK+ interface for capturing and viewing video from
+ devices supported by the Linux UVC driver.
+ .
+ This package contains files that are needed to build applications.
+Multi-Arch: same
+Homepage: http://guvcview.sourceforge.net/
+
+Package: libguvcview-dev
+Priority: extra
+Section: libdevel
+Installed-Size: 397
+Maintainer: Nobuhiro Iwamatsu <iwamatsu@debian.org>
+Architecture: armhf
+Source: guvcview
+Version: 2.0.2.1~armbian5.25+1
+Depends: libguvcview-1.1-1 (= 2.0.2.1~armbian5.25+1)
+Recommends: uvcdynctrl
+Filename: pool/xenial-desktop/g/guvcview/libguvcview-dev_2.0.2.1~armbian5.25+1_armhf.deb
+Size: 109180
+MD5sum: bed90c919e044e4c90d201b525d4131a
+SHA1: 1c5000c1b6bb763fa78fc5e576203ee61fac78f5
+SHA256: 8afd216cedffc54b4a084ac5ed999281dea266596250f447bfd7478f5e528520
+SHA512: f1c00e4b81dd4fe913effe52cc940c2dc7bc2f6a455497f30f099da3fa53db372285df87917e930f4f90b29901fd5d05d3fc913ce8592676e9c4d188834666e8
+Description: GTK+ base UVC Viewer - development files
+ guvcview is a simple GTK+ interface for capturing and viewing video from
+ devices supported by the Linux UVC driver.
+ .
+ This package contains files that are needed to build applications.
+Homepage: http://guvcview.sourceforge.net/
+Multi-Arch: same
+
+Package: libmali-sunxi-dev
+Priority: optional
+Section: libdevel
+Installed-Size: 166
+Maintainer: root <root@unknown>
+Architecture: armhf
+Source: libmali-sunxi-r3p0
+Version: 1.0-1~armbian5.38+1
+Replaces: libegl1-mesa-dev, libgles1-mesa-dev, libgles2-mesa-dev
+Provides: sunxi-mali-dev
+Depends: libmali-sunxi-r3p0 (= 1.0-1~armbian5.38+1)
+Filename: pool/xenial-desktop/libm/libmali-sunxi-r3p0/libmali-sunxi-dev_1.0-1~armbian5.38+1_armhf.deb
+Size: 21104
+MD5sum: 00c4c6bf609ad325161b5f984a9b8cf3
+SHA1: 72046a00beb0e78dfa415abc483cae205b1032a5
+SHA256: 0ba58563b683905381988a64e68bd0bf4967234163906d688eb21c54104b1092
+SHA512: 0ddf5ae1a4636d50c50933f0a1da74c660e0f4bbafc5b7b0f2c7c516b421bea19906f4d94a3d439c9984d58d92dc9b4433ec0e7094556e4f52523e394e4b77ea
+Description: Mali userspace binary driver version r3p0
+ This package contains a complete set of Mali userspace drivers,
+ including proprietary OpenGLESv2/EGL binaries.
+ This package contains OpenGLESv2/EGL development headers
+ from Mali OpenGL ES SDK.
+Homepage: https://github.com/linux-sunxi/sunxi-mali/
+
+Package: libmali-sunxi-dev
+Priority: optional
+Section: libdevel
+Installed-Size: 166
+Maintainer: root <root@unknown>
+Architecture: armhf
+Source: libmali-sunxi-r3p0
+Version: 1.0-1~armbian5.35+1
+Replaces: libegl1-mesa-dev, libgles1-mesa-dev, libgles2-mesa-dev
+Provides: sunxi-mali-dev
+Depends: libmali-sunxi-r3p0 (= 1.0-1~armbian5.35+1)
+Filename: pool/xenial-desktop/libm/libmali-sunxi-r3p0/libmali-sunxi-dev_1.0-1~armbian5.35+1_armhf.deb
+Size: 21080
+MD5sum: 84c1b124f5f96a09a4e95ab728dfdcf9
+SHA1: 02a8a492603f4e6744695828633d4febd5fedd57
+SHA256: 4f6bf2bae2e320c58955cf640a3bdb810d424249d802f1d2de96aed18be29bc4
+SHA512: 17906340379e07478b55978edbb71c81840d241d99fc501998080ea29bcff99d951dbb55329f481b296cb98f74e6dc1baca1e993b2621e4fe326ea10a2cd972d
+Description: Mali userspace binary driver version r3p0
+ This package contains a complete set of Mali userspace drivers,
+ including proprietary OpenGLESv2/EGL binaries.
+ This package contains OpenGLESv2/EGL development headers
+ from Mali OpenGL ES SDK.
+Homepage: https://github.com/linux-sunxi/sunxi-mali/
+
+Package: libmali-sunxi-dev
+Priority: optional
+Section: libdevel
+Installed-Size: 166
+Maintainer: root <root@unknown>
+Architecture: armhf
+Source: libmali-sunxi-r3p0
+Version: 1.0-1~armbian5.31+1
+Replaces: libegl1-mesa-dev, libgles1-mesa-dev, libgles2-mesa-dev
+Provides: sunxi-mali-dev
+Depends: libmali-sunxi-r3p0 (= 1.0-1~armbian5.31+1)
+Filename: pool/xenial-desktop/libm/libmali-sunxi-r3p0/libmali-sunxi-dev_1.0-1~armbian5.31+1_armhf.deb
+Size: 21074
+MD5sum: 1e5d1a3438388ec9528189ac509c843f
+SHA1: bc8c00b8cf85541830f4c6df3a92c7a1b6aa6015
+SHA256: 8cd44b2820d65693df8988ebeac40d9a0ae3434ad75f9cd3c0f30b3db88398f6
+SHA512: 97ea5bc01dab31f199672d4a885cb1b59b1d3059e4ceaa8ce076fc746b1c9ee8b6167084bbc0acf0ec1d2247fa8344d9b758abe4bf8b5ac0a2dc27b758313970
+Description: Mali userspace binary driver version r3p0
+ This package contains a complete set of Mali userspace drivers,
+ including proprietary OpenGLESv2/EGL binaries.
+ This package contains OpenGLESv2/EGL development headers
+ from Mali OpenGL ES SDK.
+Homepage: https://github.com/linux-sunxi/sunxi-mali/
+
+Package: libmali-sunxi-dev
+Priority: optional
+Section: libdevel
+Installed-Size: 166
+Maintainer: root <root@unknown>
+Architecture: armhf
+Source: libmali-sunxi-r3p0
+Version: 1.0-1~armbian5.30+1
+Replaces: libegl1-mesa-dev, libgles1-mesa-dev, libgles2-mesa-dev
+Provides: sunxi-mali-dev
+Depends: libmali-sunxi-r3p0 (= 1.0-1~armbian5.30+1)
+Filename: pool/xenial-desktop/libm/libmali-sunxi-r3p0/libmali-sunxi-dev_1.0-1~armbian5.30+1_armhf.deb
+Size: 21082
+MD5sum: ab29c5b34601111b3df51f8a555c8eb6
+SHA1: e9846145292d02afa56b2f298406b1f8cdd6dc1e
+SHA256: 7d5ec1b718bd09160f59bf919a32328ac5f2441b8f4e4f0d83af2b6e8bbf9694
+SHA512: 9476ec5908284c9954019d8222386759917832eb85255bd112e4d8abeab1d5248505d8fe8241137c66d8e83df5d00fc34624de0f5c9b03a19ea1f952960b2faa
+Description: Mali userspace binary driver version r3p0
+ This package contains a complete set of Mali userspace drivers,
+ including proprietary OpenGLESv2/EGL binaries.
+ This package contains OpenGLESv2/EGL development headers
+ from Mali OpenGL ES SDK.
+Homepage: https://github.com/linux-sunxi/sunxi-mali/
+
+Package: libmali-sunxi-r3p0
+Priority: optional
+Section: libs
+Installed-Size: 1705
+Maintainer: root <root@unknown>
+Architecture: armhf
+Version: 1.0-1~armbian5.38+1
+Replaces: libegl1-mesa, libegl1-mesa-dev, libgles1-mesa, libgles1-mesa-dev, libgles2-mesa, libgles2-mesa-dev
+Provides: sunxi-mali
+Depends: libc6 (>= 2.4), libdri2-1 (>= 1.0.0~git20120510+26fee2e), libdrm2 (>= 2.3.1), libgcc1 (>= 1:3.5), libump, libx11-6 (>= 2:1.4.99.1), libxext6, libxfixes3
+Pre-Depends: armbian-bsp
+Filename: pool/xenial-desktop/libm/libmali-sunxi-r3p0/libmali-sunxi-r3p0_1.0-1~armbian5.38+1_armhf.deb
+Size: 390418
+MD5sum: 4764a64f4d3a657a47a78a650ed6e2c8
+SHA1: 0ba7c45cd906868db7678dab37a63d94d824bfeb
+SHA256: 40785cfc7f567fa93cbc3e437d615ab6099f009dfbd0a17bca156e88ec053905
+SHA512: 3203d048660b4cf1d3be4803221797a9303d65746f8c458a28e942ccc0dc124a5660af1e6760391af5ef0273272fae58258bc12956501d39b481e5bc61949a7d
+Description: Mali userspace binary driver version r3p0
+ This package contains a complete set of Mali userspace drivers,
+ including proprietary OpenGLESv2/EGL binaries.
+Multi-Arch: same
+Homepage: https://github.com/linux-sunxi/sunxi-mali/
+
+Package: libmali-sunxi-r3p0
+Priority: optional
+Section: libs
+Installed-Size: 1705
+Maintainer: root <root@unknown>
+Architecture: armhf
+Version: 1.0-1~armbian5.35+1
+Replaces: libegl1-mesa, libegl1-mesa-dev, libgles1-mesa, libgles1-mesa-dev, libgles2-mesa, libgles2-mesa-dev
+Provides: sunxi-mali
+Depends: libc6 (>= 2.4), libdri2-1 (>= 1.0.0~git20120510+26fee2e), libdrm2 (>= 2.3.1), libgcc1 (>= 1:3.5), libump, libx11-6 (>= 2:1.4.99.1), libxext6, libxfixes3
+Pre-Depends: armbian-bsp
+Filename: pool/xenial-desktop/libm/libmali-sunxi-r3p0/libmali-sunxi-r3p0_1.0-1~armbian5.35+1_armhf.deb
+Size: 390274
+MD5sum: e029faf84773194dd3ecc43dc70e9632
+SHA1: 66d1bf11b8c403a86fe4e4fa208b4450e96f76c0
+SHA256: 79a96b3cd8b03e55c117c49255b3bad53cc2a36c37d6bfa117f8d77e33a5e5ef
+SHA512: 5ef3ee6be504cdfc69e58bfb743d26ec67f78b3f640845469284cf94a969804cc5b63f9e2584e834edc8cc12ac9c1c0bc3161982e076ff0c7988d337f772c210
+Description: Mali userspace binary driver version r3p0
+ This package contains a complete set of Mali userspace drivers,
+ including proprietary OpenGLESv2/EGL binaries.
+Homepage: https://github.com/linux-sunxi/sunxi-mali/
+Multi-Arch: same
+
+Package: libmali-sunxi-r3p0
+Priority: optional
+Section: libs
+Installed-Size: 1705
+Maintainer: root <root@unknown>
+Architecture: armhf
+Version: 1.0-1~armbian5.31+1
+Replaces: libegl1-mesa, libegl1-mesa-dev, libgles1-mesa, libgles1-mesa-dev, libgles2-mesa, libgles2-mesa-dev
+Provides: sunxi-mali
+Depends: libc6 (>= 2.4), libdri2-1 (>= 1.0.0~git20120510+26fee2e), libdrm2 (>= 2.3.1), libgcc1 (>= 1:3.5), libump, libx11-6 (>= 2:1.4.99.1), libxext6, libxfixes3
+Pre-Depends: armbian-bsp
+Filename: pool/xenial-desktop/libm/libmali-sunxi-r3p0/libmali-sunxi-r3p0_1.0-1~armbian5.31+1_armhf.deb
+Size: 390914
+MD5sum: 1a1741cd8d9667dde323dcefe06a12f4
+SHA1: 245943c13941a7df217c75be2125132f198bb5fd
+SHA256: c733b9f67b76f83b20a06127909a0426314370ac0880079af3848435919c0a4d
+SHA512: 748e2fe3ad04fdf73dae2fbe99d6fb5dfb968808d89fd9760504c61f43ae2fb8b3d197291b424d0564671f377ec85d82c8c9b0fde778de019f85af4359fa857d
+Description: Mali userspace binary driver version r3p0
+ This package contains a complete set of Mali userspace drivers,
+ including proprietary OpenGLESv2/EGL binaries.
+Multi-Arch: same
+Homepage: https://github.com/linux-sunxi/sunxi-mali/
+
+Package: libmali-sunxi-r3p0
+Priority: optional
+Section: libs
+Installed-Size: 1705
+Maintainer: root <root@unknown>
+Architecture: armhf
+Version: 1.0-1~armbian5.30+1
+Replaces: libegl1-mesa, libegl1-mesa-dev, libgles1-mesa, libgles1-mesa-dev, libgles2-mesa, libgles2-mesa-dev
+Provides: sunxi-mali
+Depends: libc6 (>= 2.4), libdri2-1 (>= 1.0.0~git20120510+26fee2e), libdrm2 (>= 2.3.1), libgcc1 (>= 1:3.5), libump, libx11-6 (>= 2:1.4.99.1), libxext6, libxfixes3
+Pre-Depends: armbian-bsp
+Filename: pool/xenial-desktop/libm/libmali-sunxi-r3p0/libmali-sunxi-r3p0_1.0-1~armbian5.30+1_armhf.deb
+Size: 390536
+MD5sum: abcfac71cc2846d459b9f950a89c0d7a
+SHA1: c3c51883cc312ec4f6ed87194550812dd2c00653
+SHA256: c3ab2ff07113fe63e7b99032e9b6142ca748dca8c7fc211cf36511310ac019ae
+SHA512: 666273153e3cf96f3082b232f162672684c2fefb599baba6be066cfb2ee61f9d1e2b711228aff789b1b11b743977e39ef83f4c45f586838684f90f57b1adbde8
+Description: Mali userspace binary driver version r3p0
+ This package contains a complete set of Mali userspace drivers,
+ including proprietary OpenGLESv2/EGL binaries.
+Homepage: https://github.com/linux-sunxi/sunxi-mali/
+Multi-Arch: same
+
+Package: libump
+Priority: optional
+Section: libs
+Installed-Size: 45
+Maintainer: Luc Verhaegen <libv@skynet.be>
+Architecture: armhf
+Version: 3.0-0sunxi1~armbian5.38+1
+Depends: libc6 (>= 2.4)
+Filename: pool/xenial-desktop/libu/libump/libump_3.0-0sunxi1~armbian5.38+1_armhf.deb
+Size: 11510
+MD5sum: 641023920c84b6c5ecdeb8e247254f8b
+SHA1: b43f6349a005befe3591ce256701128be501d93a
+SHA256: 3faba431b208c2cebd5a365a65bf67714d754f5477ee49fd16ca61f1f7e31213
+SHA512: f517423beb208b080d452216fd906edd3457411fdc3eafb5a896f37497ab3759a51b40fe6b8cd69fdcf1cc00dd2b0eb7422d2996131864a4b9c240db7ed7e51e
+Description: ARM Unified Memory Provider library
+ The ARM Unified Memory Provider is needed for certain ARM SoCs with
+ an ARM Mali GPU. The binary Mali driver for X11 depends on it.
+Multi-Arch: same
+
+Package: libump
+Priority: optional
+Section: libs
+Installed-Size: 45
+Maintainer: Luc Verhaegen <libv@skynet.be>
+Architecture: armhf
+Version: 3.0-0sunxi1~armbian5.35+1
+Depends: libc6 (>= 2.4)
+Filename: pool/xenial-desktop/libu/libump/libump_3.0-0sunxi1~armbian5.35+1_armhf.deb
+Size: 11498
+MD5sum: fa8a50177d27cf247cdc19644889d229
+SHA1: 4c360b13949f7d7b9bc16322a73ebc9c3f5475a4
+SHA256: 284a2251b78ea2bad91c909b979647ab436d707b5f342a820fc2d6a33348884d
+SHA512: 47c7a2fe8024b46e5b49b50bcd8554ad0ecbd8f73d9ccb1959f57730c9b2ab76948b5093a095f40197d54ec1cb8167745714994baed9ada9857f285765f89744
+Description: ARM Unified Memory Provider library
+ The ARM Unified Memory Provider is needed for certain ARM SoCs with
+ an ARM Mali GPU. The binary Mali driver for X11 depends on it.
+Multi-Arch: same
+
+Package: libump
+Priority: optional
+Section: libs
+Installed-Size: 45
+Maintainer: Luc Verhaegen <libv@skynet.be>
+Architecture: armhf
+Version: 3.0-0sunxi1~armbian5.31+1
+Depends: libc6 (>= 2.4)
+Filename: pool/xenial-desktop/libu/libump/libump_3.0-0sunxi1~armbian5.31+1_armhf.deb
+Size: 11512
+MD5sum: b7eda7ca71e39809caa3816743e45dc9
+SHA1: 74246d23e1cb02ccbe1f3fa806494f45461b33c0
+SHA256: bab0c7ddcc76b47f46c66cfdbd4f55f9e957bbfe71515dffa03bfb038ebea93a
+SHA512: 86b1a7fe88cbbc7a70989faf602f0f7f119aebf855a886acda15d82569d29791462d68fdba78da52e26a081b1364c080344770b07291f4401e32236cc1b0998a
+Description: ARM Unified Memory Provider library
+ The ARM Unified Memory Provider is needed for certain ARM SoCs with
+ an ARM Mali GPU. The binary Mali driver for X11 depends on it.
+Multi-Arch: same
+
+Package: libump
+Priority: optional
+Section: libs
+Installed-Size: 45
+Maintainer: Luc Verhaegen <libv@skynet.be>
+Architecture: armhf
+Version: 3.0-0sunxi1~armbian5.30+1
+Depends: libc6 (>= 2.4)
+Filename: pool/xenial-desktop/libu/libump/libump_3.0-0sunxi1~armbian5.30+1_armhf.deb
+Size: 11514
+MD5sum: ba621d4544b6ec77afed86c81a5e3477
+SHA1: 896671fdaaab32fe71cef0d116bc391fb357360d
+SHA256: f0c321db67f360dcf1db51678664654d3e5712dd0eda8a4dba6640cb61fdfcf2
+SHA512: a5fbaa1bd81e7cc08edb28fd7da74536920722855988cd92f5b76072fa1ef6660e5c58e073c523d7fec0ab9ebab74ad558a27b8e7c1d16938fcb6368112aa273
+Description: ARM Unified Memory Provider library
+ The ARM Unified Memory Provider is needed for certain ARM SoCs with
+ an ARM Mali GPU. The binary Mali driver for X11 depends on it.
+Multi-Arch: same
+
+Package: libump-dev
+Priority: optional
+Section: libdevel
+Installed-Size: 71
+Maintainer: Luc Verhaegen <libv@skynet.be>
+Architecture: armhf
+Source: libump
+Version: 3.0-0sunxi1~armbian5.38+1
+Depends: libump (= 3.0-0sunxi1~armbian5.38+1)
+Filename: pool/xenial-desktop/libu/libump/libump-dev_3.0-0sunxi1~armbian5.38+1_armhf.deb
+Size: 14458
+MD5sum: ab4b56a03daa9cd65a54f404eb6290cc
+SHA1: f94a7c5ddbcd6971d487ea9eb79817ffb0e98f34
+SHA256: 6cb68dc6c51336e62a9252871214fa11687ffe59f9e7468af570b3685af89e26
+SHA512: c8550db1c1393304004599cfc99236043b66bfbb981405f2be52f5767b96907a5ea75212faa237ac6f81f61c0414d2f9d626d7ec2aaf2afc3656eb0024905c20
+Description: ARM Unified Memory Provider library (development files)
+ The ARM Unified Memory Provider is needed for certain ARM SoCs with
+ an ARM Mali GPU. The binary Mali driver for X11 depends on it. This
+ package is needed to build programs which link against libUMP.
+
+Package: libump-dev
+Priority: optional
+Section: libdevel
+Installed-Size: 71
+Maintainer: Luc Verhaegen <libv@skynet.be>
+Architecture: armhf
+Source: libump
+Version: 3.0-0sunxi1~armbian5.35+1
+Depends: libump (= 3.0-0sunxi1~armbian5.35+1)
+Filename: pool/xenial-desktop/libu/libump/libump-dev_3.0-0sunxi1~armbian5.35+1_armhf.deb
+Size: 14452
+MD5sum: 5c4b5605578b5116feaaa0eaaba5654b
+SHA1: d490d4a14a1e8fcfe96edbbd96b1c8be40c5f060
+SHA256: b45d619dc92a64abe2e2c007a095ee8f7f6ad4b1563192fc9e1230725d3ab67e
+SHA512: 460a28f601f837c6cfbb46dcf0cdc48637e49dfa72f87e8d51e470b49420c7f20cf17f19d31e13b7dea692bd61b532c732c6801b4ba5cd759a1a6beabfdafda1
+Description: ARM Unified Memory Provider library (development files)
+ The ARM Unified Memory Provider is needed for certain ARM SoCs with
+ an ARM Mali GPU. The binary Mali driver for X11 depends on it. This
+ package is needed to build programs which link against libUMP.
+
+Package: libump-dev
+Priority: optional
+Section: libdevel
+Installed-Size: 71
+Maintainer: Luc Verhaegen <libv@skynet.be>
+Architecture: armhf
+Source: libump
+Version: 3.0-0sunxi1~armbian5.31+1
+Depends: libump (= 3.0-0sunxi1~armbian5.31+1)
+Filename: pool/xenial-desktop/libu/libump/libump-dev_3.0-0sunxi1~armbian5.31+1_armhf.deb
+Size: 14450
+MD5sum: 2a7a805669ce208b70d1f484f2d0af69
+SHA1: 2c2f828e46a64ed5e99754bdad8f1852a778180d
+SHA256: c9a551da13da3d1a8fabda78a9ce91205b21927e909b30d3855c4d4307037345
+SHA512: 12e6102a30dd214ef81178d6e0ffa1b4084fcc80035d18b6e732f30fdb94e7809c437c08733e9ec8ae2acee31b2e8a8c70d7fd072cf63144dcbd8928bc6b6763
+Description: ARM Unified Memory Provider library (development files)
+ The ARM Unified Memory Provider is needed for certain ARM SoCs with
+ an ARM Mali GPU. The binary Mali driver for X11 depends on it. This
+ package is needed to build programs which link against libUMP.
+
+Package: libump-dev
+Priority: optional
+Section: libdevel
+Installed-Size: 71
+Maintainer: Luc Verhaegen <libv@skynet.be>
+Architecture: armhf
+Source: libump
+Version: 3.0-0sunxi1~armbian5.30+1
+Depends: libump (= 3.0-0sunxi1~armbian5.30+1)
+Filename: pool/xenial-desktop/libu/libump/libump-dev_3.0-0sunxi1~armbian5.30+1_armhf.deb
+Size: 14470
+MD5sum: 50f678a623e8c7e322c7989b3bc5e64a
+SHA1: 4d1975ce3e21d00b513e2384a0fd7c8d2a9600c2
+SHA256: dc30814f0c5b79b0b5beea11429faf045fc51864bcaec4fe00c42fb1baba9000
+SHA512: 4f28891d5c76ca95d8c04a946ad1bcd77e8e5ceae17c597e83cc64e10b18b89b95b4c79e68607300b5797cb4c5de666429a7f344e5fed630a44054126c23435b
+Description: ARM Unified Memory Provider library (development files)
+ The ARM Unified Memory Provider is needed for certain ARM SoCs with
+ an ARM Mali GPU. The binary Mali driver for X11 depends on it. This
+ package is needed to build programs which link against libUMP.
+
+Package: libvdpau-dev
+Priority: optional
+Section: libdevel
+Installed-Size: 204
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Architecture: armhf
+Source: libvdpau
+Version: 1.1.1-10~armbian5.38+1
+Depends: libvdpau1 (= 1.1.1-10~armbian5.38+1), libx11-dev
+Suggests: libvdpau-doc
+Filename: pool/xenial-desktop/libv/libvdpau/libvdpau-dev_1.1.1-10~armbian5.38+1_armhf.deb
+Size: 40298
+MD5sum: 75460602ea7e97aac4f7821a56ccc48a
+SHA1: cc2cc751882ba45794bd4305ae57ca56bf17426c
+SHA256: 042f03fc9593f8895e5f07b1ff66e6408d2211a7fd57bdfa4d1140a57c73c5c4
+SHA512: cbbc80cf49602e01c392fedd1ac056ef5abff97a901b2e1de0b41b113d12f7ea1bcced2a91e53b94145f1a6faeecb0c87746a165ee4ab26225df2501a24b5d55
+Description: Video Decode and Presentation API for Unix (development files)
+ VDPAU (Video Decode and Presentation API for Unix) is an open source
+ library (libvdpau) and API designed by NVIDIA originally for its GeForce
+ 8 series and later GPU hardware, targeted at the X Window System on Unix
+ operating-systems (including Linux, FreeBSD, and Solaris). This VDPAU API
+ allows video programs to offload portions of the video decoding process
+ and video post-processing to the GPU video-hardware.
+ .
+ This package contains the files necessary for development with VDPAU.
+Multi-Arch: same
+Homepage: http://cgit.freedesktop.org/~aplattner/libvdpau
+
+Package: libvdpau-dev
+Priority: optional
+Section: libdevel
+Installed-Size: 204
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Architecture: armhf
+Source: libvdpau
+Version: 1.1.1-10~armbian5.35+1
+Depends: libvdpau1 (= 1.1.1-10~armbian5.35+1), libx11-dev
+Suggests: libvdpau-doc
+Filename: pool/xenial-desktop/libv/libvdpau/libvdpau-dev_1.1.1-10~armbian5.35+1_armhf.deb
+Size: 40318
+MD5sum: 1d0599ea32c2ea42f3672e930533a9fb
+SHA1: a15402057dccddce064d73ba3bc4b8fff8fade97
+SHA256: 0310216f6cdd4faa7383fdb7cb79b821a7e5cc65cee67635d8050744a222171e
+SHA512: 9a07b6e9ef27728e28d5ee8989fb9ca67efc009e099c9ad83851c439bbddd9b6ab3f6ea54124c1121a134c43e35497d4ccc38f7c908dd2b20f473c58e33567b2
+Description: Video Decode and Presentation API for Unix (development files)
+ VDPAU (Video Decode and Presentation API for Unix) is an open source
+ library (libvdpau) and API designed by NVIDIA originally for its GeForce
+ 8 series and later GPU hardware, targeted at the X Window System on Unix
+ operating-systems (including Linux, FreeBSD, and Solaris). This VDPAU API
+ allows video programs to offload portions of the video decoding process
+ and video post-processing to the GPU video-hardware.
+ .
+ This package contains the files necessary for development with VDPAU.
+Multi-Arch: same
+Homepage: http://cgit.freedesktop.org/~aplattner/libvdpau
+
+Package: libvdpau-dev
+Priority: optional
+Section: libdevel
+Installed-Size: 204
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Architecture: armhf
+Source: libvdpau
+Version: 1.1.1-10~armbian5.31+1
+Depends: libvdpau1 (= 1.1.1-10~armbian5.31+1), libx11-dev
+Suggests: libvdpau-doc
+Filename: pool/xenial-desktop/libv/libvdpau/libvdpau-dev_1.1.1-10~armbian5.31+1_armhf.deb
+Size: 40304
+MD5sum: cd46c1d0e1b5c99b3d852184379cecc9
+SHA1: 4ee337e19ffa79491ffdfecd45858a0557e955b1
+SHA256: e3cf542ec1e2f57142525b6894aa0c877499e0d06f81d6b78e36e242d8f2fb92
+SHA512: a5d37b55ef4089526552ef8839458e404137fdc510200074353da7d43e565f362e62c628bd21e0ed7347ed0d3a7ef3a4bc6969df2c168320edf0ec714efb8b38
+Description: Video Decode and Presentation API for Unix (development files)
+ VDPAU (Video Decode and Presentation API for Unix) is an open source
+ library (libvdpau) and API designed by NVIDIA originally for its GeForce
+ 8 series and later GPU hardware, targeted at the X Window System on Unix
+ operating-systems (including Linux, FreeBSD, and Solaris). This VDPAU API
+ allows video programs to offload portions of the video decoding process
+ and video post-processing to the GPU video-hardware.
+ .
+ This package contains the files necessary for development with VDPAU.
+Multi-Arch: same
+Homepage: http://cgit.freedesktop.org/~aplattner/libvdpau
+
+Package: libvdpau-dev
+Priority: optional
+Section: libdevel
+Installed-Size: 204
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Architecture: armhf
+Source: libvdpau
+Version: 1.1.1-10~armbian5.30+1
+Depends: libvdpau1 (= 1.1.1-10~armbian5.30+1), libx11-dev
+Suggests: libvdpau-doc
+Filename: pool/xenial-desktop/libv/libvdpau/libvdpau-dev_1.1.1-10~armbian5.30+1_armhf.deb
+Size: 40312
+MD5sum: 622e5d836a5968613d5ac2f5f118cb8f
+SHA1: cca2a98d6d6c702af4a7497583bc0d66c4d592f0
+SHA256: 703029727daa52bf2e8b8c198762c6fa9dacf1c0f04336c8c9610f190d43f4f1
+SHA512: 298c3b8fbe3e916dec355f187eb7f047eb2f82e769498a3da316e58af0486939187ac882b298933e402ed9f503d0c7d454fda909baf441d2570daae973e11100
+Description: Video Decode and Presentation API for Unix (development files)
+ VDPAU (Video Decode and Presentation API for Unix) is an open source
+ library (libvdpau) and API designed by NVIDIA originally for its GeForce
+ 8 series and later GPU hardware, targeted at the X Window System on Unix
+ operating-systems (including Linux, FreeBSD, and Solaris). This VDPAU API
+ allows video programs to offload portions of the video decoding process
+ and video post-processing to the GPU video-hardware.
+ .
+ This package contains the files necessary for development with VDPAU.
+Multi-Arch: same
+Homepage: http://cgit.freedesktop.org/~aplattner/libvdpau
+
+Package: libvdpau-sunxi1
+Priority: optional
+Section: libs
+Installed-Size: 68
+Maintainer: Simon Eisenmann <simon@longsleep.org>
+Architecture: armhf
+Source: libvdpau-sunxi
+Version: 0.5.1~armbian5.38+1
+Provides: vdpau-driver
+Depends: libc6 (>= 2.4), libcedrus1, libpixman-1-0 (>= 0.18.0), libx11-6
+Filename: pool/xenial-desktop/libv/libvdpau-sunxi/libvdpau-sunxi1_0.5.1~armbian5.38+1_armhf.deb
+Size: 24980
+MD5sum: 36d637950f904d8b533bcb7ddb7125ae
+SHA1: e7b878f97ab97e0c1d75a47810f0d5bf200aa41d
+SHA256: 4bfa4b4f222fcbdfd0887b34dc61b6937c2dcace7e13f36efb49d981d5f8e14c
+SHA512: 12ebef3fa498dd6f73f4d95baadb4165fba11c1495ec2dc16859c667ebe835bd0a3229593ab7330ab9f3de9cd972ba249a6bbce3ffe4cb8556c11afcd1fc8282
+Description: VDPAU implementation for sunxi SoCs
+ It supports decoding of MPEG1 and MPEG2, some limited MPEG4 types,
+ H.264 and on H3/A64 it also decodes H.265.
+Multi-Arch: same
+Enhances: libvdpau1
+
+Package: libvdpau-sunxi1
+Priority: optional
+Section: libs
+Installed-Size: 68
+Maintainer: Simon Eisenmann <simon@longsleep.org>
+Architecture: armhf
+Source: libvdpau-sunxi
+Version: 0.5.1~armbian5.35+1
+Provides: vdpau-driver
+Depends: libc6 (>= 2.4), libcedrus1, libpixman-1-0 (>= 0.18.0), libx11-6
+Filename: pool/xenial-desktop/libv/libvdpau-sunxi/libvdpau-sunxi1_0.5.1~armbian5.35+1_armhf.deb
+Size: 24978
+MD5sum: 9ad8d280c679acde647abca98d052fae
+SHA1: 4160ce93ab6fcf878ab6b81d573515a7b7060e96
+SHA256: 722d3246d3051c74e251548150412b0adaa415a0636c9eddcf900177dc3df631
+SHA512: 51b10169e3b1db2d32f5140d94ee26fdb54104c098107838de09f190b5d811c6674450c1fdc165f8adb7e296cc6c82767a40c64a42e90a735fa5fcd801627c3c
+Description: VDPAU implementation for sunxi SoCs
+ It supports decoding of MPEG1 and MPEG2, some limited MPEG4 types,
+ H.264 and on H3/A64 it also decodes H.265.
+Multi-Arch: same
+Enhances: libvdpau1
+
+Package: libvdpau-sunxi1
+Priority: optional
+Section: libs
+Installed-Size: 68
+Maintainer: Simon Eisenmann <simon@longsleep.org>
+Architecture: armhf
+Source: libvdpau-sunxi
+Version: 0.5.1~armbian5.31+1
+Provides: vdpau-driver
+Depends: libc6 (>= 2.4), libcedrus1, libpixman-1-0 (>= 0.18.0), libx11-6
+Filename: pool/xenial-desktop/libv/libvdpau-sunxi/libvdpau-sunxi1_0.5.1~armbian5.31+1_armhf.deb
+Size: 24986
+MD5sum: 9b59bae7c722dc75a9f3b7c36a40cc47
+SHA1: 0594e8686b345395c9d34596ac15b482e7f9b70c
+SHA256: 740c124d0b2e125b7c2955e949355cb0550ca66acd331e3e1f0a030e04ced7e1
+SHA512: de7cb06d11df0af41189349ff1f9d2c625fe9f2c05ff9b4692f2131f36b82c84f32fc5f55ac20b447020b8138310e5a9cec613b39378ab114062afb5d6383fa9
+Description: VDPAU implementation for sunxi SoCs
+ It supports decoding of MPEG1 and MPEG2, some limited MPEG4 types,
+ H.264 and on H3/A64 it also decodes H.265.
+Multi-Arch: same
+Enhances: libvdpau1
+
+Package: libvdpau-sunxi1
+Priority: optional
+Section: libs
+Installed-Size: 68
+Maintainer: Simon Eisenmann <simon@longsleep.org>
+Architecture: armhf
+Source: libvdpau-sunxi
+Version: 0.5.1~armbian5.30+1
+Provides: vdpau-driver
+Depends: libc6 (>= 2.4), libcedrus1, libpixman-1-0 (>= 0.18.0), libx11-6
+Filename: pool/xenial-desktop/libv/libvdpau-sunxi/libvdpau-sunxi1_0.5.1~armbian5.30+1_armhf.deb
+Size: 24984
+MD5sum: 5e68f4eeaa72468a469239415ae69fc4
+SHA1: f7a707e9c2782d8dac80170251fa0e508c1d63b0
+SHA256: c3fe4fe8ea261427ecef10735a94696d827b528dcdee34dd313880098c915533
+SHA512: fbbc4dc4536a3ef4fe7f98f46a164936fb7cd2a47f028b9780f4fc9a754f24b93e3cf668dab5a568282536b85632c713ac55123b2456dce27967637189513726
+Description: VDPAU implementation for sunxi SoCs
+ It supports decoding of MPEG1 and MPEG2, some limited MPEG4 types,
+ H.264 and on H3/A64 it also decodes H.265.
+Enhances: libvdpau1
+Multi-Arch: same
+
+Package: libvdpau1
+Priority: optional
+Section: libs
+Installed-Size: 75
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Architecture: armhf
+Source: libvdpau
+Version: 1.1.1-10~armbian5.38+1
+Replaces: lib32vdpau1
+Depends: libc6 (>= 2.17), libgcc1 (>= 1:3.5), libx11-6 (>= 2:1.4.99.1), libxext6
+Recommends: vdpau-driver
+Conflicts: lib32vdpau1
+Filename: pool/xenial-desktop/libv/libvdpau/libvdpau1_1.1.1-10~armbian5.38+1_armhf.deb
+Size: 25988
+MD5sum: 75ce8ca0d1acf8da441facf7d6985429
+SHA1: 5062f981f8f1754bc930415119dccac2bc0409aa
+SHA256: 736ee119d7cd69a5a976c33e2374abf7297dc2989f0058d062da387a1716e9b9
+SHA512: 836bd8a79484302f1c466c2bcde47b45380bb0c46d8a00c9c6785a73ab91c3933806c00084c04c6b4f6ee614ff3e661c544fd4cd765d3b3a70c8b3fbf746cc21
+Description: Video Decode and Presentation API for Unix (libraries)
+ VDPAU (Video Decode and Presentation API for Unix) is an open source
+ library (libvdpau) and API designed by NVIDIA originally for its GeForce
+ 8 series and later GPU hardware, targeted at the X Window System on Unix
+ operating-systems (including Linux, FreeBSD, and Solaris). This VDPAU API
+ allows video programs to offload portions of the video decoding process
+ and video post-processing to the GPU video-hardware.
+ .
+ This package contains the VDPAU wrapper and trace libraries.
+Multi-Arch: same
+Homepage: http://cgit.freedesktop.org/~aplattner/libvdpau
+
+Package: libvdpau1
+Priority: optional
+Section: libs
+Installed-Size: 75
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Architecture: armhf
+Source: libvdpau
+Version: 1.1.1-10~armbian5.35+1
+Replaces: lib32vdpau1
+Depends: libc6 (>= 2.17), libgcc1 (>= 1:3.5), libx11-6 (>= 2:1.4.99.1), libxext6
+Recommends: vdpau-driver
+Conflicts: lib32vdpau1
+Filename: pool/xenial-desktop/libv/libvdpau/libvdpau1_1.1.1-10~armbian5.35+1_armhf.deb
+Size: 26006
+MD5sum: 20886b6e2490d897ff0f221d522682d0
+SHA1: 10e5354b0c5e8490933a8ee07cba296c5dc683eb
+SHA256: 4089407de8348b52767ab31f55b8c04a8dec55ad6b886d9975a4aab1ac96db01
+SHA512: 6df4630847dc878996cc9ae051b6e2288dbd866e9248889e6875192190956168dc629ef9354ad0c76cf2d773edd2ef392d06261a5e0eef169cccdd07b0c89ebe
+Description: Video Decode and Presentation API for Unix (libraries)
+ VDPAU (Video Decode and Presentation API for Unix) is an open source
+ library (libvdpau) and API designed by NVIDIA originally for its GeForce
+ 8 series and later GPU hardware, targeted at the X Window System on Unix
+ operating-systems (including Linux, FreeBSD, and Solaris). This VDPAU API
+ allows video programs to offload portions of the video decoding process
+ and video post-processing to the GPU video-hardware.
+ .
+ This package contains the VDPAU wrapper and trace libraries.
+Multi-Arch: same
+Homepage: http://cgit.freedesktop.org/~aplattner/libvdpau
+
+Package: libvdpau1
+Priority: optional
+Section: libs
+Installed-Size: 75
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Architecture: armhf
+Source: libvdpau
+Version: 1.1.1-10~armbian5.31+1
+Replaces: lib32vdpau1
+Depends: libc6 (>= 2.17), libgcc1 (>= 1:3.5), libx11-6 (>= 2:1.4.99.1), libxext6
+Recommends: vdpau-driver
+Conflicts: lib32vdpau1
+Filename: pool/xenial-desktop/libv/libvdpau/libvdpau1_1.1.1-10~armbian5.31+1_armhf.deb
+Size: 25988
+MD5sum: 79be03b469eb7b32431ce139732887f3
+SHA1: 50ac40f7dbb2e61f71bd2857418e8317b1823c6a
+SHA256: 12ef6892d81768ddd6e10e32b43d5f9ec53cedd05bf2a656f033545eaacf4f95
+SHA512: 4f238d41237a098ed176264b5ac4d7848ff43379530944781e4615e395527c423b9f0962cc34d704f00e21e6b3d8eebdbe4d4f302b9ac17b9b8728100318b7c5
+Description: Video Decode and Presentation API for Unix (libraries)
+ VDPAU (Video Decode and Presentation API for Unix) is an open source
+ library (libvdpau) and API designed by NVIDIA originally for its GeForce
+ 8 series and later GPU hardware, targeted at the X Window System on Unix
+ operating-systems (including Linux, FreeBSD, and Solaris). This VDPAU API
+ allows video programs to offload portions of the video decoding process
+ and video post-processing to the GPU video-hardware.
+ .
+ This package contains the VDPAU wrapper and trace libraries.
+Homepage: http://cgit.freedesktop.org/~aplattner/libvdpau
+Multi-Arch: same
+
+Package: libvdpau1
+Priority: optional
+Section: libs
+Installed-Size: 75
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Architecture: armhf
+Source: libvdpau
+Version: 1.1.1-10~armbian5.30+1
+Replaces: lib32vdpau1
+Depends: libc6 (>= 2.17), libgcc1 (>= 1:3.5), libx11-6 (>= 2:1.4.99.1), libxext6
+Recommends: vdpau-driver
+Conflicts: lib32vdpau1
+Filename: pool/xenial-desktop/libv/libvdpau/libvdpau1_1.1.1-10~armbian5.30+1_armhf.deb
+Size: 25992
+MD5sum: 2d9a1d71deed95dce6b65f564aed917b
+SHA1: dc5db329aa6de22bf0f2f7972dd030193930c68b
+SHA256: a313a980363228691c531ea2225e0e5be77206a6ec86b56591d1da6f2ab781c2
+SHA512: e08909b46959b316f0c7e173f629a49d0f97a1fede8a0e57ead436331abbc68066dbcb46f2a304d8705e2af48b96585f92fe8f3d1e4a5834023d546b335d584c
+Description: Video Decode and Presentation API for Unix (libraries)
+ VDPAU (Video Decode and Presentation API for Unix) is an open source
+ library (libvdpau) and API designed by NVIDIA originally for its GeForce
+ 8 series and later GPU hardware, targeted at the X Window System on Unix
+ operating-systems (including Linux, FreeBSD, and Solaris). This VDPAU API
+ allows video programs to offload portions of the video decoding process
+ and video post-processing to the GPU video-hardware.
+ .
+ This package contains the VDPAU wrapper and trace libraries.
+Multi-Arch: same
+Homepage: http://cgit.freedesktop.org/~aplattner/libvdpau
+
+Package: libvdpau1
+Priority: optional
+Section: libs
+Installed-Size: 75
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Architecture: armhf
+Source: libvdpau
+Version: 1.1.1-10~armbian5.25+1
+Replaces: lib32vdpau1
+Depends: libc6 (>= 2.17), libgcc1 (>= 1:3.5), libx11-6 (>= 2:1.4.99.1), libxext6
+Recommends: vdpau-driver
+Conflicts: lib32vdpau1
+Filename: pool/xenial-desktop/libv/libvdpau/libvdpau1_1.1.1-10~armbian5.25+1_armhf.deb
+Size: 26010
+MD5sum: d9710cb0c09b0debc9e84f204067f6e8
+SHA1: ef4270c148e1e8190f68018fac6c3c117e257dbd
+SHA256: 7818910a6739be8324b6dcbac0ef52b2160d0c36b35624cf3d7820e44221d81a
+SHA512: 2c74f58711bd9a74e57ff754c3248ba81239594edf4bc6d985c349d0da6bf8d6cafd7e9d356d0292cc8c630e63d329763229d61aec20e9540d55498bdd8ddcc0
+Description: Video Decode and Presentation API for Unix (libraries)
+ VDPAU (Video Decode and Presentation API for Unix) is an open source
+ library (libvdpau) and API designed by NVIDIA originally for its GeForce
+ 8 series and later GPU hardware, targeted at the X Window System on Unix
+ operating-systems (including Linux, FreeBSD, and Solaris). This VDPAU API
+ allows video programs to offload portions of the video decoding process
+ and video post-processing to the GPU video-hardware.
+ .
+ This package contains the VDPAU wrapper and trace libraries.
+Homepage: http://cgit.freedesktop.org/~aplattner/libvdpau
+Multi-Arch: same
+
+Package: mali-sunxi-utils
+Priority: optional
+Section: libs
+Installed-Size: 43
+Maintainer: root <root@unknown>
+Architecture: armhf
+Source: libmali-sunxi-r3p0
+Version: 1.0-1~armbian5.31+1
+Depends: libmali-sunxi-r3p0, libc6 (>= 2.4), libx11-6
+Filename: pool/xenial-desktop/libm/libmali-sunxi-r3p0/mali-sunxi-utils_1.0-1~armbian5.31+1_armhf.deb
+Size: 13866
+MD5sum: 7e398cc7e22a9048499b1508bdbba8dd
+SHA1: 236c95d9a2614aba2c18aed9dae8d4a9542e5ad0
+SHA256: 5ec8bf2847076bc5d5f8b90ed94ebacd78d0f810faa53624845c649c18fc4538
+SHA512: 3a965924066f723ceb91f2d032174b4b783f09387b0c7e70b4999d74d72619d453e18db7a9070a965e7ce3943ecbf9745866222efab5de4e5a12a528a5decf4a
+Description: Mali userspace binary driver version r3p0
+ This package contains a complete set of Mali userspace drivers,
+ including proprietary OpenGLESv2/EGL binaries.
+ This package contains mali-triangle test application.
+Homepage: https://github.com/linux-sunxi/sunxi-mali/
+
+Package: mali-sunxi-utils
+Priority: optional
+Section: libs
+Installed-Size: 43
+Maintainer: root <root@unknown>
+Architecture: armhf
+Source: libmali-sunxi-r3p0
+Version: 1.0-1~armbian5.30+1
+Depends: libmali-sunxi-r3p0, libc6 (>= 2.4), libx11-6
+Filename: pool/xenial-desktop/libm/libmali-sunxi-r3p0/mali-sunxi-utils_1.0-1~armbian5.30+1_armhf.deb
+Size: 13850
+MD5sum: f12ed5171425adef8f263032e07b7aa4
+SHA1: e0a5e76aa478cf5feb7fe54553755786ec08d40e
+SHA256: bc0d8dc9a2ec1f4bb4bf44f2c433fdb06c1ae62a9e72b9042524668c32405fb3
+SHA512: a76d7fd75cb61192971a5092b6b5aacf7a7ebec22950a1d7b324cf1a8b29457e98c4caa2ca64e3a5e5c3dc905af29bb2a16ae2f3181754f29a90c04b84fe2e74
+Description: Mali userspace binary driver version r3p0
+ This package contains a complete set of Mali userspace drivers,
+ including proprietary OpenGLESv2/EGL binaries.
+ This package contains mali-triangle test application.
+Homepage: https://github.com/linux-sunxi/sunxi-mali/
+
+Package: xserver-xorg-video-armsoc-sun4i
+Priority: optional
+Section: x11
+Installed-Size: 84
+Maintainer: Ubuntu Developers <ubuntu-devel@lists.ubuntu.com>
+Original-Maintainer: Marcin Juszkiewicz <marcin@juszkiewicz.com.pl>
+Architecture: armhf
+Source: xf86-video-armsoc
+Version: 1.4.1~armbian5.38+1
+Provides: xorg-driver-video
+Depends: libc6 (>= 2.15), libdrm2 (>= 2.4.36), libpixman-1-0, xorg-video-abi-20, xserver-xorg-core (>= 2:1.17.99.902)
+Filename: pool/xenial-desktop/x/xf86-video-armsoc/xserver-xorg-video-armsoc-sun4i_1.4.1~armbian5.38+1_armhf.deb
+Size: 32964
+MD5sum: d66049ce58a943b441964f4c9a06a494
+SHA1: 8d2e11c0f942580b1080489db9a5ec83a6d2357a
+SHA256: ff6166612f6c9422f0cc1356344ae6d3a8319c041d6ef28d0cbd830cd44a6493
+SHA512: 42df0684cd1ebddba0362df9c4192e929d3d1fdb45e0929024ce3a6c9f703aee854645a566bd1abe60fc34f6c38e6e19fe49abbb83891e4972f037fda4c15340
+Description: X.Org X server -- ARM SoC display driver for Allwinner DRM
+ This driver for the X.Org X server (see xserver-xorg for a further
+ description) provides support for devices including
+ Allwinner H3, H5 and A64.
+ .
+ The driver depends on drm support in the kernel, which is
+ in the staging area of the mainline kernel since version 3.3.
+ .
+ More information about X.Org can be found at:
+  * <URL:http://www.X.org>
+  * <URL:http://xorg.freedesktop.org>
+  * <URL:http://lists.freedesktop.org/mailman/listinfo/xorg>
+ .
+ This package contains the armsoc driver for the Sunxi DRM driver.
+
+Package: xserver-xorg-video-armsoc-sun4i
+Priority: optional
+Section: x11
+Installed-Size: 84
+Maintainer: Ubuntu Developers <ubuntu-devel@lists.ubuntu.com>
+Original-Maintainer: Marcin Juszkiewicz <marcin@juszkiewicz.com.pl>
+Architecture: armhf
+Source: xf86-video-armsoc
+Version: 1.4.1~armbian5.35+1
+Provides: xorg-driver-video
+Depends: libc6 (>= 2.15), libdrm2 (>= 2.4.36), libpixman-1-0, xorg-video-abi-20, xserver-xorg-core (>= 2:1.17.99.902)
+Filename: pool/xenial-desktop/x/xf86-video-armsoc/xserver-xorg-video-armsoc-sun4i_1.4.1~armbian5.35+1_armhf.deb
+Size: 32952
+MD5sum: a24e8784aa1dc279e03d557b3aec5dfd
+SHA1: 0d5e4eddf695126e090898a87f4108c7c8acc5ac
+SHA256: 28c31c7ce1e4d3eae89368611df21d3f8707b70e9aa29f63f6e896d85ab2ccc0
+SHA512: c9c66c73367221550c4181b1d02da59fe9925afa4855cae7972a018b8205ff85a3d3cbf60120488714310ce8e40ecb19ce71e24c492ff6b3a4fb14e2f5112228
+Description: X.Org X server -- ARM SoC display driver for Allwinner DRM
+ This driver for the X.Org X server (see xserver-xorg for a further
+ description) provides support for devices including
+ Allwinner H3, H5 and A64.
+ .
+ The driver depends on drm support in the kernel, which is
+ in the staging area of the mainline kernel since version 3.3.
+ .
+ More information about X.Org can be found at:
+  * <URL:http://www.X.org>
+  * <URL:http://xorg.freedesktop.org>
+  * <URL:http://lists.freedesktop.org/mailman/listinfo/xorg>
+ .
+ This package contains the armsoc driver for the Sunxi DRM driver.
+
+Package: xserver-xorg-video-fbturbo
+Priority: optional
+Section: x11
+Installed-Size: 78
+Maintainer: Vincent LAMAR <vincent@lamar.fr>
+Architecture: armhf
+Version: 1:0.4.4~armbian5.38+1
+Provides: xorg-driver-video
+Depends: libc6 (>= 2.7), libump, xorg-video-abi-20, xserver-xorg-core (>= 2:1.17.99.902)
+Filename: pool/xenial-desktop/x/xserver-xorg-video-fbturbo/xserver-xorg-video-fbturbo_0.4.4~armbian5.38+1_armhf.deb
+Size: 34044
+MD5sum: 4c7e12b943da7131a9c4a8ad6fc14bd7
+SHA1: 163fff296cb2f0b2b1b9e3bae68401fd8ac5822d
+SHA256: c071ed7e73f5f205ffbe24497516ab171fb56bdd0b11d8bc07a7e6338df7135b
+SHA512: dde65a5ce28f6d39b38e5025f7e941308b708c79af7c7e9d87bf4698d4e3ba0e421ac6dc89bd20b01a6dfca2c982fa4c6d9eca7361c6d392eb7e11cd6a1372e0
+Description: fbdev display driver optimized for Allwinner SoC
+ This package provides the driver for the Linux framebuffer
+ primarily optimized for the devices powered by the Allwinner SoC
+ It can use some of the 2D/3D hardware
+
+Package: xserver-xorg-video-fbturbo
+Priority: optional
+Section: x11
+Installed-Size: 78
+Maintainer: Vincent LAMAR <vincent@lamar.fr>
+Architecture: armhf
+Version: 1:0.4.4~armbian5.35+1
+Provides: xorg-driver-video
+Depends: libc6 (>= 2.7), libump, xorg-video-abi-20, xserver-xorg-core (>= 2:1.17.99.902)
+Filename: pool/xenial-desktop/x/xserver-xorg-video-fbturbo/xserver-xorg-video-fbturbo_0.4.4~armbian5.35+1_armhf.deb
+Size: 34116
+MD5sum: b33e53e70b4460642bba5be8b3a277de
+SHA1: 5f947d238d960747fc3984560b7705132e3e4ea1
+SHA256: 1c9cea407a55c61f7de8a90ec731690cf4a04fcf8ff3ff901124a77e342a3d28
+SHA512: c801124120944aa4f578f7093e8f415ee627fea4a9414c8503b457f505b4f0bc0080c90fea4cc4f47305d9b06f2edd62d7b91ac7b9ec8a726878c9f4f23b1508
+Description: fbdev display driver optimized for Allwinner SoC
+ This package provides the driver for the Linux framebuffer
+ primarily optimized for the devices powered by the Allwinner SoC
+ It can use some of the 2D/3D hardware
+
+Package: xserver-xorg-video-fbturbo
+Priority: optional
+Section: x11
+Installed-Size: 78
+Maintainer: Vincent LAMAR <vincent@lamar.fr>
+Architecture: armhf
+Version: 1:0.4.4~armbian5.31+1
+Provides: xorg-driver-video
+Depends: libc6 (>= 2.7), libump, xorg-video-abi-20, xserver-xorg-core (>= 2:1.17.99.902)
+Filename: pool/xenial-desktop/x/xserver-xorg-video-fbturbo/xserver-xorg-video-fbturbo_0.4.4~armbian5.31+1_armhf.deb
+Size: 34026
+MD5sum: 9eb340758dea07d7db3f7732ee1d5a50
+SHA1: 50d52627bddfb3b1d0d68583ceb1733ad5915e3e
+SHA256: 58fde40e0b3d52edd20c9febb92ab960ecfcfc420955f76dae7914c2a5d4e4ed
+SHA512: 3bade78e27e08c2467b343219e4a9f9a7837e0da43fd664882a63fc9aa61dbdc2d60c39898fbd0d44cbb29ad6693d3d0a3b74ce610e499fb1bab9b970db3993e
+Description: fbdev display driver optimized for Allwinner SoC
+ This package provides the driver for the Linux framebuffer
+ primarily optimized for the devices powered by the Allwinner SoC
+ It can use some of the 2D/3D hardware
+
+Package: xserver-xorg-video-fbturbo
+Priority: optional
+Section: x11
+Installed-Size: 78
+Maintainer: Vincent LAMAR <vincent@lamar.fr>
+Architecture: armhf
+Version: 1:0.4.4~armbian5.30+1
+Provides: xorg-driver-video
+Depends: libc6 (>= 2.7), libump, xorg-video-abi-20, xserver-xorg-core (>= 2:1.17.99.902)
+Filename: pool/xenial-desktop/x/xserver-xorg-video-fbturbo/xserver-xorg-video-fbturbo_0.4.4~armbian5.30+1_armhf.deb
+Size: 34084
+MD5sum: 383a22074df61f029763d5fcf0c0cfdf
+SHA1: c618ef0b7090930a12bfedc3362574457179b569
+SHA256: c996a0786ca33ba96b1865089a2e55097d567f23af5932bb8b82f7384e055db2
+SHA512: 93f6b8ab1750903b185235b544209af50d2ae8fa34b22602285780a7c2ab8fbdf0e006a838c0f944eabd3d731aa5e3ff0b9bb6e9fc10ec91d46d2d28d3c3a921
+Description: fbdev display driver optimized for Allwinner SoC
+ This package provides the driver for the Linux framebuffer
+ primarily optimized for the devices powered by the Allwinner SoC
+ It can use some of the 2D/3D hardware
+

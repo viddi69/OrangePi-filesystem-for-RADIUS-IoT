@@ -1,0 +1,13 @@
+#!/bin/sh
+[ "$1" = "upgrade" ] && touch /var/run/.reboot_required
+[ -d "/boot/bin.old" ] && rm -rf /boot/bin.old
+[ -d "/boot/bin" ] && mv -f /boot/bin /boot/bin.old
+if [ -L "/etc/network/interfaces" ]; then
+cp /etc/network/interfaces /etc/network/interfaces.tmp
+rm /etc/network/interfaces
+mv /etc/network/interfaces.tmp /etc/network/interfaces
+fi
+# make a backup since we are unconditionally overwriting this on update
+[ -f "/etc/default/cpufrequtils" ] && cp /etc/default/cpufrequtils /etc/default/cpufrequtils.dpkg-old
+dpkg-divert --package linux-xenial-root-orangepizero --add --rename 		--divert /etc/mpv/mpv-dist.conf /etc/mpv/mpv.conf
+exit 0

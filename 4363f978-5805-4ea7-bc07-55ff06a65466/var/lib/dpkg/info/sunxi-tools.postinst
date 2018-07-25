@@ -1,0 +1,37 @@
+#! /bin/sh
+
+set -e
+
+case "$1" in
+    configure)
+
+        addgroup --system --quiet sunxi-fel
+
+        ;;
+
+    abort-upgrade|abort-remove|abort-deconfigure)
+
+        ;;
+
+    *)
+
+        echo "postinst called with unknown argument \`$1'" >&2
+        exit 0
+
+        ;;
+esac
+
+# Automatically added by dh_installudev
+if [ "$1" = configure ]; then
+	if [ -e "/etc/udev/rules.d/z60_sunxi-tools.rules" ]; then
+		echo "Preserving user changes to /etc/udev/rules.d/60-sunxi-tools.rules ..."
+		if [ -e "/etc/udev/rules.d/60-sunxi-tools.rules" ]; then
+			mv -f "/etc/udev/rules.d/60-sunxi-tools.rules" "/etc/udev/rules.d/60-sunxi-tools.rules.dpkg-new"
+		fi
+		mv -f "/etc/udev/rules.d/z60_sunxi-tools.rules" "/etc/udev/rules.d/60-sunxi-tools.rules"
+	fi
+fi
+# End automatically added section
+
+
+exit 0

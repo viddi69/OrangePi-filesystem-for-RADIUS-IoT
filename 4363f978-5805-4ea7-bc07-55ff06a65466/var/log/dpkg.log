@@ -1,0 +1,195 @@
+2018-06-07 06:06:30 startup archives unpack
+2018-06-07 06:06:30 upgrade git-man:all 1:2.7.4-0ubuntu1.3 1:2.7.4-0ubuntu1.4
+2018-06-07 06:06:30 status half-configured git-man:all 1:2.7.4-0ubuntu1.3
+2018-06-07 06:06:30 status unpacked git-man:all 1:2.7.4-0ubuntu1.3
+2018-06-07 06:06:30 status half-installed git-man:all 1:2.7.4-0ubuntu1.3
+2018-06-07 06:06:30 status triggers-pending man-db:armhf 2.7.5-1
+2018-06-07 06:06:30 status half-installed git-man:all 1:2.7.4-0ubuntu1.3
+2018-06-07 06:06:30 status unpacked git-man:all 1:2.7.4-0ubuntu1.4
+2018-06-07 06:06:31 status unpacked git-man:all 1:2.7.4-0ubuntu1.4
+2018-06-07 06:06:31 upgrade git:armhf 1:2.7.4-0ubuntu1.3 1:2.7.4-0ubuntu1.4
+2018-06-07 06:06:31 status half-configured git:armhf 1:2.7.4-0ubuntu1.3
+2018-06-07 06:06:31 status unpacked git:armhf 1:2.7.4-0ubuntu1.3
+2018-06-07 06:06:31 status half-installed git:armhf 1:2.7.4-0ubuntu1.3
+2018-06-07 06:06:33 status half-installed git:armhf 1:2.7.4-0ubuntu1.3
+2018-06-07 06:06:33 status unpacked git:armhf 1:2.7.4-0ubuntu1.4
+2018-06-07 06:06:33 status unpacked git:armhf 1:2.7.4-0ubuntu1.4
+2018-06-07 06:06:33 trigproc man-db:armhf 2.7.5-1 <none>
+2018-06-07 06:06:33 status half-configured man-db:armhf 2.7.5-1
+2018-06-07 06:06:36 status installed man-db:armhf 2.7.5-1
+2018-06-07 06:06:36 startup packages configure
+2018-06-07 06:06:36 configure git-man:all 1:2.7.4-0ubuntu1.4 <none>
+2018-06-07 06:06:36 status unpacked git-man:all 1:2.7.4-0ubuntu1.4
+2018-06-07 06:06:36 status half-configured git-man:all 1:2.7.4-0ubuntu1.4
+2018-06-07 06:06:36 status installed git-man:all 1:2.7.4-0ubuntu1.4
+2018-06-07 06:06:36 configure git:armhf 1:2.7.4-0ubuntu1.4 <none>
+2018-06-07 06:06:36 status unpacked git:armhf 1:2.7.4-0ubuntu1.4
+2018-06-07 06:06:36 status unpacked git:armhf 1:2.7.4-0ubuntu1.4
+2018-06-07 06:06:36 status half-configured git:armhf 1:2.7.4-0ubuntu1.4
+2018-06-07 06:06:37 status installed git:armhf 1:2.7.4-0ubuntu1.4
+2018-06-07 06:06:37 startup packages configure
+2018-06-12 06:32:23 startup archives unpack
+2018-06-12 06:32:23 upgrade linux-libc-dev:armhf 4.4.0-127.153 4.4.0-128.154
+2018-06-12 06:32:23 status half-configured linux-libc-dev:armhf 4.4.0-127.153
+2018-06-12 06:32:23 status unpacked linux-libc-dev:armhf 4.4.0-127.153
+2018-06-12 06:32:23 status half-installed linux-libc-dev:armhf 4.4.0-127.153
+2018-06-12 06:32:25 status half-installed linux-libc-dev:armhf 4.4.0-127.153
+2018-06-12 06:32:25 status unpacked linux-libc-dev:armhf 4.4.0-128.154
+2018-06-12 06:32:25 status unpacked linux-libc-dev:armhf 4.4.0-128.154
+2018-06-12 06:32:25 startup packages configure
+2018-06-12 06:32:25 configure linux-libc-dev:armhf 4.4.0-128.154 <none>
+2018-06-12 06:32:25 status unpacked linux-libc-dev:armhf 4.4.0-128.154
+2018-06-12 06:32:25 status half-configured linux-libc-dev:armhf 4.4.0-128.154
+2018-06-12 06:32:25 status installed linux-libc-dev:armhf 4.4.0-128.154
+2018-06-12 06:32:25 startup packages configure
+2018-06-14 06:04:56 startup archives unpack
+2018-06-14 06:04:57 upgrade libperl5.22:armhf 5.22.1-9ubuntu0.3 5.22.1-9ubuntu0.5
+2018-06-14 06:04:57 status half-configured libperl5.22:armhf 5.22.1-9ubuntu0.3
+2018-06-14 06:04:57 status unpacked libperl5.22:armhf 5.22.1-9ubuntu0.3
+2018-06-14 06:04:57 status half-installed libperl5.22:armhf 5.22.1-9ubuntu0.3
+2018-06-14 06:04:59 status triggers-pending man-db:armhf 2.7.5-1
+2018-06-14 06:04:59 status half-installed libperl5.22:armhf 5.22.1-9ubuntu0.3
+2018-06-14 06:05:00 status unpacked libperl5.22:armhf 5.22.1-9ubuntu0.5
+2018-06-14 06:05:00 status unpacked libperl5.22:armhf 5.22.1-9ubuntu0.5
+2018-06-14 06:05:00 upgrade perl:armhf 5.22.1-9ubuntu0.3 5.22.1-9ubuntu0.5
+2018-06-14 06:05:00 status half-configured perl:armhf 5.22.1-9ubuntu0.3
+2018-06-14 06:05:00 status unpacked perl:armhf 5.22.1-9ubuntu0.3
+2018-06-14 06:05:00 status half-installed perl:armhf 5.22.1-9ubuntu0.3
+2018-06-14 06:05:00 status half-installed perl:armhf 5.22.1-9ubuntu0.3
+2018-06-14 06:05:00 status unpacked perl:armhf 5.22.1-9ubuntu0.5
+2018-06-14 06:05:00 status unpacked perl:armhf 5.22.1-9ubuntu0.5
+2018-06-14 06:05:00 upgrade perl-base:armhf 5.22.1-9ubuntu0.3 5.22.1-9ubuntu0.5
+2018-06-14 06:05:00 status half-configured perl-base:armhf 5.22.1-9ubuntu0.3
+2018-06-14 06:05:00 status unpacked perl-base:armhf 5.22.1-9ubuntu0.3
+2018-06-14 06:05:00 status half-installed perl-base:armhf 5.22.1-9ubuntu0.3
+2018-06-14 06:05:01 status half-installed perl-base:armhf 5.22.1-9ubuntu0.3
+2018-06-14 06:05:01 status unpacked perl-base:armhf 5.22.1-9ubuntu0.5
+2018-06-14 06:05:01 status unpacked perl-base:armhf 5.22.1-9ubuntu0.5
+2018-06-14 06:05:01 trigproc man-db:armhf 2.7.5-1 <none>
+2018-06-14 06:05:01 status half-configured man-db:armhf 2.7.5-1
+2018-06-14 06:05:03 status installed man-db:armhf 2.7.5-1
+2018-06-14 06:05:03 startup packages configure
+2018-06-14 06:05:03 configure perl-base:armhf 5.22.1-9ubuntu0.5 <none>
+2018-06-14 06:05:03 status unpacked perl-base:armhf 5.22.1-9ubuntu0.5
+2018-06-14 06:05:03 status half-configured perl-base:armhf 5.22.1-9ubuntu0.5
+2018-06-14 06:05:03 status installed perl-base:armhf 5.22.1-9ubuntu0.5
+2018-06-14 06:05:03 startup archives unpack
+2018-06-14 06:05:03 upgrade perl-modules-5.22:all 5.22.1-9ubuntu0.3 5.22.1-9ubuntu0.5
+2018-06-14 06:05:03 status half-configured perl-modules-5.22:all 5.22.1-9ubuntu0.3
+2018-06-14 06:05:03 status unpacked perl-modules-5.22:all 5.22.1-9ubuntu0.3
+2018-06-14 06:05:03 status half-installed perl-modules-5.22:all 5.22.1-9ubuntu0.3
+2018-06-14 06:05:07 status half-installed perl-modules-5.22:all 5.22.1-9ubuntu0.3
+2018-06-14 06:05:07 status unpacked perl-modules-5.22:all 5.22.1-9ubuntu0.5
+2018-06-14 06:05:07 status unpacked perl-modules-5.22:all 5.22.1-9ubuntu0.5
+2018-06-14 06:05:07 upgrade gpgv:armhf 1.4.20-1ubuntu3.1 1.4.20-1ubuntu3.2
+2018-06-14 06:05:07 status half-configured gpgv:armhf 1.4.20-1ubuntu3.1
+2018-06-14 06:05:07 status unpacked gpgv:armhf 1.4.20-1ubuntu3.1
+2018-06-14 06:05:07 status half-installed gpgv:armhf 1.4.20-1ubuntu3.1
+2018-06-14 06:05:07 status triggers-pending man-db:armhf 2.7.5-1
+2018-06-14 06:05:07 status half-installed gpgv:armhf 1.4.20-1ubuntu3.1
+2018-06-14 06:05:08 status unpacked gpgv:armhf 1.4.20-1ubuntu3.2
+2018-06-14 06:05:08 status unpacked gpgv:armhf 1.4.20-1ubuntu3.2
+2018-06-14 06:05:08 trigproc man-db:armhf 2.7.5-1 <none>
+2018-06-14 06:05:08 status half-configured man-db:armhf 2.7.5-1
+2018-06-14 06:05:08 status installed man-db:armhf 2.7.5-1
+2018-06-14 06:05:08 startup packages configure
+2018-06-14 06:05:08 configure gpgv:armhf 1.4.20-1ubuntu3.2 <none>
+2018-06-14 06:05:08 status unpacked gpgv:armhf 1.4.20-1ubuntu3.2
+2018-06-14 06:05:08 status half-configured gpgv:armhf 1.4.20-1ubuntu3.2
+2018-06-14 06:05:08 status installed gpgv:armhf 1.4.20-1ubuntu3.2
+2018-06-14 06:05:09 startup archives unpack
+2018-06-14 06:05:09 upgrade gnupg:armhf 1.4.20-1ubuntu3.1 1.4.20-1ubuntu3.2
+2018-06-14 06:05:09 status half-configured gnupg:armhf 1.4.20-1ubuntu3.1
+2018-06-14 06:05:09 status unpacked gnupg:armhf 1.4.20-1ubuntu3.1
+2018-06-14 06:05:09 status half-installed gnupg:armhf 1.4.20-1ubuntu3.1
+2018-06-14 06:05:09 status triggers-pending man-db:armhf 2.7.5-1
+2018-06-14 06:05:09 status half-installed gnupg:armhf 1.4.20-1ubuntu3.1
+2018-06-14 06:05:09 status unpacked gnupg:armhf 1.4.20-1ubuntu3.2
+2018-06-14 06:05:09 status unpacked gnupg:armhf 1.4.20-1ubuntu3.2
+2018-06-14 06:05:09 trigproc man-db:armhf 2.7.5-1 <none>
+2018-06-14 06:05:09 status half-configured man-db:armhf 2.7.5-1
+2018-06-14 06:05:10 status installed man-db:armhf 2.7.5-1
+2018-06-14 06:05:10 startup packages configure
+2018-06-14 06:05:10 configure gnupg:armhf 1.4.20-1ubuntu3.2 <none>
+2018-06-14 06:05:10 status unpacked gnupg:armhf 1.4.20-1ubuntu3.2
+2018-06-14 06:05:10 status half-configured gnupg:armhf 1.4.20-1ubuntu3.2
+2018-06-14 06:05:10 status installed gnupg:armhf 1.4.20-1ubuntu3.2
+2018-06-14 06:05:10 configure perl-modules-5.22:all 5.22.1-9ubuntu0.5 <none>
+2018-06-14 06:05:10 status unpacked perl-modules-5.22:all 5.22.1-9ubuntu0.5
+2018-06-14 06:05:10 status half-configured perl-modules-5.22:all 5.22.1-9ubuntu0.5
+2018-06-14 06:05:10 status installed perl-modules-5.22:all 5.22.1-9ubuntu0.5
+2018-06-14 06:05:10 configure libperl5.22:armhf 5.22.1-9ubuntu0.5 <none>
+2018-06-14 06:05:10 status unpacked libperl5.22:armhf 5.22.1-9ubuntu0.5
+2018-06-14 06:05:10 status half-configured libperl5.22:armhf 5.22.1-9ubuntu0.5
+2018-06-14 06:05:10 status installed libperl5.22:armhf 5.22.1-9ubuntu0.5
+2018-06-14 06:05:10 status triggers-pending libc-bin:armhf 2.23-0ubuntu10
+2018-06-14 06:05:10 configure perl:armhf 5.22.1-9ubuntu0.5 <none>
+2018-06-14 06:05:10 status unpacked perl:armhf 5.22.1-9ubuntu0.5
+2018-06-14 06:05:10 status unpacked perl:armhf 5.22.1-9ubuntu0.5
+2018-06-14 06:05:10 status half-configured perl:armhf 5.22.1-9ubuntu0.5
+2018-06-14 06:05:10 status installed perl:armhf 5.22.1-9ubuntu0.5
+2018-06-14 06:05:10 trigproc libc-bin:armhf 2.23-0ubuntu10 <none>
+2018-06-14 06:05:10 status half-configured libc-bin:armhf 2.23-0ubuntu10
+2018-06-14 06:05:10 status installed libc-bin:armhf 2.23-0ubuntu10
+2018-06-14 06:05:11 startup packages configure
+2018-06-15 06:39:30 startup archives unpack
+2018-06-15 06:39:31 upgrade file:armhf 1:5.25-2ubuntu1 1:5.25-2ubuntu1.1
+2018-06-15 06:39:31 status half-configured file:armhf 1:5.25-2ubuntu1
+2018-06-15 06:39:31 status unpacked file:armhf 1:5.25-2ubuntu1
+2018-06-15 06:39:31 status half-installed file:armhf 1:5.25-2ubuntu1
+2018-06-15 06:39:31 status triggers-pending man-db:armhf 2.7.5-1
+2018-06-15 06:39:31 status half-installed file:armhf 1:5.25-2ubuntu1
+2018-06-15 06:39:31 status unpacked file:armhf 1:5.25-2ubuntu1.1
+2018-06-15 06:39:31 status unpacked file:armhf 1:5.25-2ubuntu1.1
+2018-06-15 06:39:31 upgrade libmagic1:armhf 1:5.25-2ubuntu1 1:5.25-2ubuntu1.1
+2018-06-15 06:39:31 status triggers-pending libc-bin:armhf 2.23-0ubuntu10
+2018-06-15 06:39:31 status half-configured libmagic1:armhf 1:5.25-2ubuntu1
+2018-06-15 06:39:31 status unpacked libmagic1:armhf 1:5.25-2ubuntu1
+2018-06-15 06:39:31 status half-installed libmagic1:armhf 1:5.25-2ubuntu1
+2018-06-15 06:39:31 status half-installed libmagic1:armhf 1:5.25-2ubuntu1
+2018-06-15 06:39:31 status unpacked libmagic1:armhf 1:5.25-2ubuntu1.1
+2018-06-15 06:39:31 status unpacked libmagic1:armhf 1:5.25-2ubuntu1.1
+2018-06-15 06:39:31 trigproc man-db:armhf 2.7.5-1 <none>
+2018-06-15 06:39:31 status half-configured man-db:armhf 2.7.5-1
+2018-06-15 06:39:32 status installed man-db:armhf 2.7.5-1
+2018-06-15 06:39:33 trigproc libc-bin:armhf 2.23-0ubuntu10 <none>
+2018-06-15 06:39:33 status half-configured libc-bin:armhf 2.23-0ubuntu10
+2018-06-15 06:39:33 status installed libc-bin:armhf 2.23-0ubuntu10
+2018-06-15 06:39:33 startup packages configure
+2018-06-15 06:39:33 configure libmagic1:armhf 1:5.25-2ubuntu1.1 <none>
+2018-06-15 06:39:33 status triggers-pending libc-bin:armhf 2.23-0ubuntu10
+2018-06-15 06:39:33 status unpacked libmagic1:armhf 1:5.25-2ubuntu1.1
+2018-06-15 06:39:33 status unpacked libmagic1:armhf 1:5.25-2ubuntu1.1
+2018-06-15 06:39:33 status unpacked libmagic1:armhf 1:5.25-2ubuntu1.1
+2018-06-15 06:39:33 status half-configured libmagic1:armhf 1:5.25-2ubuntu1.1
+2018-06-15 06:39:33 status installed libmagic1:armhf 1:5.25-2ubuntu1.1
+2018-06-15 06:39:33 configure file:armhf 1:5.25-2ubuntu1.1 <none>
+2018-06-15 06:39:33 status unpacked file:armhf 1:5.25-2ubuntu1.1
+2018-06-15 06:39:33 status half-configured file:armhf 1:5.25-2ubuntu1.1
+2018-06-15 06:39:33 status installed file:armhf 1:5.25-2ubuntu1.1
+2018-06-15 06:39:33 trigproc libc-bin:armhf 2.23-0ubuntu10 <none>
+2018-06-15 06:39:33 status half-configured libc-bin:armhf 2.23-0ubuntu10
+2018-06-15 06:39:33 status installed libc-bin:armhf 2.23-0ubuntu10
+2018-06-15 06:39:33 startup packages configure
+2018-06-20 06:06:00 startup archives unpack
+2018-06-20 06:06:00 upgrade libgcrypt20:armhf 1.6.5-2ubuntu0.4 1.6.5-2ubuntu0.5
+2018-06-20 06:06:00 status triggers-pending libc-bin:armhf 2.23-0ubuntu10
+2018-06-20 06:06:00 status half-configured libgcrypt20:armhf 1.6.5-2ubuntu0.4
+2018-06-20 06:06:00 status unpacked libgcrypt20:armhf 1.6.5-2ubuntu0.4
+2018-06-20 06:06:00 status half-installed libgcrypt20:armhf 1.6.5-2ubuntu0.4
+2018-06-20 06:06:01 status half-installed libgcrypt20:armhf 1.6.5-2ubuntu0.4
+2018-06-20 06:06:01 status unpacked libgcrypt20:armhf 1.6.5-2ubuntu0.5
+2018-06-20 06:06:01 status unpacked libgcrypt20:armhf 1.6.5-2ubuntu0.5
+2018-06-20 06:06:01 trigproc libc-bin:armhf 2.23-0ubuntu10 <none>
+2018-06-20 06:06:01 status half-configured libc-bin:armhf 2.23-0ubuntu10
+2018-06-20 06:06:01 status installed libc-bin:armhf 2.23-0ubuntu10
+2018-06-20 06:06:01 startup packages configure
+2018-06-20 06:06:01 configure libgcrypt20:armhf 1.6.5-2ubuntu0.5 <none>
+2018-06-20 06:06:01 status triggers-pending libc-bin:armhf 2.23-0ubuntu10
+2018-06-20 06:06:01 status unpacked libgcrypt20:armhf 1.6.5-2ubuntu0.5
+2018-06-20 06:06:01 status half-configured libgcrypt20:armhf 1.6.5-2ubuntu0.5
+2018-06-20 06:06:01 status installed libgcrypt20:armhf 1.6.5-2ubuntu0.5
+2018-06-20 06:06:01 trigproc libc-bin:armhf 2.23-0ubuntu10 <none>
+2018-06-20 06:06:01 status half-configured libc-bin:armhf 2.23-0ubuntu10
+2018-06-20 06:06:01 status installed libc-bin:armhf 2.23-0ubuntu10
+2018-06-20 06:06:01 startup packages configure

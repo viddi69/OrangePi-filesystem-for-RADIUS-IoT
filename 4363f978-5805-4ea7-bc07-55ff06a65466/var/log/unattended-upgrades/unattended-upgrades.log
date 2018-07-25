@@ -1,0 +1,226 @@
+2018-06-01 06:29:54,290 INFO Initial blacklisted packages: 
+2018-06-01 06:29:54,293 INFO Initial whitelisted packages: 
+2018-06-01 06:29:54,294 INFO Starting unattended upgrades script
+2018-06-01 06:29:54,295 INFO Allowed origins are: ['o=Ubuntu,a=xenial', 'o=Ubuntu,a=xenial-security', 'o=UbuntuESM,a=xenial']
+2018-06-01 06:30:14,982 INFO No packages found that can be upgraded unattended and no pending auto-removals
+2018-06-01 16:43:12,114 INFO Initial blacklisted packages: 
+2018-06-01 16:43:12,117 INFO Initial whitelisted packages: 
+2018-06-01 16:43:12,119 INFO Starting unattended upgrades script
+2018-06-01 16:43:12,120 INFO Allowed origins are: ['o=Ubuntu,a=xenial', 'o=Ubuntu,a=xenial-security', 'o=UbuntuESM,a=xenial']
+2018-06-02 06:16:00,358 INFO Initial blacklisted packages: 
+2018-06-02 06:16:00,361 INFO Initial whitelisted packages: 
+2018-06-02 06:16:00,363 INFO Starting unattended upgrades script
+2018-06-02 06:16:00,364 INFO Allowed origins are: ['o=Ubuntu,a=xenial', 'o=Ubuntu,a=xenial-security', 'o=UbuntuESM,a=xenial']
+2018-06-02 06:16:21,694 INFO No packages found that can be upgraded unattended and no pending auto-removals
+2018-06-02 11:35:12,950 INFO Initial blacklisted packages: 
+2018-06-02 11:35:13,430 INFO Initial whitelisted packages: 
+2018-06-02 11:35:13,432 INFO Starting unattended upgrades script
+2018-06-02 11:35:13,433 INFO Allowed origins are: ['o=Ubuntu,a=xenial', 'o=Ubuntu,a=xenial-security', 'o=UbuntuESM,a=xenial']
+2018-06-03 06:31:27,426 INFO Initial blacklisted packages: 
+2018-06-03 06:31:27,429 INFO Initial whitelisted packages: 
+2018-06-03 06:31:27,431 INFO Starting unattended upgrades script
+2018-06-03 06:31:27,432 INFO Allowed origins are: ['o=Ubuntu,a=xenial', 'o=Ubuntu,a=xenial-security', 'o=UbuntuESM,a=xenial']
+2018-06-03 06:39:54,327 INFO Initial blacklisted packages: 
+2018-06-03 06:39:54,330 INFO Initial whitelisted packages: 
+2018-06-03 06:39:54,331 INFO Starting unattended upgrades script
+2018-06-03 06:39:54,332 INFO Allowed origins are: ['o=Ubuntu,a=xenial', 'o=Ubuntu,a=xenial-security', 'o=UbuntuESM,a=xenial']
+2018-06-03 06:40:14,666 INFO No packages found that can be upgraded unattended and no pending auto-removals
+2018-06-04 06:14:54,345 INFO Initial blacklisted packages: 
+2018-06-04 06:14:54,347 INFO Initial whitelisted packages: 
+2018-06-04 06:14:54,349 INFO Starting unattended upgrades script
+2018-06-04 06:14:54,350 INFO Allowed origins are: ['o=Ubuntu,a=xenial', 'o=Ubuntu,a=xenial-security', 'o=UbuntuESM,a=xenial']
+2018-06-04 06:15:14,971 INFO No packages found that can be upgraded unattended and no pending auto-removals
+2018-06-04 06:47:07,299 INFO Initial blacklisted packages: 
+2018-06-04 06:47:07,302 INFO Initial whitelisted packages: 
+2018-06-04 06:47:07,303 INFO Starting unattended upgrades script
+2018-06-04 06:47:07,304 INFO Allowed origins are: ['o=Ubuntu,a=xenial', 'o=Ubuntu,a=xenial-security', 'o=UbuntuESM,a=xenial']
+2018-06-05 06:42:54,346 INFO Initial blacklisted packages: 
+2018-06-05 06:42:54,349 INFO Initial whitelisted packages: 
+2018-06-05 06:42:54,350 INFO Starting unattended upgrades script
+2018-06-05 06:42:54,351 INFO Allowed origins are: ['o=Ubuntu,a=xenial', 'o=Ubuntu,a=xenial-security', 'o=UbuntuESM,a=xenial']
+2018-06-05 06:43:15,017 INFO No packages found that can be upgraded unattended and no pending auto-removals
+2018-06-05 11:11:06,337 INFO Initial blacklisted packages: 
+2018-06-05 11:11:06,339 INFO Initial whitelisted packages: 
+2018-06-05 11:11:06,341 INFO Starting unattended upgrades script
+2018-06-05 11:11:06,342 INFO Allowed origins are: ['o=Ubuntu,a=xenial', 'o=Ubuntu,a=xenial-security', 'o=UbuntuESM,a=xenial']
+2018-06-06 06:25:54,295 INFO Initial blacklisted packages: 
+2018-06-06 06:25:54,298 INFO Initial whitelisted packages: 
+2018-06-06 06:25:54,299 INFO Starting unattended upgrades script
+2018-06-06 06:25:54,300 INFO Allowed origins are: ['o=Ubuntu,a=xenial', 'o=Ubuntu,a=xenial-security', 'o=UbuntuESM,a=xenial']
+2018-06-06 06:26:14,722 INFO No packages found that can be upgraded unattended and no pending auto-removals
+2018-06-06 10:33:26,366 INFO Initial blacklisted packages: 
+2018-06-06 10:33:26,369 INFO Initial whitelisted packages: 
+2018-06-06 10:33:26,370 INFO Starting unattended upgrades script
+2018-06-06 10:33:26,371 INFO Allowed origins are: ['o=Ubuntu,a=xenial', 'o=Ubuntu,a=xenial-security', 'o=UbuntuESM,a=xenial']
+2018-06-07 04:41:18,849 INFO Initial blacklisted packages: 
+2018-06-07 04:41:18,852 INFO Initial whitelisted packages: 
+2018-06-07 04:41:18,853 INFO Starting unattended upgrades script
+2018-06-07 04:41:18,854 INFO Allowed origins are: ['o=Ubuntu,a=xenial', 'o=Ubuntu,a=xenial-security', 'o=UbuntuESM,a=xenial']
+2018-06-07 06:05:54,332 INFO Initial blacklisted packages: 
+2018-06-07 06:05:54,335 INFO Initial whitelisted packages: 
+2018-06-07 06:05:54,336 INFO Starting unattended upgrades script
+2018-06-07 06:05:54,337 INFO Allowed origins are: ['o=Ubuntu,a=xenial', 'o=Ubuntu,a=xenial-security', 'o=UbuntuESM,a=xenial']
+2018-06-07 06:06:27,961 INFO Packages that will be upgraded: git git-man
+2018-06-07 06:06:27,963 INFO Writing dpkg log to '/var/log/unattended-upgrades/unattended-upgrades-dpkg.log'
+2018-06-07 06:06:40,909 INFO All upgrades installed
+2018-06-08 03:34:27,313 INFO Initial blacklisted packages: 
+2018-06-08 03:34:27,316 INFO Initial whitelisted packages: 
+2018-06-08 03:34:27,317 INFO Starting unattended upgrades script
+2018-06-08 03:34:27,318 INFO Allowed origins are: ['o=Ubuntu,a=xenial', 'o=Ubuntu,a=xenial-security', 'o=UbuntuESM,a=xenial']
+2018-06-08 06:36:54,374 INFO Initial blacklisted packages: 
+2018-06-08 06:36:54,377 INFO Initial whitelisted packages: 
+2018-06-08 06:36:54,378 INFO Starting unattended upgrades script
+2018-06-08 06:36:54,379 INFO Allowed origins are: ['o=Ubuntu,a=xenial', 'o=Ubuntu,a=xenial-security', 'o=UbuntuESM,a=xenial']
+2018-06-08 06:37:15,429 INFO No packages found that can be upgraded unattended and no pending auto-removals
+2018-06-09 06:02:38,145 INFO Initial blacklisted packages: 
+2018-06-09 06:02:38,148 INFO Initial whitelisted packages: 
+2018-06-09 06:02:38,149 INFO Starting unattended upgrades script
+2018-06-09 06:02:38,150 INFO Allowed origins are: ['o=Ubuntu,a=xenial', 'o=Ubuntu,a=xenial-security', 'o=UbuntuESM,a=xenial']
+2018-06-09 06:02:58,744 INFO No packages found that can be upgraded unattended and no pending auto-removals
+2018-06-09 10:58:06,616 INFO Initial blacklisted packages: 
+2018-06-09 10:58:06,619 INFO Initial whitelisted packages: 
+2018-06-09 10:58:06,620 INFO Starting unattended upgrades script
+2018-06-09 10:58:06,621 INFO Allowed origins are: ['o=Ubuntu,a=xenial', 'o=Ubuntu,a=xenial-security', 'o=UbuntuESM,a=xenial']
+2018-06-10 00:38:47,623 INFO Initial blacklisted packages: 
+2018-06-10 00:38:47,626 INFO Initial whitelisted packages: 
+2018-06-10 00:38:47,627 INFO Starting unattended upgrades script
+2018-06-10 00:38:47,628 INFO Allowed origins are: ['o=Ubuntu,a=xenial', 'o=Ubuntu,a=xenial-security', 'o=UbuntuESM,a=xenial']
+2018-06-10 06:49:54,309 INFO Initial blacklisted packages: 
+2018-06-10 06:49:54,312 INFO Initial whitelisted packages: 
+2018-06-10 06:49:54,313 INFO Starting unattended upgrades script
+2018-06-10 06:49:54,314 INFO Allowed origins are: ['o=Ubuntu,a=xenial', 'o=Ubuntu,a=xenial-security', 'o=UbuntuESM,a=xenial']
+2018-06-10 06:50:15,124 INFO No packages found that can be upgraded unattended and no pending auto-removals
+2018-06-11 06:06:54,331 INFO Initial blacklisted packages: 
+2018-06-11 06:06:54,334 INFO Initial whitelisted packages: 
+2018-06-11 06:06:54,335 INFO Starting unattended upgrades script
+2018-06-11 06:06:54,337 INFO Allowed origins are: ['o=Ubuntu,a=xenial', 'o=Ubuntu,a=xenial-security', 'o=UbuntuESM,a=xenial']
+2018-06-11 06:07:14,895 INFO No packages found that can be upgraded unattended and no pending auto-removals
+2018-06-11 17:27:14,047 INFO Initial blacklisted packages: 
+2018-06-11 17:27:14,050 INFO Initial whitelisted packages: 
+2018-06-11 17:27:14,052 INFO Starting unattended upgrades script
+2018-06-11 17:27:14,053 INFO Allowed origins are: ['o=Ubuntu,a=xenial', 'o=Ubuntu,a=xenial-security', 'o=UbuntuESM,a=xenial']
+2018-06-12 03:52:26,640 INFO Initial blacklisted packages: 
+2018-06-12 03:52:26,643 INFO Initial whitelisted packages: 
+2018-06-12 03:52:26,645 INFO Starting unattended upgrades script
+2018-06-12 03:52:26,646 INFO Allowed origins are: ['o=Ubuntu,a=xenial', 'o=Ubuntu,a=xenial-security', 'o=UbuntuESM,a=xenial']
+2018-06-12 06:31:54,370 INFO Initial blacklisted packages: 
+2018-06-12 06:31:54,372 INFO Initial whitelisted packages: 
+2018-06-12 06:31:54,374 INFO Starting unattended upgrades script
+2018-06-12 06:31:54,375 INFO Allowed origins are: ['o=Ubuntu,a=xenial', 'o=Ubuntu,a=xenial-security', 'o=UbuntuESM,a=xenial']
+2018-06-12 06:32:21,161 INFO Packages that will be upgraded: linux-libc-dev
+2018-06-12 06:32:21,163 INFO Writing dpkg log to '/var/log/unattended-upgrades/unattended-upgrades-dpkg.log'
+2018-06-12 06:32:29,762 INFO All upgrades installed
+2018-06-13 06:15:54,343 INFO Initial blacklisted packages: 
+2018-06-13 06:15:54,346 INFO Initial whitelisted packages: 
+2018-06-13 06:15:54,347 INFO Starting unattended upgrades script
+2018-06-13 06:15:54,348 INFO Allowed origins are: ['o=Ubuntu,a=xenial', 'o=Ubuntu,a=xenial-security', 'o=UbuntuESM,a=xenial']
+2018-06-13 06:16:15,175 INFO No packages found that can be upgraded unattended and no pending auto-removals
+2018-06-13 13:48:27,070 INFO Initial blacklisted packages: 
+2018-06-13 13:48:27,073 INFO Initial whitelisted packages: 
+2018-06-13 13:48:27,075 INFO Starting unattended upgrades script
+2018-06-13 13:48:27,076 INFO Allowed origins are: ['o=Ubuntu,a=xenial', 'o=Ubuntu,a=xenial-security', 'o=UbuntuESM,a=xenial']
+2018-06-14 02:43:17,819 INFO Initial blacklisted packages: 
+2018-06-14 02:43:17,822 INFO Initial whitelisted packages: 
+2018-06-14 02:43:17,824 INFO Starting unattended upgrades script
+2018-06-14 02:43:17,825 INFO Allowed origins are: ['o=Ubuntu,a=xenial', 'o=Ubuntu,a=xenial-security', 'o=UbuntuESM,a=xenial']
+2018-06-14 06:03:54,417 INFO Initial blacklisted packages: 
+2018-06-14 06:03:54,420 INFO Initial whitelisted packages: 
+2018-06-14 06:03:54,422 INFO Starting unattended upgrades script
+2018-06-14 06:03:54,423 INFO Allowed origins are: ['o=Ubuntu,a=xenial', 'o=Ubuntu,a=xenial-security', 'o=UbuntuESM,a=xenial']
+2018-06-14 06:04:54,681 INFO Packages that will be upgraded: gnupg gpgv libperl5.22 perl perl-base perl-modules-5.22
+2018-06-14 06:04:54,683 INFO Writing dpkg log to '/var/log/unattended-upgrades/unattended-upgrades-dpkg.log'
+2018-06-14 06:05:14,269 INFO All upgrades installed
+2018-06-15 06:08:17,828 INFO Initial blacklisted packages: 
+2018-06-15 06:08:17,835 INFO Initial whitelisted packages: 
+2018-06-15 06:08:17,837 INFO Starting unattended upgrades script
+2018-06-15 06:08:17,838 INFO Allowed origins are: ['o=Ubuntu,a=xenial', 'o=Ubuntu,a=xenial-security', 'o=UbuntuESM,a=xenial']
+2018-06-15 06:38:54,405 INFO Initial blacklisted packages: 
+2018-06-15 06:38:54,408 INFO Initial whitelisted packages: 
+2018-06-15 06:38:54,410 INFO Starting unattended upgrades script
+2018-06-15 06:38:54,411 INFO Allowed origins are: ['o=Ubuntu,a=xenial', 'o=Ubuntu,a=xenial-security', 'o=UbuntuESM,a=xenial']
+2018-06-15 06:39:28,405 INFO Packages that will be upgraded: file libmagic1
+2018-06-15 06:39:28,407 INFO Writing dpkg log to '/var/log/unattended-upgrades/unattended-upgrades-dpkg.log'
+2018-06-15 06:39:37,245 INFO All upgrades installed
+2018-06-16 03:15:14,497 INFO Initial blacklisted packages: 
+2018-06-16 03:15:14,500 INFO Initial whitelisted packages: 
+2018-06-16 03:15:14,501 INFO Starting unattended upgrades script
+2018-06-16 03:15:14,502 INFO Allowed origins are: ['o=Ubuntu,a=xenial', 'o=Ubuntu,a=xenial-security', 'o=UbuntuESM,a=xenial']
+2018-06-16 06:34:54,339 INFO Initial blacklisted packages: 
+2018-06-16 06:34:54,341 INFO Initial whitelisted packages: 
+2018-06-16 06:34:54,343 INFO Starting unattended upgrades script
+2018-06-16 06:34:54,344 INFO Allowed origins are: ['o=Ubuntu,a=xenial', 'o=Ubuntu,a=xenial-security', 'o=UbuntuESM,a=xenial']
+2018-06-16 06:35:15,284 INFO No packages found that can be upgraded unattended and no pending auto-removals
+2018-06-17 06:51:54,336 INFO Initial blacklisted packages: 
+2018-06-17 06:51:54,339 INFO Initial whitelisted packages: 
+2018-06-17 06:51:54,340 INFO Starting unattended upgrades script
+2018-06-17 06:51:54,341 INFO Allowed origins are: ['o=Ubuntu,a=xenial', 'o=Ubuntu,a=xenial-security', 'o=UbuntuESM,a=xenial']
+2018-06-17 06:52:15,459 INFO No packages found that can be upgraded unattended and no pending auto-removals
+2018-06-17 11:58:26,790 INFO Initial blacklisted packages: 
+2018-06-17 11:58:26,793 INFO Initial whitelisted packages: 
+2018-06-17 11:58:26,794 INFO Starting unattended upgrades script
+2018-06-17 11:58:26,795 INFO Allowed origins are: ['o=Ubuntu,a=xenial', 'o=Ubuntu,a=xenial-security', 'o=UbuntuESM,a=xenial']
+2018-06-19 06:37:30,449 INFO Initial blacklisted packages: 
+2018-06-19 06:37:30,452 INFO Initial whitelisted packages: 
+2018-06-19 06:37:30,453 INFO Starting unattended upgrades script
+2018-06-19 06:37:30,454 INFO Allowed origins are: ['o=Ubuntu,a=xenial', 'o=Ubuntu,a=xenial-security', 'o=UbuntuESM,a=xenial']
+2018-06-19 06:37:51,734 INFO No packages found that can be upgraded unattended and no pending auto-removals
+2018-06-19 08:42:11,301 INFO Initial blacklisted packages: 
+2018-06-19 08:42:11,304 INFO Initial whitelisted packages: 
+2018-06-19 08:42:11,305 INFO Starting unattended upgrades script
+2018-06-19 08:42:11,306 INFO Allowed origins are: ['o=Ubuntu,a=xenial', 'o=Ubuntu,a=xenial-security', 'o=UbuntuESM,a=xenial']
+2018-06-20 02:41:13,193 INFO Initial blacklisted packages: 
+2018-06-20 02:41:13,196 INFO Initial whitelisted packages: 
+2018-06-20 02:41:13,197 INFO Starting unattended upgrades script
+2018-06-20 02:41:13,198 INFO Allowed origins are: ['o=Ubuntu,a=xenial', 'o=Ubuntu,a=xenial-security', 'o=UbuntuESM,a=xenial']
+2018-06-20 06:05:30,422 INFO Initial blacklisted packages: 
+2018-06-20 06:05:30,425 INFO Initial whitelisted packages: 
+2018-06-20 06:05:30,426 INFO Starting unattended upgrades script
+2018-06-20 06:05:30,427 INFO Allowed origins are: ['o=Ubuntu,a=xenial', 'o=Ubuntu,a=xenial-security', 'o=UbuntuESM,a=xenial']
+2018-06-20 06:05:58,258 INFO Packages that will be upgraded: libgcrypt20
+2018-06-20 06:05:58,260 INFO Writing dpkg log to '/var/log/unattended-upgrades/unattended-upgrades-dpkg.log'
+2018-06-20 06:06:05,660 INFO All upgrades installed
+2018-06-22 19:03:25,051 INFO Initial blacklisted packages: 
+2018-06-22 19:03:25,054 INFO Initial whitelisted packages: 
+2018-06-22 19:03:25,055 INFO Starting unattended upgrades script
+2018-06-22 19:03:25,056 INFO Allowed origins are: ['o=Ubuntu,a=xenial', 'o=Ubuntu,a=xenial-security', 'o=UbuntuESM,a=xenial']
+2018-06-22 19:03:44,476 INFO Initial blacklisted packages: 
+2018-06-22 19:03:44,478 INFO Initial whitelisted packages: 
+2018-06-22 19:03:44,480 INFO Starting unattended upgrades script
+2018-06-22 19:03:44,481 INFO Allowed origins are: ['o=Ubuntu,a=xenial', 'o=Ubuntu,a=xenial-security', 'o=UbuntuESM,a=xenial']
+2018-06-22 19:04:05,600 INFO No packages found that can be upgraded unattended and no pending auto-removals
+2018-06-23 06:14:40,194 INFO Initial blacklisted packages: 
+2018-06-23 06:14:40,197 INFO Initial whitelisted packages: 
+2018-06-23 06:14:40,198 INFO Starting unattended upgrades script
+2018-06-23 06:14:40,200 INFO Allowed origins are: ['o=Ubuntu,a=xenial', 'o=Ubuntu,a=xenial-security', 'o=UbuntuESM,a=xenial']
+2018-06-23 06:49:58,796 INFO Initial blacklisted packages: 
+2018-06-23 06:49:58,799 INFO Initial whitelisted packages: 
+2018-06-23 06:49:58,800 INFO Starting unattended upgrades script
+2018-06-23 06:49:58,802 INFO Allowed origins are: ['o=Ubuntu,a=xenial', 'o=Ubuntu,a=xenial-security', 'o=UbuntuESM,a=xenial']
+2018-06-23 06:50:20,050 INFO No packages found that can be upgraded unattended and no pending auto-removals
+2018-06-24 00:20:51,198 INFO Initial blacklisted packages: 
+2018-06-24 00:20:51,201 INFO Initial whitelisted packages: 
+2018-06-24 00:20:51,203 INFO Starting unattended upgrades script
+2018-06-24 00:20:51,204 INFO Allowed origins are: ['o=Ubuntu,a=xenial', 'o=Ubuntu,a=xenial-security', 'o=UbuntuESM,a=xenial']
+2018-06-24 06:43:58,748 INFO Initial blacklisted packages: 
+2018-06-24 06:43:58,751 INFO Initial whitelisted packages: 
+2018-06-24 06:43:58,753 INFO Starting unattended upgrades script
+2018-06-24 06:43:58,754 INFO Allowed origins are: ['o=Ubuntu,a=xenial', 'o=Ubuntu,a=xenial-security', 'o=UbuntuESM,a=xenial']
+2018-06-24 06:44:20,028 INFO No packages found that can be upgraded unattended and no pending auto-removals
+2018-06-25 05:34:15,285 INFO Initial blacklisted packages: 
+2018-06-25 05:34:15,288 INFO Initial whitelisted packages: 
+2018-06-25 05:34:15,289 INFO Starting unattended upgrades script
+2018-06-25 05:34:15,290 INFO Allowed origins are: ['o=Ubuntu,a=xenial', 'o=Ubuntu,a=xenial-security', 'o=UbuntuESM,a=xenial']
+2018-06-25 06:32:58,987 INFO Initial blacklisted packages: 
+2018-06-25 06:32:58,990 INFO Initial whitelisted packages: 
+2018-06-25 06:32:58,991 INFO Starting unattended upgrades script
+2018-06-25 06:32:58,992 INFO Allowed origins are: ['o=Ubuntu,a=xenial', 'o=Ubuntu,a=xenial-security', 'o=UbuntuESM,a=xenial']
+2018-06-25 06:33:20,263 INFO No packages found that can be upgraded unattended and no pending auto-removals
+2018-06-26 05:14:36,738 INFO Initial blacklisted packages: 
+2018-06-26 05:14:36,741 INFO Initial whitelisted packages: 
+2018-06-26 05:14:36,742 INFO Starting unattended upgrades script
+2018-06-26 05:14:36,743 INFO Allowed origins are: ['o=Ubuntu,a=xenial', 'o=Ubuntu,a=xenial-security', 'o=UbuntuESM,a=xenial']
+2018-06-26 06:21:19,807 INFO Initial blacklisted packages: 
+2018-06-26 06:21:19,810 INFO Initial whitelisted packages: 
+2018-06-26 06:21:19,811 INFO Starting unattended upgrades script
+2018-06-26 06:21:19,812 INFO Allowed origins are: ['o=Ubuntu,a=xenial', 'o=Ubuntu,a=xenial-security', 'o=UbuntuESM,a=xenial']
+2018-06-26 06:21:41,223 INFO No packages found that can be upgraded unattended and no pending auto-removals

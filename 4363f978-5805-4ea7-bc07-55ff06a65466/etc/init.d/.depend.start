@@ -1,0 +1,17 @@
+TARGETS = hostapd rsyslog unattended-upgrades armhwinfo killprocs haveged freeradius hddtemp single ntp sysstat ssh cron dbus loadcpufreq rsync cpufrequtils sysfsutils ondemand rc.local
+INTERACTIVE =
+haveged: rsyslog
+freeradius: rsyslog
+hddtemp: rsyslog
+single: killprocs
+ntp: rsyslog
+sysstat: rsyslog
+ssh: rsyslog
+cron: rsyslog
+dbus: rsyslog
+loadcpufreq: rsyslog
+rsync: rsyslog
+cpufrequtils: loadcpufreq
+sysfsutils: cpufrequtils
+ondemand: hostapd rsyslog unattended-upgrades haveged freeradius armhwinfo hddtemp ntp sysstat ssh cron dbus loadcpufreq rsync cpufrequtils sysfsutils
+rc.local: hostapd rsyslog unattended-upgrades haveged freeradius armhwinfo hddtemp ntp sysstat ssh cron dbus loadcpufreq rsync cpufrequtils sysfsutils

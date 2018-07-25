@@ -1,0 +1,1074 @@
+#!/bin/bash
+#
+# Copyright (c) 2017 Igor Pecovnik, igor.pecovnik@gma**.com
+#
+# This file is licensed under the terms of the GNU General Public
+# License version 2. This program is licensed "as is" without any
+# warranty of any kind, whether express or implied.
+
+[[ -n ${SUDO_USER} ]] && SUDO="sudo "
+
+function jobs ()
+{
+	# Shows box with loading ...
+	#
+	dialog --backtitle "$BACKTITLE" --title " Please wait " --infobox "\nLoading ${selection,,} submodule ... " 5 $((26+${#selection}))
+	case $1 in
+
+	#-------------------------------------------------------------------------------------------------------------------------------------#
+
+
+	# Application installer
+	#
+	"Softy" )
+		softy
+	;;
+
+	# Remove BT
+	#
+	"BT remove" )
+		debconf-apt-progress -- apt-get -y remove bluetooth bluez bluez-tools
+		check_if_installed xserver-xorg && debconf-apt-progress -- apt-get -y remove pulseaudio-module-bluetooth blueman
+		debconf-apt-progress -- apt -y -qq autoremove
+	;;
+
+	# Enabling BT
+	#
+	"BT install" )
+		debconf-apt-progress -- apt-get -y install bluetooth bluez bluez-tools
+		check_if_installed xserver-xorg && debconf-apt-progress -- apt-get -y --no-install-recommends install pulseaudio-module-bluetooth blueman
+	;;
+
+	# Removing IR
+	#
+	"Remove IR" )
+		debconf-apt-progress -- apt-get -y remove lirc
+		debconf-apt-progress -- apt -y -qq autoremove
+	;;
+
+	# Enabling IR
+	#
+	"IR" )
+		debconf-apt-progress -- apt-get -y --no-install-recommends install lirc
+	;;
+
+
+	# Sharing USB ports
+	#
+	"USB redirector" )
+		if [[ -n $(netstat -lnt | awk '$6 == "LISTEN" && $4 ~ ".'32032'"') ]]; then
+			[[ -f /usr/local/usb-redirector/uninstall.sh ]] && /usr/local/usb-redirector/uninstall.sh uninstall
+			rm -f /usr/local/bin/usbclnt
+		else
+			TARGET_BRANCH=$BRANCH
+			exceptions "$BRANCH"
+			IFS='.' read -a array <<< $(uname -r)
+			[[ -z $(dpkg -l | grep linux-headers) ]] && debconf-apt-progress -- apt-get -y \
+			install linux-headers${TARGET_BRANCH}-${TARGET_FAMILY}
+			rm -rf /usr/src/usb-redirector-linux-arm-eabi
+			if (( "${array[0]}" == "4" )) && (( "${array[1]}" >= "1" )); then
+				wget -qO- http://www.incentivespro.com/usb-redirector-linux-arm-eabi.tar.gz | tar xz -C /usr/src
+			else
+				wget -qO- https://raw.githubusercontent.com/armbian/build/master/packages/blobs/usb-redirector/usb-redirector-old.tgz \
+				| tar xz -C /usr/src
+			fi
+			cd /usr/src/usb-redirector-linux-arm-eabi/
+			./installer.sh install
+			sleep 3
+			check_port "32032" "USB Redirector"
+		fi
+	;;
+
+
+	# Simple CLI monitoring
+	#
+	"Monitor" )
+		clear
+		armbianmonitor -m
+		sleep 2
+	;;
+
+
+	# Send diagnostics
+	#
+	"Diagnostics" )
+		clear
+		armbianmonitor -u
+		echo ""
+		read -n 1 -s -p "Press any key to continue"
+	;;
+
+
+	# Control board consumption
+	#
+	"Consumption" )
+		clear
+		h3consumption
+		echo -e "\nType \e[92m${SUDO}${0##*/}\e[0m to get back\n"
+		exit
+	;;
+
+
+	# Board (fex) settings editor
+	#
+	"Fexedit" )
+		exec 3>&1
+		monitor=$(dialog --print-maxsize 2>&1 1>&3)
+		exec 3>&-
+		mon_x=$(echo $monitor | awk '{print $2}' | sed 's/,//')
+		mon_y=$(echo $monitor | awk '{print $3}' | sed 's/,//')
+		TEMP=$(mktemp -d || exit 1)
+		trap "rm -rf \"${TEMP}\" ; exit 0" 0 1 2 3 15
+		bin2fex /boot/script.bin ${TEMP}/tempfex.txt >/dev/null 2>&1
+		dialog --title "Edit u-boot environment" \
+		--ok-label "Save" --no-collapse --editbox ${TEMP}/tempfex.txt $mon_y 0 2> ${TEMP}/tempfex.out
+		[[ $? = 0 ]] && fex2bin ${TEMP}/tempfex.out /boot/script.bin
+	;;
+
+
+	# Install kernel headers
+	#
+	"Headers" )
+		TARGET_BRANCH=$BRANCH
+		exceptions "$BRANCH"
+		if [[ -n $(dpkg -l | grep linux-headers) ]]; then
+			debconf-apt-progress -- apt-get -y remove linux-headers${TARGET_BRANCH}-${TARGET_FAMILY}
+		else
+			debconf-apt-progress -- apt-get -y install linux-headers${TARGET_BRANCH}-${TARGET_FAMILY}
+		fi
+	;;
+
+
+	# Install build essentials
+	#
+	"Development" )
+		if [[ -n $(dpkg -l | grep build-essential) ]]; then
+			debconf-apt-progress -- apt-get -y remove build-essential
+			debconf-apt-progress -- apt-get -y autoremove
+		else
+			debconf-apt-progress -- apt-get -y install build-essential
+		fi
+	;;
+
+
+	# Set the display resolution
+	#
+	"Display" )
+		# show display modes menu
+		if [[ -f /usr/bin/h3disp ]]; then
+			# h3 boards
+			get_h3modes
+			dialog --title " Display output type " --colors --help-button --help-label "Cancel" --no-label "DVI" --yes-label "HDMI" \
+			--backtitle "$BACKTITLE" --yesno "\nIn case you use an HDMI-to-DVI converter choose DVI!" 7 57
+			output_type=$?
+			if [[ $output_type = 0 || $output_type = 1 ]]; then
+				if [[ $output_type = 0 ]]; then
+					display_cmd="h3disp -m $SCREEN_RESOLUTION";
+					else
+					display_cmd="h3disp -m $SCREEN_RESOLUTION -d";
+				fi
+
+
+			fi
+		else
+			# a20 boards
+			get_a20modes
+			display_cmd="sed -i \"s/^disp_mode=.*/disp_mode=$SCREEN_RESOLUTION/\" /boot/armbianEnv.txt";
+		fi
+
+		dialog --title " Display resolution " --colors --no-label "Cancel" --backtitle "$BACKTITLE" --yesno \
+		"\nSwitching to \Z1$SCREEN_RESOLUTION\Z0 and reboot?" 7 42
+		if [[ $? = 0 ]]; then
+			eval $display_cmd > /dev/null
+			reboot
+		fi
+	;;
+
+
+	#-------------------------------------------------------------------------------------------------------------------------------------#
+	#-------------------------------------------------------------------------------------------------------------------------------------#
+	#-------------------------------------------------------------------------------------------------------------------------------------#
+
+
+
+	# Select dynamic or edit static IP address
+	#
+	"IP" )
+			# select default interfaces if there is more than one
+			select_default_interface
+			dialog --title " IP address assignment " --colors --backtitle "$BACKTITLE" --help-button --help-label "Cancel" \
+			--yes-label "DHCP" --no-label "Static" --yesno \
+			"\n\Z1DHCP:\Z0   automatic IP asignment by your router or DHCP server\n\n\Z1Static:\Z0 manually fixed IP address" 9 70
+			exitstatus=$?;
+			if [[ $exitstatus = 0 ]]; then
+				create_if_config "$DEFAULT_ADAPTER" "$DEFAULT_ADAPTER" "dynamic" > /etc/network/interfaces
+			fi
+			if [[ $exitstatus = 1 ]]; then
+				create_if_config "$DEFAULT_ADAPTER" "$DEFAULT_ADAPTER" "fixed" > /dev/null
+				ip_editor "$DEFAULT_ADAPTER" "$DEFAULT_ADAPTER" "/etc/network/interfaces"
+			fi
+	;;
+
+	# Connect to wireless access point
+	#
+	"Iperf3" )
+			# disable AP mode on certain adapters
+			if pgrep -x "iperf3" > /dev/null
+			then
+				pkill iperf3
+			else
+				iperf3 -s -D
+			fi
+	;;
+
+	# Connect to wireless access point
+	#
+	"WiFi" )
+			# disable AP mode on certain adapters
+			wlan_exceptions "off"
+			[[ "$reboot_module" == true ]] && dialog --backtitle "$BACKTITLE" --title " Warning " --msgbox "\nReboot is required for this adapter to switch to STA mode" 7 62 && reboot
+			nmtui-connect
+	;;
+
+
+	# Connect to wireless access point
+	#
+	"Clear" )
+			# remove managed interfaces
+			systemctl daemon-reload
+			sed 's/interface-name:wl.*//' -i /etc/NetworkManager/conf.d/10-ignore-interfaces.conf
+			sed 's/,$//' -i /etc/NetworkManager/conf.d/10-ignore-interfaces.conf
+			rm -f /etc/network/interfaces.d/armbian.ap.nat
+			rm -f /etc/network/interfaces.d/armbian.ap.bridge
+			reload-nety
+	;;
+
+
+	# Create WiFi access point
+	#
+	"Hotspot" )
+		systemctl daemon-reload
+		CURRENT_UUID=$(LC_ALL=C nmcli -f DEVICE,TYPE,STATE device status | grep -w " wifi " | grep -w " disconnected")
+		if [[ -n $(service hostapd status | grep -w active | grep -w running) ]]; then
+			if [[ -n $HOSTAPDBRIDGE ]]; then
+				dialog --title " Hostapd service is running " --colors --backtitle "$BACKTITLE" --help-button \
+				--help-label "Cancel" --yes-label "Stop and reboot" --no-label "Edit" --yesno \
+				"\n\Z1Stop:\Z0 stop and reboot\n\n\Z1Edit:\Z0 change basic parameters: SSID, password and channel" 9 70
+
+			else
+				dialog --title " Hostapd service is running " --colors --backtitle "$BACKTITLE" --help-button \
+				--help-label "Cancel" --yes-label  "Stop" --no-label "Edit" --yesno \
+				"\n\Z1Stop:\Z0 stop providing Access Point\n\n\Z1Edit:\Z0 change basic parameters: SSID, password and channel" 9 70
+			fi
+			exitstatus=$?;
+			if [[ $exitstatus = 0 ]]; then
+				dialog --backtitle "$BACKTITLE" --title " Please wait " --infobox "\nDisabling hotstop. Please wait!" 5 35
+				sed -i "s/^DAEMON_CONF=.*/DAEMON_CONF=/" /etc/init.d/hostapd
+				# disable DNS
+				systemctl daemon-reload
+				systemctl disable dnsmasq.service >/dev/null 2>&1
+
+				ifdown $WIRELESS_ADAPTER 2> /dev/null
+				rm -f /etc/network/interfaces.d/armbian.ap.nat
+				rm -f /etc/network/interfaces.d/armbian.ap.bridge
+				rm -f /var/run/hostapd/* >/dev/null 2>&1
+				sed -i '/^iptables/ d' /etc/rc.local
+				sed -i '/^service dnsmasq/ d' /etc/rc.local
+				sed 's/interface-name:wl.*//' -i /etc/NetworkManager/conf.d/10-ignore-interfaces.conf
+				sed 's/,$//' -i /etc/NetworkManager/conf.d/10-ignore-interfaces.conf
+				iptables -F
+				# reload services
+				reload-nety
+				[[ -n $HOSTAPDBRIDGE ]] && reboot
+			fi
+			if [[ $exitstatus = 1 ]]; then wlan_edit; reload-nety "reload"; fi
+		elif [[ -z $CURRENT_UUID ]]; then
+				dialog --title " Info " --backtitle "$BACKTITLE" --no-collapse --msgbox "\nAll wireless connections are in use." 7 40
+		else
+				# check for low quality drivers and combinations
+				check_and_warn
+
+				# remove interfaces from managed list
+				if [[ -f /etc/NetworkManager/conf.d/10-ignore-interfaces.conf ]]; then
+					sed 's/interface-name:wl.*//' -i /etc/NetworkManager/conf.d/10-ignore-interfaces.conf
+					sed 's/,$//' -i /etc/NetworkManager/conf.d/10-ignore-interfaces.conf
+				fi
+
+				# clear current settings
+				rm -f /etc/network/interfaces.d/armbian.ap.nat
+				rm -f /etc/network/interfaces.d/armbian.ap.bridge
+				service networking restart
+				service network-manager restart
+				{ for ((i = 0 ; i <= 100 ; i+=20)); do sleep 1; echo $i; done } | dialog --title " Initializing wireless adapters " --colors --gauge "" 5 50 0
+
+				# start with basic config
+				if grep -q "^## IEEE 802.11ac" /etc/hostapd.conf; then sed '/## IEEE 802.11ac\>/,/^## IEEE 802.11ac\>/ s/.*/#&/' -i /etc/hostapd.conf; fi
+				if grep -q "^## IEEE 802.11a" /etc/hostapd.conf; then sed '/## IEEE 802.11a\>/,/^## IEEE 802.11a\>/ s/.*/#&/' -i /etc/hostapd.conf; fi
+				if grep -q "^## IEEE 802.11n" /etc/hostapd.conf; then sed '/## IEEE 802.11n/,/^## IEEE 802.11n/ s/.*/#&/' -i /etc/hostapd.conf; fi
+				sed -i "s/^channel=.*/channel=5/" /etc/hostapd.conf
+
+				service network-manager reload
+				# change special adapters to AP mode
+				wlan_exceptions "on"
+				# check for WLAN interfaces
+				get_wlan_interface
+				# add interface to unmanaged list
+				if [[ -f /etc/NetworkManager/conf.d/10-ignore-interfaces.conf ]]; then
+					[[ -z $(grep -w unmanaged-devices= /etc/NetworkManager/conf.d/10-ignore-interfaces.conf) ]] && sed '$ s/$/,/' -i /etc/NetworkManager/conf.d/10-ignore-interfaces.conf
+					sed '$ s/$/'"interface-name:$WIRELESS_ADAPTER"'/' -i /etc/NetworkManager/conf.d/10-ignore-interfaces.conf
+				else
+					echo "[keyfile]" > /etc/NetworkManager/conf.d/10-ignore-interfaces.conf
+					echo "unmanaged-devices=interface-name:$WIRELESS_ADAPTER" >> /etc/NetworkManager/conf.d/10-ignore-interfaces.conf
+				fi
+				service network-manager reload
+				# display dialog
+				dialog --colors --backtitle "$BACKTITLE" --title "Please wait" --infobox \
+				"\nWireless adapter: \Z1${WIRELESS_ADAPTER}\Z0\n\nProbing nl80211 hostapd driver compatibility." 7 50
+				debconf-apt-progress -- apt-get --reinstall -o Dpkg::Options::="--force-confnew" -y -qq --no-install-recommends install hostapd
+				# change to selected interface
+				sed -i "s/^interface=.*/interface=$WIRELESS_ADAPTER/" /etc/hostapd.conf
+				# add hostapd.conf to services
+				sed -i "s/^DAEMON_CONF=.*/DAEMON_CONF=\/etc\/hostapd.conf/" /etc/init.d/hostapd
+				# check both options
+				# add allow cli access if not exists. temporally
+				if ! grep -q "ctrl_interface" /etc/hostapd.conf; then
+					echo "" >> /etc/hostapd.conf
+					echo "ctrl_interface=/var/run/hostapd" >> /etc/hostapd.conf
+					echo "ctrl_interface_group=0" >> /etc/hostapd.conf
+				fi
+				#
+				check_advanced_modes
+				#
+				if [[ -n "$hostapd_error" ]]; then
+					dialog --colors --backtitle "$BACKTITLE" --title "Please wait" --infobox \
+					"\nWireless adapter: \Z1${WIRELESS_ADAPTER}\Z0\n\nProbing Realtek hostapd driver compatibility." 7 50
+					debconf-apt-progress -- apt-get --reinstall -o Dpkg::Options::="--force-confnew" -y -qq --no-install-recommends install hostapd-realtek
+					# change to selected interface
+					sed -i "s/^interface=.*/interface=$WIRELESS_ADAPTER/" /etc/hostapd.conf
+					# add allow cli access if not exists. temporally
+					if ! grep -q "ctrl_interface" /etc/hostapd.conf; then
+						echo "ctrl_interface=/var/run/hostapd" >> /etc/hostapd.conf
+						echo "ctrl_interface_group=0" >> /etc/hostapd.conf
+					fi
+					#
+					check_advanced_modes
+					#
+				fi
+
+				if [[ -n "$hostapd_error" ]]; then
+					dialog --backtitle "$BACKTITLE" --title "Warning" \
+					--infobox "\nWireless adapter: $WIRELESS_ADAPTER\n\nNo compatible hostapd driver found." 7 39
+					sed -i "s/^DAEMON_CONF=.*/DAEMON_CONF=/" /etc/init.d/hostapd
+					# remove interfaces from managed list
+					sed 's/interface-name:wl.*//' -i /etc/NetworkManager/conf.d/10-ignore-interfaces.conf
+					sed 's/,$//' -i /etc/NetworkManager/conf.d/10-ignore-interfaces.conf
+					systemctl daemon-reload;service hostapd restart
+				fi
+
+				# let's remove bridge out for this simple configurator
+				#
+				# dialog --title " Choose Access Point mode for $WIRELESS_ADAPTER " --colors --backtitle "$BACKTITLE" --no-label "Bridge" \
+				# --yes-label "NAT" --yesno "\n\Z1NAT:\Z0 with own DHCP server, out of your primary network\n\
+				# \n\Z1Bridge:\Z0 wireless clients will use your routers DHCP server" 9 70
+				# response=$?
+				#
+				# let's remove bridge out for this simple configurator
+
+				response=0
+
+				# create interfaces file if not exits
+				[[ ! -f /etc/network/interfaces ]] && echo "source /etc/network/interfaces.d/*" > /etc/network/interfaces
+
+				# select default interfaces if there is more than one
+				select_default_interface
+
+				NETWORK_CONF="/etc/network/interfaces"
+
+				case $response in
+					# bridge
+					1)
+						TEMP_CONF="/etc/network/interfaces.d/armbian.ap.bridge"
+
+						sed -i 's/.bridge=.*/bridge=br0/' /etc/hostapd.conf
+						if [[ $DEFAULT_ADAPTER == "br0" ]]; then NEW_DEFAULT_ADAPTER="eth0"; else NEW_DEFAULT_ADAPTER="$DEFAULT_ADAPTER"; fi
+						echo -e "#bridged wireless for hostapd by armbian-config\n" > $TEMP_CONF
+						echo -e "auto lo br0\niface lo inet loopback" >> $TEMP_CONF
+						echo -e "\nauto $NEW_DEFAULT_ADAPTER\nallow-hotplug $NEW_DEFAULT_ADAPTER\niface $NEW_DEFAULT_ADAPTER inet manual" >> $TEMP_CONF
+						echo -e "\nauto $WIRELESS_ADAPTER\nallow-hotplug $WIRELESS_ADAPTER\niface $WIRELESS_ADAPTER inet manual\n" >> $TEMP_CONF
+						create_if_config "$DEFAULT_ADAPTER" "br0" >> $TEMP_CONF
+						echo -e "\nbridge_ports $NEW_DEFAULT_ADAPTER $WIRELESS_ADAPTER" >> $TEMP_CONF
+
+					;;
+					# NAT
+					0)
+						TEMP_CONF="/etc/network/interfaces.d/armbian.ap.nat"
+
+						# install dnsmas and iptables
+						if [[ $(dpkg-query -W -f='${db:Status-Abbrev}\n' dnsmasq 2>/dev/null) != "*ii*" ]]; then
+							debconf-apt-progress -- apt-get -qq -y --no-install-recommends install dnsmasq;
+						fi
+
+						echo -e "# armbian NAT hostapd\nallow-hotplug $WIRELESS_ADAPTER\niface $WIRELESS_ADAPTER inet static " > $TEMP_CONF
+						echo -e "\taddress 172.24.1.1\n\tnetmask 255.255.255.0\n\tnetwork 172.24.1.0\n\tbroadcast 172.24.1.255" >> $TEMP_CONF
+						# create new configuration
+						echo "interface=$WIRELESS_ADAPTER				# Use interface $WIRELESS_ADAPTER" > /etc/dnsmasq.conf
+						echo "listen-address=172.24.1.1					# Explicitly specify the address to listen on" >> /etc/dnsmasq.conf
+						echo "bind-interfaces							# Bind to the interface to make sure we aren't sending \
+						things elsewhere" >> /etc/dnsmasq.conf
+						echo "server=8.8.8.8							# Forward DNS requests to Google DNS" >> /etc/dnsmasq.conf
+						echo "domain-needed								# Don't forward short names" >> /etc/dnsmasq.conf
+						echo "bogus-priv								# Never forward addresses in the non-routed address spaces" \
+						>> /etc/dnsmasq.conf
+						echo "dhcp-range=172.24.1.50,172.24.1.150,12h	# Assign IP addresses between 172.24.1.50 and 172.24.1.150 with \
+						a 12 hour lease time" >> /etc/dnsmasq.conf
+						# - Enable IPv4 forwarding
+						sed -i "/net.ipv4.ip_forward=/c\net.ipv4.ip_forward=1" /etc/sysctl.conf
+						echo 1 > /proc/sys/net/ipv4/ip_forward
+						# - Apply iptables
+						iptables -t nat -A POSTROUTING -o $DEFAULT_ADAPTER -j MASQUERADE
+						iptables -A FORWARD -i $DEFAULT_ADAPTER -o $WIRELESS_ADAPTER -m state --state RELATED,ESTABLISHED -j ACCEPT
+						iptables -A FORWARD -i $WIRELESS_ADAPTER -o $DEFAULT_ADAPTER -j ACCEPT
+						# - Save IP tables, applied during ifup in /etc/network/interfaces.
+						iptables-save > /etc/iptables.ipv4.nat
+						sed -i 's/^bridge=.*/#&/' /etc/hostapd.conf
+						sed -e 's/exit 0//g' -i /etc/rc.local
+						# workaround if hostapd is too slow
+						echo "service dnsmasq start" >> /etc/rc.local
+						echo "iptables-restore < /etc/iptables.ipv4.nat" >> /etc/rc.local
+						echo "exit 0" >> /etc/rc.local
+					;;
+				3)exit;;
+
+				255) exit;;
+				esac
+
+				dialog --backtitle "$BACKTITLE" --title " Please wait " --infobox "\nEnabling hotspot. Please wait!" 5 34
+
+				#
+				# only for bridged connection we need to check and reboot. tdlr check if it can be done on the fly
+				HOSTAPDBRIDGE=$(cat /etc/hostapd.conf 2> /dev/null | grep -w "^bridge=br0")
+				if [[ -n $HOSTAPDBRIDGE ]]; then
+						dialog --title "Manually adjust network configuration if needed" --backtitle "$BACKTITLE" \
+						--ok-label "Reboot to apply new settings" --no-collapse --editbox $TEMP_CONF 30 0 2> $TEMP_CONF".tmp"
+						response=$?
+						if [[ $response = 0 ]]; then
+							mv $TEMP_CONF".tmp" $TEMP_CONF
+							#reboot
+						fi
+					else
+						ifdown $WIRELESS_ADAPTER 2> /dev/null
+						sleep 2
+						ifup $WIRELESS_ADAPTER 2> /dev/null
+						echo "nameserver 8.8.8.8" > /etc/resolvconf/resolv.conf.d/base
+						[[ "$reboot_module" == true ]] && dialog --backtitle "$BACKTITLE" --title " Warning " --msgbox "\nReboot is required for this adapter to switch to AP mode" 7 61 && reboot
+						# reload services
+						reload-nety "reload"
+				fi
+		fi
+	;;
+
+
+	# Manage Softether VPN
+	#
+	"VPN" )
+	VPNDIR="/usr/local/vpnclient/"
+
+	function vpn_reconfigure ()
+	{
+	if [[ -f /etc/server.vpn ]]; then
+		${VPNDIR}vpnclient stop >/dev/null 2>&1
+		${VPNDIR}vpnclient start >/dev/null 2>&1
+		# purge old settings
+		${VPNDIR}vpncmd /client localhost /cmd accountlist | grep "VPN Connection Setting Name" | cut -d "|" -f 2 | sed 's/^/"/;s/$/"/' | xargs /usr/local/vpnclient/vpncmd /client localhost /cmd accountdisconnect >/dev/null 2>&1
+		${VPNDIR}vpncmd /client localhost /cmd accountlist | grep "VPN Connection Setting Name" | cut -d "|" -f 2 | sed 's/^/"/;s/$/"/' | xargs /usr/local/vpnclient/vpncmd /client localhost /cmd accountdelete >/dev/null 2>&1
+		# import new
+		${VPNDIR}vpncmd /client localhost /cmd accountimport //etc//server.vpn >/dev/null 2>&1
+		# reload to connect
+		${VPNDIR}vpnclient stop >/dev/null 2>&1
+		${VPNDIR}vpnclient start >/dev/null 2>&1
+		[[ $? = 0 ]] && dialog --backtitle "$BACKTITLE" --title " VPN " --msgbox "\nConfiguration was succesfully imported!" 7 43
+	fi
+	}
+
+	function get_numbers {
+		EXCLUDE=$(ip neigh | grep vpn_se | grep -o '[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.' | head -1)
+		ADAPTER=$(ip -4 route ls | grep default | grep -Po '(?<=dev )(\S+)' | grep -v vpn_se | head -1)
+		IP=$(ip route | grep $ADAPTER | grep default | grep -o '[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}' | head -1)
+		VPNSERVERIP=$(${VPNDIR}vpncmd /client localhost /cmd accountlist | grep "VPN Server" |grep -o '[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}' | head -1)
+		SUBNET=$(ifconfig vpn_se | grep 'inet addr:' | grep -v '127.0.0.1' | cut -d: -f2 | awk '{ print $1}' | grep -o '[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}')
+		GW=$(ip neigh | grep vpn_se | grep $SUBNET | grep -o '[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}' | head -1)
+	}
+
+	function raise_dev {
+			i=0;
+			while [[ -z "$TEMP" && $i<5 ]]; do
+					TEMP=$(${VPNDIR}vpncmd /client localhost /cmd accountlist | grep Status | grep Connected)
+					sleep 1
+					i=$((i+1))
+			done
+			dhclient vpn_se
+	}
+
+	if pgrep -x "vpnclient" > /dev/null
+	then
+				${VPNDIR}vpnclient stop >/dev/null 2>&1
+				${VPNDIR}vpnclient start >/dev/null 2>&1
+				if [[ -z $(${VPNDIR}vpncmd /client localhost /cmd nicList | grep Enabled) ]]; then
+					${VPNDIR}vpncmd /client localhost /cmd niccreate se >/dev/null 2>&1
+				fi
+				if [[ -z $(${VPNDIR}vpncmd /client localhost /cmd accountlist | grep "VPN Server") ]]; then
+					dialog --backtitle "$BACKTITLE" --no-label " Cancel " --yes-label " Import " --title " VPN " --yesno "\nVPN configuration was not found.\n\nPlace file to /etc/server.vpn" 9 45
+					if [[ $? = 0 && -f /etc/server.vpn ]]; then
+						${VPNDIR}vpncmd /client localhost /cmd accountimport //etc//server.vpn >/dev/null 2>&1
+						${VPNDIR}vpnclient stop >/dev/null 2>&1
+						${VPNDIR}vpnclient start >/dev/null 2>&1
+						[[ $? = 0 ]] && dialog --backtitle "$BACKTITLE" --title " VPN " --msgbox "\nConfiguration was succesfully imported!" 7 43
+					fi
+				fi
+
+				# raise devices
+				raise_dev
+
+				if [[ -n $(${VPNDIR}vpncmd /client localhost /cmd accountlist | grep Status | grep Connected) ]]; then
+					get_numbers
+					echo "ip route add $VPNSERVERIP via $IP dev $ADAPTER"
+					echo "ip route del default"
+					echo "ip route add default via $GW dev vpn_se"
+					read
+					dialog --title "VPN client is connected to $VPNSERVERIP" --colors --backtitle "$BACKTITLE" --help-button --help-label "Cancel" --yes-label "Stop" --no-label " Import " --yesno "\n\Z1Stop:  \Z0 stop\n\n\Z1Import:\Z0 import new config from /etc/armbian.vpn" 9 70
+				fi
+				response=$?
+				if [[ $response = 0 ]]; then
+					get_numbers
+					echo "ip route del $VPNSERVERIP"
+					echo "ip route del default"
+					echo "ip route add default via $IP dev $ADAPTER"
+					read
+					dialog --backtitle "$BACKTITLE"  --nocancel --nook --infobox "\nClosing VPN connection" 5 27
+					${VPNDIR}vpnclient stop >/dev/null 2>&1
+				fi
+	else
+				dialog --title "VPN client is disconnected" --colors --backtitle "$BACKTITLE" --help-button --help-label "Cancel" --yes-label "Connect" --no-label " Import " --yesno "\n\Z1Connect:\Z0 Connect with your VPN server \n\n\Z1Import:\Z0 import new config from /etc/armbian.vpn" 9 70
+				response=$?
+				if [[ $response = 0 ]]; then
+					${VPNDIR}vpnclient start >/dev/null 2>&1
+
+					# raise devices
+					raise_dev
+					get_numbers
+					echo "ip route add $VPNSERVERIP via $IP dev $ADAPTER"
+					echo "ip route del default"
+					echo "ip route add default via $GW dev vpn_se"
+					read
+
+				fi
+				[[ $response = 1 ]] && vpn_reconfigure
+	fi
+	;;
+
+
+	# Connect to Bluetooth
+	#
+	"BT discover" )
+	dialog --backtitle "$BACKTITLE" --title " Bluetooth " --msgbox "\nMake sure your Bluetooth devices are discoverable!" 7 54
+	connect_bt_interface
+	;;
+
+
+	# Edit network settings
+	#
+	"Advanced" )
+		dialog --backtitle "$BACKTITLE" --title " Edit ifupdown network configuration /etc/network/interfaces" --no-collapse \
+		--ok-label "Save" --editbox /etc/network/interfaces 30 0 2> /etc/network/interfaces.out
+		[[ $? = 0 ]] && mv /etc/network/interfaces.out /etc/network/interfaces && reload-nety "reload"
+	;;
+
+	# Remove automatic wifi conections
+	#
+	"Forget" )
+		LC_ALL=C nmcli --fields UUID,TIMESTAMP-REAL,TYPE con show | grep wireless |  awk '{print $1}' | while read line; \
+		do nmcli con delete uuid  $line; done > /dev/null
+	;;
+
+
+
+
+	#-------------------------------------------------------------------------------------------------------------------------------------#
+	#-------------------------------------------------------------------------------------------------------------------------------------#
+	#-------------------------------------------------------------------------------------------------------------------------------------#
+
+
+
+
+	# Change timezone
+	#
+	"Timezone" )
+		dpkg-reconfigure tzdata
+	;;
+
+
+	# Change locales
+	#
+	"Locales" )
+		dpkg-reconfigure locales
+	;;
+
+
+	# Change Hostname
+	#
+	"Hostname" )
+		hostname_current=$(cat /etc/hostname)
+		hostname_new=$(\
+		dialog --no-cancel --title " Change hostname " --backtitle "$BACKTITLE" --inputbox "\nType new hostname\n " 10 50 $hostname_current \
+		3>&1 1>&2 2>&3 3>&- \
+		)
+		if [[ $? = 0 && -n $hostname_new ]]; then
+			sed -i "s/$hostname_current/$hostname_new/g" /etc/hosts
+			sed -i "s/$hostname_current/$hostname_new/g" /etc/hostname
+			hostname $hostname_new
+			systemctl restart systemd-logind.service
+			dialog --title " Info " --backtitle "$BACKTITLE" --no-collapse --msgbox "\nYou need to logout to make the changes effective." 7 53
+		fi
+	;;
+
+	# Firmware update
+	#
+	"Firmware" )
+		clear
+		exec 3>&1
+		monitor=$(dialog --print-maxsize 2>&1 1>&3)
+		exec 3>&-
+		mon_x=$(echo $monitor | awk '{print $2}' | sed 's/,//');mon_x=$(( $mon_x / 2 ))
+		mon_y=$(echo $monitor | awk '{print $3}' | sed 's/,//');
+		dialog --title " Update " --backtitle "$BACKTITLE" --no-label "Cancel" --yesno "\nDo you want to update board firmware?" 7 41
+		if [[ $? = 0 ]]; then
+			debconf-apt-progress -- apt-get update
+			debconf-apt-progress -- apt-get -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" -y upgrade
+			dialog --title " Firmware update " --colors --no-label "Cancel" --backtitle "$BACKTITLE" --yesno \
+			"\nFirmware has been updated. Reboot?   " 7 39
+			if [[ $? = 0 ]]; then reboot; fi
+		fi
+	;;
+
+
+	# Install to SATA, eMMC, NAND or USB
+	#
+	"Install" )
+		nand-sata-install
+	;;
+
+
+	# Freeze and unfreeze kernel and board support packages
+	#
+	"Freeze" | "Defreeze" )
+		dialog --title " Updating " --backtitle "$BACKTITLE" --yes-label "$1" --no-label "Cancel" --yesno \
+		"\nDo you want to ${1,,} kernel updates?" 7 44
+		if [[ $? = 0 ]]; then
+		TARGET_BRANCH=$BRANCH
+		exceptions "$BRANCH"
+		PACKAGE_LIST="linux-image${TARGET_BRANCH}-${TARGET_FAMILY} linux-headers${TARGET_BRANCH}-${TARGET_FAMILY} linux-u-boot-${BOARD}-${UBOOT_BRANCH} linux-$(lsb_release -cs)-root$TARGET_BRANCH-$BOARD"
+
+		[[ $BRANCH != "default" ]] && PACKAGE_LIST=$PACKAGE_LIST" linux-dtb$TARGET_BRANCH-$TARGET_FAMILY"
+
+		local words=( $PACKAGE_LIST )
+		local command="unhold"
+		[[ $1 == "Freeze" ]] && local command="hold"
+		for word in $PACKAGE_LIST; do apt-mark $command $word; done | dialog --backtitle "$BACKTITLE" --title "Packages ${1,,}" --progressbox $((${#words[@]}+2)) 64
+		fi
+	;;
+
+
+	# Enable or disable desktop
+	#
+	"Desktop" )
+		if [[ -n $(service lightdm status 2> /dev/null | grep -w active | grep -w running) || -n $(service nodm status | grep -w active | grep -w running) ]]; then
+			dialog --title " Desktop is enabled and running " --backtitle "$BACKTITLE" \
+			--yes-label "Stop" --no-label "Cancel" --yesno "\nDo you want to stop and disable this service?" 7 50
+			exitstatus=$?;
+			[[ $exitstatus = 0 ]] && service nodm stop && service lightdm stop && \
+			sed -i "s/^NODM_ENABLED=.*/NODM_ENABLED=false/" /etc/default/nodm
+		else
+			dialog --colors --title " Choose a display manager " --backtitle "$BACKTITLE" --help-button --help-label "Cancel" --yes-label "Lightdm" \
+			--no-label "Nodm" --yesno "\n\Z1Lightdm\Z0 = full featured login display manager\n\Z1Nodm\Z0    = autoloading into desktop" 8 70
+			exitstatus=$?;
+			[[ $exitstatus = 0 ]] && [[ -f /etc/X11/default-display-manager ]] && \
+			echo "/usr/sbin/lightdm" > /etc/X11/default-display-manager && \
+			debconf-apt-progress -- apt-get -o Dpkg::Options::="--force-confold" -y --no-install-recommends install lightdm-gtk-greeter lightdm \
+			&& systemctl start lightdm.service
+			[[ $exitstatus = 1 ]] && [[ -f /etc/X11/default-display-manager ]] && \
+			debconf-apt-progress -- apt-get -o Dpkg::Options::="--force-confold" -y --no-install-recommends install nodm \
+			&& echo "/usr/sbin/nodm" > /etc/X11/default-display-manager && \
+			sed -i "s/^NODM_ENABLED=.*/NODM_ENABLED=true/" /etc/default/nodm && service nodm start
+		fi
+	;;
+
+
+	"Nodm" )
+		[[ -f /etc/X11/default-display-manager ]] && echo "/usr/sbin/nodm" > /etc/X11/default-display-manager
+		systemctl disable lightdm.service >/dev/null 2>&1
+		systemctl stop lightdm.service >/dev/null 2>&1
+		sed -i "s/^NODM_ENABLED=.*/NODM_ENABLED=true/" /etc/default/nodm && service nodm start
+		DISPLAY_MANAGER="nodm"
+	;;
+
+
+	"Lightdm" )
+		[[ -f /etc/X11/default-display-manager ]] && echo "/usr/sbin/lightdm" > /etc/X11/default-display-manager
+		debconf-apt-progress -- apt-get -o Dpkg::Options::="--force-confold" -y --no-install-recommends install lightdm-gtk-greeter lightdm
+		service nodm stop && sed -i "s/^NODM_ENABLED=.*/NODM_ENABLED=false/" /etc/default/nodm
+		systemctl enable lightdm.service >/dev/null 2>&1
+		systemctl start lightdm.service >/dev/null 2>&1
+		DISPLAY_MANAGER="lightdm"
+	;;
+
+
+	"RDP" )
+		if [[ -n $(service xrdp status | grep -w active) ]]; then
+			systemctl stop xrdp.service >/dev/null 2>&1
+			systemctl disable xrdp.service >/dev/null 2>&1
+		else
+			debconf-apt-progress -- apt-get -y install xrdp vnc4server
+			systemctl enable xrdp.service >/dev/null 2>&1
+			systemctl start xrdp.service >/dev/null 2>&1
+			dialog --title "Info" --backtitle "$BACKTITLE" --nocancel --no-collapse --pause \
+			"\nRemote graphical login to $BOARD_NAME using Microsoft Remote Desktop Protocol (RDP) is enabled." 11 57 3
+		fi
+	;;
+
+
+	# Stop low-level messages on console
+	#
+	"Lowlevel" )
+		dialog --title " Kernel messages " --backtitle "$BACKTITLE" --help-button \
+		--help-label "Yes & reboot" --yes-label "Yes" --no-label "Cancel" --yesno "\nStop low-level messages on console?" 7 64
+		exitstatus=$?;
+		[[ $exitstatus = 0 ]] && sed -i 's/^#kernel.printk\(.*\)/kernel.printk\1/' /etc/sysctl.conf
+		[[ $exitstatus = 2 ]] && sed -i 's/^#kernel.printk\(.*\)/kernel.printk\1/' /etc/sysctl.conf && reboot
+	;;
+
+
+	# Edit boot environment
+	#
+	"Bootenv" )
+		dialog --title " Edit u-boot environment " --ok-label "Save" \
+		--no-collapse --editbox /boot/armbianEnv.txt 30 0 2> /boot/armbianEnv.txt.out
+		[[ $? = 0 ]] && mv /boot/armbianEnv.txt.out /boot/armbianEnv.txt
+	;;
+
+	# Edit boot script
+	#
+	"Bootscript" )
+		if [[ -f /boot/boot.ini ]]; then
+		dialog --title " Edit boot.ini script " --ok-label "Save" \
+		--no-collapse --editbox /boot/boot.ini 30 0 2> /boot/boot.ini.out
+		[[ $? = 0 ]] && mv /boot/boot.ini.out /boot/boot.ini
+		fi
+	;;
+
+
+	# Toggle running services
+	#
+	"Services" )
+		rcconf
+	;;
+
+
+	# Toggle overlay items
+	#
+	"Hardware" )
+		# check if user agree to enter this area
+		CHANGES="false"
+		while true; do
+			overlay_prefix=$(cat /boot/armbianEnv.txt | grep overlay_prefix | sed 's/overlay_prefix=//g')
+			TARGET_BRANCH=$BRANCH
+			exceptions "$BRANCH"
+			MOTD=()
+			LINES=()
+			LIST_CONST=-3
+			j=0
+			DIALOG_CANCEL=1
+			DIALOG_ESC=255
+			while read line
+			do
+				STATUS=$([[ -n $(cat /boot/armbianEnv.txt | grep overlays | grep -w ${line}) ]] && echo "on")
+				DESC=$(description "$line")
+				MOTD+=( "$line" "$DESC" "$STATUS")
+				LINES[ $j ]=$line
+				(( j++ ))
+			done < <(ls -1 ${OVERLAYDIR}/${overlay_prefix}*.dtbo | sed 's/^.*\('${overlay_prefix}'.*\)/\1/g' | sed 's/'${overlay_prefix}'-//g' | sed 's/.dtbo//g' )
+
+			LISTLENGHT="$(($LIST_CONST+${#MOTD[@]}/2))"
+
+			exec 3>&1
+				selection=$(dialog --backtitle "$BACKTITLE" --title "Toggle hardware config" --clear --cancel-label \
+				"Cancel" --ok-label "Save" --checklist "\nChoose what you want to enable or disable:\n " \
+				$LISTLENGHT 70 $LISTLENGHT "${MOTD[@]}" 2>&1 1>&3)
+				exit_status=$?
+			exec 3>&-
+
+			case $exit_status in
+					$DIALOG_ESC)
+					break
+				;;
+				0)
+					CHANGES="true"
+					newoverlays="$(echo "$selection" | sed "s|[^ ]* *|&|g")"
+					sed -i "s/^overlays=.*/overlays=$newoverlays/" /boot/armbianEnv.txt
+					if ! grep -q "overlays" /boot/armbianEnv.txt; then echo "overlays=$newoverlays" >> /boot/armbianEnv.txt; fi
+					if [[ -z $newoverlays ]]; then sed -i "/^overlays/d" /boot/armbianEnv.txt; fi
+				;;
+				1)
+					if [[ "$CHANGES" == "true" ]]; then
+					dialog --title " Applying changes " --backtitle "$BACKTITLE" --yes-label "Reboot" \
+					--no-label "Cancel" --yesno "\nReboot to enable new features?" 7 34
+					if [[ $? = 0 ]]; then reboot; else break; fi
+					else
+						break
+					fi
+				;;
+				esac
+			done
+
+	;;
+
+	# Change to other mirrors
+	#
+	"Mirror" )
+
+		IFS=$'\r\n'
+		GLOBIGNORE='*'
+		LIST_CONST=3
+		BEFORE="$(cat /etc/apt/sources.list.d/armbian.list | sed 's/http/\nhttp/g' | grep ^http | sed 's/\(^http[^ <]*\)\(.*\)/\1/g' | sed 's/https\?:\/\///')"
+		PREFIX="$(echo $BEFORE | cut -f1 -d".")"
+		AVAL_MIRROR=("${PREFIX}.armbian.com" "${PREFIX}.uk.armbian.com")
+		local LIST=()
+		for i in "${AVAL_MIRROR[@]}"
+			do
+			DESC=$(description "${i[0]}")
+			[[ "${i[0]}" != "$BEFORE" ]] && LIST+=( "${i[0]//[[:blank:]]/}" "$DESC" )
+		done
+		LIST_LENGHT=$(($LIST_CONST+${#LIST[@]}/2));
+		if [ "$LIST_LENGHT" -eq 1 ]; then
+			TARGET_MIRROR=${AVAL_MIRROR[0]}
+			dialog --backtitle "$BACKTITLE" --title "Please wait" --colors --msgbox "\nThere are no mirrors available!" 7 35
+		else
+			exec 3>&1
+			TARGET_MIRROR=$(dialog --cancel-label "Cancel" --backtitle "$BACKTITLE" --no-collapse \
+			--title "Change repository location" --colors --clear --menu "\nfrom \Z1$BEFORE\Z0 to:\n " $((6+${LIST_LENGHT})) 60 15 "${LIST[@]}" 2>&1 1>&3)
+			exitstatus=$?;
+			exec 3>&-
+		fi
+
+		if [[ $exitstatus == 0 ]]; then
+			sed -i "s/$BEFORE/$TARGET_MIRROR/" /etc/apt/sources.list.d/armbian.list
+			dialog --backtitle "$BACKTITLE" --title "Info" --colors --msgbox "\nArmbian package repository was switched to:\n\n\Z1$TARGET_MIRROR\Z0" 9 47
+		fi
+	;;
+
+	# Toggle welcome screen items
+	#
+	"Welcome" )
+		while true; do
+		HOME="/etc/update-motd.d/"
+		MOTD=()
+		LINES=()
+		LIST_CONST=6
+		j=0
+		DIALOG_CANCEL=1
+		DIALOG_ESC=255
+
+		while read line
+		do
+				STATUS=$([[ -x ${HOME}${line} ]] && echo "on")
+			DESC=$(description "$line")
+			MOTD+=( "$line" "$DESC" "$STATUS")
+			LINES[ $j ]=$line
+			(( j++ ))
+		done < <(ls -1 $HOME)
+
+				LISTLENGHT="$(($LIST_CONST+${#MOTD[@]}/2))"
+
+				exec 3>&1
+				selection=$(dialog --backtitle "$BACKTITLE" --title "Toggle motd executing scripts" --clear --cancel-label \
+				"Exit" --ok-label "Save" --checklist "\nChoose what you want to enable or disable:\n " \
+				$LISTLENGHT 70 15 "${MOTD[@]}" 2>&1 1>&3)
+				exit_status=$?
+				exec 3>&-
+				case $exit_status in
+				$DIALOG_CANCEL | $DIALOG_ESC)
+						break
+						;;
+				0)
+						chmod -x ${HOME}*
+						chmod +x $(echo "$selection" | sed "s|[^ ]* *|${HOME}&|g")
+				;;
+				esac
+		done
+	;;
+
+
+	# Toggle sshd options
+	#
+	"SSH" )
+		while true; do
+
+			DIALOG_CANCEL=1
+			DIALOG_ESC=255
+			LIST_CONST=8
+
+			PermitRootLogin="";
+			PubkeyAuthentication="";
+			X11Forwarding="";
+
+			[[ $(grep "^PermitRootLogin" /etc/ssh/sshd_config | awk '{print $2}') == "yes" ]] && PermitRootLogin="on"
+			[[ $(grep "^PubkeyAuthentication" /etc/ssh/sshd_config | awk '{print $2}') == "yes" ]] && PubkeyAuthentication="on"
+			[[ $(grep "^X11Forwarding" /etc/ssh/sshd_config | awk '{print $2}') == "yes" ]] && X11Forwarding="on"
+
+			MOTD=("X11Forwarding" "X11 forwarding" "$X11Forwarding" \
+			"PermitRootLogin" "Allow root login" "$PermitRootLogin" \
+			"PubkeyAuthentication" "Using public keys for SSH authentication" "$PubkeyAuthentication")
+
+			LISTLENGHT="$(($LIST_CONST+${#MOTD[@]}/2))"
+
+			exec 3>&1
+				selection=$(dialog --backtitle "$BACKTITLE" --title " Toggle sshd options " --clear --cancel-label \
+				"Cancel" --ok-label "Save" --checklist "\nChoose what you want to enable or disable:\n " \
+				$LISTLENGHT 74 21 "${MOTD[@]}" 2>&1 1>&3)
+				exit_status=$?
+			exec 3>&-
+
+			case $exit_status in
+				$DIALOG_CANCEL | $DIALOG_ESC)
+				break
+				;;
+				0)
+					# read values, adjust config and restart service
+					my_array=($selection)
+					for((n=0;n<${#MOTD[@]};n++)); do
+						if (( $(($n % 3 )) == 0 )); then
+								if [[ " ${my_array[*]} " == *" ${MOTD[$n]} "* ]]; then
+									sed -i "s/#\?${MOTD[$n]}.*/${MOTD[$n]} yes/" /etc/ssh/sshd_config
+									else
+									sed -i "s/#\?${MOTD[$n]}.*/${MOTD[$n]} no/" /etc/ssh/sshd_config
+								fi
+						fi
+					done
+					service sshd restart
+				;;
+				esac
+		done
+	;;
+
+
+
+	# Switch to daily builds
+	#
+	"Nightly" )
+		dialog --colors --title " \Z1Warning\Z0 " --backtitle "$BACKTITLE" --yes-label "OK" --no-label "Cancel" --yesno \
+		"\nYou are switching to untested auto-build repository which might break your system.\n\nAre you fine with that?" 10 48
+
+		if [[ $? = 0 ]]; then
+			sed -i 's/apt.armbian.com/beta.armbian.com/' /etc/apt/sources.list.d/armbian.list
+			debconf-apt-progress -- apt-get update
+			debconf-apt-progress -- apt-get -y upgrade
+			dialog --title "Switching to nightly" --backtitle "$BACKTITLE" --yes-label "Reboot" \
+			--no-label "Cancel" --yesno "\nReboot to apply new settings?" 7 34
+			if [[ $? = 0 ]]; then reboot; fi
+		fi
+	;;
+
+
+	# Switch to stable builds
+	#
+	"Stable" )
+		dialog --colors --title " \Z1Warning\Z0 " --backtitle "$BACKTITLE" --yes-label "OK" --no-label "Cancel" \
+		--yesno "\nYou are switching back to stable respository where you are going to get future updates. Are you fine with that?" 9 44
+		if [[ $? = 0 ]]; then
+			sed -i 's/beta.armbian.com/apt.armbian.com/' /etc/apt/sources.list.d/armbian.list
+			debconf-apt-progress -- apt-get update
+			debconf-apt-progress -- apt-get -y upgrade
+			dialog --title "Switching to stable" --backtitle "$BACKTITLE" --yes-label "Reboot" --no-label "Cancel" --yesno \
+			"\nReboot to apply new settings?" 7 34
+			if [[ $? = 0 ]]; then reboot; fi
+		fi
+	;;
+
+	# Switch to alternative kernels
+	#
+	"DTB" )
+		aval_cubox
+		if [[ $exitstatus = 0 ]]; then
+		BOX_LENGHT=$((${#TARGET_BOARD}+24));
+		dialog --title "Switching board config" --backtitle "$BACKTITLE" --yes-label "Reboot" --no-label "Cancel" --yesno "\nReboot to $TARGET_BOARD settings?" 7 $BOX_LENGHT
+		if [[ $? = 0 ]]; then
+			sed -i "s/^fdt_file=.*/fdt_file=$TARGET_BOARD/" /boot/armbianEnv.txt && grep -q "fdt_file=$TARGET_BOARD" /boot/armbianEnv.txt || echo "fdt_file=$TARGET_BOARD" >> /boot/armbianEnv.txt
+			reboot;
+		fi
+		fi
+	;;
+
+	# Switch to alternative kernels
+	#
+	"Switch" )
+		aval_kernel
+		if [[ $exitstatus = 0 ]]; then
+			exceptions "$INSTALL_KERNEL"
+			dialog --title " Install and reboot " --colors --backtitle "$BACKTITLE" --yes-label "OK" --no-label "Cancel" --yesno \
+			"\nSwitching to \Z1linux-image${TARGET_BRANCH}-${TARGET_FAMILY}\Z0 \n\n\
+			Warning: another kernel might not provide the same functionality or can be broken! \
+			\n\nBoard config will be reverted to defaults." 12 50
+			if [[ $? = 0 ]]; then
+				# remove old
+				dialog --backtitle "$BACKTITLE" --title "Please wait" --infobox "\nRemoving current kernel." 5 28
+				apt-get -s -y -qq --no-install-recommends install linux-image${TARGET_BRANCH}-${TARGET_FAMILY} \
+				linux-headers${TARGET_BRANCH}-${TARGET_FAMILY} linux-u-boot-${BOARD}-${UBOOT_BRANCH} \
+				linux-$(lsb_release -cs)-root$TARGET_BRANCH-$BOARD > /dev/null 2>&1
+				# if test download is ok, remove old kernel
+				if [[ $? = 0 ]]; then
+					aptitude remove ~nlinux-image --quiet=100 -y >> /var/log/upgrade.log
+					aptitude remove ~nlinux-dtb --quiet=100 -y >> /var/log/upgrade.log
+					aptitude remove ~nlinux-headers --quiet=100 -y >> /var/log/upgrade.log
+				fi
+				# install new
+				INSTALL_DTB=""
+				[[ -n $(apt-cache search --names-only "^linux-dtb$TARGET_BRANCH-$TARGET_FAMILY") ]] && \
+				INSTALL_DTB="linux-dtb$TARGET_BRANCH-$TARGET_FAMILY"
+				debconf-apt-progress -- apt-get --reinstall -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" -y -qq --no-install-recommends install linux-image${TARGET_BRANCH}-${TARGET_FAMILY} \
+				linux-headers${TARGET_BRANCH}-${TARGET_FAMILY} linux-u-boot-${BOARD}-${UBOOT_BRANCH} \
+				linux-$(lsb_release -cs)-root$TARGET_BRANCH-$BOARD $INSTALL_DTB
+
+				dialog --title "Kernel switch" --backtitle "$BACKTITLE" --yes-label "Yes" --no-label "Cancel" \
+				--yesno "\nNew kernel was installed. Reboot?" 7 64
+				exitstatus=$?;
+				[[ $exitstatus = 0 ]] &&  reboot
+			fi
+		else
+			dialog --backtitle "$BACKTITLE" --title " Info " --msgbox  "\nNo alternative kernels available!" 7 38
+		fi
+	;;
+
+
+	# Toggle virtual read-only root filesystem
+	#
+	"Overlayroot" )
+		if [[ -n $(mount | grep -w overlay) ]]; then
+			dialog --title " Root overlay " --backtitle "$BACKTITLE" --yes-label "Disable" \
+			--no-label "Cancel" \
+			--yesno "\nYour system is already virtual read-only.\n\nDo you want to disable this feature and reboot?" 9 60
+			[[ $? = 0 ]] && overlayroot-chroot sed -i "s/^overlayroot=.*/overlayroot=\"\"/" /etc/overlayroot.conf && \
+			overlayroot-chroot rm /etc/update-motd.d/97-overlayroot && reboot
+		else
+			debconf-apt-progress -- apt-get -o Dpkg::Options::="--force-confnew" -y --no-install-recommends install overlayroot
+			echo '#!/bin/bash' > /etc/update-motd.d/97-overlayroot
+			echo 'if [ -n "$(mount | grep -w tmpfs-root)" ]; then \
+			echo -e "\n[\e[0m \e[1mremember: your system is in virtual read only mode\e[0m ]";fi' >> /etc/update-motd.d/97-overlayroot
+			chmod +x /etc/update-motd.d/97-overlayroot
+			dialog --title "Root overlay" --backtitle "$BACKTITLE" --yes-label "Reboot" \
+			--no-label "Cancel" --yesno "\nEnable virtual read-only root and reboot." 7 45
+			[[ $? = 0 ]] && sed -i "s/^overlayroot=.*/overlayroot=\"tmpfs\"/" /etc/overlayroot.conf && reboot
+		fi
+	;;
+
+
+	esac
+}

@@ -1,0 +1,28 @@
+ssh OpenBSD Secure Shell server
+network-manager network connection manager
+hostapd Advanced IEEE 802.11 management daemon
+cpufrequtils set CPUFreq kernel parameters
+loadcpufreq Load kernel modules needed to enable cpufreq scaling
+alsa-utils Restore and store ALSA driver settings
+rsync fast remote file copy program daemon
+dbus D-Bus systemwide message bus
+ntp Start NTP daemon
+keyboard-setup Set preliminary keymap
+resolvconf Nameserver information manager
+networking Raise network interfaces.
+rsyslog enhanced syslogd
+console-setup Set console keymap
+cron Regular background program processing daemon
+udev Start systemd-udevd, populate /dev and load drivers.
+kmod Load the modules listed in /etc/modules.
+procps Configure kernel parameters at boottime
+reboot Execute the reboot command.
+rc.local Run /etc/rc.local if it exist
+single executed by init(8) upon entering runlevel 1 (single).
+halt Execute the halt command.
+ondemand Set the CPU Frequency Scaling governor to "ondemand"
+umountroot Mount the root filesystem read-only.
+sendsigs Kill all remaining processes.
+umountfs Turn off swap and unmount all local file systems.
+urandom Save and restore random seed between restarts.
+killprocs executed by init(8) upon entering runlevel 1 (single).

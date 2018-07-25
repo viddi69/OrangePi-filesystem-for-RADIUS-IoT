@@ -1,0 +1,1105 @@
+Jun 24 06:25:02 localhost CRON[23334]: pam_unix(cron:session): session closed for user root
+Jun 24 06:35:01 localhost CRON[23771]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 06:35:01 localhost CRON[23771]: pam_unix(cron:session): session closed for user root
+Jun 24 06:45:02 localhost CRON[24054]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 06:45:02 localhost CRON[24054]: pam_unix(cron:session): session closed for user root
+Jun 24 06:47:01 localhost CRON[24097]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 06:47:02 localhost CRON[24097]: pam_unix(cron:session): session closed for user root
+Jun 24 06:55:01 localhost CRON[24329]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 06:55:01 localhost CRON[24329]: pam_unix(cron:session): session closed for user root
+Jun 24 07:05:01 localhost CRON[24561]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 07:05:01 localhost CRON[24561]: pam_unix(cron:session): session closed for user root
+Jun 24 07:15:01 localhost CRON[24814]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 07:15:01 localhost CRON[24814]: pam_unix(cron:session): session closed for user root
+Jun 24 07:17:01 localhost CRON[24857]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 07:17:02 localhost CRON[24857]: pam_unix(cron:session): session closed for user root
+Jun 24 07:25:01 localhost CRON[25048]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 07:25:01 localhost CRON[25048]: pam_unix(cron:session): session closed for user root
+Jun 24 07:35:01 localhost CRON[25311]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 07:35:01 localhost CRON[25311]: pam_unix(cron:session): session closed for user root
+Jun 24 07:45:01 localhost CRON[25555]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 07:45:01 localhost CRON[25555]: pam_unix(cron:session): session closed for user root
+Jun 24 07:55:01 localhost CRON[26810]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 07:55:01 localhost CRON[26810]: pam_unix(cron:session): session closed for user root
+Jun 24 08:05:01 localhost CRON[26996]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 08:05:01 localhost CRON[26996]: pam_unix(cron:session): session closed for user root
+Jun 24 08:15:01 localhost CRON[27270]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 08:15:01 localhost CRON[27270]: pam_unix(cron:session): session closed for user root
+Jun 24 08:17:01 localhost CRON[27313]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 08:17:01 localhost CRON[27313]: pam_unix(cron:session): session closed for user root
+Jun 24 08:25:01 localhost CRON[27656]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 08:25:01 localhost CRON[27656]: pam_unix(cron:session): session closed for user root
+Jun 24 08:35:01 localhost CRON[27932]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 08:35:01 localhost CRON[27932]: pam_unix(cron:session): session closed for user root
+Jun 24 08:45:01 localhost CRON[28286]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 08:45:01 localhost CRON[28286]: pam_unix(cron:session): session closed for user root
+Jun 24 08:55:01 localhost CRON[28490]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 08:55:01 localhost CRON[28490]: pam_unix(cron:session): session closed for user root
+Jun 24 09:05:02 localhost CRON[28915]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 09:05:02 localhost CRON[28915]: pam_unix(cron:session): session closed for user root
+Jun 24 09:15:01 localhost CRON[29131]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 09:15:01 localhost CRON[29131]: pam_unix(cron:session): session closed for user root
+Jun 24 09:17:01 localhost CRON[29255]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 09:17:01 localhost CRON[29255]: pam_unix(cron:session): session closed for user root
+Jun 24 09:25:01 localhost CRON[29508]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 09:25:01 localhost CRON[29508]: pam_unix(cron:session): session closed for user root
+Jun 24 09:35:01 localhost CRON[29773]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 09:35:01 localhost CRON[29773]: pam_unix(cron:session): session closed for user root
+Jun 24 09:45:01 localhost CRON[30049]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 09:45:01 localhost CRON[30049]: pam_unix(cron:session): session closed for user root
+Jun 24 09:55:01 localhost CRON[30454]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 09:55:01 localhost CRON[30454]: pam_unix(cron:session): session closed for user root
+Jun 24 10:05:01 localhost CRON[30649]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 10:05:01 localhost CRON[30649]: pam_unix(cron:session): session closed for user root
+Jun 24 10:15:01 localhost CRON[30973]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 10:15:01 localhost CRON[30973]: pam_unix(cron:session): session closed for user root
+Jun 24 10:17:01 localhost CRON[31016]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 10:17:01 localhost CRON[31016]: pam_unix(cron:session): session closed for user root
+Jun 24 10:25:01 localhost CRON[31196]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 10:25:01 localhost CRON[31196]: pam_unix(cron:session): session closed for user root
+Jun 24 10:35:01 localhost CRON[31621]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 10:35:01 localhost CRON[31621]: pam_unix(cron:session): session closed for user root
+Jun 24 10:45:01 localhost CRON[31914]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 10:45:02 localhost CRON[31914]: pam_unix(cron:session): session closed for user root
+Jun 24 10:55:01 localhost CRON[32219]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 10:55:01 localhost CRON[32219]: pam_unix(cron:session): session closed for user root
+Jun 24 11:05:01 localhost CRON[32605]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 11:05:01 localhost CRON[32605]: pam_unix(cron:session): session closed for user root
+Jun 24 11:15:01 localhost CRON[350]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 11:15:01 localhost CRON[350]: pam_unix(cron:session): session closed for user root
+Jun 24 11:17:01 localhost CRON[394]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 11:17:01 localhost CRON[394]: pam_unix(cron:session): session closed for user root
+Jun 24 11:25:01 localhost CRON[658]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 11:25:01 localhost CRON[658]: pam_unix(cron:session): session closed for user root
+Jun 24 11:35:01 localhost CRON[860]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 11:35:01 localhost CRON[860]: pam_unix(cron:session): session closed for user root
+Jun 24 11:45:01 localhost CRON[1329]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 11:45:01 localhost CRON[1329]: pam_unix(cron:session): session closed for user root
+Jun 24 11:55:01 localhost CRON[1574]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 11:55:01 localhost CRON[1574]: pam_unix(cron:session): session closed for user root
+Jun 24 12:05:01 localhost CRON[1869]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 12:05:01 localhost CRON[1869]: pam_unix(cron:session): session closed for user root
+Jun 24 12:15:01 localhost CRON[2253]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 12:15:01 localhost CRON[2253]: pam_unix(cron:session): session closed for user root
+Jun 24 12:17:01 localhost CRON[2316]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 12:17:01 localhost CRON[2316]: pam_unix(cron:session): session closed for user root
+Jun 24 12:25:01 localhost CRON[2477]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 12:25:01 localhost CRON[2477]: pam_unix(cron:session): session closed for user root
+Jun 24 12:35:01 localhost CRON[2833]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 12:35:01 localhost CRON[2833]: pam_unix(cron:session): session closed for user root
+Jun 24 12:41:40 localhost sshd[2987]: Accepted password for viddi from 192.168.1.190 port 50225 ssh2
+Jun 24 12:41:40 localhost sshd[2987]: pam_unix(sshd:session): session opened for user viddi by (uid=0)
+Jun 24 12:41:40 localhost systemd-logind[425]: New session 301 of user viddi.
+Jun 24 12:41:40 localhost systemd: pam_unix(systemd-user:session): session opened for user viddi by (uid=0)
+Jun 24 12:41:50 localhost sudo:    viddi : TTY=pts/0 ; PWD=/home/viddi ; USER=root ; COMMAND=/usr/sbin/freeradius -x
+Jun 24 12:41:50 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 24 12:41:52 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 24 12:41:55 localhost sudo:    viddi : TTY=pts/0 ; PWD=/home/viddi ; USER=root ; COMMAND=/usr/sbin/freeradius -x
+Jun 24 12:41:55 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 24 12:41:56 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 24 12:42:00 localhost sudo:    viddi : TTY=pts/0 ; PWD=/home/viddi ; USER=root ; COMMAND=/usr/sbin/freeradius -X
+Jun 24 12:42:00 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 24 12:42:01 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 24 12:42:40 localhost sudo:    viddi : TTY=pts/0 ; PWD=/etc/freeradius ; USER=root ; COMMAND=/bin/ls
+Jun 24 12:42:40 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 24 12:42:40 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 24 12:45:02 localhost CRON[3153]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 12:45:02 localhost CRON[3153]: pam_unix(cron:session): session closed for user root
+Jun 24 12:55:01 localhost CRON[3591]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 12:55:01 localhost CRON[3591]: pam_unix(cron:session): session closed for user root
+Jun 24 12:57:36 localhost sudo:    viddi : TTY=pts/0 ; PWD=/etc/freeradius ; USER=root ; COMMAND=/bin/nano ./sites-enabled/challenge
+Jun 24 12:57:36 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 24 12:58:16 localhost sshd[3667]: Accepted password for viddi from 192.168.1.190 port 50266 ssh2
+Jun 24 12:58:16 localhost sshd[3667]: pam_unix(sshd:session): session opened for user viddi by (uid=0)
+Jun 24 12:58:16 localhost systemd-logind[425]: New session 304 of user viddi.
+Jun 24 12:58:29 localhost sudo:    viddi : TTY=pts/1 ; PWD=/home/viddi ; USER=root ; COMMAND=/usr/sbin/freeradius -X
+Jun 24 12:58:29 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 24 12:58:30 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 24 12:58:39 localhost sudo:    viddi : TTY=pts/1 ; PWD=/home/viddi ; USER=root ; COMMAND=/usr/sbin/freeradius -X
+Jun 24 12:58:39 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 24 12:58:41 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 24 12:59:52 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 24 12:59:54 localhost sudo:    viddi : TTY=pts/1 ; PWD=/home/viddi ; USER=root ; COMMAND=/usr/sbin/freeradius -X
+Jun 24 12:59:54 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 24 12:59:55 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 24 13:05:01 localhost CRON[3985]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 13:05:01 localhost CRON[3985]: pam_unix(cron:session): session closed for user root
+Jun 24 13:07:46 localhost sudo:    viddi : TTY=pts/0 ; PWD=/etc/freeradius ; USER=root ; COMMAND=/bin/nano ./sites-enabled/challenge
+Jun 24 13:07:46 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 24 13:08:14 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 24 13:08:16 localhost sudo:    viddi : TTY=pts/1 ; PWD=/home/viddi ; USER=root ; COMMAND=/usr/sbin/freeradius -X
+Jun 24 13:08:16 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 24 13:08:17 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 24 13:08:23 localhost sudo:    viddi : TTY=pts/0 ; PWD=/etc/freeradius ; USER=root ; COMMAND=/bin/nano ./sites-enabled/challenge
+Jun 24 13:08:23 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 24 13:09:07 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 24 13:09:08 localhost sudo:    viddi : TTY=pts/0 ; PWD=/etc/freeradius ; USER=root ; COMMAND=/bin/nano ./sites-enabled/challenge
+Jun 24 13:09:08 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 24 13:09:28 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 24 13:09:29 localhost sudo:    viddi : TTY=pts/1 ; PWD=/home/viddi ; USER=root ; COMMAND=/usr/sbin/freeradius -X
+Jun 24 13:09:30 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 24 13:09:31 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 24 13:09:34 localhost sudo:    viddi : TTY=pts/0 ; PWD=/etc/freeradius ; USER=root ; COMMAND=/bin/nano ./sites-enabled/challenge
+Jun 24 13:09:34 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 24 13:09:48 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 24 13:09:51 localhost sudo:    viddi : TTY=pts/0 ; PWD=/etc/freeradius ; USER=root ; COMMAND=/bin/ls
+Jun 24 13:09:51 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 24 13:09:51 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 24 13:10:02 localhost sudo:    viddi : TTY=pts/0 ; PWD=/etc/freeradius ; USER=root ; COMMAND=/bin/nano ./sites-enabled/challenge
+Jun 24 13:10:02 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 24 13:10:10 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 24 13:10:25 localhost sudo:    viddi : TTY=pts/0 ; PWD=/etc/freeradius ; USER=root ; COMMAND=/bin/nano policy.conf
+Jun 24 13:10:25 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 24 13:11:06 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 24 13:11:16 localhost sudo:    viddi : TTY=pts/0 ; PWD=/etc/freeradius ; USER=root ; COMMAND=/bin/nano radiusd.conf
+Jun 24 13:11:16 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 24 13:11:55 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 24 13:12:01 localhost sudo:    viddi : TTY=pts/0 ; PWD=/etc/freeradius ; USER=root ; COMMAND=/bin/nano users
+Jun 24 13:12:01 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 24 13:12:32 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 24 13:12:35 localhost sudo:    viddi : TTY=pts/0 ; PWD=/etc/freeradius ; USER=root ; COMMAND=/bin/nano policy.conf
+Jun 24 13:12:35 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 24 13:12:45 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 24 13:12:47 localhost sudo:    viddi : TTY=pts/1 ; PWD=/home/viddi ; USER=root ; COMMAND=/usr/sbin/freeradius -X
+Jun 24 13:12:47 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 24 13:12:52 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 24 13:13:00 localhost sudo:    viddi : TTY=pts/0 ; PWD=/etc/freeradius ; USER=root ; COMMAND=/bin/nano users
+Jun 24 13:13:00 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 24 13:13:13 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 24 13:13:14 localhost sudo:    viddi : TTY=pts/0 ; PWD=/etc/freeradius ; USER=root ; COMMAND=/bin/nano users
+Jun 24 13:13:14 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 24 13:13:35 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 24 13:13:37 localhost sudo:    viddi : TTY=pts/1 ; PWD=/home/viddi ; USER=root ; COMMAND=/usr/sbin/freeradius -X
+Jun 24 13:13:37 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 24 13:13:39 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 24 13:13:45 localhost sudo:    viddi : TTY=pts/0 ; PWD=/etc/freeradius ; USER=root ; COMMAND=/bin/nano users
+Jun 24 13:13:45 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 24 13:13:54 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 24 13:13:56 localhost sudo:    viddi : TTY=pts/1 ; PWD=/home/viddi ; USER=root ; COMMAND=/usr/sbin/freeradius -X
+Jun 24 13:13:56 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 24 13:15:01 localhost CRON[4309]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 13:15:01 localhost CRON[4309]: pam_unix(cron:session): session closed for user root
+Jun 24 13:15:10 localhost sudo:    viddi : TTY=pts/0 ; PWD=/etc/freeradius ; USER=root ; COMMAND=/bin/nano ./sites-enabled/challenge
+Jun 24 13:15:10 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 24 13:17:01 localhost CRON[4354]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 13:17:01 localhost CRON[4354]: pam_unix(cron:session): session closed for user root
+Jun 24 13:17:53 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 24 13:18:04 localhost sudo:    viddi : TTY=pts/0 ; PWD=/etc/freeradius ; USER=root ; COMMAND=/bin/ls ./sites-enabled
+Jun 24 13:18:04 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 24 13:18:04 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 24 13:18:10 localhost sudo:    viddi : TTY=pts/0 ; PWD=/etc/freeradius ; USER=root ; COMMAND=/bin/nano ./sites-enabled/default
+Jun 24 13:18:10 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 24 13:18:42 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 24 13:18:44 localhost sudo:    viddi : TTY=pts/1 ; PWD=/home/viddi ; USER=root ; COMMAND=/bin/nano ./sites-enabled/challenge
+Jun 24 13:18:44 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 24 13:18:47 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 24 13:19:00 localhost sudo:    viddi : TTY=pts/1 ; PWD=/home/viddi ; USER=root ; COMMAND=/bin/nano /etc/freeradius/sites-enabled/challenge
+Jun 24 13:19:00 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 24 13:20:27 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 24 13:20:29 localhost sudo:    viddi : TTY=pts/1 ; PWD=/home/viddi ; USER=root ; COMMAND=/usr/sbin/freeradius -X
+Jun 24 13:20:29 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 24 13:21:02 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 24 13:21:06 localhost sudo:    viddi : TTY=pts/1 ; PWD=/home/viddi ; USER=root ; COMMAND=/bin/nano /etc/freeradius/sites-enabled/challenge
+Jun 24 13:21:06 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 24 13:22:14 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 24 13:22:15 localhost sudo:    viddi : TTY=pts/1 ; PWD=/home/viddi ; USER=root ; COMMAND=/usr/sbin/freeradius -X
+Jun 24 13:22:15 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 24 13:24:31 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 24 13:24:35 localhost sudo:    viddi : TTY=pts/0 ; PWD=/etc/freeradius ; USER=root ; COMMAND=/bin/nano ./sites-enabled/challenge
+Jun 24 13:24:35 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 24 13:25:01 localhost CRON[4643]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 13:25:01 localhost CRON[4643]: pam_unix(cron:session): session closed for user root
+Jun 24 13:25:55 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 24 13:27:11 localhost sudo:    viddi : TTY=pts/0 ; PWD=/etc/freeradius ; USER=root ; COMMAND=/bin/mkdir /etc/freeradius/backup
+Jun 24 13:27:11 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 24 13:27:11 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 24 13:27:15 localhost sudo:    viddi : TTY=pts/0 ; PWD=/etc/freeradius ; USER=root ; COMMAND=/bin/ls
+Jun 24 13:27:15 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 24 13:27:15 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 24 13:27:52 localhost sudo:    viddi : TTY=pts/0 ; PWD=/etc/freeradius ; USER=root ; COMMAND=/bin/cp ./sites-enabled/challenge ./backup/challengeBackup24-06
+Jun 24 13:27:52 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 24 13:27:52 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 24 13:28:01 localhost sudo:    viddi : TTY=pts/0 ; PWD=/etc/freeradius ; USER=root ; COMMAND=/bin/ls ./backup
+Jun 24 13:28:01 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 24 13:28:01 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 24 13:28:07 localhost sudo:    viddi : TTY=pts/0 ; PWD=/etc/freeradius ; USER=root ; COMMAND=/bin/nano ./sites-enabled/challenge
+Jun 24 13:28:07 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 24 13:29:02 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 24 13:29:06 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 24 13:29:06 localhost sudo:    viddi : TTY=pts/1 ; PWD=/home/viddi ; USER=root ; COMMAND=/usr/sbin/freeradius -X
+Jun 24 13:29:06 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 24 13:29:08 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 24 13:29:19 localhost sudo:    viddi : TTY=pts/0 ; PWD=/etc/freeradius ; USER=root ; COMMAND=/bin/nano ./sites-enabled/challenge
+Jun 24 13:29:19 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 24 13:30:07 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 24 13:30:08 localhost sudo:    viddi : TTY=pts/0 ; PWD=/etc/freeradius ; USER=root ; COMMAND=/bin/nano ./sites-enabled/challenge
+Jun 24 13:30:08 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 24 13:30:54 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 24 13:30:56 localhost sudo:    viddi : TTY=pts/0 ; PWD=/etc/freeradius ; USER=root ; COMMAND=/bin/nano ./sites-enabled/challenge
+Jun 24 13:30:56 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 24 13:31:24 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 24 13:31:28 localhost sudo:    viddi : TTY=pts/1 ; PWD=/home/viddi ; USER=root ; COMMAND=/usr/sbin/freeradius -X
+Jun 24 13:31:28 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 24 13:31:29 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 24 13:31:34 localhost sudo:    viddi : TTY=pts/0 ; PWD=/etc/freeradius ; USER=root ; COMMAND=/bin/nano ./sites-enabled/challenge
+Jun 24 13:31:34 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 24 13:32:27 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 24 13:32:30 localhost sudo:    viddi : TTY=pts/1 ; PWD=/home/viddi ; USER=root ; COMMAND=/usr/sbin/freeradius -X
+Jun 24 13:32:30 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 24 13:35:01 localhost CRON[4913]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 13:35:01 localhost CRON[4913]: pam_unix(cron:session): session closed for user root
+Jun 24 13:45:01 localhost CRON[5299]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 13:45:01 localhost CRON[5299]: pam_unix(cron:session): session closed for user root
+Jun 24 13:55:01 localhost CRON[5495]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 13:55:01 localhost CRON[5495]: pam_unix(cron:session): session closed for user root
+Jun 24 14:05:01 localhost CRON[5779]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 14:05:01 localhost CRON[5779]: pam_unix(cron:session): session closed for user root
+Jun 24 14:15:01 localhost CRON[6054]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 14:15:01 localhost CRON[6054]: pam_unix(cron:session): session closed for user root
+Jun 24 14:17:01 localhost CRON[6208]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 14:17:01 localhost CRON[6208]: pam_unix(cron:session): session closed for user root
+Jun 24 14:25:01 localhost CRON[6520]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 14:25:01 localhost CRON[6520]: pam_unix(cron:session): session closed for user root
+Jun 24 14:35:01 localhost CRON[6845]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 14:35:01 localhost CRON[6845]: pam_unix(cron:session): session closed for user root
+Jun 24 14:45:01 localhost CRON[7200]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 14:45:01 localhost CRON[7200]: pam_unix(cron:session): session closed for user root
+Jun 24 14:55:01 localhost CRON[7504]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 14:55:01 localhost CRON[7504]: pam_unix(cron:session): session closed for user root
+Jun 24 15:05:01 localhost CRON[7779]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 15:05:01 localhost CRON[7779]: pam_unix(cron:session): session closed for user root
+Jun 24 15:15:01 localhost CRON[8094]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 15:15:01 localhost CRON[8094]: pam_unix(cron:session): session closed for user root
+Jun 24 15:17:01 localhost CRON[8167]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 15:17:01 localhost CRON[8167]: pam_unix(cron:session): session closed for user root
+Jun 24 15:25:01 localhost CRON[8408]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 15:25:01 localhost CRON[8408]: pam_unix(cron:session): session closed for user root
+Jun 24 15:35:01 localhost CRON[8713]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 15:35:01 localhost CRON[8713]: pam_unix(cron:session): session closed for user root
+Jun 24 15:45:01 localhost CRON[9027]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 15:45:01 localhost CRON[9027]: pam_unix(cron:session): session closed for user root
+Jun 24 15:55:01 localhost CRON[9320]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 15:55:01 localhost CRON[9320]: pam_unix(cron:session): session closed for user root
+Jun 24 16:05:01 localhost CRON[9595]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 16:05:01 localhost CRON[9595]: pam_unix(cron:session): session closed for user root
+Jun 24 16:15:01 localhost CRON[9860]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 16:15:01 localhost CRON[9860]: pam_unix(cron:session): session closed for user root
+Jun 24 16:17:02 localhost CRON[9923]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 16:17:02 localhost CRON[9923]: pam_unix(cron:session): session closed for user root
+Jun 24 16:25:01 localhost CRON[10186]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 16:25:01 localhost CRON[10186]: pam_unix(cron:session): session closed for user root
+Jun 24 16:35:01 localhost CRON[10470]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 16:35:01 localhost CRON[10470]: pam_unix(cron:session): session closed for user root
+Jun 24 16:45:01 localhost CRON[10755]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 16:45:01 localhost CRON[10755]: pam_unix(cron:session): session closed for user root
+Jun 24 16:55:01 localhost CRON[11120]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 16:55:01 localhost CRON[11120]: pam_unix(cron:session): session closed for user root
+Jun 24 17:05:01 localhost CRON[11355]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 17:05:01 localhost CRON[11355]: pam_unix(cron:session): session closed for user root
+Jun 24 17:15:01 localhost CRON[11659]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 17:15:01 localhost CRON[11659]: pam_unix(cron:session): session closed for user root
+Jun 24 17:17:01 localhost CRON[11702]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 17:17:01 localhost CRON[11702]: pam_unix(cron:session): session closed for user root
+Jun 24 17:25:01 localhost CRON[11863]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 17:25:01 localhost CRON[11863]: pam_unix(cron:session): session closed for user root
+Jun 24 17:35:01 localhost CRON[12167]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 17:35:01 localhost CRON[12167]: pam_unix(cron:session): session closed for user root
+Jun 24 17:45:01 localhost CRON[12451]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 17:45:01 localhost CRON[12451]: pam_unix(cron:session): session closed for user root
+Jun 24 17:55:01 localhost CRON[12736]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 17:55:01 localhost CRON[12736]: pam_unix(cron:session): session closed for user root
+Jun 24 18:05:01 localhost CRON[13062]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 18:05:01 localhost CRON[13062]: pam_unix(cron:session): session closed for user root
+Jun 24 18:15:01 localhost CRON[13320]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 18:15:01 localhost CRON[13320]: pam_unix(cron:session): session closed for user root
+Jun 24 18:17:01 localhost CRON[13403]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 18:17:01 localhost CRON[13403]: pam_unix(cron:session): session closed for user root
+Jun 24 18:25:01 localhost CRON[13704]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 18:25:01 localhost CRON[13704]: pam_unix(cron:session): session closed for user root
+Jun 24 18:35:01 localhost CRON[13950]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 18:35:01 localhost CRON[13950]: pam_unix(cron:session): session closed for user root
+Jun 24 18:45:01 localhost CRON[14206]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 18:45:01 localhost CRON[14206]: pam_unix(cron:session): session closed for user root
+Jun 24 18:55:01 localhost CRON[14471]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 18:55:01 localhost CRON[14471]: pam_unix(cron:session): session closed for user root
+Jun 24 19:05:01 localhost CRON[14787]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 19:05:01 localhost CRON[14787]: pam_unix(cron:session): session closed for user root
+Jun 24 19:15:01 localhost CRON[15063]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 19:15:01 localhost CRON[15063]: pam_unix(cron:session): session closed for user root
+Jun 24 19:17:01 localhost CRON[15117]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 19:17:01 localhost CRON[15117]: pam_unix(cron:session): session closed for user root
+Jun 24 19:25:01 localhost CRON[15291]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 19:25:01 localhost CRON[15291]: pam_unix(cron:session): session closed for user root
+Jun 24 19:35:01 localhost CRON[15594]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 19:35:01 localhost CRON[15594]: pam_unix(cron:session): session closed for user root
+Jun 24 19:45:01 localhost CRON[15837]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 19:45:01 localhost CRON[15837]: pam_unix(cron:session): session closed for user root
+Jun 24 19:55:01 localhost CRON[16152]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 19:55:02 localhost CRON[16152]: pam_unix(cron:session): session closed for user root
+Jun 24 20:05:01 localhost CRON[16416]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 20:05:01 localhost CRON[16416]: pam_unix(cron:session): session closed for user root
+Jun 24 20:15:01 localhost CRON[16680]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 20:15:01 localhost CRON[16680]: pam_unix(cron:session): session closed for user root
+Jun 24 20:17:01 localhost CRON[16733]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 20:17:01 localhost CRON[16733]: pam_unix(cron:session): session closed for user root
+Jun 24 20:22:02 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 24 20:22:09 localhost sudo:    viddi : TTY=pts/0 ; PWD=/etc/freeradius ; USER=root ; COMMAND=/bin/nano ./sites-enabled/challenge
+Jun 24 20:22:09 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 24 20:24:15 localhost sshd[16986]: Accepted password for viddi from 192.168.1.190 port 59868 ssh2
+Jun 24 20:24:15 localhost sshd[16986]: pam_unix(sshd:session): session opened for user viddi by (uid=0)
+Jun 24 20:24:15 localhost systemd-logind[425]: New session 357 of user viddi.
+Jun 24 20:24:54 localhost sshd[16986]: pam_unix(sshd:session): session closed for user viddi
+Jun 24 20:24:54 localhost systemd-logind[425]: Removed session 357.
+Jun 24 20:25:01 localhost CRON[17107]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 20:25:01 localhost CRON[17107]: pam_unix(cron:session): session closed for user root
+Jun 24 20:25:05 localhost sshd[17110]: Accepted password for root from 192.168.1.190 port 59869 ssh2
+Jun 24 20:25:05 localhost sshd[17110]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Jun 24 20:25:06 localhost systemd: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+Jun 24 20:25:06 localhost systemd-logind[425]: New session 359 of user root.
+Jun 24 20:35:01 localhost CRON[17466]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 20:35:01 localhost CRON[17466]: pam_unix(cron:session): session closed for user root
+Jun 24 20:45:01 localhost CRON[17780]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 20:45:01 localhost CRON[17780]: pam_unix(cron:session): session closed for user root
+Jun 24 20:55:01 localhost CRON[18026]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 20:55:01 localhost CRON[18026]: pam_unix(cron:session): session closed for user root
+Jun 24 21:05:01 localhost CRON[18342]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 21:05:01 localhost CRON[18342]: pam_unix(cron:session): session closed for user root
+Jun 24 21:15:01 localhost CRON[18566]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 21:15:01 localhost CRON[18566]: pam_unix(cron:session): session closed for user root
+Jun 24 21:17:01 localhost CRON[18629]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 21:17:01 localhost CRON[18629]: pam_unix(cron:session): session closed for user root
+Jun 24 21:25:01 localhost CRON[18791]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 21:25:01 localhost CRON[18791]: pam_unix(cron:session): session closed for user root
+Jun 24 21:35:01 localhost CRON[19085]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 21:35:01 localhost CRON[19085]: pam_unix(cron:session): session closed for user root
+Jun 24 21:45:01 localhost CRON[19339]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 21:45:01 localhost CRON[19339]: pam_unix(cron:session): session closed for user root
+Jun 24 21:55:02 localhost CRON[19653]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 21:55:02 localhost CRON[19653]: pam_unix(cron:session): session closed for user root
+Jun 24 22:05:01 localhost CRON[19926]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 22:05:01 localhost CRON[19926]: pam_unix(cron:session): session closed for user root
+Jun 24 22:15:01 localhost CRON[20190]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 22:15:01 localhost CRON[20190]: pam_unix(cron:session): session closed for user root
+Jun 24 22:17:01 localhost CRON[20233]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 22:17:01 localhost CRON[20233]: pam_unix(cron:session): session closed for user root
+Jun 24 22:25:01 localhost CRON[20465]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 22:25:01 localhost CRON[20465]: pam_unix(cron:session): session closed for user root
+Jun 24 22:35:01 localhost CRON[20788]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 22:35:01 localhost CRON[20788]: pam_unix(cron:session): session closed for user root
+Jun 24 22:45:01 localhost CRON[21062]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 22:45:01 localhost CRON[21062]: pam_unix(cron:session): session closed for user root
+Jun 24 22:55:01 localhost CRON[21307]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 22:55:01 localhost CRON[21307]: pam_unix(cron:session): session closed for user root
+Jun 24 23:05:01 localhost CRON[21613]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 23:05:01 localhost CRON[21613]: pam_unix(cron:session): session closed for user root
+Jun 24 23:15:01 localhost CRON[21827]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 23:15:01 localhost CRON[21827]: pam_unix(cron:session): session closed for user root
+Jun 24 23:17:01 localhost CRON[21891]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 23:17:01 localhost CRON[21891]: pam_unix(cron:session): session closed for user root
+Jun 24 23:25:01 localhost CRON[22151]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 23:25:01 localhost CRON[22151]: pam_unix(cron:session): session closed for user root
+Jun 24 23:35:01 localhost CRON[22385]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 23:35:01 localhost CRON[22385]: pam_unix(cron:session): session closed for user root
+Jun 24 23:45:01 localhost CRON[22668]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 23:45:01 localhost CRON[22668]: pam_unix(cron:session): session closed for user root
+Jun 24 23:55:01 localhost CRON[22921]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 23:55:01 localhost CRON[22921]: pam_unix(cron:session): session closed for user root
+Jun 24 23:59:01 localhost CRON[23054]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 24 23:59:01 localhost CRON[23054]: pam_unix(cron:session): session closed for user root
+Jun 25 00:00:01 localhost CRON[23077]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 00:00:06 localhost CRON[23077]: pam_unix(cron:session): session closed for user root
+Jun 25 00:05:01 localhost CRON[23174]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 00:05:01 localhost CRON[23174]: pam_unix(cron:session): session closed for user root
+Jun 25 00:15:01 localhost CRON[23477]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 00:15:01 localhost CRON[23477]: pam_unix(cron:session): session closed for user root
+Jun 25 00:17:01 localhost CRON[23540]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 00:17:02 localhost CRON[23540]: pam_unix(cron:session): session closed for user root
+Jun 25 00:25:01 localhost CRON[23750]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 00:25:01 localhost CRON[23750]: pam_unix(cron:session): session closed for user root
+Jun 25 00:35:01 localhost CRON[24014]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 00:35:01 localhost CRON[24014]: pam_unix(cron:session): session closed for user root
+Jun 25 00:45:01 localhost CRON[24267]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 00:45:01 localhost CRON[24267]: pam_unix(cron:session): session closed for user root
+Jun 25 00:55:01 localhost CRON[24570]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 00:55:01 localhost CRON[24570]: pam_unix(cron:session): session closed for user root
+Jun 25 01:05:01 localhost CRON[24893]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 01:05:01 localhost CRON[24893]: pam_unix(cron:session): session closed for user root
+Jun 25 01:15:01 localhost CRON[25116]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 01:15:01 localhost CRON[25116]: pam_unix(cron:session): session closed for user root
+Jun 25 01:17:01 localhost CRON[25169]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 01:17:01 localhost CRON[25169]: pam_unix(cron:session): session closed for user root
+Jun 25 01:25:01 localhost CRON[25419]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 01:25:01 localhost CRON[25419]: pam_unix(cron:session): session closed for user root
+Jun 25 01:35:01 localhost CRON[25643]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 01:35:01 localhost CRON[25643]: pam_unix(cron:session): session closed for user root
+Jun 25 01:45:01 localhost CRON[25956]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 01:45:01 localhost CRON[25956]: pam_unix(cron:session): session closed for user root
+Jun 25 01:55:01 localhost CRON[26219]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 01:55:01 localhost CRON[26219]: pam_unix(cron:session): session closed for user root
+Jun 25 02:05:01 localhost CRON[26502]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 02:05:01 localhost CRON[26502]: pam_unix(cron:session): session closed for user root
+Jun 25 02:15:01 localhost CRON[26755]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 02:15:02 localhost CRON[26755]: pam_unix(cron:session): session closed for user root
+Jun 25 02:17:01 localhost CRON[26838]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 02:17:01 localhost CRON[26838]: pam_unix(cron:session): session closed for user root
+Jun 25 02:25:01 localhost CRON[27059]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 02:25:01 localhost CRON[27059]: pam_unix(cron:session): session closed for user root
+Jun 25 02:35:01 localhost CRON[27362]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 02:35:01 localhost CRON[27362]: pam_unix(cron:session): session closed for user root
+Jun 25 02:45:01 localhost CRON[27625]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 02:45:01 localhost CRON[27625]: pam_unix(cron:session): session closed for user root
+Jun 25 02:55:01 localhost CRON[27968]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 02:55:01 localhost CRON[27968]: pam_unix(cron:session): session closed for user root
+Jun 25 03:05:01 localhost CRON[28162]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 03:05:01 localhost CRON[28162]: pam_unix(cron:session): session closed for user root
+Jun 25 03:15:01 localhost CRON[28445]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 03:15:01 localhost CRON[28445]: pam_unix(cron:session): session closed for user root
+Jun 25 03:17:01 localhost CRON[28488]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 03:17:01 localhost CRON[28488]: pam_unix(cron:session): session closed for user root
+Jun 25 03:25:01 localhost CRON[28718]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 03:25:01 localhost CRON[28718]: pam_unix(cron:session): session closed for user root
+Jun 25 03:35:01 localhost CRON[28993]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 03:35:01 localhost CRON[28993]: pam_unix(cron:session): session closed for user root
+Jun 25 03:45:01 localhost CRON[29266]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 03:45:01 localhost CRON[29266]: pam_unix(cron:session): session closed for user root
+Jun 25 03:55:01 localhost CRON[29519]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 03:55:01 localhost CRON[29519]: pam_unix(cron:session): session closed for user root
+Jun 25 04:05:01 localhost CRON[29822]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 04:05:01 localhost CRON[29822]: pam_unix(cron:session): session closed for user root
+Jun 25 04:15:02 localhost CRON[30126]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 04:15:02 localhost CRON[30126]: pam_unix(cron:session): session closed for user root
+Jun 25 04:17:01 localhost CRON[30179]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 04:17:01 localhost CRON[30179]: pam_unix(cron:session): session closed for user root
+Jun 25 04:25:01 localhost CRON[30420]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 04:25:01 localhost CRON[30420]: pam_unix(cron:session): session closed for user root
+Jun 25 04:35:01 localhost CRON[30643]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 04:35:01 localhost CRON[30643]: pam_unix(cron:session): session closed for user root
+Jun 25 04:45:01 localhost CRON[30916]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 04:45:01 localhost CRON[30916]: pam_unix(cron:session): session closed for user root
+Jun 25 04:55:01 localhost CRON[31250]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 04:55:01 localhost CRON[31250]: pam_unix(cron:session): session closed for user root
+Jun 25 05:05:01 localhost CRON[31494]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 05:05:01 localhost CRON[31494]: pam_unix(cron:session): session closed for user root
+Jun 25 05:15:01 localhost CRON[31747]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 05:15:01 localhost CRON[31747]: pam_unix(cron:session): session closed for user root
+Jun 25 05:17:01 localhost CRON[31800]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 05:17:01 localhost CRON[31800]: pam_unix(cron:session): session closed for user root
+Jun 25 05:25:01 localhost CRON[31990]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 05:25:01 localhost CRON[31990]: pam_unix(cron:session): session closed for user root
+Jun 25 05:35:01 localhost CRON[32594]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 05:35:01 localhost CRON[32594]: pam_unix(cron:session): session closed for user root
+Jun 25 05:45:01 localhost CRON[402]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 05:45:01 localhost CRON[402]: pam_unix(cron:session): session closed for user root
+Jun 25 05:55:02 localhost CRON[706]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 05:55:02 localhost CRON[706]: pam_unix(cron:session): session closed for user root
+Jun 25 06:05:01 localhost CRON[955]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 06:05:01 localhost CRON[955]: pam_unix(cron:session): session closed for user root
+Jun 25 06:15:01 localhost CRON[1202]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 06:15:01 localhost CRON[1202]: pam_unix(cron:session): session closed for user root
+Jun 25 06:17:01 localhost CRON[1285]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 06:17:01 localhost CRON[1285]: pam_unix(cron:session): session closed for user root
+Jun 25 06:25:01 localhost CRON[1509]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 06:25:01 localhost CRON[1508]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 06:25:01 localhost CRON[1509]: pam_unix(cron:session): session closed for user root
+Jun 25 06:25:03 localhost CRON[1508]: pam_unix(cron:session): session closed for user root
+Jun 25 06:35:01 localhost CRON[1882]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 06:35:01 localhost CRON[1882]: pam_unix(cron:session): session closed for user root
+Jun 25 06:45:01 localhost CRON[2086]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 06:45:01 localhost CRON[2086]: pam_unix(cron:session): session closed for user root
+Jun 25 06:55:01 localhost CRON[2313]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 06:55:01 localhost CRON[2313]: pam_unix(cron:session): session closed for user root
+Jun 25 07:05:01 localhost CRON[2517]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 07:05:01 localhost CRON[2517]: pam_unix(cron:session): session closed for user root
+Jun 25 07:15:01 localhost CRON[2810]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 07:15:01 localhost CRON[2810]: pam_unix(cron:session): session closed for user root
+Jun 25 07:17:01 localhost CRON[2933]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 07:17:01 localhost CRON[2933]: pam_unix(cron:session): session closed for user root
+Jun 25 07:25:01 localhost CRON[3140]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 07:25:01 localhost CRON[3140]: pam_unix(cron:session): session closed for user root
+Jun 25 07:35:01 localhost CRON[3384]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 07:35:01 localhost CRON[3384]: pam_unix(cron:session): session closed for user root
+Jun 25 07:45:01 localhost CRON[3650]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 07:45:01 localhost CRON[3650]: pam_unix(cron:session): session closed for user root
+Jun 25 07:55:01 localhost CRON[3937]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 07:55:01 localhost CRON[3937]: pam_unix(cron:session): session closed for user root
+Jun 25 08:05:01 localhost CRON[4192]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 08:05:01 localhost CRON[4192]: pam_unix(cron:session): session closed for user root
+Jun 25 08:15:01 localhost CRON[4497]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 08:15:01 localhost CRON[4497]: pam_unix(cron:session): session closed for user root
+Jun 25 08:17:01 localhost CRON[4540]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 08:17:02 localhost CRON[4540]: pam_unix(cron:session): session closed for user root
+Jun 25 08:25:01 localhost CRON[4771]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 08:25:01 localhost CRON[4771]: pam_unix(cron:session): session closed for user root
+Jun 25 08:35:01 localhost CRON[5046]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 08:35:01 localhost CRON[5046]: pam_unix(cron:session): session closed for user root
+Jun 25 08:45:01 localhost CRON[5331]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 08:45:01 localhost CRON[5331]: pam_unix(cron:session): session closed for user root
+Jun 25 08:55:01 localhost CRON[5600]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 08:55:01 localhost CRON[5600]: pam_unix(cron:session): session closed for user root
+Jun 25 09:05:01 localhost CRON[5850]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 09:05:01 localhost CRON[5850]: pam_unix(cron:session): session closed for user root
+Jun 25 09:15:01 localhost CRON[6103]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 09:15:01 localhost CRON[6103]: pam_unix(cron:session): session closed for user root
+Jun 25 09:17:01 localhost CRON[6156]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 09:17:01 localhost CRON[6156]: pam_unix(cron:session): session closed for user root
+Jun 25 09:25:01 localhost CRON[6397]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 09:25:01 localhost CRON[6397]: pam_unix(cron:session): session closed for user root
+Jun 25 09:35:01 localhost CRON[6642]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 09:35:01 localhost CRON[6642]: pam_unix(cron:session): session closed for user root
+Jun 25 09:45:01 localhost CRON[6927]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 09:45:01 localhost CRON[6927]: pam_unix(cron:session): session closed for user root
+Jun 25 09:55:01 localhost CRON[7220]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 09:55:01 localhost CRON[7220]: pam_unix(cron:session): session closed for user root
+Jun 25 10:05:01 localhost CRON[7443]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 10:05:01 localhost CRON[7443]: pam_unix(cron:session): session closed for user root
+Jun 25 10:15:01 localhost CRON[7786]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 10:15:01 localhost CRON[7786]: pam_unix(cron:session): session closed for user root
+Jun 25 10:17:02 localhost CRON[7829]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 10:17:02 localhost CRON[7829]: pam_unix(cron:session): session closed for user root
+Jun 25 10:25:01 localhost CRON[8050]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 10:25:01 localhost CRON[8050]: pam_unix(cron:session): session closed for user root
+Jun 25 10:35:01 localhost CRON[8314]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 10:35:01 localhost CRON[8314]: pam_unix(cron:session): session closed for user root
+Jun 25 10:45:01 localhost CRON[8547]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 10:45:01 localhost CRON[8547]: pam_unix(cron:session): session closed for user root
+Jun 25 10:55:01 localhost CRON[8810]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 10:55:01 localhost CRON[8810]: pam_unix(cron:session): session closed for user root
+Jun 25 11:05:01 localhost CRON[9054]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 11:05:01 localhost CRON[9054]: pam_unix(cron:session): session closed for user root
+Jun 25 11:15:01 localhost CRON[9317]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 11:15:01 localhost CRON[9317]: pam_unix(cron:session): session closed for user root
+Jun 25 11:17:01 localhost CRON[9360]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 11:17:01 localhost CRON[9360]: pam_unix(cron:session): session closed for user root
+Jun 25 11:25:01 localhost CRON[9600]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 11:25:01 localhost CRON[9600]: pam_unix(cron:session): session closed for user root
+Jun 25 11:35:01 localhost CRON[9864]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 11:35:01 localhost CRON[9864]: pam_unix(cron:session): session closed for user root
+Jun 25 11:45:01 localhost CRON[10117]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 11:45:01 localhost CRON[10117]: pam_unix(cron:session): session closed for user root
+Jun 25 11:55:01 localhost CRON[10370]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 11:55:01 localhost CRON[10370]: pam_unix(cron:session): session closed for user root
+Jun 25 12:05:02 localhost CRON[10674]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 12:05:02 localhost CRON[10674]: pam_unix(cron:session): session closed for user root
+Jun 25 12:15:01 localhost CRON[10950]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 12:15:01 localhost CRON[10950]: pam_unix(cron:session): session closed for user root
+Jun 25 12:17:01 localhost CRON[11023]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 12:17:01 localhost CRON[11023]: pam_unix(cron:session): session closed for user root
+Jun 25 12:25:01 localhost CRON[11205]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 12:25:01 localhost CRON[11205]: pam_unix(cron:session): session closed for user root
+Jun 25 12:35:01 localhost CRON[11479]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 12:35:01 localhost CRON[11479]: pam_unix(cron:session): session closed for user root
+Jun 25 12:35:38 localhost sudo:    viddi : TTY=pts/1 ; PWD=/home/viddi ; USER=root ; COMMAND=/usr/sbin/freeradius -X
+Jun 25 12:35:38 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 25 12:37:22 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 25 12:37:24 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 25 12:37:25 localhost sudo:    viddi : TTY=pts/1 ; PWD=/home/viddi ; USER=root ; COMMAND=/usr/sbin/freeradius -X
+Jun 25 12:37:25 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 25 12:37:26 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 25 12:37:47 localhost sudo:    viddi : TTY=pts/0 ; PWD=/etc/freeradius ; USER=root ; COMMAND=/bin/nano ./policy.conf
+Jun 25 12:37:47 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 25 12:37:51 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 25 12:37:52 localhost sudo:    viddi : TTY=pts/0 ; PWD=/etc/freeradius ; USER=root ; COMMAND=/bin/nano ./sites-enabled/challenge
+Jun 25 12:37:52 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 25 12:38:04 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 25 12:38:06 localhost sudo:    viddi : TTY=pts/1 ; PWD=/home/viddi ; USER=root ; COMMAND=/usr/sbin/freeradius -X
+Jun 25 12:38:06 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 25 12:38:40 localhost sudo:    viddi : TTY=pts/0 ; PWD=/etc/freeradius ; USER=root ; COMMAND=/bin/nano ./policy.conf
+Jun 25 12:38:40 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 25 12:38:48 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 25 12:38:53 localhost sudo:    viddi : TTY=pts/0 ; PWD=/etc/freeradius ; USER=root ; COMMAND=/bin/nano ./users
+Jun 25 12:38:53 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 25 12:39:18 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 25 12:39:31 localhost sudo:    viddi : TTY=pts/0 ; PWD=/etc/freeradius ; USER=root ; COMMAND=/bin/nano ./radiusd.conf
+Jun 25 12:39:31 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 25 12:40:01 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 25 12:40:54 localhost sudo:    viddi : TTY=pts/0 ; PWD=/etc/freeradius ; USER=root ; COMMAND=/bin/nano ./sites-enabled/challenge
+Jun 25 12:40:54 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 25 12:41:22 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 25 12:41:27 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 25 12:41:27 localhost sudo:    viddi : TTY=pts/1 ; PWD=/home/viddi ; USER=root ; COMMAND=/usr/sbin/freeradius -X
+Jun 25 12:41:27 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 25 12:41:29 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 25 12:41:35 localhost sudo:    viddi : TTY=pts/0 ; PWD=/etc/freeradius ; USER=root ; COMMAND=/bin/nano ./sites-enabled/challenge
+Jun 25 12:41:35 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 25 12:41:57 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 25 12:42:00 localhost sudo:    viddi : TTY=pts/1 ; PWD=/home/viddi ; USER=root ; COMMAND=/usr/sbin/freeradius -X
+Jun 25 12:42:00 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 25 12:43:41 localhost sudo:    viddi : TTY=pts/0 ; PWD=/etc/freeradius ; USER=root ; COMMAND=/bin/nano ./sites-enabled/challenge
+Jun 25 12:43:41 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 25 12:44:10 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 25 12:44:13 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 25 12:44:13 localhost sudo:    viddi : TTY=pts/1 ; PWD=/home/viddi ; USER=root ; COMMAND=/usr/sbin/freeradius -X
+Jun 25 12:44:13 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 25 12:45:01 localhost CRON[11770]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 12:45:01 localhost CRON[11770]: pam_unix(cron:session): session closed for user root
+Jun 25 12:55:01 localhost CRON[12024]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 12:55:01 localhost CRON[12024]: pam_unix(cron:session): session closed for user root
+Jun 25 13:05:01 localhost CRON[12257]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 13:05:01 localhost CRON[12257]: pam_unix(cron:session): session closed for user root
+Jun 25 13:15:01 localhost CRON[12501]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 13:15:01 localhost CRON[12501]: pam_unix(cron:session): session closed for user root
+Jun 25 13:17:01 localhost CRON[12554]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 13:17:01 localhost CRON[12554]: pam_unix(cron:session): session closed for user root
+Jun 25 13:25:01 localhost CRON[12845]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 13:25:01 localhost CRON[12845]: pam_unix(cron:session): session closed for user root
+Jun 25 13:35:01 localhost CRON[13099]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 13:35:01 localhost CRON[13099]: pam_unix(cron:session): session closed for user root
+Jun 25 13:45:01 localhost CRON[13363]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 13:45:01 localhost CRON[13363]: pam_unix(cron:session): session closed for user root
+Jun 25 13:55:01 localhost CRON[13607]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 13:55:01 localhost CRON[13607]: pam_unix(cron:session): session closed for user root
+Jun 25 14:05:02 localhost CRON[13870]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 14:05:02 localhost CRON[13870]: pam_unix(cron:session): session closed for user root
+Jun 25 14:09:24 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 25 14:09:30 localhost sudo:    viddi : TTY=pts/0 ; PWD=/etc/freeradius ; USER=root ; COMMAND=/bin/nano ./sites-enabled/challenge
+Jun 25 14:09:30 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 25 14:10:23 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 25 14:10:29 localhost sudo:    viddi : TTY=pts/1 ; PWD=/home/viddi ; USER=root ; COMMAND=/usr/sbin/freeradius -X
+Jun 25 14:10:29 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 25 14:10:42 localhost sudo:    viddi : TTY=pts/0 ; PWD=/etc/freeradius ; USER=root ; COMMAND=/bin/nano ./sites-enabled/challenge
+Jun 25 14:10:42 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 25 14:11:03 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 25 14:11:05 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 25 14:11:06 localhost sudo:    viddi : TTY=pts/1 ; PWD=/home/viddi ; USER=root ; COMMAND=/usr/sbin/freeradius -X
+Jun 25 14:11:06 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 25 14:11:16 localhost sudo:    viddi : TTY=pts/0 ; PWD=/etc/freeradius ; USER=root ; COMMAND=/bin/nano ./sites-enabled/challenge
+Jun 25 14:11:16 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 25 14:11:39 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 25 14:11:41 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 25 14:11:41 localhost sudo:    viddi : TTY=pts/1 ; PWD=/home/viddi ; USER=root ; COMMAND=/usr/sbin/freeradius -X
+Jun 25 14:11:41 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 25 14:11:48 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 25 14:11:51 localhost sudo:    viddi : TTY=pts/0 ; PWD=/etc/freeradius ; USER=root ; COMMAND=/bin/nano ./sites-enabled/challenge
+Jun 25 14:11:51 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 25 14:12:01 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 25 14:12:02 localhost sudo:    viddi : TTY=pts/0 ; PWD=/etc/freeradius ; USER=root ; COMMAND=/bin/nano ./sites-enabled/challenge
+Jun 25 14:12:03 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 25 14:12:12 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 25 14:12:17 localhost sudo:    viddi : TTY=pts/0 ; PWD=/etc/freeradius ; USER=root ; COMMAND=/bin/nano ./users
+Jun 25 14:12:17 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 25 14:13:10 localhost sudo:    viddi : TTY=pts/1 ; PWD=/home/viddi ; USER=root ; COMMAND=/usr/sbin/freeradius -X
+Jun 25 14:13:10 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 25 14:15:01 localhost CRON[14156]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 14:15:01 localhost CRON[14156]: pam_unix(cron:session): session closed for user root
+Jun 25 14:15:26 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 25 14:15:28 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 25 14:15:29 localhost sudo:    viddi : TTY=pts/1 ; PWD=/home/viddi ; USER=root ; COMMAND=/usr/sbin/freeradius -X
+Jun 25 14:15:29 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 25 14:15:31 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 25 14:15:41 localhost sudo:    viddi : TTY=pts/0 ; PWD=/etc/freeradius ; USER=root ; COMMAND=/bin/nano ./users
+Jun 25 14:15:41 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 25 14:15:56 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 25 14:15:58 localhost sudo:    viddi : TTY=pts/1 ; PWD=/home/viddi ; USER=root ; COMMAND=/usr/sbin/freeradius -X
+Jun 25 14:15:58 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 25 14:15:59 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 25 14:16:01 localhost sudo:    viddi : TTY=pts/0 ; PWD=/etc/freeradius ; USER=root ; COMMAND=/bin/nano ./users
+Jun 25 14:16:01 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 25 14:16:59 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 25 14:17:01 localhost CRON[14237]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 14:17:01 localhost CRON[14237]: pam_unix(cron:session): session closed for user root
+Jun 25 14:17:01 localhost sudo:    viddi : TTY=pts/1 ; PWD=/home/viddi ; USER=root ; COMMAND=/usr/sbin/freeradius -X
+Jun 25 14:17:01 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 25 14:17:03 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 25 14:17:09 localhost sudo:    viddi : TTY=pts/0 ; PWD=/etc/freeradius ; USER=root ; COMMAND=/bin/nano ./users
+Jun 25 14:17:09 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 25 14:17:36 localhost sudo:    viddi : TTY=pts/1 ; PWD=/home/viddi ; USER=root ; COMMAND=/usr/sbin/freeradius -X
+Jun 25 14:17:36 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 25 14:17:37 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 25 14:17:39 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 25 14:17:41 localhost sudo:    viddi : TTY=pts/1 ; PWD=/home/viddi ; USER=root ; COMMAND=/usr/sbin/freeradius -X
+Jun 25 14:17:41 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 25 14:17:42 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 25 14:17:44 localhost sudo:    viddi : TTY=pts/0 ; PWD=/etc/freeradius ; USER=root ; COMMAND=/bin/nano ./users
+Jun 25 14:17:44 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 25 14:20:40 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 25 14:20:43 localhost sudo:    viddi : TTY=pts/1 ; PWD=/home/viddi ; USER=root ; COMMAND=/usr/sbin/freeradius -X
+Jun 25 14:20:43 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 25 14:21:47 localhost sudo:    viddi : TTY=pts/0 ; PWD=/etc/freeradius ; USER=root ; COMMAND=/bin/nano ./users
+Jun 25 14:21:47 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 25 14:22:16 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 25 14:22:18 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 25 14:22:18 localhost sudo:    viddi : TTY=pts/1 ; PWD=/home/viddi ; USER=root ; COMMAND=/usr/sbin/freeradius -X
+Jun 25 14:22:18 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 25 14:22:20 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 25 14:22:22 localhost sudo:    viddi : TTY=pts/0 ; PWD=/etc/freeradius ; USER=root ; COMMAND=/bin/nano ./users
+Jun 25 14:22:22 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 25 14:22:29 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 25 14:22:31 localhost sudo:    viddi : TTY=pts/1 ; PWD=/home/viddi ; USER=root ; COMMAND=/usr/sbin/freeradius -X
+Jun 25 14:22:31 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 25 14:22:32 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 25 14:22:37 localhost sudo:    viddi : TTY=pts/0 ; PWD=/etc/freeradius ; USER=root ; COMMAND=/bin/nano ./users
+Jun 25 14:22:37 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 25 14:22:50 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 25 14:22:52 localhost sudo:    viddi : TTY=pts/1 ; PWD=/home/viddi ; USER=root ; COMMAND=/usr/sbin/freeradius -X
+Jun 25 14:22:52 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 25 14:22:53 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 25 14:22:55 localhost sudo:    viddi : TTY=pts/0 ; PWD=/etc/freeradius ; USER=root ; COMMAND=/bin/nano ./users
+Jun 25 14:22:55 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 25 14:23:16 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 25 14:23:17 localhost sudo:    viddi : TTY=pts/1 ; PWD=/home/viddi ; USER=root ; COMMAND=/usr/sbin/freeradius -X
+Jun 25 14:23:17 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 25 14:23:18 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 25 14:23:20 localhost sudo:    viddi : TTY=pts/0 ; PWD=/etc/freeradius ; USER=root ; COMMAND=/bin/nano ./users
+Jun 25 14:23:20 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 25 14:23:26 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 25 14:23:27 localhost sudo:    viddi : TTY=pts/1 ; PWD=/home/viddi ; USER=root ; COMMAND=/usr/sbin/freeradius -X
+Jun 25 14:23:27 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 25 14:25:01 localhost CRON[14543]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 14:25:01 localhost CRON[14543]: pam_unix(cron:session): session closed for user root
+Jun 25 14:26:02 localhost sudo:    viddi : TTY=pts/0 ; PWD=/etc/freeradius ; USER=root ; COMMAND=/bin/nano ./users
+Jun 25 14:26:02 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 25 14:26:35 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 25 14:26:38 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 25 14:26:39 localhost sudo:    viddi : TTY=pts/1 ; PWD=/home/viddi ; USER=root ; COMMAND=/usr/sbin/freeradius -X
+Jun 25 14:26:39 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 25 14:27:24 localhost sudo:    viddi : TTY=pts/0 ; PWD=/etc/freeradius ; USER=root ; COMMAND=/bin/nano ./users
+Jun 25 14:27:24 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 25 14:27:37 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 25 14:27:39 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 25 14:27:40 localhost sudo:    viddi : TTY=pts/1 ; PWD=/home/viddi ; USER=root ; COMMAND=/usr/sbin/freeradius -X
+Jun 25 14:27:40 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 25 14:28:02 localhost sudo:    viddi : TTY=pts/0 ; PWD=/etc/freeradius ; USER=root ; COMMAND=/bin/nano ./users
+Jun 25 14:28:02 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 25 14:28:11 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 25 14:28:14 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 25 14:28:14 localhost sudo:    viddi : TTY=pts/1 ; PWD=/home/viddi ; USER=root ; COMMAND=/usr/sbin/freeradius -X
+Jun 25 14:28:14 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 25 14:28:15 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 25 14:28:24 localhost sudo:    viddi : TTY=pts/0 ; PWD=/etc/freeradius ; USER=root ; COMMAND=/bin/nano ./users
+Jun 25 14:28:24 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 25 14:28:40 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 25 14:28:49 localhost sudo:    viddi : TTY=pts/0 ; PWD=/etc/freeradius ; USER=root ; COMMAND=/bin/nano ./radiusd.conf
+Jun 25 14:28:49 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 25 14:29:23 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 25 14:29:28 localhost sudo:    viddi : TTY=pts/0 ; PWD=/etc/freeradius ; USER=root ; COMMAND=/bin/ls
+Jun 25 14:29:28 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 25 14:29:28 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 25 14:29:44 localhost sudo:    viddi : TTY=pts/0 ; PWD=/etc/freeradius ; USER=root ; COMMAND=/bin/nano ./policy.conf
+Jun 25 14:29:44 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 25 14:30:00 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 25 14:30:03 localhost sudo:    viddi : TTY=pts/0 ; PWD=/etc/freeradius ; USER=root ; COMMAND=/bin/nano ./users
+Jun 25 14:30:03 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 25 14:30:34 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 25 14:30:36 localhost sudo:    viddi : TTY=pts/1 ; PWD=/home/viddi ; USER=root ; COMMAND=/usr/sbin/freeradius -X
+Jun 25 14:30:36 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 25 14:30:37 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 25 14:30:42 localhost sudo:    viddi : TTY=pts/0 ; PWD=/etc/freeradius ; USER=root ; COMMAND=/bin/nano ./users
+Jun 25 14:30:42 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 25 14:30:58 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 25 14:31:00 localhost sudo:    viddi : TTY=pts/0 ; PWD=/etc/freeradius ; USER=root ; COMMAND=/bin/nano ./users
+Jun 25 14:31:00 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 25 14:31:07 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 25 14:31:10 localhost sudo:    viddi : TTY=pts/1 ; PWD=/home/viddi ; USER=root ; COMMAND=/usr/sbin/freeradius -X
+Jun 25 14:31:10 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 25 14:31:11 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 25 14:31:17 localhost sudo:    viddi : TTY=pts/0 ; PWD=/etc/freeradius ; USER=root ; COMMAND=/bin/nano ./users
+Jun 25 14:31:17 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 25 14:31:29 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 25 14:31:30 localhost sudo:    viddi : TTY=pts/1 ; PWD=/home/viddi ; USER=root ; COMMAND=/usr/sbin/freeradius -X
+Jun 25 14:31:30 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 25 14:31:44 localhost sudo:    viddi : TTY=pts/0 ; PWD=/etc/freeradius ; USER=root ; COMMAND=/bin/nano ./users
+Jun 25 14:31:44 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 25 14:32:29 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 25 14:32:33 localhost sudo:    viddi : TTY=pts/0 ; PWD=/etc/freeradius ; USER=root ; COMMAND=/bin/nano ./radiusd.conf
+Jun 25 14:32:33 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 25 14:33:31 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 25 14:33:38 localhost sudo:    viddi : TTY=pts/0 ; PWD=/etc/freeradius ; USER=root ; COMMAND=/bin/nano ./sites-enabled/default
+Jun 25 14:33:38 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 25 14:34:11 localhost sshd[14807]: Accepted password for viddi from 192.168.1.190 port 62224 ssh2
+Jun 25 14:34:11 localhost sshd[14807]: pam_unix(sshd:session): session opened for user viddi by (uid=0)
+Jun 25 14:34:11 localhost systemd-logind[425]: New session 489 of user viddi.
+Jun 25 14:34:41 localhost sudo:    viddi : TTY=pts/2 ; PWD=/etc/freeradius ; USER=root ; COMMAND=/bin/nano users
+Jun 25 14:34:41 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 25 14:35:01 localhost CRON[14935]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 14:35:01 localhost CRON[14935]: pam_unix(cron:session): session closed for user root
+Jun 25 14:35:09 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 25 14:35:14 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 25 14:35:14 localhost sudo:    viddi : TTY=pts/1 ; PWD=/home/viddi ; USER=root ; COMMAND=/usr/sbin/freeradius -X
+Jun 25 14:35:14 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 25 14:35:20 localhost sudo:    viddi : TTY=pts/2 ; PWD=/etc/freeradius ; USER=root ; COMMAND=/bin/nano users
+Jun 25 14:35:20 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 25 14:45:01 localhost CRON[15227]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 14:45:01 localhost CRON[15227]: pam_unix(cron:session): session closed for user root
+Jun 25 14:55:01 localhost CRON[15476]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 14:55:01 localhost CRON[15476]: pam_unix(cron:session): session closed for user root
+Jun 25 15:05:01 localhost CRON[15720]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 15:05:01 localhost CRON[15720]: pam_unix(cron:session): session closed for user root
+Jun 25 15:09:44 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 25 15:09:50 localhost sudo:    viddi : TTY=pts/2 ; PWD=/etc/freeradius ; USER=root ; COMMAND=/bin/nano ./sites-enabled/challenge
+Jun 25 15:09:50 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 25 15:10:11 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 25 15:10:16 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 25 15:10:19 localhost sudo:    viddi : TTY=pts/1 ; PWD=/home/viddi ; USER=root ; COMMAND=/usr/sbin/freeradius -X
+Jun 25 15:10:19 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 25 15:10:20 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 25 15:10:26 localhost sudo:    viddi : TTY=pts/2 ; PWD=/etc/freeradius ; USER=root ; COMMAND=/bin/nano ./sites-enabled/challenge
+Jun 25 15:10:26 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 25 15:10:42 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 25 15:10:45 localhost sudo:    viddi : TTY=pts/1 ; PWD=/home/viddi ; USER=root ; COMMAND=/usr/sbin/freeradius -X
+Jun 25 15:10:45 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 25 15:11:00 localhost sudo:    viddi : TTY=pts/2 ; PWD=/etc/freeradius ; USER=root ; COMMAND=/bin/nano ./sites-enabled/challenge
+Jun 25 15:11:00 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 25 15:11:46 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 25 15:11:49 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 25 15:11:49 localhost sudo:    viddi : TTY=pts/1 ; PWD=/home/viddi ; USER=root ; COMMAND=/usr/sbin/freeradius -X
+Jun 25 15:11:49 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 25 15:13:25 localhost sudo:    viddi : TTY=pts/2 ; PWD=/etc/freeradius ; USER=root ; COMMAND=/bin/nano users
+Jun 25 15:13:25 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 25 15:13:35 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 25 15:13:38 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 25 15:13:38 localhost sudo:    viddi : TTY=pts/1 ; PWD=/home/viddi ; USER=root ; COMMAND=/usr/sbin/freeradius -X
+Jun 25 15:13:38 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 25 15:13:52 localhost sudo:    viddi : TTY=pts/2 ; PWD=/etc/freeradius ; USER=root ; COMMAND=/bin/nano users
+Jun 25 15:13:52 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 25 15:14:24 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 25 15:14:28 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 25 15:14:29 localhost sudo:    viddi : TTY=pts/1 ; PWD=/home/viddi ; USER=root ; COMMAND=/usr/sbin/freeradius -X
+Jun 25 15:14:29 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 25 15:14:30 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 25 15:14:37 localhost sudo:    viddi : TTY=pts/2 ; PWD=/etc/freeradius ; USER=root ; COMMAND=/bin/nano users
+Jun 25 15:14:37 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 25 15:15:01 localhost CRON[16022]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 15:15:01 localhost CRON[16022]: pam_unix(cron:session): session closed for user root
+Jun 25 15:16:25 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 25 15:16:26 localhost sudo:    viddi : TTY=pts/1 ; PWD=/home/viddi ; USER=root ; COMMAND=/usr/sbin/freeradius -X
+Jun 25 15:16:26 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 25 15:17:01 localhost CRON[16069]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 15:17:01 localhost CRON[16069]: pam_unix(cron:session): session closed for user root
+Jun 25 15:25:01 localhost CRON[16280]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 15:25:01 localhost CRON[16280]: pam_unix(cron:session): session closed for user root
+Jun 25 15:35:01 localhost CRON[16593]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 15:35:02 localhost CRON[16593]: pam_unix(cron:session): session closed for user root
+Jun 25 15:45:01 localhost CRON[16867]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 15:45:01 localhost CRON[16867]: pam_unix(cron:session): session closed for user root
+Jun 25 15:55:01 localhost CRON[17186]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 15:55:01 localhost CRON[17186]: pam_unix(cron:session): session closed for user root
+Jun 25 16:05:01 localhost CRON[17472]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 16:05:01 localhost CRON[17472]: pam_unix(cron:session): session closed for user root
+Jun 25 16:15:01 localhost CRON[17717]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 16:15:01 localhost CRON[17717]: pam_unix(cron:session): session closed for user root
+Jun 25 16:17:01 localhost CRON[17760]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 16:17:01 localhost CRON[17760]: pam_unix(cron:session): session closed for user root
+Jun 25 16:25:01 localhost CRON[18001]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 16:25:01 localhost CRON[18001]: pam_unix(cron:session): session closed for user root
+Jun 25 16:35:01 localhost CRON[18286]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 16:35:01 localhost CRON[18286]: pam_unix(cron:session): session closed for user root
+Jun 25 16:45:01 localhost CRON[18572]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 16:45:01 localhost CRON[18572]: pam_unix(cron:session): session closed for user root
+Jun 25 16:55:01 localhost CRON[18796]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 16:55:01 localhost CRON[18796]: pam_unix(cron:session): session closed for user root
+Jun 25 17:05:01 localhost CRON[19050]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 17:05:01 localhost CRON[19050]: pam_unix(cron:session): session closed for user root
+Jun 25 17:15:01 localhost CRON[19324]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 17:15:01 localhost CRON[19324]: pam_unix(cron:session): session closed for user root
+Jun 25 17:17:01 localhost CRON[19377]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 17:17:01 localhost CRON[19377]: pam_unix(cron:session): session closed for user root
+Jun 25 17:25:01 localhost CRON[19599]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 17:25:01 localhost CRON[19599]: pam_unix(cron:session): session closed for user root
+Jun 25 17:35:01 localhost CRON[19894]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 17:35:01 localhost CRON[19894]: pam_unix(cron:session): session closed for user root
+Jun 25 17:42:02 localhost sshd[17110]: pam_unix(sshd:session): session closed for user root
+Jun 25 17:42:02 localhost systemd-logind[425]: Removed session 359.
+Jun 25 17:42:03 localhost systemd: pam_unix(systemd-user:session): session closed for user root
+Jun 25 17:42:04 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 25 17:42:06 localhost sshd[3667]: pam_unix(sshd:session): session closed for user viddi
+Jun 25 17:42:06 localhost systemd-logind[425]: Removed session 304.
+Jun 25 17:42:10 localhost sshd[14807]: pam_unix(sshd:session): session closed for user viddi
+Jun 25 17:42:10 localhost systemd-logind[425]: Removed session 489.
+Jun 25 17:42:15 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 25 17:42:18 localhost sshd[2987]: pam_unix(sshd:session): session closed for user viddi
+Jun 25 17:42:18 localhost systemd-logind[425]: Removed session 301.
+Jun 25 17:42:19 localhost systemd: pam_unix(systemd-user:session): session closed for user viddi
+Jun 25 17:45:01 localhost CRON[20167]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 17:45:01 localhost CRON[20167]: pam_unix(cron:session): session closed for user root
+Jun 25 17:55:01 localhost CRON[20363]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 17:55:01 localhost CRON[20363]: pam_unix(cron:session): session closed for user root
+Jun 25 18:05:01 localhost CRON[20559]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 18:05:01 localhost CRON[20559]: pam_unix(cron:session): session closed for user root
+Jun 25 18:15:01 localhost CRON[20784]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 18:15:01 localhost CRON[20784]: pam_unix(cron:session): session closed for user root
+Jun 25 18:17:01 localhost CRON[20827]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 18:17:01 localhost CRON[20827]: pam_unix(cron:session): session closed for user root
+Jun 25 18:25:01 localhost CRON[20978]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 18:25:01 localhost CRON[20978]: pam_unix(cron:session): session closed for user root
+Jun 25 18:35:01 localhost CRON[21195]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 18:35:01 localhost CRON[21195]: pam_unix(cron:session): session closed for user root
+Jun 25 18:45:01 localhost CRON[21359]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 18:45:01 localhost CRON[21359]: pam_unix(cron:session): session closed for user root
+Jun 25 18:55:01 localhost CRON[21545]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 18:55:01 localhost CRON[21545]: pam_unix(cron:session): session closed for user root
+Jun 25 19:05:01 localhost CRON[21902]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 19:05:01 localhost CRON[21902]: pam_unix(cron:session): session closed for user root
+Jun 25 19:15:01 localhost CRON[22166]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 19:15:01 localhost CRON[22166]: pam_unix(cron:session): session closed for user root
+Jun 25 19:17:02 localhost CRON[22220]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 19:17:02 localhost CRON[22220]: pam_unix(cron:session): session closed for user root
+Jun 25 19:19:04 localhost sshd[22271]: Accepted password for viddi from 192.168.1.190 port 63258 ssh2
+Jun 25 19:19:04 localhost sshd[22271]: pam_unix(sshd:session): session opened for user viddi by (uid=0)
+Jun 25 19:19:05 localhost systemd-logind[425]: New session 524 of user viddi.
+Jun 25 19:19:05 localhost systemd: pam_unix(systemd-user:session): session opened for user viddi by (uid=0)
+Jun 25 19:19:14 localhost sudo:    viddi : TTY=pts/0 ; PWD=/home/viddi ; USER=root ; COMMAND=/bin/nano ./sites-enabled/default
+Jun 25 19:19:14 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 25 19:19:18 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jun 25 19:19:46 localhost sudo:    viddi : TTY=pts/0 ; PWD=/etc/freeradius ; USER=root ; COMMAND=/bin/nano ./sites-enabled/default
+Jun 25 19:19:46 localhost sudo: pam_unix(sudo:session): session opened for user root by viddi(uid=0)
+Jun 25 19:25:01 localhost CRON[22547]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 19:25:01 localhost CRON[22547]: pam_unix(cron:session): session closed for user root
+Jun 25 19:35:01 localhost CRON[22763]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 19:35:01 localhost CRON[22763]: pam_unix(cron:session): session closed for user root
+Jun 25 19:45:01 localhost CRON[23030]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 19:45:01 localhost CRON[23030]: pam_unix(cron:session): session closed for user root
+Jun 25 19:55:01 localhost CRON[23295]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 19:55:01 localhost CRON[23295]: pam_unix(cron:session): session closed for user root
+Jun 25 20:05:01 localhost CRON[23532]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 20:05:01 localhost CRON[23532]: pam_unix(cron:session): session closed for user root
+Jun 25 20:15:01 localhost CRON[23839]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 20:15:01 localhost CRON[23839]: pam_unix(cron:session): session closed for user root
+Jun 25 20:17:01 localhost CRON[23882]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 20:17:01 localhost CRON[23882]: pam_unix(cron:session): session closed for user root
+Jun 25 20:25:01 localhost CRON[24095]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 20:25:01 localhost CRON[24095]: pam_unix(cron:session): session closed for user root
+Jun 25 20:35:01 localhost CRON[24340]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 20:35:01 localhost CRON[24340]: pam_unix(cron:session): session closed for user root
+Jun 25 20:45:01 localhost CRON[24564]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 20:45:01 localhost CRON[24564]: pam_unix(cron:session): session closed for user root
+Jun 25 20:55:01 localhost CRON[24812]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 20:55:01 localhost CRON[24812]: pam_unix(cron:session): session closed for user root
+Jun 25 21:05:01 localhost CRON[25049]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 21:05:01 localhost CRON[25049]: pam_unix(cron:session): session closed for user root
+Jun 25 21:15:02 localhost CRON[25325]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 21:15:02 localhost CRON[25325]: pam_unix(cron:session): session closed for user root
+Jun 25 21:17:01 localhost CRON[25379]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 21:17:01 localhost CRON[25379]: pam_unix(cron:session): session closed for user root
+Jun 25 21:25:01 localhost CRON[25620]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 21:25:01 localhost CRON[25620]: pam_unix(cron:session): session closed for user root
+Jun 25 21:35:01 localhost CRON[25855]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 21:35:01 localhost CRON[25855]: pam_unix(cron:session): session closed for user root
+Jun 25 21:45:01 localhost CRON[26142]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 21:45:01 localhost CRON[26142]: pam_unix(cron:session): session closed for user root
+Jun 25 21:55:01 localhost CRON[26376]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 21:55:01 localhost CRON[26376]: pam_unix(cron:session): session closed for user root
+Jun 25 22:05:01 localhost CRON[26661]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 22:05:01 localhost CRON[26661]: pam_unix(cron:session): session closed for user root
+Jun 25 22:15:01 localhost CRON[26894]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 22:15:01 localhost CRON[26894]: pam_unix(cron:session): session closed for user root
+Jun 25 22:17:01 localhost CRON[26958]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 22:17:01 localhost CRON[26958]: pam_unix(cron:session): session closed for user root
+Jun 25 22:25:01 localhost CRON[27168]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 22:25:01 localhost CRON[27168]: pam_unix(cron:session): session closed for user root
+Jun 25 22:35:01 localhost CRON[27452]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 22:35:01 localhost CRON[27452]: pam_unix(cron:session): session closed for user root
+Jun 25 22:45:01 localhost CRON[27635]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 22:45:01 localhost CRON[27635]: pam_unix(cron:session): session closed for user root
+Jun 25 22:55:01 localhost CRON[27908]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 22:55:01 localhost CRON[27908]: pam_unix(cron:session): session closed for user root
+Jun 25 23:05:01 localhost CRON[28162]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 23:05:01 localhost CRON[28162]: pam_unix(cron:session): session closed for user root
+Jun 25 23:15:01 localhost CRON[28435]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 23:15:01 localhost CRON[28435]: pam_unix(cron:session): session closed for user root
+Jun 25 23:17:01 localhost CRON[28468]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 23:17:01 localhost CRON[28468]: pam_unix(cron:session): session closed for user root
+Jun 25 23:25:01 localhost CRON[28709]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 23:25:01 localhost CRON[28709]: pam_unix(cron:session): session closed for user root
+Jun 25 23:35:01 localhost CRON[28993]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 23:35:01 localhost CRON[28993]: pam_unix(cron:session): session closed for user root
+Jun 25 23:45:01 localhost CRON[29236]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 23:45:01 localhost CRON[29236]: pam_unix(cron:session): session closed for user root
+Jun 25 23:55:01 localhost CRON[29459]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 23:55:01 localhost CRON[29459]: pam_unix(cron:session): session closed for user root
+Jun 25 23:59:01 localhost CRON[29542]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 25 23:59:01 localhost CRON[29542]: pam_unix(cron:session): session closed for user root
+Jun 26 00:00:01 localhost CRON[29585]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 26 00:00:07 localhost CRON[29585]: pam_unix(cron:session): session closed for user root
+Jun 26 00:05:01 localhost CRON[29702]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 26 00:05:01 localhost CRON[29702]: pam_unix(cron:session): session closed for user root
+Jun 26 00:15:01 localhost CRON[29975]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 26 00:15:01 localhost CRON[29975]: pam_unix(cron:session): session closed for user root
+Jun 26 00:17:01 localhost CRON[30028]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 26 00:17:01 localhost CRON[30028]: pam_unix(cron:session): session closed for user root
+Jun 26 00:25:01 localhost CRON[30268]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 26 00:25:01 localhost CRON[30268]: pam_unix(cron:session): session closed for user root
+Jun 26 00:35:01 localhost CRON[30482]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 26 00:35:01 localhost CRON[30482]: pam_unix(cron:session): session closed for user root
+Jun 26 00:45:01 localhost CRON[30705]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 26 00:45:01 localhost CRON[30705]: pam_unix(cron:session): session closed for user root
+Jun 26 00:55:01 localhost CRON[30969]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 26 00:55:01 localhost CRON[30969]: pam_unix(cron:session): session closed for user root
+Jun 26 01:05:01 localhost CRON[31252]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 26 01:05:01 localhost CRON[31252]: pam_unix(cron:session): session closed for user root
+Jun 26 01:15:01 localhost CRON[31515]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 26 01:15:01 localhost CRON[31515]: pam_unix(cron:session): session closed for user root
+Jun 26 01:17:01 localhost CRON[31558]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 26 01:17:01 localhost CRON[31558]: pam_unix(cron:session): session closed for user root
+Jun 26 01:25:01 localhost CRON[31769]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 26 01:25:01 localhost CRON[31769]: pam_unix(cron:session): session closed for user root
+Jun 26 01:35:02 localhost CRON[32022]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 26 01:35:02 localhost CRON[32022]: pam_unix(cron:session): session closed for user root
+Jun 26 01:45:01 localhost CRON[32255]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 26 01:45:01 localhost CRON[32255]: pam_unix(cron:session): session closed for user root
+Jun 26 01:55:01 localhost CRON[32518]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 26 01:55:01 localhost CRON[32518]: pam_unix(cron:session): session closed for user root
+Jun 26 02:05:01 localhost CRON[32732]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 26 02:05:01 localhost CRON[32732]: pam_unix(cron:session): session closed for user root
+Jun 26 02:15:01 localhost CRON[518]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 26 02:15:01 localhost CRON[518]: pam_unix(cron:session): session closed for user root
+Jun 26 02:17:01 localhost CRON[561]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 26 02:17:01 localhost CRON[561]: pam_unix(cron:session): session closed for user root
+Jun 26 02:25:01 localhost CRON[807]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 26 02:25:01 localhost CRON[807]: pam_unix(cron:session): session closed for user root
+Jun 26 02:35:01 localhost CRON[1005]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 26 02:35:01 localhost CRON[1005]: pam_unix(cron:session): session closed for user root
+Jun 26 02:45:01 localhost CRON[1249]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 26 02:45:01 localhost CRON[1249]: pam_unix(cron:session): session closed for user root
+Jun 26 02:55:01 localhost CRON[1522]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 26 02:55:01 localhost CRON[1522]: pam_unix(cron:session): session closed for user root
+Jun 26 03:05:01 localhost CRON[1776]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 26 03:05:01 localhost CRON[1776]: pam_unix(cron:session): session closed for user root
+Jun 26 03:15:01 localhost CRON[2009]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 26 03:15:01 localhost CRON[2009]: pam_unix(cron:session): session closed for user root
+Jun 26 03:17:01 localhost CRON[2072]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 26 03:17:02 localhost CRON[2072]: pam_unix(cron:session): session closed for user root
+Jun 26 03:25:01 localhost CRON[2293]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 26 03:25:01 localhost CRON[2293]: pam_unix(cron:session): session closed for user root
+Jun 26 03:35:01 localhost CRON[2556]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 26 03:35:01 localhost CRON[2556]: pam_unix(cron:session): session closed for user root
+Jun 26 03:45:01 localhost CRON[2810]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 26 03:45:01 localhost CRON[2810]: pam_unix(cron:session): session closed for user root
+Jun 26 03:55:01 localhost CRON[3044]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 26 03:55:01 localhost CRON[3044]: pam_unix(cron:session): session closed for user root
+Jun 26 04:05:01 localhost CRON[3287]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 26 04:05:01 localhost CRON[3287]: pam_unix(cron:session): session closed for user root
+Jun 26 04:15:01 localhost CRON[3570]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 26 04:15:01 localhost CRON[3570]: pam_unix(cron:session): session closed for user root
+Jun 26 04:17:01 localhost CRON[3623]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 26 04:17:01 localhost CRON[3623]: pam_unix(cron:session): session closed for user root
+Jun 26 04:25:01 localhost CRON[3814]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 26 04:25:01 localhost CRON[3814]: pam_unix(cron:session): session closed for user root
+Jun 26 04:35:01 localhost CRON[4057]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 26 04:35:01 localhost CRON[4057]: pam_unix(cron:session): session closed for user root
+Jun 26 04:45:01 localhost CRON[4260]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 26 04:45:01 localhost CRON[4260]: pam_unix(cron:session): session closed for user root
+Jun 26 04:55:01 localhost CRON[4515]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 26 04:55:01 localhost CRON[4515]: pam_unix(cron:session): session closed for user root
+Jun 26 05:05:01 localhost CRON[4791]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 26 05:05:01 localhost CRON[4791]: pam_unix(cron:session): session closed for user root
+Jun 26 05:15:01 localhost CRON[5313]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 26 05:15:01 localhost CRON[5313]: pam_unix(cron:session): session closed for user root
+Jun 26 05:17:01 localhost CRON[5346]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 26 05:17:01 localhost CRON[5346]: pam_unix(cron:session): session closed for user root
+Jun 26 05:25:01 localhost CRON[5577]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 26 05:25:01 localhost CRON[5577]: pam_unix(cron:session): session closed for user root
+Jun 26 05:35:01 localhost CRON[5792]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 26 05:35:01 localhost CRON[5792]: pam_unix(cron:session): session closed for user root
+Jun 26 05:45:01 localhost CRON[6076]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 26 05:45:01 localhost CRON[6076]: pam_unix(cron:session): session closed for user root
+Jun 26 05:55:01 localhost CRON[6341]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 26 05:55:01 localhost CRON[6341]: pam_unix(cron:session): session closed for user root
+Jun 26 06:05:01 localhost CRON[6565]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 26 06:05:01 localhost CRON[6565]: pam_unix(cron:session): session closed for user root
+Jun 26 06:15:01 localhost CRON[6852]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 26 06:15:01 localhost CRON[6852]: pam_unix(cron:session): session closed for user root
+Jun 26 06:17:01 localhost CRON[6906]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 26 06:17:01 localhost CRON[6906]: pam_unix(cron:session): session closed for user root
+Jun 26 06:25:01 localhost CRON[7169]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 26 06:25:01 localhost CRON[7168]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 26 06:25:01 localhost CRON[7169]: pam_unix(cron:session): session closed for user root
